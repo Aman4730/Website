@@ -32,32 +32,41 @@ const AboutUS = () => {
                 About Logimetrix IT SOLUTIONS
               </span>
               <h2 class="sec-title">
-                We Are Increasing Business Success With
-                <span class="text-theme">Technology</span>
+                The Best IT Solution With 14 Years of
+                <span class="text-theme"> Experience.</span>
               </h2>
             </div>
             <p className="mt-n2 mb-25">
-              Continually harness backward-compatible initiatives and
-              synergistic content. Objectively strategize cutting edge niches
-              with collaborative synergy. Globally pontificate e-business
-              processes through orthoonal web readiness enhance backend value.
+              Logimetrix Techsolutions, founded by IIT alumni, is a fast-growing
+              business solution provider specializing in cutting-edge custom
+              software development. Our expert team is driven by innovation and
+              excellence, delivering reliable, timely, flexible, and
+              cost-effective solutions tailored to your business needs. Customer
+              satisfaction is our top priority. Our expertise includes:
             </p>
-            <div className="checklist style4 mb-40 list-center">
-              <ul>
-                <li>
+            <div className="checklist style4 mb-40 list-center d-flex flex-row justify-content-between w-50">
+              <ul className="list-unstyled d-flex flex-column gap-2">
+                <li className="d-flex align-items-center gap-2">
                   <img src="assets/img/icon/check_1.png" alt="icon" />
-                  Dramatically re-engineer value added IT systems via mission
+                  Award Winning
                 </li>
-                <li>
-                  <img src="assets/img/icon/check_1.png" alt="icon" /> Website
-                  &amp; Mobile application design &amp; Development
-                </li>
-                <li>
+                <li className="d-flex align-items-center gap-2">
                   <img src="assets/img/icon/check_1.png" alt="icon" />
-                  Professional User Experince &amp; Interface researching
+                  Professional Staff
+                </li>
+              </ul>
+              <ul className="list-unstyled d-flex flex-column gap-2">
+                <li className="d-flex align-items-center gap-2">
+                  <img src="assets/img/icon/check_1.png" alt="icon" />
+                  24/7 Support
+                </li>
+                <li className="d-flex align-items-center gap-2">
+                  <img src="assets/img/icon/check_1.png" alt="icon" />
+                  Fair Prices
                 </li>
               </ul>
             </div>
+
             <a href="about.html" className="th-btn">
               ABOUT MORE
               <i className="fa-regular fa-arrow-right ms-2" />

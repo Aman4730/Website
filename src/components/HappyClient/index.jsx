@@ -15,7 +15,7 @@ const HappyClient = () => {
               </div>
               <div className="media-body">
                 <h2 className="counter-card_number">
-                  <span className="counter-number">986</span>+
+                  <span className="counter-number">650</span>+
                 </h2>
                 <p className="counter-card_text">Finished Project</p>
               </div>
@@ -28,7 +28,7 @@ const HappyClient = () => {
               </div>
               <div className="media-body">
                 <h2 className="counter-card_number">
-                  <span className="counter-number">896</span>+
+                  <span className="counter-number">689</span>+
                 </h2>
                 <p className="counter-card_text">Happy Clients</p>
               </div>
@@ -41,7 +41,7 @@ const HappyClient = () => {
               </div>
               <div className="media-body">
                 <h2 className="counter-card_number">
-                  <span className="counter-number">396</span>+
+                  <span className="counter-number">150</span>+
                 </h2>
                 <p className="counter-card_text">Skilled Experts</p>
               </div>
@@ -54,7 +54,7 @@ const HappyClient = () => {
               </div>
               <div className="media-body">
                 <h2 className="counter-card_number">
-                  <span className="counter-number">496</span>+
+                  <span className="counter-number">253</span>+
                 </h2>
                 <p className="counter-card_text">Honorable Awards</p>
               </div>

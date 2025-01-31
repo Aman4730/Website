@@ -1,5 +1,8 @@
 import React from "react";
-
+import ConsultingIcon from "../../Imges/ConsultingIcon.png";
+import developmentIcon from "../../Imges/developmentIcon.png";
+import seoIcon from "../../Imges/seoIcon.png";
+import Business1 from "../../Imges/Business1.png";
 const HowToWork = () => {
   return (
     <section className="space" id="process-sec">
@@ -25,12 +28,21 @@ const HowToWork = () => {
               <div className="process-card">
                 <div className="pulse" />
                 <div className="process-card_icon">
-                  <img src="assets/img/icon/process_box_1.png" alt="icon" />
+                  <img
+                    src={ConsultingIcon}
+                    alt="icon"
+                    style={{
+                      width: "90px",
+                      height: "90px",
+                    }}
+                  />
                 </div>
-                <h2 className="box-title">Select a project</h2>
+                <h2 className="box-title" style={{ fontSize: "20px" }}>
+                  Consulting Services
+                </h2>
                 <p className="process-card_text">
-                  Continua scale empowered metrics with cost effective
-                  innovation.
+                  We provide expert consulting services to optimize business
+                  processes and technology solutions.
                 </p>
               </div>
             </div>
@@ -38,12 +50,21 @@ const HowToWork = () => {
               <div className="process-card">
                 <div className="pulse" />
                 <div className="process-card_icon">
-                  <img src="assets/img/icon/process_box_2.png" alt="icon" />
+                  <img
+                    src={Business1}
+                    alt="icon"
+                    style={{
+                      width: "100px",
+                      height: "100px",
+                    }}
+                  />
                 </div>
-                <h2 className="box-title">Project analysis</h2>
+                <h2 className="box-title" style={{ fontSize: "20px" }}>
+                  Business Solutions
+                </h2>
                 <p className="process-card_text">
-                  Continua scale empowered metrics with cost effective
-                  innovation.
+                  We provide innovative business solutions to optimize
+                  efficiency and drive growth globally.
                 </p>
               </div>
             </div>
@@ -51,12 +72,21 @@ const HowToWork = () => {
               <div className="process-card">
                 <div className="pulse" />
                 <div className="process-card_icon">
-                  <img src="assets/img/icon/process_box_3.png" alt="icon" />
+                  <img
+                    src={developmentIcon}
+                    alt="icon"
+                    style={{
+                      width: "90px",
+                      height: "80px",
+                    }}
+                  />
                 </div>
-                <h2 className="box-title">Plan Execute</h2>
+                <h2 className="box-title" style={{ fontSize: "20px" }}>
+                  Web Development
+                </h2>
                 <p className="process-card_text">
-                  Continua scale empowered metrics with cost effective
-                  innovation.
+                  We create dynamic, responsive websites that drive user
+                  engagement and business success.
                 </p>
               </div>
             </div>
@@ -64,12 +94,21 @@ const HowToWork = () => {
               <div className="process-card">
                 <div className="pulse" />
                 <div className="process-card_icon">
-                  <img src="assets/img/icon/process_box_4.png" alt="icon" />
+                  <img
+                    src={seoIcon}
+                    alt="icon"
+                    style={{
+                      width: "90px",
+                      height: "90px",
+                    }}
+                  />
                 </div>
-                <h2 className="box-title">Deliver result</h2>
+                <h2 className="box-title" style={{ fontSize: "20px" }}>
+                  SEO Optimization
+                </h2>
                 <p className="process-card_text">
-                  Continua scale empowered metrics with cost effective
-                  innovation.
+                  We enhance your online visibility with strategic SEO solutions
+                  for higher rankings and traffic.
                 </p>
               </div>
             </div>

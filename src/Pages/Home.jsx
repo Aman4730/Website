@@ -9,6 +9,8 @@ import HowToWork from "../components/HowToWork";
 import TechnologySolutions from "../components/TechnologySolutions";
 import ChooseUS from "../components/ChooseUS";
 import OurExpertise from "../components/OurExpertise";
+import OurClient from "../components/OurClient";
+import Brands from "../components/Brands";
 
 const Home = () => {
   return (
@@ -306,7 +308,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <NavBar />
       <Dashboard />
       <AboutUS />
       <HowToWork />
@@ -314,7 +315,7 @@ const Home = () => {
       <TechnologySolutions />
       <ChooseUS />
       <OurExpertise />
-      <Footer />
+      <OurClient />
     </div>
   );
 };

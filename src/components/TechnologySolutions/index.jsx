@@ -35,11 +35,12 @@ const TechnologySolutions = () => {
                   <img src="assets/img/icon/service_4_1.svg" alt="Icon" />
                 </div>
                 <h3 className="box-title">
-                  <a href="service-details.html">Cyber Security Solution</a>
+                  <a href="service-details.html">LAMP (PHP/MySQL) Solutions</a>
                 </h3>
                 <p className="service-box3_text">
-                  Building a cybersecurity culture within organizations is
-                  essential to promoting security.
+                  Robust web applications using the LAMP stack for dynamic sites
+                  and
+                  <br /> e-commerce.
                 </p>
                 <a href="service-details.html" className="line-btn">
                   Learn More
@@ -70,11 +71,13 @@ const TechnologySolutions = () => {
                   <img src="assets/img/icon/service_4_2.svg" alt="Icon" />
                 </div>
                 <h3 className="box-title">
-                  <a href="service-details.html">Cloud Integration</a>
+                  <a href="service-details.html">
+                    MERN/MEAN <br /> Solutions
+                  </a>
                 </h3>
                 <p className="service-box3_text">
-                  Building a cybersecurity culture within organizations is
-                  essential to promoting security.
+                  Full-stack JavaScript framework for fast, scalable web
+                  applications and real-time features.
                 </p>
                 <a href="service-details.html" className="line-btn">
                   Learn More
@@ -90,11 +93,14 @@ const TechnologySolutions = () => {
                   <img src="assets/img/icon/service_4_3.svg" alt="Icon" />
                 </div>
                 <h3 className="box-title">
-                  <a href="service-details.html">Managed IT Services</a>
+                  <a href="service-details.html">
+                    Android <br />
+                    Solutions
+                  </a>
                 </h3>
                 <p className="service-box3_text">
-                  Building a cybersecurity culture within organizations is
-                  essential to promoting security.
+                  Custom Android app development for engaging, high-performance
+                  mobile applications.
                 </p>
                 <a href="service-details.html" className="line-btn">
                   Learn More
@@ -110,11 +116,13 @@ const TechnologySolutions = () => {
                   <img src="assets/img/icon/service_4_4.svg" alt="Icon" />
                 </div>
                 <h3 className="box-title">
-                  <a href="service-details.html">Software Development</a>
+                  <a href="service-details.html">
+                    Mobile / Smartphone Solutions
+                  </a>
                 </h3>
                 <p className="service-box3_text">
-                  Building a cybersecurity culture within organizations is
-                  essential to promoting security.
+                  Native and cross-platform mobile apps for iOS and Android,
+                  ensuring optimal user experiences.
                 </p>
                 <a href="service-details.html" className="line-btn">
                   Learn More
@@ -130,11 +138,13 @@ const TechnologySolutions = () => {
                   <img src="assets/img/icon/service_4_5.svg" alt="Icon" />
                 </div>
                 <h3 className="box-title">
-                  <a href="service-details.html">Data Analytics</a>
+                  <a href="service-details.html">
+                    Ruby on Rails (RoR) Solutions
+                  </a>
                 </h3>
                 <p className="service-box3_text">
-                  Building a cybersecurity culture within organizations is
-                  essential to promoting security.
+                  Efficient web applications built with RoR for quick
+                  development and scalability.
                 </p>
                 <a href="service-details.html" className="line-btn">
                   Learn More

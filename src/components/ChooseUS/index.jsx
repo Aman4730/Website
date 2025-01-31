@@ -20,7 +20,7 @@ const ChooseUS = () => {
           </div>
           <div className="col-xl-6">
             <div class="title-area mb-35 text-center text-xl-start">
-              <div class="shadow-title">ABOUT US</div>
+              <div class="shadow-title">WHY CHOOSE US?</div>
               <span class="sub-title">
                 <div class="icon-masking me-2">
                   <img
@@ -46,7 +46,7 @@ const ChooseUS = () => {
                     aria-expanded="true"
                     aria-controls="collapse-1"
                   >
-                    Do I need a marketing degree to use Webteck?
+                    What sets your team apart from others?
                   </button>
                 </div>
                 <div
@@ -57,10 +57,10 @@ const ChooseUS = () => {
                 >
                   <div className="accordion-body">
                     <p className="faq-text">
-                      No marketing degree is required! Webteck's intuitive
-                      interface and built-in features empower you to create
-                      effective marketing campaigns even without prior
-                      experience..
+                      Our dedication and commitment drive us to exceed client
+                      expectations, delivering exceptional results through
+                      innovation, efficiency, and a passion for excellence in
+                      every project.
                     </p>
                   </div>
                 </div>
@@ -75,7 +75,7 @@ const ChooseUS = () => {
                     aria-expanded="false"
                     aria-controls="collapse-2"
                   >
-                    What kind of content can I create with Webteck?
+                    How do you accommodate different client needs?
                   </button>
                 </div>
                 <div
@@ -86,9 +86,10 @@ const ChooseUS = () => {
                 >
                   <div className="accordion-body">
                     <p className="faq-text">
-                      As of my last knowledge update in January 2022, Digix
-                      refers to DigixGlobal, a company that tokenizes physical
-                      assets, primarily gold, on the Ethereum blockchain.
+                      We provide flexible engagement models, customizing our
+                      approach to meet each client’s unique needs, ensuring
+                      optimal efficiency, effectiveness, and seamless project
+                      execution for superior results.
                     </p>
                   </div>
                 </div>
@@ -103,7 +104,7 @@ const ChooseUS = () => {
                     aria-expanded="false"
                     aria-controls="collapse-3"
                   >
-                    Does Webteck integrate with other tools I use?
+                    What expertise does your team bring to the table?
                   </button>
                 </div>
                 <div
@@ -114,11 +115,10 @@ const ChooseUS = () => {
                 >
                   <div className="accordion-body">
                     <p className="faq-text">
-                      Implementing automation for routine and repetitive tasks
-                      can significantly reduce manual effort and the risk of
-                      errors. This can be achieved through the use of software
-                      tools, scripts, or robotic process automation (RPA)
-                      systems.
+                      With a team of 30+ skilled IT professionals and strong
+                      technological expertise, we solve complex challenges
+                      through innovative, cutting-edge solutions tailored to
+                      client needs.
                     </p>
                   </div>
                 </div>
@@ -133,7 +133,7 @@ const ChooseUS = () => {
                     aria-expanded="false"
                     aria-controls="collapse-4"
                   >
-                    What kind of analytics does Webteck offer?
+                    How do you ensure efficiency and cost-effectiveness?
                   </button>
                 </div>
                 <div
@@ -144,10 +144,10 @@ const ChooseUS = () => {
                 >
                   <div className="accordion-body">
                     <p className="faq-text">
-                      Webteck offers a variety of benefits, including increased
-                      productivity, streamlined workflows, enhanced
-                      collaboration, improved data-driven decision making, and
-                      more.
+                      We ensure fast turnaround times, competitive pricing, and
+                      timely delivery, all while maintaining high quality
+                      standards to meet your business needs effectively and
+                      efficiently.
                     </p>
                   </div>
                 </div>

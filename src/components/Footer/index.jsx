@@ -1,63 +1,33 @@
 import React from "react";
-
+import footerLogo from "../../Imges/footerLogo.png";
 const Footer = () => {
   return (
-    <footer
-      className="footer-wrapper footer-layout3"
-      data-bg-src="assets/img/bg/footer_bg_2.jpg"
-    >
-      <div className="footer-top">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-xl-3">
-              <div className="footer-logo">
-                <a className="icon-masking" href="index.html">
-                  <span
-                    data-mask-src="assets/img/logo-white.svg"
-                    className="mask-icon"
-                  />
-                  <img src="assets/img/logo-white.svg" alt="logimetrix" />
-                </a>
-              </div>
-            </div>
-            <div className="col-xl-9">
-              <div className="newsletter-wrap">
-                <div className="newsletter-content">
-                  <h3 className="newsletter-title">News Subscription</h3>
-                  <p className="newsletter-text">
-                    Get Latest Deals from Waker’s Inbox &amp; Subscribe Now
-                  </p>
-                </div>
-                <form className="newsletter-form">
-                  <div className="form-group">
-                    <input
-                      className="form-control"
-                      type="email"
-                      placeholder="Email Address"
-                      required=""
-                    />
-                    <i className="fal fa-envelope" />
-                  </div>
-                  <button type="submit" className="th-btn style3">
-                    Subscribe
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <footer className="footer-wrapper footer-layout1">
       <div className="widget-area">
-        <div className="container">
+        <div
+          className="container"
+          style={{ maxWidth: "1500px", paddingLeft: "30px" }}
+        >
           <div className="row justify-content-between">
             <div className="col-md-6 col-xxl-3 col-xl-4">
               <div className="widget footer-widget">
                 <h3 className="widget_title">About Company</h3>
                 <div className="th-widget-about">
                   <p className="about-text">
-                    Professionally redefine transparent ROI through low-risk
-                    high-yield imperatives. Progressively create empowered. cost
-                    effective users via team driven.
+                    <img
+                      src={footerLogo}
+                      alt="Logimetrix Tech Solution"
+                      style={{
+                        width: "170px",
+                        height: "auto",
+                      }}
+                    />
+                    <br />
+                    Logimetrix Techsolutions is a rapidly growing business
+                    solution provider organisation founded by Indian Institute
+                    of Technology (IIT) alumni with extensive experience in
+                    designing and developing cutting edge custom software
+                    solutions.
                   </p>
                   <div className="th-social">
                     <a href="https://www.facebook.com/">
@@ -79,137 +49,162 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-xl-auto">
+            <div
+              className="col-md-5 col-xl-auto"
+              style={{ marginRight: "35px" }}
+            >
               <div className="widget widget_nav_menu footer-widget">
                 <h3 className="widget_title">Quick Links</h3>
                 <div className="menu-all-pages-container">
                   <ul className="menu">
                     <li>
-                      <a href="about.html">About Us</a>
+                      <a href="about.html">
+                        <p className="about-text">About Us</p>
+                      </a>
                     </li>
                     <li>
-                      <a href="team.html">Meet Our Team</a>
+                      <a href="team.html">
+                        <p className="about-text">Meet Our Team</p>
+                      </a>
                     </li>
                     <li>
-                      <a href="project.html">Our Projects</a>
+                      <a href="project.html">
+                        <p className="about-text">Our Projects</p>
+                      </a>
                     </li>
                     <li>
-                      <a href="faq.html">Help &amp; FAQs</a>
+                      <a href="faq.html">
+                        <p className="about-text">Help &amp; FAQs</p>
+                      </a>
                     </li>
                     <li>
-                      <a href="contact.html">Contact Us</a>
+                      <a href="contact.html">
+                        <p className="about-text">Contact Us</p>
+                      </a>
                     </li>
                   </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-6 col-xl-auto">
+              <div className="widget footer-widget">
+                <h3 className="widget_title">Contact US</h3>
+                <div className="th-widget-contact">
+                  <div className="footer-contact">
+                    <div
+                      className="footer-contact_icon"
+                      style={{ marginTop: "-30px" }}
+                    >
+                      <i className="fas fa-phone"></i>
+                    </div>
+                    <div className="media-body">
+                      <p href="tel:+19088000393" className="about-text">
+                        +91(993)-554-0006 / (993)-587-6555
+                      </p>
+                    </div>
+                  </div>
+                  <div className="footer-contact">
+                    <div
+                      className="footer-contact_icon"
+                      style={{ marginTop: "-30px" }}
+                    >
+                      <i className="fas fa-envelope"></i>
+                    </div>
+                    <div className="media-body">
+                      <p href="mailto:info@webteck.com" className="about-text">
+                        info@webteck.com
+                      </p>
+                    </div>
+                  </div>
+                  <div className="footer-contact">
+                    <div
+                      className="footer-contact_icon"
+                      style={{ marginTop: "-50px" }}
+                    >
+                      <i className="fas fa-location-dot"></i>
+                    </div>
+                    <div className="media-body">
+                      <p
+                        href="https://www.google.com/maps"
+                        className="about-text"
+                      >
+                        3/23, Vikaskhand 3, Vikas Khand, Gomti Nagar, Lucknow,
+                        Uttar Pradesh 226010
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="col-md-6 col-xl-auto">
               <div className="widget widget_nav_menu footer-widget">
-                <h3 className="widget_title">IT SERVICES</h3>
+                <h3 className="widget_title">Our Offices</h3>
                 <div className="menu-all-pages-container">
                   <ul className="menu">
                     <li>
-                      <a href="service-details.html">Web Development</a>
+                      <a href="service-details.html">LUCKNOW OFFICE</a>
                     </li>
                     <li>
-                      <a href="service-details.html">Business Development</a>
+                      <p className="about-footer-text">
+                        Krishna Sadan, 3/204, 3rd Floor, Vikas Khand Gomti
+                        Nagar, Lucknow, Uttar Pradesh- 226 010
+                      </p>
                     </li>
                     <li>
-                      <a href="service-details.html">Product Management</a>
+                      <a href="service-details.html">DELHI OFFICE</a>
                     </li>
                     <li>
-                      <a href="service-details.html">UI/UX Design</a>
+                      <p className="about-footer-text">
+                        E-5, Ist Floor, Connaught Place, New Delhi-110001
+                      </p>
                     </li>
                     <li>
-                      <a href="service-details.html">Cloud services</a>
+                      <a href="service-details.html">BANGLORE OFFICE</a>
+                    </li>
+                    <li>
+                      <p className="about-footer-text">
+                        #4/1, 4th Main, Pinnacle Square, Dollars Colony RMV 2nd
+                        Stage, Bangalore- 560 094
+                      </p>
                     </li>
                   </ul>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-xl-auto">
-              <div className="widget footer-widget">
-                <h3 className="widget_title">Recent Posts</h3>
-                <div className="recent-post-wrap">
-                  <div className="recent-post">
-                    <div className="media-img">
-                      <a href="blog-details.html">
-                        <img
-                          src="assets/img/blog/recent-post-2-1.jpg"
-                          alt="Blog Image"
-                        />
-                      </a>
-                    </div>
-                    <div className="media-body">
-                      <h4 className="post-title">
-                        <a className="text-inherit" href="blog-details.html">
-                          Unsatiable entreaties may collecting Power.
-                        </a>
-                      </h4>
-                      <div className="recent-post-meta">
-                        <a href="blog.html">
-                          <i className="fal fa-calendar-days" />
-                          21 June, 2024
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="recent-post">
-                    <div className="media-img">
-                      <a href="blog-details.html">
-                        <img
-                          src="assets/img/blog/recent-post-2-2.jpg"
-                          alt="Blog Image"
-                        />
-                      </a>
-                    </div>
-                    <div className="media-body">
-                      <h4 className="post-title">
-                        <a className="text-inherit" href="blog-details.html">
-                          Regional Manager limited time management.
-                        </a>
-                      </h4>
-                      <div className="recent-post-meta">
-                        <a href="blog.html">
-                          <i className="fal fa-calendar-days" />
-                          22 June, 2024
-                        </a>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="copyright-wrap">
+      <div
+        className="copyright-wrap bg-title"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+          width: "100%",
+        }}
+      >
         <div className="container">
-          <div className="row justify-content-between align-items-center">
-            <div className="col-lg-6">
-              <p className="copyright-text">
-                Copyright <i className="fal fa-copyright" /> 2024
-                <a href="https://themeforest.net/user/themeholy">Themeholy</a>.
-                All Rights Reserved.
+          <div className="row">
+            <div className="col-lg-12">
+              <p
+                className="copyright-text"
+                style={{ margin: 0, width: "100%" }}
+              >
+                Copyright © 2012-2025 Logimetrix Techsolutions Pvt. Ltd, All
+                Rights Reserved.
               </p>
-            </div>
-            <div className="col-lg-6 text-lg-end text-center">
-              <div className="footer-links">
-                <ul>
-                  <li>
-                    <a href="about.html">Terms &amp; Condition</a>
-                  </li>
-                  <li>
-                    <a href="about.html">Careers</a>
-                  </li>
-                  <li>
-                    <a href="about.html">Privacy Policy</a>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="shape-left">
+        <img src="assets/img/shape/footer_shape_2.svg" alt="shape" />
+      </div>
+      <div className="shape-right">
+        <div className="particle-1" id="particle-5" />
       </div>
     </footer>
   );

@@ -36,8 +36,8 @@ const OurExpertise = () => {
                   IT Consulting
                 </h2>
                 <p className="process-card_text">
-                  Continua scale empowered metrics with cost effective
-                  innovation.
+                  Our IT consulting accelerates digital transformation,
+                  optimizing performance to drive sustainable growth.
                 </p>
               </div>
             </div>
@@ -51,8 +51,8 @@ const OurExpertise = () => {
                   Web Development
                 </h2>
                 <p className="process-card_text">
-                  Continua scale empowered metrics with cost effective
-                  innovation.
+                  Delivering exceptional web development solutions, trusted by
+                  leading companies worldwide.
                 </p>
               </div>
             </div>
@@ -66,8 +66,8 @@ const OurExpertise = () => {
                   Apps Development
                 </h2>
                 <p className="process-card_text">
-                  Continua scale empowered metrics with cost effective
-                  innovation.
+                  Delivering innovative app solutions that exceed expectations
+                  for top companies.
                 </p>
               </div>
             </div>
@@ -81,8 +81,8 @@ const OurExpertise = () => {
                   DW, BI & Analysis
                 </h2>
                 <p className="process-card_text">
-                  Continua scale empowered metrics with cost effective
-                  innovation.
+                  Empowering businesses with innovative Data Warehousing, BI,
+                  and Analytics solutions for success.
                 </p>
               </div>
             </div>

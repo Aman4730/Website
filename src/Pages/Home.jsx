@@ -15,8 +15,6 @@ import Brands from "../components/Brands";
 const Home = () => {
   return (
     <div>
-      <div className="cursor" />
-      <div className="cursor2" />
       <div className="th-menu-wrapper">
         <div className="th-menu-area text-center">
           <button className="th-menu-toggle">

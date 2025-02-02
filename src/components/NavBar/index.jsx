@@ -1,5 +1,6 @@
 import React from "react";
 import logimetrixlogo1 from "../../Imges/logimetrixlogo1.png";
+import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <>
@@ -52,7 +53,7 @@ const NavBar = () => {
               <div className="row align-items-center justify-content-between">
                 <div className="col-auto">
                   <div className="header-logo">
-                    <a className="icon-masking" href="/">
+                    <Link className="icon-masking" to="/">
                       <span
                         data-mask-src="assets/img/logo.svg"
                         className="mask-icon"
@@ -62,17 +63,17 @@ const NavBar = () => {
                         alt="logimetrix"
                         style={{ width: "130px", height: "45px" }}
                       />
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-auto">
                   <nav className="main-menu d-none d-lg-inline-block">
                     <ul>
                       <li>
-                        <a href="/">Home</a>
+                        <Link to="/">Home</Link>
                       </li>
                       <li>
-                        <a href="/aboutus">About Us</a>
+                        <Link to="/aboutus">About Us</Link>
                       </li>
 
                       <li className="menu-item-has-children mega-menu-wrap">
@@ -82,25 +83,51 @@ const NavBar = () => {
                             <a href="#">Standalone Products</a>
                             <ul style={{ marginBottom: "20px" }}>
                               <li>
-                                <a href="index.html">TrakMob</a>
+                                <Link to="/solutions/qblock">Qblock</Link>
                               </li>
                               <li>
-                                <a href="home-web-development.html">
+                                <Link to="/solutions/LogBooksPage">
+                                  LogBooks
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/solutions/AbsoluteStudyPage">
                                   Absolute Study
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="home-software-company.html">
+                                <Link to="/solution/VisionDeskPage">
+                                  VisionDesk (MIS Portal)
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/solution/SaiSoftwarePage">
+                                  Sai-Software (College Fee Mgmt)
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/solution/AksharPage">
+                                  Akshar(Loan Management system)
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/solution/SAGPage">
+                                  SAG (System for Agricultural Growth)
+                                </Link>
+                              </li>
+
+                              <li>
+                                <Link to="/solution/TrakFuelPage">
                                   TrakFuel
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="home-software-company-2.html">
+                                <Link to="/solution/IManagerPage">
                                   IManager
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="home-startup-company.html">Cropnet</a>
+                                <Link to="/solution/CropnetPage">Cropnet</Link>
                               </li>
                             </ul>
                             <a href="#">ERP Solutions</a>
@@ -114,16 +141,6 @@ const NavBar = () => {
                             <a href="#">Data Science</a>
                             <ul>
                               <li>
-                                <a href="home-sass-landing-2.html">
-                                  Issue Management System
-                                </a>
-                              </li>
-                              <li>
-                                <a href="home-app-landing.html">
-                                  Agriculture Information System
-                                </a>
-                              </li>
-                              <li>
                                 <a href="home-ai-technology.html">
                                   Field Quotation System
                                 </a>
@@ -131,6 +148,16 @@ const NavBar = () => {
                               <li>
                                 <a href="home-cyber-security.html">
                                   Decision Support System
+                                </a>
+                              </li>
+                              <li>
+                                <a href="home-sass-landing-2.html">
+                                  Issue Management System
+                                </a>
+                              </li>
+                              <li>
+                                <a href="home-app-landing.html">
+                                  Agriculture Information System
                                 </a>
                               </li>
                             </ul>
@@ -148,30 +175,46 @@ const NavBar = () => {
                                   Dairy Application
                                 </a>
                               </li>
+                              <li>
+                                <a href="home-web-development-op.html">
+                                  Photon (Centralized Solar Solution)
+                                </a>
+                              </li>
                             </ul>
                           </li>
                           <li>
                             <a href="#">Mobile Applications</a>
                             <ul>
                               <li>
-                                <a href="home-sass-landing-2-op.html">KarGo</a>
-                              </li>
-                              <li>
                                 <a href="home-app-landing-op.html">IRedi</a>
                               </li>
+                              <li>
+                                <a href="home-sass-landing-2-op.html">KarGo</a>
+                              </li>
+
                               <li>
                                 <a href="home-ai-technology-op.html">
                                   MonitorM
                                 </a>
                               </li>
                               <li>
-                                <a href="home-cyber-security-op.html">
-                                  Communication Application
+                                <a href="home-ai-technology-op.html">
+                                  J&K Tourism
                                 </a>
                               </li>
                               <li>
                                 <a href="home-cyber-security-2-op.html">
                                   Tourism Application
+                                </a>
+                              </li>
+                              <li>
+                                <a href="home-ai-technology-op.html">
+                                  Saroj Education Mobile app
+                                </a>
+                              </li>
+                              <li>
+                                <a href="home-cyber-security-op.html">
+                                  Communication Application
                                 </a>
                               </li>
                             </ul>

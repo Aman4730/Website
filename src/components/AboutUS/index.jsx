@@ -32,7 +32,7 @@ const AboutUS = () => {
                 About Logimetrix IT SOLUTIONS
               </span>
               <h2 class="sec-title">
-                The Best IT Solution With 14 Years of
+                The Best IT Solution With 12 Years of
                 <span class="text-theme"> Experience.</span>
               </h2>
             </div>

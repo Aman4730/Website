@@ -96,38 +96,38 @@ const NavBar = () => {
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/solution/VisionDeskPage">
+                                <Link to="/solutions/VisionDeskPage">
                                   VisionDesk (MIS Portal)
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/solution/SaiSoftwarePage">
+                                <Link to="/solutions/SaiSoftwarePage">
                                   Sai-Software (College Fee Mgmt)
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/solution/AksharPage">
+                                <Link to="/solutions/AksharPage">
                                   Akshar(Loan Management system)
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/solution/SAGPage">
+                                <Link to="/solutions/SAGPage">
                                   SAG (System for Agricultural Growth)
                                 </Link>
                               </li>
 
                               <li>
-                                <Link to="/solution/TrakFuelPage">
+                                <Link to="/solutions/TrakFuelPage">
                                   TrakFuel
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/solution/IManagerPage">
+                                <Link to="/solutions/IManagerPage">
                                   IManager
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/solution/CropnetPage">Cropnet</Link>
+                                <Link to="/solutions/CropnetPage">Cropnet</Link>
                               </li>
                             </ul>
                             <a href="#">ERP Solutions</a>
@@ -221,14 +221,88 @@ const NavBar = () => {
                           </li>
                         </ul>
                       </li>
-                      <li className="menu-item-has-children">
+                      <li className="menu-item-has-children mega-menu-wrap">
                         <a href="#">Services</a>
-                        <ul className="sub-menu">
+                        <ul className="mega-menu">
                           <li>
-                            <a href="service.html">Services</a>
+                            <a href="#">IT Services</a>
+                            <ul style={{ marginBottom: "20px" }}>
+                              <li>
+                                <Link to="/solutions/qblock">
+                                  Application Development
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/solutions/LogBooksPage">
+                                  POC Development
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/solutions/AbsoluteStudyPage">
+                                  Product-Oriented Delivery
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/solutions/VisionDeskPage">
+                                  Enterprise Application
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/solutions/SaiSoftwarePage">
+                                  Application Re-engineering
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/solutions/AksharPage">
+                                  Cloud Migration
+                                </Link>
+                              </li>
+                            </ul>
                           </li>
                           <li>
-                            <a href="service-details.html">Services Details</a>
+                            <a href="#">Infra Services</a>
+                            <ul>
+                              <li>
+                                <a href="home-sass-landing-2.html">
+                                  Indus Towers Limited
+                                </a>
+                              </li>
+                              <li>
+                                <a href="home-ai-technology.html">
+                                  Central Cattle Breeding Farm (CCBF) Renovation
+                                </a>
+                              </li>
+                              <li>
+                                <a href="home-cyber-security.html">
+                                  Organic Health Products Initiative
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">Accomplishments</a>
+                            <ul>
+                              <li>
+                                <a href="home-digital-agency-op.html">
+                                  MOVCDNER
+                                </a>
+                              </li>
+                              <li>
+                                <a href="home-web-development-op.html">
+                                  Jammu Smart City Project
+                                </a>
+                              </li>
+                              <li>
+                                <a href="home-web-development-op.html">
+                                  Acme Solar CMS System
+                                </a>
+                              </li>
+                              <li>
+                                <a href="home-web-development-op.html">
+                                  Jammu Tourism
+                                </a>
+                              </li>
+                            </ul>
                           </li>
                         </ul>
                       </li>

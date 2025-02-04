@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import team from "../Imges/team.jpg";
@@ -8,6 +8,22 @@ import team1 from "../Imges/team1.png";
 import team2 from "../Imges/team2.jpg";
 import team3 from "../Imges/team3.jpg";
 import team4 from "../Imges/team4.jpeg";
+import { Link } from "react-router-dom";
+import BrandSlider from "../components/Brands";
+import AbhishekMishra from "../Imges/AbhishekMishra.png";
+import MartijnHalbesma from "../Imges/MartijnHalbesma.jpg";
+import Sanjay_rai from "../Imges/Sanjay_rai.jpg";
+import VivekKumarSrivastava from "../Imges/VivekKumarSrivastava.jpg";
+import Vijay from "../Imges/Vijay.jpg";
+import about_feature_1_1 from "../assets/img/icon/about_feature_1_1.svg";
+import about_feature_1_2 from "../assets/img/icon/about_feature_1_2.svg";
+import star from "../assets/img/icon/star.svg";
+import sershape from "../assets/img/icon/ser-shape.svg";
+import service_3 from "../assets/img/service/service_3.png";
+import service_2_1 from "../assets/img/icon/service_2_1.svg";
+import service_2_2 from "../assets/img/icon/service_2_2.svg";
+import service_2_3 from "../assets/img/icon/service_2_3.svg";
+import service_2_4 from "../assets/img/icon/service_2_4.svg";
 const teamMembers = [
   {
     name: "Shantanu Kumar",
@@ -43,17 +59,6 @@ const teamMembers = [
     },
   },
   {
-    name: "Yash Trivedi",
-    role: "BDE",
-    image: team2,
-    socialLinks: {
-      facebook: "https://facebook.com/rayanathels",
-      twitter: "https://twitter.com/rayanathels",
-      instagram: "https://instagram.com/rayanathels",
-      linkedin: "https://www.linkedin.com/in/yashtrivedibd/",
-    },
-  },
-  {
     name: "Sandipan Basu",
     role: "President & Mentor",
     image: team3,
@@ -64,9 +69,82 @@ const teamMembers = [
       linkedin: "https://www.linkedin.com/in/sandipan-basu-b67323335/",
     },
   },
+  {
+    name: "Yash Trivedi",
+    role: "BDE",
+    image: team2,
+    socialLinks: {
+      facebook: "https://facebook.com/rayanathels",
+      twitter: "https://twitter.com/rayanathels",
+      instagram: "https://instagram.com/rayanathels",
+      linkedin: "https://www.linkedin.com/in/yashtrivedibd/",
+    },
+  },
 ];
-
+const testimonials = [
+  {
+    img: Sanjay_rai,
+    name: "Sanjay Rai",
+    designation: "Principal Engineer II | HARMAN",
+    text: "Working with Shantanu was a great experience. His strong sense of ownership, results-driven mindset, and ability to balance both big-picture strategy and intricate details make him an exceptional professional. He is creative, energetic, solution-oriented, and highly motivated, with outstanding communication skills. A true asset to any organization!",
+  },
+  {
+    img: "assets/img/testimonial/testi_3_4.jpg",
+    name: "Yashwant Kumar Singh",
+    designation: "Xiaomi | Ex-Microsoft, Nokia, Foxconn",
+    text: "Shantanu is a highly passionate individual with a strong drive to help others through his technological expertise. He is an ambitious leader, always focused on achieving his goals while ensuring seamless communication. His ability to understand needs and deliver solutions makes him an invaluable asset to both customers and colleagues. Wishing him all the best",
+  },
+  {
+    img: Vijay,
+    name: "Vijay Dwivedi",
+    designation: "Managing Director | Sinthia Technologies India Pvt Ltd",
+    text: "Working with Shantanu, I came to know him as a sharp, insightful senior professional who combines wit with a strong commitment to quality and deliverables. He is highly organized, communicates effectively with peers and teams, and ensures clarity in every interaction. With his calm and pragmatic approach, he consistently finds solutions—even in challenging project situations. A true leader and problem solver!",
+  },
+  {
+    img: "assets/img/testimonial/testi_3_2.jpg",
+    name: "Sonali Patro",
+    designation:
+      "Quality Assistance | Business Analysis | Project Management | Canva",
+    text: "Shantanu is an exceptional leader with impressive management skills and deep technical expertise. He is professional, proactive, and an excellent decision-maker. Despite his strong leadership, he remains down-to-earth and easy to work with, making him ideal for management roles. His strategic approach ensures top-quality team output, and his high standards naturally reflect on every team member while maintaining high team morale. A truly commendable leader!",
+  },
+  {
+    img: VivekKumarSrivastava,
+    name: "Vivek Kumar Srivastava",
+    designation: "Manager | TNS India",
+    text: "Shantanu is a dedicated, ambitious, and results-driven leader with exceptional problem-solving skills. His ability to navigate complex challenges with focus and determination sets him apart. Having known him for over 15 years, I have seen his deep understanding of both functional and technical aspects of various domains. His commitment to excellence makes him a standout professional, and it has been a privilege to have a professional relationship with him.",
+  },
+  {
+    img: MartijnHalbesma,
+    name: "Martijn Halbesma",
+    designation: "Regulatory & Compliance Lead | Philips",
+    text: "I had the pleasure of working with Shantanu for several months on projects involving the development, testing, and release of products for a major telecommunications player. Shantanu's exceptional communication and leadership skills were invaluable to the success of the projects. He collaborated seamlessly with international teams and was an outstanding host when project members visited India. His dedication and expertise make him an asset to any team.",
+  },
+  {
+    img: AbhishekMishra,
+    name: "Abhishek Mishra",
+    designation:
+      "Co-Founder @ Sort String Solutions LLP | Entrepreneurial-spirited Technologist",
+    text: "I had the pleasure of working closely with Shantanu and found him to be a sincere, honest, and hardworking individual with a remarkable depth of knowledge in the agribusiness market. His expertise in data gathering and understanding the agricultural commodities market in India is unparalleled. If you're looking for the real, unfiltered picture of the market and how to leverage it to your advantage, Shantanu is the person to work with. In an industry full of misinformation, Shantanu stands out for his commitment to honesty, transparency, and ethical business practices. Moreover, he possesses extensive knowledge in mobility solutions and has an exceptional ability to identify and apply technology in the simplest and most effective ways.",
+  },
+];
 const AboutUsPage = () => {
+  const [expandedIndex, setExpandedIndex] = useState(null);
+  const [pauseSlider, setPauseSlider] = useState(false);
+
+  const toggleText = (index) => {
+    if (expandedIndex === index) {
+      setExpandedIndex(null);
+      setPauseSlider(false);
+    } else {
+      setExpandedIndex(index);
+      setPauseSlider(true);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setExpandedIndex(null);
+    setPauseSlider(false);
+  };
   return (
     <>
       <div
@@ -77,14 +155,28 @@ const AboutUsPage = () => {
           backgroundPosition: "center",
           height: "300px",
           width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
         <div className="container">
-          <div className="breadcumb-content">
-            <h1 className="breadcumb-title">About Us</h1>
+          <div className="breadcumb-content text-center">
+            <div className="title-area mb-35">
+              <div className="shadow-title">ABOUT US</div>
+              <span className="sub-title">
+                <div className="icon-masking me-2">
+                  <img
+                    src="assets/img/theme-img/title_shape_2.svg"
+                    alt="shape"
+                  />
+                </div>
+                Logimetrix TechSolutions
+              </span>
+            </div>
             <ul className="breadcumb-menu">
               <li>
-                <a href="index.html">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>About Us</li>
             </ul>
@@ -104,7 +196,7 @@ const AboutUsPage = () => {
                 </div>
                 <div className="year-counter">
                   <h3 className="year-counter_number">
-                    <span className="counter-number">25</span>
+                    <span className="counter-number">12+</span>
                   </h3>
                   <p className="year-counter_text">Years Experience</p>
                 </div>
@@ -124,23 +216,23 @@ const AboutUsPage = () => {
                     About Logimetrix IT SOLUTIONS
                   </span>
                   <h2 class="sec-title">
-                    The Best IT Solution With 14 Years of
+                    The Best IT Solution With 12+ Years of
                     <span class="text-theme"> Experience.</span>
                   </h2>
                 </div>
                 <p className="mt-n2 mb-25">
-                  Collaboratively envisioneer user friendly supply chains and
-                  cross unit imperative. Authoritativel fabricate competitive
-                  resource and holistic synergy. Uniquely generate efficient
-                  schemas before future.
+                  Logimetrix Techsolutions is a dynamic and fast-growing
+                  business solutions provider, founded by IIT alumni with deep
+                  expertise in designing and developing cutting-edge custom
+                  software solutions. Backed by a team of highly skilled and
+                  innovative professionals, we are committed to delivering
+                  scalable, efficient, and cost-effective technology solutions
+                  tailored to your business needs.
                 </p>
                 <div className="about-feature-wrap">
                   <div className="about-feature">
                     <div className="about-feature_icon">
-                      <img
-                        src="assets/img/icon/about_feature_1_1.svg"
-                        alt="Icon"
-                      />
+                      <img src={about_feature_1_1} alt="Icon" />
                     </div>
                     <div className="media-body">
                       <h3 className="about-feature_title">Certified Company</h3>
@@ -151,10 +243,7 @@ const AboutUsPage = () => {
                   </div>
                   <div className="about-feature">
                     <div className="about-feature_icon">
-                      <img
-                        src="assets/img/icon/about_feature_1_2.svg"
-                        alt="Icon"
-                      />
+                      <img src={about_feature_1_2} alt="Icon" />
                     </div>
                     <div className="media-body">
                       <h3 className="about-feature_title">Expart Team</h3>
@@ -174,7 +263,7 @@ const AboutUsPage = () => {
                     <div className="media-body">
                       <span className="btn-text">Call Us On:</span>
                       <a href="tel:+19088000393" className="btn-title">
-                        +190-8800-0393
+                        +91 9935540006
                       </a>
                     </div>
                   </div>
@@ -184,28 +273,239 @@ const AboutUsPage = () => {
           </div>
         </div>
       </div>
+      {/* What we do AI */}
+      <section className="space" id="service-sec">
+        <div className="container th-container4">
+          <div className="row justify-content-center">
+            <div className="col-lg-8">
+              <div className="title-area text-center">
+                <div className="title-area mb-35 text-center">
+                  <div className="shadow-title">What We Do</div>
+                  <span className="sub-title">
+                    <div className="icon-masking me-2">
+                      <img
+                        src="assets/img/theme-img/title_shape_2.svg"
+                        alt="shape"
+                      />
+                    </div>
+                    What We Do
+                  </span>
+                  <h2 className="sec-title">
+                    Empowering Success Through
+                    <span className="text-theme"> Innovation.</span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row gy-4 justify-content-between align-items-center">
+            <div className="service-card2_wrap style1">
+              <div className="service-card2_wrap">
+                <div className="service-card2 wow fadeInRight">
+                  <div className="service-card2_content">
+                    <div className="service-card2_icon">
+                      <img src={service_2_1} alt="Icon" />
+                    </div>
+                    <h3 className="box-title">
+                      <a href="service-details.html">Mobility Solutions</a>
+                    </h3>
+                    <p className="service-card2_text">
+                      Custom mobile apps for Android, iOS, and Windows that
+                      drive user engagement and business growth.
+                    </p>
+                  </div>
+                </div>
+                <div className="service-card2 wow fadeInRight">
+                  <div className="service-card2_content">
+                    <div className="service-card2_icon">
+                      <img src={service_2_2} alt="Icon" />
+                    </div>
+                    <h3 className="box-title">
+                      <a href="service-details.html">Technology Solutions</a>
+                    </h3>
+                    <p className="service-card2_text">
+                      Enterprise-grade software architectures built with
+                      cutting-edge technology for maximum performance.
+                    </p>
+                  </div>
+                </div>
+                <div className="service-card2 wow fadeInRight">
+                  <div className="service-card2_content">
+                    <div className="service-card2_icon">
+                      <img src={service_2_3} alt="Icon" />
+                    </div>
+                    <h3 className="box-title">
+                      <a href="service-details.html">Research & Analytics</a>
+                    </h3>
+                    <p className="service-card2_text">
+                      Transform your raw data into actionable insights through
+                      advanced analytics and reporting.
+                    </p>
+                  </div>
+                </div>
+                <div className="service-card2 wow fadeInRight">
+                  <div className="service-card2_content">
+                    <div className="service-card2_icon">
+                      <img src={service_2_4} alt="Icon" />
+                    </div>
+                    <h3 className="box-title">
+                      <a href="service-details.html">Custom Development</a>
+                    </h3>
+                    <p className="service-card2_text">
+                      Tailor-made solutions designed specifically for your
+                      unique business challenges and goals.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="service-card2 style1 wow fadeInUp"
+                style={{
+                  backgroundImage: `url(${service_3})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  height: "auto",
+                  width: "100%",
+                }}
+              >
+                <div className="service-card2_content">
+                  <h3 className="service-title">
+                    We build digital experiences.
+                  </h3>
+                  <h4 className="cilent-box_counter">
+                    <span className="counter-number">689</span>+ clients across
+                    India
+                  </h4>
+                  <span className="ser-shape">
+                    <img src={sershape} alt="" />
+                  </span>
+                </div>
+              </div>
+              <div
+                className="shape-mockup service-shape spin d-none d-xl-block"
+                style={{
+                  position: "absolute",
+                  top: "46%",
+                  left: "23.5%",
+                }}
+                data-top="46%"
+                data-left="23.5%"
+              >
+                <img src={star} alt="shape" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Why Choose Us */}
+      <div className="space" data-bg-src="assets/img/bg/why_bg_1.png">
+        <div className="container">
+          <div className="row align-items-center flex-row-reverse">
+            <div className="col-xxl-7 col-xl-6 mb-30 mb-xl-0">
+              <div className="img-box2">
+                <div className="img1">
+                  <img src="assets/img/normal/why_1_1.jpg" alt="Why" />
+                </div>
+              </div>
+            </div>
+            <div className="col-xxl-5 col-xl-6">
+              <div class="title-area mb-35 text-center text-xl-start">
+                <div class="shadow-title">WHY CHOOSE</div>
+                <span class="sub-title">
+                  <div class="icon-masking me-2">
+                    <img
+                      src="assets/img/theme-img/title_shape_2.svg"
+                      alt="shape"
+                    />
+                  </div>
+                  WHY CHOOSE US
+                </span>
+                <h2 class="sec-title">
+                  We Deal With The Aspects Professional
+                  <span class="text-theme"> IT Services.</span>
+                </h2>
+              </div>
+              <p className="mt-n2 mb-30">
+                With a growing reputation for technology leadership, quality
+                assurance, and outstanding service delivery, we continue to push
+                the boundaries of what’s possible. Whether you're a startup,
+                enterprise, or industry leader, we invite you to partner with us
+                on a journey of innovation and success.
+              </p>
+              <div className="two-column">
+                <div className="checklist style2">
+                  <ul>
+                    <li>
+                      <i className="far fa-check" /> Big Data Analysis
+                    </li>
+                    <li>
+                      <i className="far fa-check" /> Business Improvement
+                    </li>
+                    <li>
+                      <i className="far fa-check" /> Innovation-Driven
+                    </li>
+                    <li>
+                      <i className="far fa-check" /> Scalability & Security
+                    </li>
+                    <li>
+                      <i className="far fa-check" /> 24/7 Online Support
+                    </li>
+                  </ul>
+                </div>
+                <div className="checklist style2">
+                  <ul>
+                    <li>
+                      <i className="far fa-check" /> High Quality Security
+                    </li>
+                    <li>
+                      <i className="far fa-check" /> Easy Solutions
+                    </li>
+                    <li>
+                      <i className="far fa-check" /> Client-Centric
+                    </li>
+                    <li>
+                      <i className="far fa-check" /> End-to-End Support
+                    </li>
+                    <li>
+                      <i className="far fa-check" /> 24/7 Support Team
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Team Members Section */}
       <section className="team-sec space">
         <div className="container z-index-common">
-          <div className="title-area text-center">
-            <span className="sub-title">
-              <div className="icon-masking me-2">
-                <img src="assets/img/theme-img/title_shape_1.svg" alt="shape" />
+          <div class="title-area mb-35 text-center">
+            <div class="shadow-title">TEAM MEMBER</div>
+            <span class="sub-title">
+              <div class="icon-masking me-2">
+                <img src="assets/img/theme-img/title_shape_2.svg" alt="shape" />
               </div>
               TEAM MEMBER
             </span>
-            <h2 className="sec-title">
-              See Our Skilled Expert <span className="text-theme">Team</span>
+            <h2 class="sec-title">
+              See Our Skilled Expert
+              <span class="text-theme"> Team.</span>
             </h2>
           </div>
 
           <div className="slider-area">
             <Swiper
-              modules={[Navigation]}
+              modules={[Navigation, Autoplay]}
               navigation={{
                 nextEl: ".slider-next",
                 prevEl: ".slider-prev",
               }}
               loop={true}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
               breakpoints={{
                 0: { slidesPerView: 1 },
                 576: { slidesPerView: 1 },
@@ -292,171 +592,80 @@ const AboutUsPage = () => {
           </div>
         </div>
       </section>
-      <div
-        className="bg-theme space-extra"
-        data-bg-src="assets/img/bg/counter_bg_1.png"
-      >
-        <div className="container py-2">
-          <div className="row gy-40 justify-content-between">
-            <div className="col-6 col-lg-auto">
-              <div className="counter-card">
-                <div className="counter-card_icon">
-                  <img src="assets/img/icon/counter_1_1.svg" alt="Icon" />
-                </div>
-                <div className="media-body">
-                  <h2 className="counter-card_number">
-                    <span className="counter-number">986</span>+
-                  </h2>
-                  <p className="counter-card_text">Finished Project</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-6 col-lg-auto">
-              <div className="counter-card">
-                <div className="counter-card_icon">
-                  <img src="assets/img/icon/counter_1_2.svg" alt="Icon" />
-                </div>
-                <div className="media-body">
-                  <h2 className="counter-card_number">
-                    <span className="counter-number">896</span>+
-                  </h2>
-                  <p className="counter-card_text">Happy Clients</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-6 col-lg-auto">
-              <div className="counter-card">
-                <div className="counter-card_icon">
-                  <img src="assets/img/icon/counter_1_3.svg" alt="Icon" />
-                </div>
-                <div className="media-body">
-                  <h2 className="counter-card_number">
-                    <span className="counter-number">396</span>+
-                  </h2>
-                  <p className="counter-card_text">Skilled Experts</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-6 col-lg-auto">
-              <div className="counter-card">
-                <div className="counter-card_icon">
-                  <img src="assets/img/icon/counter_1_4.svg" alt="Icon" />
-                </div>
-                <div className="media-body">
-                  <h2 className="counter-card_number">
-                    <span className="counter-number">496</span>+
-                  </h2>
-                  <p className="counter-card_text">Honorable Awards</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      {/* Brands Logos */}
+      <div style={{ marginBottom: "120px" }}>
+        <BrandSlider />
       </div>
-      <div className="space" data-bg-src="assets/img/bg/why_bg_1.png">
-        <div className="container">
-          <div className="row align-items-center flex-row-reverse">
-            <div className="col-xxl-7 col-xl-6 mb-30 mb-xl-0">
-              <div className="img-box2">
-                <div className="img1">
-                  <img src="assets/img/normal/why_1_1.jpg" alt="Why" />
-                </div>
-              </div>
-            </div>
-            <div className="col-xxl-5 col-xl-6">
-              <div className="title-area mb-35">
-                <span className="sub-title">
-                  <div className="icon-masking me-2">
-                    <span
-                      className="mask-icon"
-                      data-mask-src="assets/img/theme-img/title_shape_1.svg"
-                    />
-                    <img
-                      src="assets/img/theme-img/title_shape_1.svg"
-                      alt="shape"
-                    />
-                  </div>
-                  WHY CHOOSE US
-                </span>
-                <h2 className="sec-title">
-                  We Deal With The Aspects Professional
-                  <span className="text-theme">IT Services</span>
-                </h2>
-              </div>
-              <p className="mt-n2 mb-30">
-                Collaboratively envisioneer user friendly supply chains and
-                cross unit imperative. Authoritativel fabricate competitive
-                resource and holistic.
-              </p>
-              <div className="two-column">
-                <div className="checklist style2">
-                  <ul>
-                    <li>
-                      <i className="far fa-check" /> Big Data Analysis
-                    </li>
-                    <li>
-                      <i className="far fa-check" /> 24/7 Online Support
-                    </li>
-                    <li>
-                      <i className="far fa-check" /> Business Improvement
-                    </li>
-                  </ul>
-                </div>
-                <div className="checklist style2">
-                  <ul>
-                    <li>
-                      <i className="far fa-check" /> High Quality Sicurity
-                    </li>
-                    <li>
-                      <i className="far fa-check" /> 24/7 Support Team
-                    </li>
-                    <li>
-                      <i className="far fa-check" /> Easy Solutions
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* TESTIMONIALS shape */}
       <section
-        className="bg-top-center space"
-        data-bg-src="assets/img/bg/testi_bg_3.jpg"
+        className="overflow-hidden bg-top-center th-radius3 m-4 mt-0 mb-0 space position-relative"
+        id="testi-sec"
       >
+        <div
+          className="position-absolute top-0 start-0 w-100"
+          style={{
+            backgroundImage: "url('assets/img/bg/testi_bg_3.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            height: "515px",
+            borderBottomLeftRadius: "2rem",
+            borderBottomRightRadius: "2rem",
+          }}
+        ></div>
         <div className="container">
           <div className="title-area text-center">
             <div className="shadow-title color2">TESTIMONIALS</div>
             <span className="sub-title">
               <div className="icon-masking me-2">
-                <span
-                  className="mask-icon"
-                  data-mask-src="assets/img/theme-img/title_shape_2.svg"
-                />
-                <img src="assets/img/theme-img/title_shape_2.svg" alt="shape" />
+                <span className="mask-icon">
+                  <img
+                    src="assets/img/theme-img/title_shape_2.svg"
+                    alt="shape"
+                  />
+                </span>
               </div>
-              CUSTOMER FEEDBACK
             </span>
             <h2 className="sec-title text-white">
-              What Happy Clients Says
-              <br />
-              <span className="text-theme">About Us?</span>
+              Praise for Our
+              <span className="text-theme"> Founder</span>
             </h2>
           </div>
+
           <div className="slider-area">
-            <div
-              className="swiper th-slider has-shadow"
-              id="testiSlider3"
-              data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}}'
+            <Swiper
+              modules={[Navigation, Autoplay]}
+              loop={true}
+              autoplay={
+                pauseSlider
+                  ? false
+                  : { delay: 2000, disableOnInteraction: false }
+              }
+              navigation={{
+                nextEl: ".slider-next",
+                prevEl: ".slider-prev",
+              }}
+              spaceBetween={20}
+              breakpoints={{
+                0: { slidesPerView: 1 },
+                576: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                992: { slidesPerView: 2 },
+                1200: { slidesPerView: 3 },
+              }}
             >
-              <div className="swiper-wrapper">
-                <div className="swiper-slide">
-                  <div className="testi-grid">
+              {testimonials.map((testimonial, index) => (
+                <SwiperSlide key={index}>
+                  <div
+                    className="testi-grid"
+                    onMouseLeave={handleMouseLeave}
+                    style={{
+                      height: expandedIndex === index ? "auto" : "420px",
+                      marginBottom: "3px",
+                      transition: "height 0.3s ease",
+                    }}
+                  >
                     <div className="testi-grid_img">
-                      <img
-                        src="assets/img/testimonial/testi_3_1.jpg"
-                        alt="Avater"
-                      />
+                      <img src={testimonial.img} alt="Avatar" />
                       <div className="testi-grid_quote">
                         <img
                           src="assets/img/icon/quote_left_3.svg"
@@ -465,737 +674,72 @@ const AboutUsPage = () => {
                       </div>
                     </div>
                     <div className="testi-grid_review">
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
+                      {[...Array(5)].map((_, i) => (
+                        <i key={i} className="fa-solid fa-star" />
+                      ))}
                     </div>
                     <div className="testi-grid_content">
-                      <p className="testi-grid_text">
-                        Objectively visualize error-free technology for B2B
-                        alignment. Monotonectally harness an expanded array of
-                        models via effective collaboration. Globally synergize
-                        resource sucking value via cutting-edge.
-                      </p>
-                      <h3 className="box-title">David Farnandes</h3>
-                      <p className="testi-grid_desig">CEO at Anaton</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="testi-grid">
-                    <div className="testi-grid_img">
-                      <img
-                        src="assets/img/testimonial/testi_3_2.jpg"
-                        alt="Avater"
-                      />
-                      <div className="testi-grid_quote">
-                        <img
-                          src="assets/img/icon/quote_left_3.svg"
-                          alt="quote"
-                        />
+                      <div>
+                        <p
+                          className="testi-grid_text"
+                          style={{
+                            overflow:
+                              expandedIndex === index ? "visible" : "hidden",
+                            display: "-webkit-box",
+                            WebkitBoxOrient: "vertical",
+                            WebkitLineClamp:
+                              expandedIndex === index ? "unset" : 7,
+                            textOverflow: "ellipsis",
+                            maxWidth: "700px",
+                            transition: "background-color 0.3s ease",
+                          }}
+                        >
+                          {testimonial.text}
+                        </p>
+                        <span
+                          onClick={() => toggleText(index)}
+                          style={{
+                            cursor: "pointer",
+                            display: "flex",
+                            justifyContent: "flex-end",
+                          }}
+                        >
+                          {expandedIndex === index ? "See Less" : "See More"}
+                        </span>
                       </div>
-                    </div>
-                    <div className="testi-grid_review">
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                    </div>
-                    <div className="testi-grid_content">
-                      <p className="testi-grid_text">
-                        Objectively visualize error-free technology for B2B
-                        alignment. Monotonectally harness an expanded array of
-                        models via effective collaboration. Globally synergize
-                        resource sucking value via cutting-edge.
-                      </p>
-                      <h3 className="box-title">Jackline Techie</h3>
-                      <p className="testi-grid_desig">CEO at Kormola</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="testi-grid">
-                    <div className="testi-grid_img">
-                      <img
-                        src="assets/img/testimonial/testi_3_3.jpg"
-                        alt="Avater"
-                      />
-                      <div className="testi-grid_quote">
-                        <img
-                          src="assets/img/icon/quote_left_3.svg"
-                          alt="quote"
-                        />
-                      </div>
-                    </div>
-                    <div className="testi-grid_review">
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                    </div>
-                    <div className="testi-grid_content">
-                      <p className="testi-grid_text">
-                        Objectively visualize error-free technology for B2B
-                        alignment. Monotonectally harness an expanded array of
-                        models via effective collaboration. Globally synergize
-                        resource sucking value via cutting-edge.
-                      </p>
-                      <h3 className="box-title">Abraham Khalil</h3>
-                      <p className="testi-grid_desig">CEO at Anatora</p>
+
+                      <h3 className="box-title">{testimonial.name}</h3>
+                      <abbr
+                        title={testimonial.designation}
+                        style={{ cursor: "pointer", textDecoration: "none" }}
+                      >
+                        <p
+                          className="testi-grid_desig"
+                          style={{
+                            whiteSpace: "nowrap",
+                            overflow: "hidden",
+                            textOverflow: "ellipsis",
+                            maxWidth: "400px",
+                            transition: "background-color 0.3s ease",
+                            height: "100px",
+                          }}
+                        >
+                          {testimonial.designation}
+                        </p>
+                      </abbr>
                     </div>
                   </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="testi-grid">
-                    <div className="testi-grid_img">
-                      <img
-                        src="assets/img/testimonial/testi_3_4.jpg"
-                        alt="Avater"
-                      />
-                      <div className="testi-grid_quote">
-                        <img
-                          src="assets/img/icon/quote_left_3.svg"
-                          alt="quote"
-                        />
-                      </div>
-                    </div>
-                    <div className="testi-grid_review">
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                    </div>
-                    <div className="testi-grid_content">
-                      <p className="testi-grid_text">
-                        Objectively visualize error-free technology for B2B
-                        alignment. Monotonectally harness an expanded array of
-                        models via effective collaboration. Globally synergize
-                        resource sucking value via cutting-edge.
-                      </p>
-                      <h3 className="box-title">Md Sumon Mia</h3>
-                      <p className="testi-grid_desig">CEO at Rimasu</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="testi-grid">
-                    <div className="testi-grid_img">
-                      <img
-                        src="assets/img/testimonial/testi_3_1.jpg"
-                        alt="Avater"
-                      />
-                      <div className="testi-grid_quote">
-                        <img
-                          src="assets/img/icon/quote_left_3.svg"
-                          alt="quote"
-                        />
-                      </div>
-                    </div>
-                    <div className="testi-grid_review">
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                    </div>
-                    <div className="testi-grid_content">
-                      <p className="testi-grid_text">
-                        Objectively visualize error-free technology for B2B
-                        alignment. Monotonectally harness an expanded array of
-                        models via effective collaboration. Globally synergize
-                        resource sucking value via cutting-edge.
-                      </p>
-                      <h3 className="box-title">David Farnandes</h3>
-                      <p className="testi-grid_desig">CEO at Anaton</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="testi-grid">
-                    <div className="testi-grid_img">
-                      <img
-                        src="assets/img/testimonial/testi_3_2.jpg"
-                        alt="Avater"
-                      />
-                      <div className="testi-grid_quote">
-                        <img
-                          src="assets/img/icon/quote_left_3.svg"
-                          alt="quote"
-                        />
-                      </div>
-                    </div>
-                    <div className="testi-grid_review">
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                    </div>
-                    <div className="testi-grid_content">
-                      <p className="testi-grid_text">
-                        Objectively visualize error-free technology for B2B
-                        alignment. Monotonectally harness an expanded array of
-                        models via effective collaboration. Globally synergize
-                        resource sucking value via cutting-edge.
-                      </p>
-                      <h3 className="box-title">Jackline Techie</h3>
-                      <p className="testi-grid_desig">CEO at Kormola</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="testi-grid">
-                    <div className="testi-grid_img">
-                      <img
-                        src="assets/img/testimonial/testi_3_3.jpg"
-                        alt="Avater"
-                      />
-                      <div className="testi-grid_quote">
-                        <img
-                          src="assets/img/icon/quote_left_3.svg"
-                          alt="quote"
-                        />
-                      </div>
-                    </div>
-                    <div className="testi-grid_review">
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                    </div>
-                    <div className="testi-grid_content">
-                      <p className="testi-grid_text">
-                        Objectively visualize error-free technology for B2B
-                        alignment. Monotonectally harness an expanded array of
-                        models via effective collaboration. Globally synergize
-                        resource sucking value via cutting-edge.
-                      </p>
-                      <h3 className="box-title">Abraham Khalil</h3>
-                      <p className="testi-grid_desig">CEO at Anatora</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="testi-grid">
-                    <div className="testi-grid_img">
-                      <img
-                        src="assets/img/testimonial/testi_3_4.jpg"
-                        alt="Avater"
-                      />
-                      <div className="testi-grid_quote">
-                        <img
-                          src="assets/img/icon/quote_left_3.svg"
-                          alt="quote"
-                        />
-                      </div>
-                    </div>
-                    <div className="testi-grid_review">
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                      <i className="fa-solid fa-star-sharp" />
-                    </div>
-                    <div className="testi-grid_content">
-                      <p className="testi-grid_text">
-                        Objectively visualize error-free technology for B2B
-                        alignment. Monotonectally harness an expanded array of
-                        models via effective collaboration. Globally synergize
-                        resource sucking value via cutting-edge.
-                      </p>
-                      <h3 className="box-title">Md Sumon Mia</h3>
-                      <p className="testi-grid_desig">CEO at Rimasu</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button
-              data-slider-prev="#testiSlider3"
-              className="slider-arrow style3 slider-prev"
-            >
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+            <button className="slider-arrow style3 slider-prev">
               <i className="far fa-arrow-left" />
             </button>
-            <button
-              data-slider-next="#testiSlider3"
-              className="slider-arrow style3 slider-next"
-            >
+            <button className="slider-arrow style3 slider-next">
               <i className="far fa-arrow-right" />
             </button>
           </div>
-        </div>
-      </section>
-      <section
-        className="bg-top-right overflow-hidden space-bottom"
-        id="blog-sec"
-        data-bg-src="assets/img/bg/blog_bg_1.png"
-      >
-        <div className="container space-bottom">
-          <div className="title-area text-center">
-            <span className="sub-title">
-              <div className="icon-masking me-2">
-                <span
-                  className="mask-icon"
-                  data-mask-src="assets/img/theme-img/title_shape_1.svg"
-                />
-                <img src="assets/img/theme-img/title_shape_1.svg" alt="shape" />
-              </div>
-              NEWS &amp; ARTICLES
-            </span>
-            <h2 className="sec-title">
-              Get Every Single Update <span className="text-theme">Blog</span>
-            </h2>
-          </div>
-          <div className="slider-area">
-            <div
-              className="swiper th-slider has-shadow"
-              id="blogSlider1"
-              data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}}'
-            >
-              <div className="swiper-wrapper">
-                <div className="swiper-slide">
-                  <div className="blog-card">
-                    <div className="blog-img">
-                      <img
-                        src="assets/img/blog/blog_1_1.jpg"
-                        alt="blog image"
-                      />
-                    </div>
-                    <div className="blog-content">
-                      <div className="blog-meta">
-                        <a href="blog.html">
-                          <i className="fal fa-calendar-days" />
-                          15 Jan, 2024
-                        </a>
-                        <a href="blog.html">
-                          <i className="fal fa-comments" />2 Comments
-                        </a>
-                      </div>
-                      <h3 className="box-title">
-                        <a href="blog-details.html">
-                          Unsatiable entreaties may collecting Power.
-                        </a>
-                      </h3>
-                      <div className="blog-bottom">
-                        <a href="blog.html" className="author">
-                          <img
-                            src="assets/img/blog/author-1-1.png"
-                            alt="avater"
-                          />
-                          By Themeholy
-                        </a>
-                        <a href="blog-details.html" className="line-btn">
-                          Read More
-                          <i className="fas fa-arrow-right" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="blog-card">
-                    <div className="blog-img">
-                      <img
-                        src="assets/img/blog/blog_1_2.jpg"
-                        alt="blog image"
-                      />
-                    </div>
-                    <div className="blog-content">
-                      <div className="blog-meta">
-                        <a href="blog.html">
-                          <i className="fal fa-calendar-days" />
-                          16 Jan, 2024
-                        </a>
-                        <a href="blog.html">
-                          <i className="fal fa-comments" />3 Comments
-                        </a>
-                      </div>
-                      <h3 className="box-title">
-                        <a href="blog-details.html">
-                          Regional Manager &amp; limited time management.
-                        </a>
-                      </h3>
-                      <div className="blog-bottom">
-                        <a href="blog.html" className="author">
-                          <img
-                            src="assets/img/blog/author-1-1.png"
-                            alt="avater"
-                          />
-                          By Themeholy
-                        </a>
-                        <a href="blog-details.html" className="line-btn">
-                          Read More
-                          <i className="fas fa-arrow-right" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="blog-card">
-                    <div className="blog-img">
-                      <img
-                        src="assets/img/blog/blog_1_3.jpg"
-                        alt="blog image"
-                      />
-                    </div>
-                    <div className="blog-content">
-                      <div className="blog-meta">
-                        <a href="blog.html">
-                          <i className="fal fa-calendar-days" />
-                          17 Jan, 2024
-                        </a>
-                        <a href="blog.html">
-                          <i className="fal fa-comments" />2 Comments
-                        </a>
-                      </div>
-                      <h3 className="box-title">
-                        <a href="blog-details.html">
-                          What’s the Holding Back the It Solution Industry?
-                        </a>
-                      </h3>
-                      <div className="blog-bottom">
-                        <a href="blog.html" className="author">
-                          <img
-                            src="assets/img/blog/author-1-1.png"
-                            alt="avater"
-                          />
-                          By Themeholy
-                        </a>
-                        <a href="blog-details.html" className="line-btn">
-                          Read More
-                          <i className="fas fa-arrow-right" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="blog-card">
-                    <div className="blog-img">
-                      <img
-                        src="assets/img/blog/blog_1_4.jpg"
-                        alt="blog image"
-                      />
-                    </div>
-                    <div className="blog-content">
-                      <div className="blog-meta">
-                        <a href="blog.html">
-                          <i className="fal fa-calendar-days" />
-                          19 Jan, 2024
-                        </a>
-                        <a href="blog.html">
-                          <i className="fal fa-comments" />4 Comments
-                        </a>
-                      </div>
-                      <h3 className="box-title">
-                        <a href="blog-details.html">
-                          Latin derived from Cicero's 1st-century BC
-                        </a>
-                      </h3>
-                      <div className="blog-bottom">
-                        <a href="blog.html" className="author">
-                          <img
-                            src="assets/img/blog/author-1-1.png"
-                            alt="avater"
-                          />
-                          By Themeholy
-                        </a>
-                        <a href="blog-details.html" className="line-btn">
-                          Read More
-                          <i className="fas fa-arrow-right" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="blog-card">
-                    <div className="blog-img">
-                      <img
-                        src="assets/img/blog/blog_1_1.jpg"
-                        alt="blog image"
-                      />
-                    </div>
-                    <div className="blog-content">
-                      <div className="blog-meta">
-                        <a href="blog.html">
-                          <i className="fal fa-calendar-days" />
-                          15 Jan, 2024
-                        </a>
-                        <a href="blog.html">
-                          <i className="fal fa-comments" />2 Comments
-                        </a>
-                      </div>
-                      <h3 className="box-title">
-                        <a href="blog-details.html">
-                          Unsatiable entreaties may collecting Power.
-                        </a>
-                      </h3>
-                      <div className="blog-bottom">
-                        <a href="blog.html" className="author">
-                          <img
-                            src="assets/img/blog/author-1-1.png"
-                            alt="avater"
-                          />
-                          By Themeholy
-                        </a>
-                        <a href="blog-details.html" className="line-btn">
-                          Read More
-                          <i className="fas fa-arrow-right" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="blog-card">
-                    <div className="blog-img">
-                      <img
-                        src="assets/img/blog/blog_1_2.jpg"
-                        alt="blog image"
-                      />
-                    </div>
-                    <div className="blog-content">
-                      <div className="blog-meta">
-                        <a href="blog.html">
-                          <i className="fal fa-calendar-days" />
-                          16 Jan, 2024
-                        </a>
-                        <a href="blog.html">
-                          <i className="fal fa-comments" />3 Comments
-                        </a>
-                      </div>
-                      <h3 className="box-title">
-                        <a href="blog-details.html">
-                          Regional Manager &amp; limited time management.
-                        </a>
-                      </h3>
-                      <div className="blog-bottom">
-                        <a href="blog.html" className="author">
-                          <img
-                            src="assets/img/blog/author-1-1.png"
-                            alt="avater"
-                          />
-                          By Themeholy
-                        </a>
-                        <a href="blog-details.html" className="line-btn">
-                          Read More
-                          <i className="fas fa-arrow-right" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="blog-card">
-                    <div className="blog-img">
-                      <img
-                        src="assets/img/blog/blog_1_3.jpg"
-                        alt="blog image"
-                      />
-                    </div>
-                    <div className="blog-content">
-                      <div className="blog-meta">
-                        <a href="blog.html">
-                          <i className="fal fa-calendar-days" />
-                          17 Jan, 2024
-                        </a>
-                        <a href="blog.html">
-                          <i className="fal fa-comments" />2 Comments
-                        </a>
-                      </div>
-                      <h3 className="box-title">
-                        <a href="blog-details.html">
-                          What’s the Holding Back the It Solution Industry?
-                        </a>
-                      </h3>
-                      <div className="blog-bottom">
-                        <a href="blog.html" className="author">
-                          <img
-                            src="assets/img/blog/author-1-1.png"
-                            alt="avater"
-                          />
-                          By Themeholy
-                        </a>
-                        <a href="blog-details.html" className="line-btn">
-                          Read More
-                          <i className="fas fa-arrow-right" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="blog-card">
-                    <div className="blog-img">
-                      <img
-                        src="assets/img/blog/blog_1_4.jpg"
-                        alt="blog image"
-                      />
-                    </div>
-                    <div className="blog-content">
-                      <div className="blog-meta">
-                        <a href="blog.html">
-                          <i className="fal fa-calendar-days" />
-                          19 Jan, 2024
-                        </a>
-                        <a href="blog.html">
-                          <i className="fal fa-comments" />4 Comments
-                        </a>
-                      </div>
-                      <h3 className="box-title">
-                        <a href="blog-details.html">
-                          Latin derived from Cicero's 1st-century BC
-                        </a>
-                      </h3>
-                      <div className="blog-bottom">
-                        <a href="blog.html" className="author">
-                          <img
-                            src="assets/img/blog/author-1-1.png"
-                            alt="avater"
-                          />
-                          By Themeholy
-                        </a>
-                        <a href="blog-details.html" className="line-btn">
-                          Read More
-                          <i className="fas fa-arrow-right" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button
-              data-slider-prev="#blogSlider1"
-              className="slider-arrow style3 slider-prev"
-            >
-              <i className="far fa-arrow-left" />
-            </button>
-            <button
-              data-slider-next="#blogSlider1"
-              className="slider-arrow style3 slider-next"
-            >
-              <i className="far fa-arrow-right" />
-            </button>
-          </div>
-        </div>
-        <div className="container">
-          <div className="slider-area text-center">
-            <div
-              className="swiper th-slider"
-              data-slider-options='{"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4"},"1400":{"slidesPerView":"5"}}}'
-            >
-              <div className="swiper-wrapper">
-                <div className="swiper-slide">
-                  <div className="brand-box">
-                    <img
-                      src="assets/img/brand/brand_1_1.png"
-                      alt="Brand Logo"
-                    />
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="brand-box">
-                    <img
-                      src="assets/img/brand/brand_1_2.png"
-                      alt="Brand Logo"
-                    />
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="brand-box">
-                    <img
-                      src="assets/img/brand/brand_1_3.png"
-                      alt="Brand Logo"
-                    />
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="brand-box">
-                    <img
-                      src="assets/img/brand/brand_1_4.png"
-                      alt="Brand Logo"
-                    />
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="brand-box">
-                    <img
-                      src="assets/img/brand/brand_1_5.png"
-                      alt="Brand Logo"
-                    />
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="brand-box">
-                    <img
-                      src="assets/img/brand/brand_1_6.png"
-                      alt="Brand Logo"
-                    />
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="brand-box">
-                    <img
-                      src="assets/img/brand/brand_1_1.png"
-                      alt="Brand Logo"
-                    />
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="brand-box">
-                    <img
-                      src="assets/img/brand/brand_1_2.png"
-                      alt="Brand Logo"
-                    />
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="brand-box">
-                    <img
-                      src="assets/img/brand/brand_1_3.png"
-                      alt="Brand Logo"
-                    />
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="brand-box">
-                    <img
-                      src="assets/img/brand/brand_1_4.png"
-                      alt="Brand Logo"
-                    />
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="brand-box">
-                    <img
-                      src="assets/img/brand/brand_1_5.png"
-                      alt="Brand Logo"
-                    />
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="brand-box">
-                    <img
-                      src="assets/img/brand/brand_1_6.png"
-                      alt="Brand Logo"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="shape-mockup" data-bottom={0} data-left={0}>
-          <div className="particle-2 small" id="particle-4" />
         </div>
       </section>
       <div className="scroll-top">

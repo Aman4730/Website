@@ -1,5 +1,5 @@
 import React from "react";
-import breadcumbbg from "../../../Imges/SolutionImg/breadcumb-bg.jpg";
+import breadcumbbg from "../../../assets/img/bg/breadcumb-bg.jpg";
 
 const TrakFuelPage = () => {
   return (

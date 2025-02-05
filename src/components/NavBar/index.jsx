@@ -91,8 +91,8 @@ const NavBar = () => {
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/solutions/AbsoluteStudyPage">
-                                  Absolute Study
+                                <Link to="/solutions/edusaroj">
+                                  Saroj Education
                                 </Link>
                               </li>
                               <li>
@@ -166,6 +166,11 @@ const NavBar = () => {
                             <a href="#">Internet of Things (IoT)</a>
                             <ul>
                               <li>
+                                <a href="home-web-development-op.html">
+                                  Photon (Centralized Solar Solution)
+                                </a>
+                              </li>
+                              <li>
                                 <a href="home-digital-agency-op.html">
                                   Milk Analyser
                                 </a>
@@ -173,11 +178,6 @@ const NavBar = () => {
                               <li>
                                 <a href="home-web-development-op.html">
                                   Dairy Application
-                                </a>
-                              </li>
-                              <li>
-                                <a href="home-web-development-op.html">
-                                  Photon (Centralized Solar Solution)
                                 </a>
                               </li>
                             </ul>
@@ -238,7 +238,7 @@ const NavBar = () => {
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/solutions/AbsoluteStudyPage">
+                                <Link to="/solutions/edusaroj">
                                   Product-Oriented Delivery
                                 </Link>
                               </li>
@@ -372,13 +372,6 @@ const NavBar = () => {
                     </ul>
                   </nav>
                   <div className="header-button">
-                    <button
-                      type="button"
-                      className="icon-btn sideMenuToggler d-inline-block d-lg-none"
-                    >
-                      <i className="far fa-shopping-cart" />
-                      <span className="badge">5</span>
-                    </button>
                     <button
                       type="button"
                       className="th-menu-toggle d-inline-block d-lg-none"

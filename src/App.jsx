@@ -26,10 +26,7 @@ function App() {
         <Route path="/aboutus" element={<AboutUsPage />} />
         <Route path="/solutions/qblock" element={<QblockPage />} />
         <Route path="/solutions/LogBooksPage" element={<LogBooksPage />} />
-        <Route
-          path="/solutions/AbsoluteStudyPage"
-          element={<AbsoluteStudyPage />}
-        />
+        <Route path="/solutions/edusaroj" element={<AbsoluteStudyPage />} />
         <Route path="/solutions/VisionDeskPage" element={<VisionDeskPage />} />
         <Route
           path="/solutions/SaiSoftwarePage"

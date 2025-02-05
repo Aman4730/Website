@@ -24,6 +24,8 @@ import service_2_1 from "../assets/img/icon/service_2_1.svg";
 import service_2_2 from "../assets/img/icon/service_2_2.svg";
 import service_2_3 from "../assets/img/icon/service_2_3.svg";
 import service_2_4 from "../assets/img/icon/service_2_4.svg";
+import YashwantKumarSingh from "../Imges/YashwantKumarSingh.png";
+import title_shape_2_white from "../assets/img/theme-img/title_shape_2_white.svg";
 const teamMembers = [
   {
     name: "Shantanu Kumar",
@@ -89,7 +91,7 @@ const testimonials = [
     text: "Working with Shantanu was a great experience. His strong sense of ownership, results-driven mindset, and ability to balance both big-picture strategy and intricate details make him an exceptional professional. He is creative, energetic, solution-oriented, and highly motivated, with outstanding communication skills. A true asset to any organization!",
   },
   {
-    img: "assets/img/testimonial/testi_3_4.jpg",
+    img: YashwantKumarSingh,
     name: "Yashwant Kumar Singh",
     designation: "Xiaomi | Ex-Microsoft, Nokia, Foxconn",
     text: "Shantanu is a highly passionate individual with a strong drive to help others through his technological expertise. He is an ambitious leader, always focused on achieving his goals while ensuring seamless communication. His ability to understand needs and deliver solutions makes him an invaluable asset to both customers and colleagues. Wishing him all the best",
@@ -164,12 +166,9 @@ const AboutUsPage = () => {
           <div className="breadcumb-content text-center">
             <div className="title-area mb-35">
               <div className="shadow-title">ABOUT US</div>
-              <span className="sub-title">
+              <span className="sub-title" style={{ color: "white" }}>
                 <div className="icon-masking me-2">
-                  <img
-                    src="assets/img/theme-img/title_shape_2.svg"
-                    alt="shape"
-                  />
+                  <img src={title_shape_2_white} alt="shape" />
                 </div>
                 Logimetrix TechSolutions
               </span>

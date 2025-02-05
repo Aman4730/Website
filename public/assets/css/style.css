@@ -16901,7 +16901,7 @@ span.select2-selection.select2-selection--single:focus {
   }
 }
 .img-box15 .img1 img {
-  box-shadow: 10px 10px 50px 10px rgba(0, 31, 96, 0.2);
+  box-shadow: 10px 10px 50px 10px rgba(0, 31, 96, 0.1);
   border-radius: 10px;
 }
 .img-box15 .img2 {
@@ -31448,7 +31448,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 .process-area5 {
   position: relative;
-  padding: 200px 0 140px 0;
+  padding: 150px 0 100px 0;
   -webkit-clip-path: path("M0 0L270 128.559H1920V1192L1650 1068.58H0V0Z");
   clip-path: path("M0 0L270 128.559H1920V1192L1650 1068.58H0V0Z");
 }

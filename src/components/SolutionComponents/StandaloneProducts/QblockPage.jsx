@@ -1,31 +1,34 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import faq_1_1 from "../../../assets/img/normal/faq_1_1.png";
+import quote_3d from "../../../assets/img/icon/quote_3d.png";
+import testi_bg_4 from "../../../assets/img/bg/testi_bg_4.png";
 import about_2_1 from "../../../assets/img/normal/about_2_1.jpg";
 import about_2_2 from "../../../assets/img/normal/about_2_2.jpg";
 import about_2_3 from "../../../assets/img/normal/about_2_3.jpg";
 import about_3_1 from "../../../assets/img/normal/about_3_1.png";
-import about_2_shape from "../../../assets/img/normal/about_2_shape.png";
-import video_shape_2 from "../../../assets/img/bg/video_shape_2.png";
-import faq_1_1 from "../../../assets/img/normal/faq_1_1.png";
 import breadcumbbg from "../../../assets/img/bg/breadcumb-bg.jpg";
-import testi_bg_4 from "../../../assets/img/bg/testi_bg_4.png";
+import video_shape_2 from "../../../assets/img/bg/video_shape_2.png";
+import about_2_shape from "../../../assets/img/normal/about_2_shape.png";
+import RecycleBinIcon from "../../../Imges/QblockIcon/RecycleBinIcon.jpg";
+import AutoBackupIcon from "../../../Imges/QblockIcon/AutoBackupIcon.jpg";
+import AuditTrailsIcon from "../../../Imges/QblockIcon/AuditTrailsIcon.jpg";
 import title_shape_2 from "../../../assets/img/theme-img/title_shape_2.svg";
-import title_shape_2_white from "../../../assets/img/theme-img/title_shape_2_white.svg";
-import quote_3d from "../../../assets/img/icon/quote_3d.png";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
-import DocumentsStorageIcon from "../../../Imges/QblockIcon/DocumentsStorageIcon.jpg";
-import VersionControlIcon from "../../../Imges/QblockIcon/VersionControlIcon.jpg";
 import AccessControlIcon from "../../../Imges/QblockIcon/AccessControlIcon.jpg";
+import VersionControlIcon from "../../../Imges/QblockIcon/VersionControlIcon.jpg";
+import DocumentsStorageIcon from "../../../Imges/QblockIcon/DocumentsStorageIcon.jpg";
+import title_shape_2_white from "../../../assets/img/theme-img/title_shape_2_white.svg";
 import DocumentsRetrievalIcon from "../../../Imges/QblockIcon/DocumentsRetrievalIcon.jpg";
 import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomationIcon.jpg";
 import CollaborationToolsIcon from "../../../Imges/QblockIcon/CollaborationToolsIcon.jpg";
-import AuditTrailsIcon from "../../../Imges/QblockIcon/AuditTrailsIcon.jpg";
-import StorageQuotaManagementIcon from "../../../Imges/QblockIcon/StorageQuotaManagementIcon.jpg";
 import UserGuestDeactivationIcon from "../../../Imges/QblockIcon/UserGuestDeactivationIcon.jpg";
-import AutoBackupIcon from "../../../Imges/QblockIcon/AutoBackupIcon.jpg";
-import RecycleBinIcon from "../../../Imges/QblockIcon/RecycleBinIcon.jpg";
+import StorageQuotaManagementIcon from "../../../Imges/QblockIcon/StorageQuotaManagementIcon.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
+import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
+import OurExpertise from "./SolutionReuseCom/OurExpertise";
 
 const testimonials = [
   {
@@ -95,7 +98,17 @@ const testimonials = [
     designation: "",
   },
 ];
-
+const ExpertiseArray = {
+  heading: "Qblock",
+  para: "Collaboratively envisioneer user friendly supply chains and cross unit imperative. Authoritativel fabricate competitive resource andholistic. Holisticly restore real time resources whereas standardized networks.",
+  keyPoints: [
+    { name: "Centralized Document", per: "95%" },
+    { name: "Quick & Easy Access", per: "99%" },
+    { name: "Advanced Security & Access Control", per: "95%" },
+    { name: "Automated Workflows", per: "95%" },
+    { name: "Backup & Recovery", per: "92%" },
+  ],
+};
 const QblockPage = () => {
   return (
     <div>
@@ -107,16 +120,27 @@ const QblockPage = () => {
           backgroundPosition: "center",
           height: "300px",
           width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
         <div className="container">
-          <div className="breadcumb-content">
-            <h1 className="breadcumb-title">Qblock</h1>
+          <div className="breadcumb-content text-center">
+            <div className="title-area mb-35">
+              <div className="shadow-title">QBLOCK</div>
+              <span className="sub-title" style={{ color: "white" }}>
+                <div className="icon-masking me-2">
+                  <img src={title_shape_2_white} alt="shape" />
+                </div>
+                QBLOCK
+              </span>
+            </div>
             <ul className="breadcumb-menu">
               <li>
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
               </li>
-              <li>Qblock</li>
+              <li>Solution</li>
             </ul>
           </div>
         </div>
@@ -197,164 +221,8 @@ const QblockPage = () => {
           <div className="particle-2 small" id="particle-1" />
         </div>
       </div>
-      <div className="overflow-hidden bg-smoke space">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-xl-6">
-              <div className="title-area mb-35 text-center text-xl-start">
-                <span className="sub-title">
-                  <div className="icon-masking me-2">
-                    <img src={title_shape_2} alt="shape" />
-                  </div>
-                  GREAT IT SKILLS
-                </span>
-                <h2 className="sec-title">
-                  More Than 12+ Years Experience We Provide
-                  <span className="text-theme fw-normal">IT Services</span>
-                </h2>
-              </div>
-              <p className="mt-n2 mb-25 text-center text-xl-start">
-                Collaboratively envisioneer user friendly supply chains and
-                cross unit imperative. Authoritativel fabricate competitive
-                resource and holistic. Holisticly restore real time resources
-                whereas standardized networks.
-              </p>
-              <div className="pe-xxl-4">
-                <div className="skill-feature">
-                  <h3 className="skill-feature_title">Centralized Document</h3>
-                  <div className="progress">
-                    <div className="progress-bar" style={{ width: "95%" }}>
-                      <div className="progress-value">95%</div>
-                    </div>
-                  </div>
-                </div>
-                <div className="skill-feature">
-                  <h3 className="skill-feature_title">Quick & Easy Access</h3>
-                  <div className="progress">
-                    <div className="progress-bar" style={{ width: "99%" }}>
-                      <div className="progress-value">99%</div>
-                    </div>
-                  </div>
-                </div>
-                <div className="skill-feature">
-                  <h3 className="skill-feature_title">
-                    Advanced Security & Access Control
-                  </h3>
-                  <div className="progress">
-                    <div className="progress-bar" style={{ width: "95%" }}>
-                      <div className="progress-value">95%</div>
-                    </div>
-                  </div>
-                </div>
-                <div className="skill-feature">
-                  <h3 className="skill-feature_title">Automated Workflows</h3>
-                  <div className="progress">
-                    <div className="progress-bar" style={{ width: "88%" }}>
-                      <div className="progress-value">88%</div>
-                    </div>
-                  </div>
-                </div>
-                <div className="skill-feature">
-                  <h3 className="skill-feature_title">Backup & Recovery</h3>
-                  <div className="progress">
-                    <div className="progress-bar" style={{ width: "92%" }}>
-                      <div className="progress-value">92%</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-6 mt-40 mt-xl-0">
-              <div className="video-box1">
-                <img className="tilt-active" src={video_shape_2} alt="Video" />
-                <a
-                  href="https://youtu.be/ix_OpmpsRBY"
-                  className="play-btn popup-video"
-                >
-                  <i className="fas fa-play" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="shape-mockup" data-top="0%" data-left="0%">
-          <img src="assets/img/shape/tech_shape_3.png" alt="shape" />
-        </div>
-        <div className="shape-mockup" data-bottom="0%" data-right="0%">
-          <img src="assets/img/shape/tech_shape_4.png" alt="shape" />
-        </div>
-      </div>
-      <section>
-        <div
-          className="round-container"
-          style={{
-            backgroundImage: `url(${testi_bg_4})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundColor: "#4786E6",
-          }}
-        >
-          <div className="container">
-            <div className="title-area" style={{ marginTop: "60px" }}>
-              <div className="shadow-title">Key Features</div>
-              <span className="sub-title" style={{ color: "white" }}>
-                <div className="icon-masking me-2">
-                  <img src={title_shape_2_white} alt="shape" />
-                </div>
-                Key Features
-              </span>
-            </div>
-            <div className="testi-block-area">
-              <Swiper
-                modules={[Pagination, Autoplay]}
-                loop={true}
-                pagination={{ clickable: true }}
-                autoplay={{ delay: 3000 }}
-                breakpoints={{
-                  0: { slidesPerView: 1 },
-                  576: { slidesPerView: 1 },
-                  768: { slidesPerView: 1 },
-                  992: { slidesPerView: 1 },
-                  1200: { slidesPerView: 1 },
-                }}
-                className="swiper th-slider has-shadow testi-block-slide"
-              >
-                {testimonials.map((testimonial, index) => (
-                  <SwiperSlide
-                    key={index}
-                    style={{
-                      padding: "0px 20px 0px 20px",
-                      height: "350px",
-                    }}
-                  >
-                    <div className="testi-block">
-                      <p className="testi-block_text">{testimonial.text}</p>
-                      <div className="testi-block_profile">
-                        <div className="testi-block_avater">
-                          <img
-                            src={testimonial.img}
-                            alt="Avatar"
-                            style={{ width: "80px", height: "80px" }}
-                          />
-                        </div>
-                        <div className="media-body">
-                          <h3 className="box-title">{testimonial.name}</h3>
-                          <p className="testi-block_desig">
-                            {testimonial.designation}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-              <div className="testi-block-quote">
-                <img src={quote_3d} alt="quote" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <OurExpertise ExpertiseArray={ExpertiseArray} />
+      <KeyFeatures testimonials={testimonials} />
       <div className="bg-smoke overflow-hidden space" id="faq-sec">
         <div className="container">
           <div className="row justify-content-center">
@@ -362,20 +230,13 @@ const QblockPage = () => {
               <div className="title-area text-center text-xl-start">
                 <span className="sub-title">
                   <div className="icon-masking me-2">
-                    <span
-                      className="mask-icon"
-                      data-mask-src="assets/img/theme-img/title_shape_2.svg"
-                    />
-                    <img
-                      src="assets/img/theme-img/title_shape_2.svg"
-                      alt="shape"
-                    />
+                    <img src={title_shape_2} alt="shape" />
                   </div>
                   Frequently Ask Question
                 </span>
                 <h2 className="sec-title">
                   Talk To About Any
-                  <span className="text-theme fw-normal">Question?</span>
+                  <span className="text-theme fw-normal"> Question?</span>
                 </h2>
               </div>
               <div className="accordion-area accordion" id="faqAccordion">
@@ -389,7 +250,7 @@ const QblockPage = () => {
                       aria-expanded="false"
                       aria-controls="collapse-1"
                     >
-                      Where can I get analytics help?
+                      How does Qblock help in managing documents efficiently?
                     </button>
                   </div>
                   <div
@@ -400,11 +261,9 @@ const QblockPage = () => {
                   >
                     <div className="accordion-body">
                       <p className="faq-text">
-                        Dramatically disseminate real-time portals rather than
-                        top-line action items. Uniquely provide access to
-                        low-risk high-yield products without dynamic products.
-                        Progressively re-engineer low-risk high-yield ideas
-                        rather than emerging alignments.
+                        Qblock provides a centralized, secure platform for
+                        storing, organizing, and retrieving documents with
+                        advanced search and indexing features.
                       </p>
                     </div>
                   </div>
@@ -419,7 +278,8 @@ const QblockPage = () => {
                       aria-expanded="true"
                       aria-controls="collapse-2"
                     >
-                      How long should a business plan be?
+                      Is Qblock suitable for enterprises with strict security
+                      requirements?
                     </button>
                   </div>
                   <div
@@ -430,11 +290,9 @@ const QblockPage = () => {
                   >
                     <div className="accordion-body">
                       <p className="faq-text">
-                        Dramatically disseminate real-time portals rather than
-                        top-line action items. Uniquely provide access to
-                        low-risk high-yield products without dynamic products.
-                        Progressively re-engineer low-risk high-yield ideas
-                        rather than emerging alignments.
+                        Yes! Qblock offers role-based access control,
+                        encryption, audit trails, and automatic backups,
+                        ensuring enterprise-grade security and compliance.
                       </p>
                     </div>
                   </div>
@@ -449,7 +307,7 @@ const QblockPage = () => {
                       aria-expanded="false"
                       aria-controls="collapse-3"
                     >
-                      Do I need a business plan?
+                      Can multiple users collaborate on documents in real-time?
                     </button>
                   </div>
                   <div
@@ -460,11 +318,37 @@ const QblockPage = () => {
                   >
                     <div className="accordion-body">
                       <p className="faq-text">
-                        Dramatically disseminate real-time portals rather than
-                        top-line action items. Uniquely provide access to
-                        low-risk high-yield products without dynamic products.
-                        Progressively re-engineer low-risk high-yield ideas
-                        rather than emerging alignments.
+                        Absolutely! Qblock enables teams to share, edit,
+                        annotate, and track versions while maintaining a
+                        detailed change history.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="accordion-card">
+                  <div className="accordion-header" id="collapse-item-4">
+                    <button
+                      className="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse-4"
+                      aria-expanded="false"
+                      aria-controls="collapse-4"
+                    >
+                      Does Qblock support integration with other tools?
+                    </button>
+                  </div>
+                  <div
+                    id="collapse-4"
+                    className="accordion-collapse collapse"
+                    aria-labelledby="collapse-item-4"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div className="accordion-body">
+                      <p className="faq-text">
+                        Yes! Qblock provides seamless integration with a variety
+                        of third-party applications, allowing you to automate
+                        workflows and enhance productivity.
                       </p>
                     </div>
                   </div>

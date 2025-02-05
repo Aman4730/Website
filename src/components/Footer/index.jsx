@@ -1,5 +1,6 @@
 import React from "react";
 import footerLogo from "../../Imges/footerLogo.png";
+import footer_shape_2 from "../../assets/img/shape/footer_shape_2.svg";
 const Footer = () => {
   return (
     <footer className="footer-wrapper footer-layout1">
@@ -201,7 +202,7 @@ const Footer = () => {
       </div>
 
       <div className="shape-left">
-        <img src="assets/img/shape/footer_shape_2.svg" alt="shape" />
+        <img src={footer_shape_2} alt="shape" />
       </div>
       <div className="shape-right">
         <div className="particle-1" id="particle-5" />

@@ -171,8 +171,16 @@ const VisionDeskPage = () => {
             </div>
             <div className="col-xl-6">
               <div className="">
-                <div className="title-area mb-40 pe-xl-3">
-                  <span className="sub-title sub-title5">Vision Desk</span>
+                <div className="title-area  pe-xl-3">
+                  <div className="title-area">
+                    <span className="shadow-title">Vision Desk</span>
+                    <span className="sub-title">
+                      <div className="icon-masking me-2">
+                        <img src={title_shape_2} alt="shape" />
+                      </div>
+                      Vision Desk
+                    </span>
+                  </div>
                   <h2 className="sec-title">
                     Comprehensive MIS Portal for Agricultural Data Management
                   </h2>

@@ -16724,11 +16724,9 @@ span.select2-selection.select2-selection--single:focus {
 }
 .about-area3 {
   position: relative;
-  background: #f8faff;
-  border: 1px solid #e3e7f0;
   border-radius: 30px;
   padding: 80px;
-  max-width: 1380px;
+  max-width: 1480px;
   display: block;
   margin: auto;
   z-index: 3;

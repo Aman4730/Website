@@ -306,6 +306,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <Dashboard />
       <AboutUS />
       <HowToWork />

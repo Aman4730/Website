@@ -19,7 +19,10 @@ const KeyFeatures = ({ testimonials }) => {
         }}
       >
         <div className="container">
-          <div className="title-area" style={{ marginTop: "60px" }}>
+          <div
+            className="title-area"
+            style={{ marginTop: "60px", marginBottom: "-50px" }}
+          >
             <div className="shadow-title">Key Features</div>
             <span className="sub-title" style={{ color: "white" }}>
               <div className="icon-masking me-2">

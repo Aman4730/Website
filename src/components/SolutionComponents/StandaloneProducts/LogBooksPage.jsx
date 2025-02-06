@@ -22,7 +22,9 @@ import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
 import { Link } from "react-router-dom";
 import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
 import OurExpertise1 from "./SolutionReuseCom/OurExpertise1";
-
+import about_11_1 from "../../../assets/img/normal/about_11_1.jpg";
+import about_11_2 from "../../../assets/img/normal/about_11_2.jpg";
+import about_11_3 from "../../../assets/img/normal/about_11_3.jpg";
 const processSteps = [
   {
     id: 1,
@@ -142,84 +144,87 @@ const LogBooksPage = () => {
           </div>
         </div>
       </div>
-      <div className="space" id="about-sec">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-xl-6 mb-30 mb-xl-0">
-              <div className="img-box3">
-                <div className="img1">
-                  <img src={about_2_1} alt="About" />
+      <div className="about-area3 overflow-hidden" id="about-sec">
+        <div className="container th-container4">
+          <div className="row">
+            <div className="col-xl-6">
+              <div className="pe-xl-5 me-xl-3">
+                <div className="title-area style2 mb-30">
+                  <div className="title-area">
+                    <div className="shadow-title">Log Book</div>
+                    <span className="sub-title">
+                      <div className="icon-masking me-2">
+                        <img src={title_shape_2} alt="shape" />
+                      </div>
+                      Log Book
+                    </span>
+                  </div>
+                  <h2 className="sec-title">
+                    Log Book and Management
+                    <span className="text-theme fw-normal"> System</span>
+                  </h2>
                 </div>
-                <div className="img2">
-                  <img src={about_2_2} alt="About" />
+                <p className="mt-n2 mb-25">
+                  Our Log Book and Management System is designed to offer
+                  real-time tracking and management of vehicle operations, with
+                  features that ensure seamless monitoring of vehicles, fuel
+                  records, and trip details. This system is ideal for fleet
+                  managers, transportation services, or any organization
+                  requiring efficient vehicle management.
+                </p>
+                <div className="checklist style7">
+                  <ul>
+                    <li>
+                      <i className="far fa-check-circle" />
+                      Track vehicles in real-time with instant location updates
+                      and full fleet visibility.
+                    </li>
+                    <li>
+                      <i className="far fa-check-circle" /> Monitor passenger
+                      drop-offs per trip for better transport planning.
+                    </li>
+                    <li>
+                      <i className="far fa-check-circle" />
+                      Track fuel consumption and purchases for efficient fleet
+                      management.
+                    </li>
+                  </ul>
                 </div>
-                <div className="img3">
-                  <img src={about_2_3} alt="About" />
-                </div>
-                <div className="shape1">
-                  <img src={about_2_shape} alt="About" />
+                <div className="about-btn mt-35">
+                  <a
+                    href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
+                    className="th-btn popup-video style-radius text-capitalize"
+                  >
+                    <i className="fa-solid fa-circle-play me-2" />
+                    View Client Stories
+                  </a>
                 </div>
               </div>
             </div>
-
             <div className="col-xl-6">
-              <div className="title-area">
-                <div className="shadow-title">Log Book</div>
-                <span className="sub-title">
-                  <div className="icon-masking me-2">
-                    <img src={title_shape_2} alt="shape" />
+              <div className="img-box9">
+                <div className="img1">
+                  <img src={about_11_1} alt="About" />
+                </div>
+                <div className="img2">
+                  <img src={about_11_2} alt="About" />
+                </div>
+                <div className="img3">
+                  <img src={about_11_3} alt="About" />
+                </div>
+                <div className="th-experience">
+                  <div className="th-experience_content">
+                    <h2 className="experience-year">
+                      <span className="counter-number">25</span>
+                    </h2>
+                    <p className="experience-text">
+                      Years of experience in startup building
+                    </p>
                   </div>
-                  Log Book
-                </span>
-              </div>
-              <div className="title-area mb-35">
-                <h2 className="sec-title">
-                  Log Book and Management
-                  <span className="text-theme fw-normal"> System</span>
-                </h2>
-              </div>
-
-              <p className="mt-n2 mb-25">
-                Our Log Book and Management System is designed to offer
-                real-time tracking and management of vehicle operations, with
-                features that ensure seamless monitoring of vehicles, fuel
-                records, and trip details. This system is ideal for fleet
-                managers, transportation services, or any organization requiring
-                efficient vehicle management.
-              </p>
-              <div className="checklist style3 mb-40">
-                <ul>
-                  <li>
-                    <i className="fa-solid fa-square-check" />
-                    Track vehicles in real-time with instant location updates
-                    and full fleet visibility.
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-square-check" />
-                    Monitor passenger drop-offs per trip for better transport
-                    planning.
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-square-check" />
-                    Track fuel consumption and purchases for efficient fleet
-                    management.
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-square-check" />
-                    Search trip details via voice commands for efficiency and
-                    time-saving.
-                  </li>
-                </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          className="shape-mockup d-none d-lg-block"
-          data-bottom="0%"
-          data-right="0%"
-        >
-          <div className="particle-2 small" id="particle-1" />
         </div>
       </div>
       <KeyFeatures testimonials={testimonials} />

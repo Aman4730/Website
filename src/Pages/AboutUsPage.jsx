@@ -1,8 +1,4 @@
 import React, { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
 import team from "../Imges/team.jpg";
 import team1 from "../Imges/team1.png";
 import team2 from "../Imges/team2.jpg";
@@ -10,22 +6,24 @@ import team3 from "../Imges/team3.jpg";
 import team4 from "../Imges/team4.jpeg";
 import { Link } from "react-router-dom";
 import BrandSlider from "../components/Brands";
-import AbhishekMishra from "../Imges/AbhishekMishra.png";
-import MartijnHalbesma from "../Imges/MartijnHalbesma.jpg";
-import Sanjay_rai from "../Imges/Sanjay_rai.jpg";
-import VivekKumarSrivastava from "../Imges/VivekKumarSrivastava.jpg";
-import Vijay from "../Imges/Vijay.jpg";
-import about_feature_1_1 from "../assets/img/icon/about_feature_1_1.svg";
-import about_feature_1_2 from "../assets/img/icon/about_feature_1_2.svg";
 import star from "../assets/img/icon/star.svg";
+import Sanjay_rai from "../Imges/Sanjay_rai.jpg";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from "swiper/modules";
 import sershape from "../assets/img/icon/ser-shape.svg";
+import MartijnHalbesma from "../Imges/MartijnHalbesma.jpg";
 import service_3 from "../assets/img/service/service_3.png";
 import service_2_1 from "../assets/img/icon/service_2_1.svg";
 import service_2_2 from "../assets/img/icon/service_2_2.svg";
 import service_2_3 from "../assets/img/icon/service_2_3.svg";
 import service_2_4 from "../assets/img/icon/service_2_4.svg";
 import YashwantKumarSingh from "../Imges/YashwantKumarSingh.png";
+import VivekKumarSrivastava from "../Imges/VivekKumarSrivastava.jpg";
+import about_feature_1_1 from "../assets/img/icon/about_feature_1_1.svg";
+import about_feature_1_2 from "../assets/img/icon/about_feature_1_2.svg";
 import title_shape_2_white from "../assets/img/theme-img/title_shape_2_white.svg";
+import "swiper/css";
+import "swiper/css/navigation";
 const teamMembers = [
   {
     name: "Shantanu Kumar",
@@ -97,12 +95,6 @@ const testimonials = [
     text: "Shantanu is a highly passionate individual with a strong drive to help others through his technological expertise. He is an ambitious leader, always focused on achieving his goals while ensuring seamless communication. His ability to understand needs and deliver solutions makes him an invaluable asset to both customers and colleagues. Wishing him all the best",
   },
   {
-    img: Vijay,
-    name: "Vijay Dwivedi",
-    designation: "Managing Director | Sinthia Technologies India Pvt Ltd",
-    text: "Working with Shantanu, I came to know him as a sharp, insightful senior professional who combines wit with a strong commitment to quality and deliverables. He is highly organized, communicates effectively with peers and teams, and ensures clarity in every interaction. With his calm and pragmatic approach, he consistently finds solutions—even in challenging project situations. A true leader and problem solver!",
-  },
-  {
     img: "assets/img/testimonial/testi_3_2.jpg",
     name: "Sonali Patro",
     designation:
@@ -120,13 +112,6 @@ const testimonials = [
     name: "Martijn Halbesma",
     designation: "Regulatory & Compliance Lead | Philips",
     text: "I had the pleasure of working with Shantanu for several months on projects involving the development, testing, and release of products for a major telecommunications player. Shantanu's exceptional communication and leadership skills were invaluable to the success of the projects. He collaborated seamlessly with international teams and was an outstanding host when project members visited India. His dedication and expertise make him an asset to any team.",
-  },
-  {
-    img: AbhishekMishra,
-    name: "Abhishek Mishra",
-    designation:
-      "Co-Founder @ Sort String Solutions LLP | Entrepreneurial-spirited Technologist",
-    text: "I had the pleasure of working closely with Shantanu and found him to be a sincere, honest, and hardworking individual with a remarkable depth of knowledge in the agribusiness market. His expertise in data gathering and understanding the agricultural commodities market in India is unparalleled. If you're looking for the real, unfiltered picture of the market and how to leverage it to your advantage, Shantanu is the person to work with. In an industry full of misinformation, Shantanu stands out for his commitment to honesty, transparency, and ethical business practices. Moreover, he possesses extensive knowledge in mobility solutions and has an exceptional ability to identify and apply technology in the simplest and most effective ways.",
   },
 ];
 const AboutUsPage = () => {

@@ -25,43 +25,71 @@ import OurExpertise1 from "./SolutionReuseCom/OurExpertise1";
 import about_11_1 from "../../../assets/img/normal/about_11_1.jpg";
 import about_11_2 from "../../../assets/img/normal/about_11_2.jpg";
 import about_11_3 from "../../../assets/img/normal/about_11_3.jpg";
+import CountUp from "react-countup";
 const processSteps = [
   {
     id: 1,
-    title: "Enhanced Efficiency",
+    title: "Smart Data Management",
     step: "STEP-01",
     description:
-      "Real-time tracking and voice command search make managing your fleet more efficient and effective.",
+      "Effortlessly fetch, organize, and analyze farmers' data, including land details, crop patterns, and yield insights.",
     image: process_img_1,
     img: process_img_1,
+    checklist: [
+      "Seamless Farmer Data Handling",
+      "Real-time Land & Crop Monitoring",
+      "Data Accuracy & Security",
+    ],
   },
   {
     id: 2,
-    title: "Cost Management",
+    title: "Financial Oversight",
     step: "STEP-02",
     description:
-      "Keep track of fuel consumption and other operational metrics to optimize your fleet's running costs.",
+      "Seamlessly track government subsidies, financial aid, and loan disbursements to support farmers effectively.",
     image: process_img_2,
     img: process_img_2,
+    checklist: [
+      "Monitor Subsidy Distribution",
+      "Ensure Transparent Transactions",
+      "Optimize Loan Disbursement",
+    ],
   },
   {
     id: 3,
-    title: "Improved Service",
+    title: "Insightful Analytics",
     step: "STEP-03",
     description:
-      "Monitor passenger drop-offs to better manage the routes and schedules, improving overall service delivery.",
+      "Generate powerful reports, trend analysis, and data visualizations to drive informed agricultural decisions.",
     image: process_img_3,
     img: process_img_3,
+    checklist: [
+      "AI-Powered Data Insights",
+      "Customizable Reports & Charts",
+      "Predictive Farming Trends",
+    ],
   },
   {
     id: 4,
-    title: "Data Accessibility",
+    title: "Anywhere, Anytime Access",
     step: "STEP-04",
     description:
-      "Exportable data in CSV format makes it easy to share insights and collaborate with other departments or stakeholders.",
+      "Leverage cloud-based storage and a responsive design for real-time data accessibility on any device.",
     image: process_img_4,
     img: process_img_4,
+    checklist: [
+      "Secure Cloud Storage",
+      "Cross-Device Compatibility",
+      "24/7 Data Accessibility",
+    ],
   },
+];
+
+const processStepsArray = [
+  "Smart Data Management",
+  "Financial Oversight",
+  "Insightful Analytics",
+  "Anywhere, Anytime Access",
 ];
 const testimonials = [
   {
@@ -215,7 +243,7 @@ const LogBooksPage = () => {
                 <div className="th-experience">
                   <div className="th-experience_content">
                     <h2 className="experience-year">
-                      <span className="counter-number">25</span>
+                      <CountUp start={1} end={12} duration={3} />+
                     </h2>
                     <p className="experience-text">
                       Years of experience in startup building
@@ -228,7 +256,10 @@ const LogBooksPage = () => {
         </div>
       </div>
       <KeyFeatures testimonials={testimonials} />
-      <OurExpertise1 processSteps={processSteps} />
+      <OurExpertise1
+        processSteps={processSteps}
+        processStepsArray={processStepsArray}
+      />
       <section>
         <div
           class="faq-area position-relative overflow-hidden space"

@@ -15,7 +15,6 @@ import about_2_shape from "../../../assets/img/normal/about_2_shape.png";
 import RecycleBinIcon from "../../../Imges/QblockIcon/RecycleBinIcon.jpg";
 import AutoBackupIcon from "../../../Imges/QblockIcon/AutoBackupIcon.jpg";
 import AuditTrailsIcon from "../../../Imges/QblockIcon/AuditTrailsIcon.jpg";
-import title_shape_2 from "../../../assets/img/theme-img/title_shape_2.svg";
 import AccessControlIcon from "../../../Imges/QblockIcon/AccessControlIcon.jpg";
 import VersionControlIcon from "../../../Imges/QblockIcon/VersionControlIcon.jpg";
 import DocumentsStorageIcon from "../../../Imges/QblockIcon/DocumentsStorageIcon.jpg";
@@ -28,91 +27,149 @@ import StorageQuotaManagementIcon from "../../../Imges/QblockIcon/StorageQuotaMa
 import "swiper/css";
 import "swiper/css/pagination";
 import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
-import OurExpertise from "./SolutionReuseCom/OurExpertise";
+import OurExpertise1 from "./SolutionReuseCom/OurExpertise1";
 import feature_2_1 from "../../../assets/img/icon/feature_2_1.svg";
 import feature_2_3 from "../../../assets/img/icon/feature_2_3.svg";
 import feature_2_2 from "../../../assets/img/icon/feature_2_2.svg";
 import feature_2_4 from "../../../assets/img/icon/feature_2_4.svg";
 import feature_8_1 from "../../../assets/img/normal/feature_8_1.png";
+import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
+import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
+import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
+import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
+import TalkToAbout2 from "./SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout2";
 const testimonials = [
   {
-    text: "“Effortlessly retrieve and manage comprehensive farmers' data, including detailed land records, crop patterns, historical yield insights, and predictive analytics for improved agricultural decision-making and productivity enhancement.”",
+    text: "“Students can easily apply for education loans through the platform, partnering with registered schools and financial institutions. A transparent process keeps them informed at every stage, ensuring a smooth loan application experience.”",
     img: DocumentsStorageIcon,
-    name: "Documents Storage",
+    name: "Streamlined Loan Application Process",
     designation: "",
   },
   {
-    text: "Systematically maintain an organized repository of farmers, capturing essential demographic information, landholding specifics, crop cultivation patterns, and historical agricultural data for streamlined management and informed decisions.",
+    text: "“Schools and institutions can configure loan settings to align with their guidelines and student needs. Both students and institutions can upload necessary documents for a smooth loan application and approval process.”",
     img: VersionControlIcon,
-    name: "Version Control",
+    name: "Customizable School Loan Settings",
     designation: "",
   },
   {
-    text: "Continuously track and analyze crop cycles, yields, and farming practices, enabling data-driven insights, sustainable agricultural methods, and enhanced productivity for long-term farm management and efficiency.",
+    text: "“Students can track loan details, monitor disbursements, and manage EMIs efficiently. Real-time updates ensure transparency, while flexible EMI scheduling helps them stay on top of repayments effortlessly and plan finances better.”",
     img: AccessControlIcon,
-    name: "Access Control",
+    name: "Loan Management & Tracking",
     designation: "",
   },
   {
-    text: "Efficiently monitor and manage financial assistance, government subsidies, and loan disbursements for farmers, ensuring transparent tracking, timely disbursements, and optimized support for agricultural growth and sustainability.",
+    text: "“Schools can register and manage users, ensuring smooth communication between students and lenders. Students can access personal profiles to manage loan applications, fees, and transaction histories efficiently.”",
     img: DocumentsRetrievalIcon,
-    name: "Documents Retrieval",
+    name: "User Registration & Profile Management",
     designation: "",
   },
   {
-    text: "Streamline procurement planning, optimize input supply distribution, and enhance logistics management for agricultural produce, ensuring timely availability, cost-efficiency, and effective supply chain coordination to boost farm productivity.",
-    img: WorkflowAutomationIcon,
-    name: "Workflow Automation",
-    designation: "",
-  },
-  {
-    text: "Ensure real-time monitoring of stock levels, track inventory, and efficiently manage storage facilities, optimizing resources, reducing wastage, improving efficiency, and ensuring timely access to agricultural supplies and produce.",
+    text: "“The Akshar mobile app allows students and institutions to manage loans and finances on-the-go, providing easy access to loan details, EMI schedules, profile management, real-time updates, secure transactions, and more.”",
     img: CollaborationToolsIcon,
-    name: "Collaboration Tools",
+    name: "Mobile Accessibility",
     designation: "",
   },
   {
-    text: "Create comprehensive reports, engaging data visualizations, and trend analyses to provide actionable insights, empowering informed decision-making, optimizing farm operations, and driving sustainable agricultural practices.",
+    text: "“Students and schools receive real-time loan status updates for smooth processing. The app offers customizable loan parameters, enabling flexible loan options tailored to the needs of both institutions and students.”",
     img: AuditTrailsIcon,
-    name: "Audit Trails",
-    designation: "",
-  },
-  {
-    text: "Create comprehensive reports, engaging data visualizations, and trend analyses to provide actionable insights, empowering informed decision-making, optimizing farm operations, and driving sustainable agricultural practices.",
-    img: StorageQuotaManagementIcon,
-    name: "Storage Quota Management",
-    designation: "",
-  },
-  {
-    text: "Create comprehensive reports, engaging data visualizations, and trend analyses to provide actionable insights, empowering informed decision-making, optimizing farm operations, and driving sustainable agricultural practices.",
-    img: UserGuestDeactivationIcon,
-    name: "User & Guest Deactivation",
-    designation: "",
-  },
-  {
-    text: "Create comprehensive reports, engaging data visualizations, and trend analyses to provide actionable insights, empowering informed decision-making, optimizing farm operations, and driving sustainable agricultural practices.",
-    img: AutoBackupIcon,
-    name: "Auto-Backup",
-    designation: "",
-  },
-  {
-    text: "Create comprehensive reports, engaging data visualizations, and trend analyses to provide actionable insights, empowering informed decision-making, optimizing farm operations, and driving sustainable agricultural practices.",
-    img: RecycleBinIcon,
-    name: "Recycle Bin",
+    name: "Robust Support for Students and Institutions",
     designation: "",
   },
 ];
-const ExpertiseArray = {
-  heading: "Qblock",
-  para: "Collaboratively envisioneer user friendly supply chains and cross unit imperative. Authoritativel fabricate competitive resource andholistic. Holisticly restore real time resources whereas standardized networks.",
-  keyPoints: [
-    { name: "Centralized Document", per: "95%" },
-    { name: "Quick & Easy Access", per: "99%" },
-    { name: "Advanced Security & Access Control", per: "95%" },
-    { name: "Automated Workflows", per: "95%" },
-    { name: "Backup & Recovery", per: "92%" },
-  ],
-};
+const processSteps = [
+  {
+    id: 1,
+    title: "Real-Time Loan Updates",
+    step: "STEP-01",
+    description:
+      "Students and schools receive timely updates on loan status, ensuring smooth processing and transparency.",
+    image: process_img_1,
+    img: process_img_1,
+    checklist: [
+      "Instant Loan Status Alerts",
+      "Seamless Communication",
+      "Transparent Processing",
+    ],
+  },
+  {
+    id: 2,
+    title: "Customizable Loan Parameters",
+    step: "STEP-02",
+    description:
+      "Flexible loan offerings tailored to the needs of institutions and students for better financial management.",
+    image: process_img_2,
+    img: process_img_2,
+    checklist: [
+      "Institution-Specific Loan Configurations",
+      "Student-Centric Loan Customization",
+      "Enhanced Financial Flexibility",
+    ],
+  },
+  {
+    id: 3,
+    title: "Student & Institution Dashboard",
+    step: "STEP-03",
+    description:
+      "Students can track loans, manage EMIs, and access profiles, while institutions handle user management and communication.",
+    image: process_img_3,
+    img: process_img_3,
+    checklist: [
+      "Loan & EMI Tracking",
+      "Profile & Transaction Management",
+      "Seamless Institution-Student Interaction",
+    ],
+  },
+  {
+    id: 4,
+    title: "Mobile-Friendly Loan Management",
+    step: "STEP-04",
+    description:
+      "The Akshar mobile app enables students and institutions to manage loans on-the-go with real-time access and secure transactions.",
+    image: process_img_4,
+    img: process_img_4,
+    checklist: [
+      "Real-Time Loan Access",
+      "Secure Transactions",
+      "Anywhere, Anytime Accessibility",
+    ],
+  },
+];
+
+const processStepsArray = [
+  "Real-Time Loan Updates",
+  "Customizable Loan Parameters",
+  "Student & Institution Dashboard",
+  "Mobile-Friendly Loan Management",
+];
+
+const TalkToAbout2Array = [
+  {
+    id: 1,
+    question:
+      "How does this system assist in managing agricultural activities?",
+    answer:
+      "Our system helps streamline agricultural activities by tracking land usage, monitoring crop health, and optimizing resource allocation for better productivity.",
+  },
+  {
+    id: 2,
+    question: "Can I track government schemes and farmer benefits?",
+    answer:
+      "Yes! The system allows users to monitor government schemes, subsidies, and farmer benefits, ensuring transparency and effective fund utilization.",
+  },
+  {
+    id: 3,
+    question: "Does the system provide weather and soil analysis reports?",
+    answer:
+      "Absolutely! The system offers weather forecasts, soil quality analysis, and predictive insights to help farmers make informed decisions.",
+  },
+  {
+    id: 4,
+    question: "How reliable is the data security in this system?",
+    answer:
+      "We ensure top-tier security with encrypted data storage, multi-layer authentication, and strict access controls to protect sensitive information.",
+  },
+];
+
 const AksharPage = () => {
   return (
     <div>
@@ -216,156 +273,12 @@ const AksharPage = () => {
           </div>
         </div>
       </div>
-
-      <OurExpertise ExpertiseArray={ExpertiseArray} />
       <KeyFeatures testimonials={testimonials} />
-      <div className="bg-smoke overflow-hidden space" id="faq-sec">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-xl-6 col-lg-9">
-              <div className="title-area text-center text-xl-start">
-                <span className="sub-title">
-                  <div className="icon-masking me-2">
-                    <img src={title_shape_2} alt="shape" />
-                  </div>
-                  Frequently Ask Question
-                </span>
-                <h2 className="sec-title">
-                  Talk To About Any
-                  <span className="text-theme fw-normal"> Question?</span>
-                </h2>
-              </div>
-              <div className="accordion-area accordion" id="faqAccordion">
-                <div className="accordion-card">
-                  <div className="accordion-header" id="collapse-item-1">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapse-1"
-                      aria-expanded="false"
-                      aria-controls="collapse-1"
-                    >
-                      How does Qblock help in managing documents efficiently?
-                    </button>
-                  </div>
-                  <div
-                    id="collapse-1"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="collapse-item-1"
-                    data-bs-parent="#faqAccordion"
-                  >
-                    <div className="accordion-body">
-                      <p className="faq-text">
-                        Qblock provides a centralized, secure platform for
-                        storing, organizing, and retrieving documents with
-                        advanced search and indexing features.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-card active">
-                  <div className="accordion-header" id="collapse-item-2">
-                    <button
-                      className="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapse-2"
-                      aria-expanded="true"
-                      aria-controls="collapse-2"
-                    >
-                      Is Qblock suitable for enterprises with strict security
-                      requirements?
-                    </button>
-                  </div>
-                  <div
-                    id="collapse-2"
-                    className="accordion-collapse collapse show"
-                    aria-labelledby="collapse-item-2"
-                    data-bs-parent="#faqAccordion"
-                  >
-                    <div className="accordion-body">
-                      <p className="faq-text">
-                        Yes! Qblock offers role-based access control,
-                        encryption, audit trails, and automatic backups,
-                        ensuring enterprise-grade security and compliance.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-card">
-                  <div className="accordion-header" id="collapse-item-3">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapse-3"
-                      aria-expanded="false"
-                      aria-controls="collapse-3"
-                    >
-                      Can multiple users collaborate on documents in real-time?
-                    </button>
-                  </div>
-                  <div
-                    id="collapse-3"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="collapse-item-3"
-                    data-bs-parent="#faqAccordion"
-                  >
-                    <div className="accordion-body">
-                      <p className="faq-text">
-                        Absolutely! Qblock enables teams to share, edit,
-                        annotate, and track versions while maintaining a
-                        detailed change history.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-card">
-                  <div className="accordion-header" id="collapse-item-4">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapse-4"
-                      aria-expanded="false"
-                      aria-controls="collapse-4"
-                    >
-                      Does Qblock support integration with other tools?
-                    </button>
-                  </div>
-                  <div
-                    id="collapse-4"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="collapse-item-4"
-                    data-bs-parent="#faqAccordion"
-                  >
-                    <div className="accordion-body">
-                      <p className="faq-text">
-                        Yes! Qblock provides seamless integration with a variety
-                        of third-party applications, allowing you to automate
-                        workflows and enhance productivity.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-6 mt-35 mt-xl-0">
-              <div className="faq-img tilt-active">
-                <div className="img-shape icon-masking">
-                  <span className="mask-icon" />
-                  <img src={about_3_1} alt="img" />
-                </div>
-                <img src={faq_1_1} alt="Faq" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="shape-mockup jump" data-bottom="0%" data-left="0%">
-          <img src="assets/img/shape/tech_shape_5.png" alt="shape" />
-        </div>
-      </div>
+      <OurExpertise1
+        processSteps={processSteps}
+        processStepsArray={processStepsArray}
+      />
+      <TalkToAbout2 TalkToAbout2Array={TalkToAbout2Array} />
     </div>
   );
 };

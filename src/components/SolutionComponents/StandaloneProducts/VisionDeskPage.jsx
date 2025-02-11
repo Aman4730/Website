@@ -1,13 +1,16 @@
 import React from "react";
+import CountUp from "react-countup";
 import { Link } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
 import check_4 from "../../../assets/img/icon/check_4.svg";
-import quote_3d from "../../../assets/img/icon/quote_3d.png";
-import testi_bg_4 from "../../../assets/img/bg/testi_bg_4.png";
 import breadcumbbg from "../../../assets/img/bg/breadcumb-bg.jpg";
 import about_18_1 from "../../../assets/img/normal/about_18_1.jpg";
 import about_18_2 from "../../../assets/img/normal/about_18_2.jpg";
+import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
+import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
+import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
+import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
+import title_shape_2 from "../../../assets/img/theme-img/title_shape_2.svg";
 import AuditTrailsIcon from "../../../Imges/QblockIcon/AuditTrailsIcon.jpg";
 import AccessControlIcon from "../../../Imges/QblockIcon/AccessControlIcon.jpg";
 import VersionControlIcon from "../../../Imges/QblockIcon/VersionControlIcon.jpg";
@@ -16,102 +19,164 @@ import title_shape_2_white from "../../../assets/img/theme-img/title_shape_2_whi
 import DocumentsRetrievalIcon from "../../../Imges/QblockIcon/DocumentsRetrievalIcon.jpg";
 import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomationIcon.jpg";
 import CollaborationToolsIcon from "../../../Imges/QblockIcon/CollaborationToolsIcon.jpg";
-import process_bg_2 from "../../../assets/img/bg/process_bg_2.jpg";
-import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
-import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
-import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
-import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
-import star2 from "../../../assets/img/shape/star-2.png";
-import line3 from "../../../assets/img/shape/line-3.png";
-import title_shape_2 from "../../../assets/img/theme-img/title_shape_2.svg";
-import faq_7_1 from "../../../assets/img/normal/faq_7_1.jpg";
-import faq_7_2 from "../../../assets/img/normal/faq_7_2.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
-import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
+import OurExpertise1 from "./SolutionReuseCom/OurExpertise1";
+import TalkToAbout from "./SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout";
 const VisionDeskPage = () => {
   const testimonials = [
     {
-      text: "“Track vehicles in real-time with instant location updates. Monitor start and stop times for complete fleet visibility, ensuring efficient operations, improved route planning, reduced downtime, and enhanced control over movements.”",
+      text: "“Seamlessly fetch, manage, and analyze farmers' data, including land details, crop patterns, and yield insights, enabling real-time access to agricultural information for better decision-making, planning, and monitoring by stakeholders.”",
       img: DocumentsStorageIcon,
-      name: "Real-Time Vehicle Tracking",
+      name: "Integration with Krishi Mapper",
       designation: "",
     },
     {
-      text: "“Monitor passenger drop-offs per trip to improve transport tracking. Gain insights into drop-off counts, optimize service management, enhance planning, ensure efficiency, and improve overall operational oversight for better transportation services.”",
+      text: "“Maintain a well-organized repository of farmers, including demographic information, landholding data, and crop cultivation details, ensuring efficient data management for better planning, analysis, and decision-making in agriculture.”",
       img: VersionControlIcon,
-      name: "Passenger Drop-off Tracking",
+      name: "Farmer Database Management",
       designation: "",
     },
     {
-      text: "“The system tracks fuel consumption and records purchases, ensuring efficient fuel management. It provides a centralized database for each vehicle, aiding maintenance, cost analysis, and optimizing overall fleet operations.”",
+      text: "“Monitor crop cycles, yields, and farming practices to enhance agricultural productivity, optimize resource utilization, and support data-driven decision-making for sustainable and efficient farming operations.”",
       img: AccessControlIcon,
-      name: "Fuel Record Management",
+      name: "Crop & Yield Tracking",
       designation: "",
     },
     {
-      text: "“Users can search trip details using voice commands, simplifying access without manual entry. This improves efficiency, saves time, and enhances convenience when retrieving specific trip or vehicle information effortlessly.”",
+      text: "“Track and manage financial assistance, government subsidies, and loan disbursements to ensure timely support for farmers, promoting economic stability, increased productivity, and sustainable agricultural growth with data-driven insights.”",
       img: DocumentsRetrievalIcon,
-      name: "Voice Command Search",
+      name: "Finance & Subsidy Management",
       designation: "",
     },
     {
-      text: "“Easily export trip and fuel data in CSV format for convenient sharing and offline analysis. Supports seamless integration with other tools, enabling further analysis, reporting, auditing, and improved data management.”",
+      text: "“Optimize procurement planning, input supply distribution, and logistics for agricultural produce to enhance efficiency, reduce wastage, improve supply chain management, and ensure timely delivery to markets and stakeholders.”",
       img: WorkflowAutomationIcon,
-      name: "CSV Export Functionality",
+      name: "Supply Chain & Procurement",
       designation: "",
     },
     {
-      text: "“Designed to be intuitive and user-friendly for fleet managers, drivers, and administrative staff. The system enables easy access and interaction with data, simplifying tasks, boosting efficiency, and improving overall operational performance.”",
+      text: "“Maintain real-time stock levels, track inventory, and manage storage facilities efficiently to prevent shortages, reduce wastage, optimize resource utilization, and ensure seamless supply chain operations in agriculture.”",
       img: CollaborationToolsIcon,
-      name: "User-Friendly Interface",
+      name: "Warehouse & Stock Management",
       designation: "",
     },
     {
-      text: "“The system provides detailed reports on trips, fuel usage, drop-offs, and more. Analyze historical data and fuel consumption trends to make informed decisions, optimize fleet operations, and enhance efficiency.”",
+      text: "“Generate insightful reports, data visualizations, and trend analysis to enhance decision-making, improve strategic planning, identify patterns, optimize resource allocation, and drive data-driven solutions for sustainable agricultural growth and efficiency.”",
       img: AuditTrailsIcon,
-      name: "Comprehensive Reporting and Data Analytics",
+      name: "Report & Analytics Dashboard",
+      designation: "",
+    },
+    {
+      text: "“Define user roles, access levels, and permissions to ensure secured data management, prevent unauthorized access, enhance accountability, streamline operations, and maintain data integrity across agricultural information systems.”",
+      img: AuditTrailsIcon,
+      name: "User Access & Role Management",
+      designation: "",
+    },
+    {
+      text: "“Maintain a detailed history of all system transactions to ensure transparency, regulatory compliance, audit readiness, data security, accountability, traceability, fraud prevention, and operational efficiency in agricultural management systems.”",
+      img: AuditTrailsIcon,
+      name: "Audit Logs & Compliance",
+      designation: "",
+    },
+    {
+      text: "“Access data anytime, anywhere with a responsive design and cloud-based storage, ensuring scalability, security, real-time synchronization, seamless user experience, and efficient agricultural data management across multiple devices.”",
+      img: AuditTrailsIcon,
+      name: "Mobile-Friendly & Cloud-Based",
       designation: "",
     },
   ];
   const processSteps = [
     {
       id: 1,
-      title: "Enhanced Efficiency",
+      title: "Smart Data Management",
       step: "STEP-01",
       description:
-        "Real-time tracking and voice command search make managing your fleet more efficient and effective.",
+        "Effortlessly fetch, organize, and analyze farmers' data, including land details, crop patterns, and yield insights.",
       image: process_img_1,
       img: process_img_1,
+      checklist: [
+        "Seamless Farmer Data Handling",
+        "Real-time Land & Crop Monitoring",
+        "Data Accuracy & Security",
+      ],
     },
     {
       id: 2,
-      title: "Cost Management",
+      title: "Financial Oversight",
       step: "STEP-02",
       description:
-        "Keep track of fuel consumption and other operational metrics to optimize your fleet's running costs.",
+        "Seamlessly track government subsidies, financial aid, and loan disbursements to support farmers effectively.",
       image: process_img_2,
       img: process_img_2,
+      checklist: [
+        "Monitor Subsidy Distribution",
+        "Ensure Transparent Transactions",
+        "Optimize Loan Disbursement",
+      ],
     },
     {
       id: 3,
-      title: "Improved Service",
+      title: "Insightful Analytics",
       step: "STEP-03",
       description:
-        "Monitor passenger drop-offs to better manage the routes and schedules, improving overall service delivery.",
+        "Generate powerful reports, trend analysis, and data visualizations to drive informed agricultural decisions.",
       image: process_img_3,
       img: process_img_3,
+      checklist: [
+        "AI-Powered Data Insights",
+        "Customizable Reports & Charts",
+        "Predictive Farming Trends",
+      ],
     },
     {
       id: 4,
-      title: "Data Accessibility",
+      title: "Anywhere, Anytime Access",
       step: "STEP-04",
       description:
-        "Exportable data in CSV format makes it easy to share insights and collaborate with other departments or stakeholders.",
+        "Leverage cloud-based storage and a responsive design for real-time data accessibility on any device.",
       image: process_img_4,
       img: process_img_4,
+      checklist: [
+        "Secure Cloud Storage",
+        "Cross-Device Compatibility",
+        "24/7 Data Accessibility",
+      ],
     },
   ];
+  const processStepsArray = [
+    "Smart Data Management",
+    "Financial Oversight",
+    "Insightful Analytics",
+    "Anywhere, Anytime Access",
+  ];
+  const TalkToAboutAnyQuestion = [
+    {
+      id: 1,
+      question: "How does this system help in tracking farmers' data?",
+      answer:
+        "Our system provides real-time tracking of farmers' data, including land ownership, crop patterns, and yield insights, ensuring efficient agricultural planning.",
+    },
+    {
+      id: 2,
+      question: "Can I monitor government subsidies and loan disbursements?",
+      answer:
+        "Yes! The system includes tracking for government subsidies, financial aid, and loan disbursements, ensuring transparency and effective financial management.",
+    },
+    {
+      id: 3,
+      question: "Does the system support data analytics and reporting?",
+      answer:
+        "Absolutely! The system generates insightful reports, trend analysis, and visual data representations to support better agricultural decision-making.",
+    },
+    {
+      id: 4,
+      question: "How secure is the data stored in the system?",
+      answer:
+        "We implement encrypted data storage, role-based access control, and cloud security measures to ensure your information remains protected at all times.",
+    },
+  ];
+
   return (
     <div>
       <div
@@ -163,7 +228,7 @@ const VisionDeskPage = () => {
                 </div>
                 <div className="th-experience">
                   <h2 className="experience-year">
-                    <span className="counter-number">25</span>
+                    <CountUp start={1} end={689} duration={10} />+
                   </h2>
                   <p className="experience-text">Happily active client’s</p>
                 </div>
@@ -244,265 +309,11 @@ const VisionDeskPage = () => {
         </div>
       </div>
       <KeyFeatures testimonials={testimonials} />
-      <section
-        className="process-area5"
-        id="process-sec"
-        style={{
-          backgroundImage: `url(${process_bg_2})`,
-        }}
-      >
-        <div className="container th-container4">
-          <div className="title-area text-center">
-            <span className="shadow-title">PROCESS</span>
-            <span className="sub-title">
-              <div className="icon-masking me-2">
-                <img src={title_shape_2} alt="shape" />
-              </div>
-              Our Work Process
-            </span>
-            <h2 className="sec-title">
-              Our Work Process
-              <span className="text-theme fw-normal"> IT Solution</span>
-            </h2>
-          </div>
-          <div className="process-tabs-wrapper">
-            <div
-              className="nav nav-tabs process-tabs-tabs"
-              id="nav-tab"
-              role="tablist"
-              style={{
-                backgroundColor: "#edf0f7",
-              }}
-            >
-              {[
-                "Enhanced Efficiency",
-                "Cost Management",
-                "Improved Service",
-                "Improved Service",
-              ].map((title, index) => (
-                <button
-                  key={index}
-                  className={`nav-link ${index === 0 ? "active" : ""}`}
-                  id={`nav-step${index + 1}-tab`}
-                  data-bs-toggle="tab"
-                  data-bs-target={`#nav-step${index + 1}`}
-                  type="button"
-                >
-                  <span className="step">STEP-0{index + 1}</span>
-                  <span className="title">{title}</span>
-                </button>
-              ))}
-            </div>
-            <div
-              className="tab-content"
-              id="nav-tabContent"
-              style={{ backgroundColor: "#edf0f7" }}
-            >
-              {processSteps.map((step, index) => (
-                <div
-                  key={step.id}
-                  className={`tab-pane fade ${
-                    index === 0 ? "show active" : ""
-                  }`}
-                  id={`nav-step${step.id}`}
-                  role="tabpanel"
-                >
-                  {console.log(step)}
-                  <div className="process-wrapper">
-                    <div className="process-content">
-                      <h5 className="box-title">{step.title}</h5>
-                      <p className="box-text">{step.description}</p>
-                      <div className="checklist" style={{ marginTop: "20px" }}>
-                        <ul>
-                          <li>
-                            <i className="far fa-check-circle text-body"></i>{" "}
-                            Best Service for You
-                          </li>
-                          <li>
-                            <i className="far fa-check-circle text-body"></i>{" "}
-                            Keeping Your Team Productive
-                          </li>
-                          <li>
-                            <i className="far fa-check-circle text-body"></i>{" "}
-                            Predictable Costs 24/7
-                          </li>
-                        </ul>
-                      </div>
-                      <a href="contact.html" className="th-btn style-radius">
-                        Get Started
-                      </a>
-                    </div>
-                    <div className="process-image">
-                      <img src={step.img} alt={`Process Step ${step.id}`} />
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div
-              className="shape-mockup d-none d-xxl-block"
-              style={{
-                bottom: "-12%",
-                right: "29.5%",
-              }}
-            >
-              <img src={star2} alt="shape" />
-            </div>
-            <div
-              className="shape-mockup z-index-3 d-none d-xl-block"
-              style={{ top: "13%", left: "35.5%" }}
-            >
-              <img src={line3} alt="shape" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div
-          class="faq-area position-relative overflow-hidden space"
-          id="faq-sec"
-        >
-          <div class="container th-container4">
-            <div class="row">
-              <div class="col-xl-6">
-                <div class="title-area pe-xl-5 me-xl-4 text-center text-xl-start">
-                  <span class="sub-title">Frequently Ask Question</span>
-                  <h2 class="sec-title">
-                    Talk To About Any
-                    <span className="text-theme fw-normal"> Question?</span>
-                  </h2>
-                </div>
-                <div class="accordion style2" id="faqAccordion">
-                  <div class="accordion-card style2 th-radius1">
-                    <div class="accordion-header" id="collapse-item-1">
-                      <button
-                        class="accordion-button"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapse-1"
-                        aria-expanded="true"
-                        aria-controls="collapse-1"
-                      >
-                        How does this system help in tracking vehicles?
-                      </button>
-                    </div>
-                    <div
-                      id="collapse-1"
-                      class="accordion-collapse collapse show"
-                      aria-labelledby="collapse-item-1"
-                      data-bs-parent="#faqAccordion"
-                    >
-                      <div class="accordion-body">
-                        <p class="faq-text">
-                          Our system provides real-time tracking of vehicles,
-                          showing when they start, stop, and their exact route,
-                          ensuring complete visibility.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-card style2 th-radius1">
-                    <div class="accordion-header" id="collapse-item-2">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapse-2"
-                        aria-expanded="false"
-                        aria-controls="collapse-2"
-                      >
-                        Can I monitor fuel consumption and expenses?
-                      </button>
-                    </div>
-                    <div
-                      id="collapse-2"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="collapse-item-2"
-                      data-bs-parent="#faqAccordion"
-                    >
-                      <div class="accordion-body">
-                        <p class="faq-text">
-                          Yes! The system includes fuel tracking and reporting,
-                          helping you manage consumption and reduce operational
-                          costs.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-card style2 th-radius1">
-                    <div class="accordion-header" id="collapse-item-3">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapse-3"
-                        aria-expanded="false"
-                        aria-controls="collapse-3"
-                      >
-                        Does the system support trip history and reporting?
-                      </button>
-                    </div>
-                    <div
-                      id="collapse-3"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="collapse-item-3"
-                      data-bs-parent="#faqAccordion"
-                    >
-                      <div class="accordion-body">
-                        <p class="faq-text">
-                          Absolutely! You can access detailed trip reports,
-                          including distance covered, stops made, and passenger
-                          drop-offs, all exportable in CSV format.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-card style2 th-radius1">
-                    <div class="accordion-header" id="collapse-item-4">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapse-4"
-                        aria-expanded="false"
-                        aria-controls="collapse-4"
-                      >
-                        How secure is the data stored in the system?
-                      </button>
-                    </div>
-                    <div
-                      id="collapse-4"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="collapse-item-4"
-                      data-bs-parent="#faqAccordion"
-                    >
-                      <div class="accordion-body">
-                        <p class="faq-text">
-                          We implement secure cloud storage, role-based access
-                          controls, and encrypted data transmission, ensuring
-                          your information stays protected.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-6">
-                <div class="faq-img8 mb-xl-0 mt-xl-0 ps-xl-5 ms-xl-1">
-                  <div class="img1">
-                    <img src={faq_7_1} alt="About" />
-                    <div class="img2 jump">
-                      <img src={faq_7_2} alt="About" />
-                    </div>
-                    <div class="faq8-shape"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <OurExpertise1
+        processSteps={processSteps}
+        processStepsArray={processStepsArray}
+      />
+      <TalkToAbout TalkToAboutAnyQuestion={TalkToAboutAnyQuestion} />
     </div>
   );
 };

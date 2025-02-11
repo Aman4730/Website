@@ -367,7 +367,7 @@ const NavBar = () => {
                         </ul>
                       </li>
                       <li>
-                        <a href="contact.html">Contact</a>
+                        <Link to="/">Carrer</Link>
                       </li>
                     </ul>
                   </nav>
@@ -382,10 +382,10 @@ const NavBar = () => {
                 </div>
                 <div className="col-auto d-none d-lg-block">
                   <div className="header-button">
-                    <a href="contact.html" className="th-btn shadow-none">
+                    <Link to="/contactUs" className="th-btn shadow-none">
                       Contact Us
                       <i className="fas fa-arrow-right ms-2" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

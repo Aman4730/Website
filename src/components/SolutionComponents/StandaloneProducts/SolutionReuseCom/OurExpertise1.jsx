@@ -4,7 +4,7 @@ import star2 from "../../../../assets/img/shape/star-2.png";
 import process_bg_2 from "../../../../assets/img/bg/process_bg_2.jpg";
 import title_shape_2 from "../../../../assets/img/theme-img/title_shape_2.svg";
 
-const OurExpertise1 = ({ processSteps }) => {
+const OurExpertise1 = ({ processSteps, processStepsArray = [] }) => {
   return (
     <section
       className="process-area5"
@@ -36,12 +36,7 @@ const OurExpertise1 = ({ processSteps }) => {
               backgroundColor: "#edf0f7",
             }}
           >
-            {[
-              "Enhanced Efficiency",
-              "Cost Management",
-              "Improved Service",
-              "Improved Service",
-            ].map((title, index) => (
+            {processStepsArray.map((title, index) => (
               <button
                 key={index}
                 className={`nav-link ${index === 0 ? "active" : ""}`}
@@ -51,7 +46,18 @@ const OurExpertise1 = ({ processSteps }) => {
                 type="button"
               >
                 <span className="step">STEP-0{index + 1}</span>
-                <span className="title">{title}</span>
+                <span
+                  className="title"
+                  style={{
+                    width: "30px",
+                    display: "inline-block",
+                    overflow: "hidden",
+                    whiteSpace: "nowrap",
+                    textOverflow: "ellipsis",
+                  }}
+                >
+                  {title}
+                </span>
               </button>
             ))}
           </div>
@@ -67,29 +73,22 @@ const OurExpertise1 = ({ processSteps }) => {
                 id={`nav-step${step.id}`}
                 role="tabpanel"
               >
-                {console.log(step)}
                 <div className="process-wrapper">
                   <div className="process-content">
                     <h5 className="box-title">{step.title}</h5>
                     <p className="box-text">{step.description}</p>
                     <div className="checklist" style={{ marginTop: "20px" }}>
                       <ul>
-                        <li>
-                          <i className="far fa-check-circle text-body"></i> Best
-                          Service for You
-                        </li>
-                        <li>
-                          <i className="far fa-check-circle text-body"></i>{" "}
-                          Keeping Your Team Productive
-                        </li>
-                        <li>
-                          <i className="far fa-check-circle text-body"></i>{" "}
-                          Predictable Costs 24/7
-                        </li>
+                        {step.checklist.map((item, i) => (
+                          <li key={i}>
+                            <i className="far fa-check-circle text-body"></i>{" "}
+                            {item}
+                          </li>
+                        ))}
                       </ul>
                     </div>
                     <a href="contact.html" className="th-btn style-radius">
-                      Get Started
+                      Explore More
                     </a>
                   </div>
                   <div className="process-image">

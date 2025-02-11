@@ -16,6 +16,7 @@ import SAGPage from "./components/SolutionComponents/StandaloneProducts/SAGPage"
 import TrakFuelPage from "./components/SolutionComponents/StandaloneProducts/TrakFuelPage";
 import IManagerPage from "./components/SolutionComponents/StandaloneProducts/IManagerPage";
 import CropnetPage from "./components/SolutionComponents/StandaloneProducts/CropnetPage";
+import ContactUs from "./components/ContactUs";
 function App() {
   return (
     <div className="App">
@@ -37,6 +38,7 @@ function App() {
         <Route path="/solutions/TrakFuelPage" element={<TrakFuelPage />} />
         <Route path="/solutions/IManagerPage" element={<IManagerPage />} />
         <Route path="/solutions/CropnetPage" element={<CropnetPage />} />
+        <Route path="/contactUs" element={<ContactUs />} />
       </Routes>
       <Footer />
     </div>

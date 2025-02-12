@@ -1,28 +1,24 @@
 import React from "react";
-import CountUp from "react-countup";
-import { Link } from "react-router-dom";
+import MainHeading from "../../MainHeading";
 import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
-import check_4 from "../../../assets/img/icon/check_4.svg";
-import breadcumbbg from "../../../assets/img/bg/breadcumb-bg.jpg";
+import SolAbout3 from "./SolutionReuseCom/SolutionAbout/SolAbout3";
 import about_18_1 from "../../../assets/img/normal/about_18_1.jpg";
 import about_18_2 from "../../../assets/img/normal/about_18_2.jpg";
 import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
 import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
 import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
 import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
-import title_shape_2 from "../../../assets/img/theme-img/title_shape_2.svg";
+import OurExpertise1 from "./SolutionReuseCom/OurExpertises/OurExpertise1";
 import AuditTrailsIcon from "../../../Imges/QblockIcon/AuditTrailsIcon.jpg";
 import AccessControlIcon from "../../../Imges/QblockIcon/AccessControlIcon.jpg";
+import TalkToAbout from "./SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout";
 import VersionControlIcon from "../../../Imges/QblockIcon/VersionControlIcon.jpg";
 import DocumentsStorageIcon from "../../../Imges/QblockIcon/DocumentsStorageIcon.jpg";
-import title_shape_2_white from "../../../assets/img/theme-img/title_shape_2_white.svg";
 import DocumentsRetrievalIcon from "../../../Imges/QblockIcon/DocumentsRetrievalIcon.jpg";
 import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomationIcon.jpg";
 import CollaborationToolsIcon from "../../../Imges/QblockIcon/CollaborationToolsIcon.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
-import OurExpertise1 from "./SolutionReuseCom/OurExpertise1";
-import TalkToAbout from "./SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout";
 const VisionDeskPage = () => {
   const testimonials = [
     {
@@ -176,138 +172,33 @@ const VisionDeskPage = () => {
         "We implement encrypted data storage, role-based access control, and cloud security measures to ensure your information remains protected at all times.",
     },
   ];
-
+  const aboutData3 = [
+    {
+      id: 1,
+      images: [about_18_1, about_18_2],
+      experienceCount: 689,
+      experienceText: "Happily active client’s",
+      shadowTitle: "Vision Desk",
+      subTitle: "Vision Desk",
+      secTitle: "Comprehensive MIS Portal for Agricultural Data Management",
+      description:
+        "VisionDesk is a Management Information System (MIS) Portal designed to streamline agricultural data management by integrating with Krishi Mapper. It provides real-time access to farmers' data and crop details for better decision-making.",
+      checklist: [
+        ["Real-time Data Access", "Krishi Mapper Integration"],
+        ["Data-Driven Solutions", "Informed Decision-Making"],
+      ],
+      contactLink: "about.html",
+      phone: "+25632542598",
+    },
+  ];
   return (
     <div>
-      <div
-        className="breadcumb-wrapper"
-        style={{
-          backgroundImage: `url(${breadcumbbg})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "300px",
-          width: "100%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <div className="container">
-          <div className="breadcumb-content text-center">
-            <div className="title-area mb-35">
-              <div className="shadow-title">VISION DESK</div>
-              <span className="sub-title" style={{ color: "white" }}>
-                <div className="icon-masking me-2">
-                  <img src={title_shape_2_white} alt="shape" />
-                </div>
-                Vision Desk
-              </span>
-            </div>
-            <ul className="breadcumb-menu">
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>Solution</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div
-        className="about-sec-18 position-relative z-index-3 overflow-hidden space"
-        id="about-sec"
-      >
-        <div className="container th-container4">
-          <div className="row justify-content-between align-items-center">
-            <div className="col-xl-6">
-              <div className="img-box21 pe-xl-5 me-xl-2">
-                <div className="img1">
-                  <img src={about_18_1} alt="About" />
-                </div>
-                <div className="img2">
-                  <img src={about_18_2} alt="About" />
-                </div>
-                <div className="th-experience">
-                  <h2 className="experience-year">
-                    <CountUp start={1} end={689} duration={10} />+
-                  </h2>
-                  <p className="experience-text">Happily active client’s</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-6">
-              <div className="">
-                <div className="title-area  pe-xl-3">
-                  <div className="title-area">
-                    <span className="shadow-title">Vision Desk</span>
-                    <span className="sub-title">
-                      <div className="icon-masking me-2">
-                        <img src={title_shape_2} alt="shape" />
-                      </div>
-                      Vision Desk
-                    </span>
-                  </div>
-                  <h2 className="sec-title">
-                    Comprehensive MIS Portal for Agricultural Data Management
-                  </h2>
-                  <p>
-                    VisionDesk is a powerful Management Information System (MIS)
-                    Portal designed to streamline agricultural data management
-                    by integrating with Krishi Mapper. It enables real-time
-                    access to farmers' data, crop details, and analytical
-                    insights to enhance decision-making for agricultural
-                    stakeholders. VisionDesk empowers organizations with
-                    data-driven solutions for effective planning, monitoring,
-                    and reporting.
-                  </p>
-                </div>
-                <div className="two-column style4 justify-content-between mb-50 list-center ms-0">
-                  <div className="checklist style13">
-                    <ul>
-                      <li>
-                        <img src={check_4} alt="" />
-                        Real-time Data Access
-                      </li>
-                      <li>
-                        <img src={check_4} alt="" />
-                        Krishi Mapper Integration
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="checklist style13">
-                    <ul>
-                      <li>
-                        <img src={check_4} alt="" />
-                        Data-Driven Solutions
-                      </li>
-                      <li>
-                        <img src={check_4} alt="" />
-                        Informed Decision-Making
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="btn-group style3">
-                  <a
-                    href="about.html"
-                    className="th-btn style-radius text-capitalize"
-                  >
-                    Contact us
-                  </a>
-                  <div className="call-btn">
-                    <i className="fas fa-phone" />
-                    <div className="media-body">
-                      <span className="btn-text">Call Now!</span>
-                      <a href="tel:+25632542598" className="btn-title">
-                        (+256) 3254 2598
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <MainHeading
+        title="VISION DESK"
+        subtitle="VISION DESK"
+        breadcrumbs={[{ label: "Home", link: "/" }, { label: "Solution" }]}
+      />
+      <SolAbout3 aboutData={aboutData3} />
       <KeyFeatures testimonials={testimonials} />
       <OurExpertise1
         processSteps={processSteps}

@@ -1,9 +1,8 @@
 import React from "react";
-import line3 from "../../../../assets/img/shape/line-3.png";
-import star2 from "../../../../assets/img/shape/star-2.png";
-import process_bg_2 from "../../../../assets/img/bg/process_bg_2.jpg";
-import title_shape_2 from "../../../../assets/img/theme-img/title_shape_2.svg";
-
+import line3 from "../../../../../assets/img/shape/line-3.png";
+import star2 from "../../../../../assets/img/shape/star-2.png";
+import process_bg_2 from "../../../../../assets/img/bg/process_bg_2.jpg";
+import title_shape_2 from "../../../../../assets/img/theme-img/title_shape_2.svg";
 const OurExpertise1 = ({ processSteps, processStepsArray = [] }) => {
   return (
     <section

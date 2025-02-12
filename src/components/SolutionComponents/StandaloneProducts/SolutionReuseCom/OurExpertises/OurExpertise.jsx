@@ -1,6 +1,6 @@
 import React from "react";
-import video_shape_2 from "../../../../assets/img/bg/video_shape_2.png";
-import title_shape_2 from "../../../../assets/img/theme-img/title_shape_2.svg";
+import video_shape_2 from "../../../../../assets/img/bg/video_shape_2.png";
+import title_shape_2 from "../../../../../assets/img/theme-img/title_shape_2.svg";
 import "swiper/css";
 import "swiper/css/pagination";
 const OurExpertise = ({ ExpertiseArray = {} }) => {

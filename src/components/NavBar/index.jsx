@@ -141,24 +141,24 @@ const NavBar = () => {
                             <a href="#">Data Science</a>
                             <ul>
                               <li>
-                                <a href="home-ai-technology.html">
+                                <Link to="/solutions/FieldQuotationSystemPage">
                                   Field Quotation System
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="home-cyber-security.html">
+                                <Link to="/solutions/DecisionSupportSystemPage">
                                   Decision Support System
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="home-sass-landing-2.html">
+                                <Link to="/solutions/IssueManagementSystemPage">
                                   Issue Management System
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="home-app-landing.html">
+                                <Link to="/solutions/AgricultureInformationSystemPage">
                                   Agriculture Information System
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </li>
@@ -166,19 +166,19 @@ const NavBar = () => {
                             <a href="#">Internet of Things (IoT)</a>
                             <ul>
                               <li>
-                                <a href="home-web-development-op.html">
+                                <Link to="/solutions/PhotonPage">
                                   Photon (Centralized Solar Solution)
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="home-digital-agency-op.html">
+                                <Link to="/solutions/MilkAnalyserPage">
                                   Milk Analyser
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="home-web-development-op.html">
+                                <Link to="/solutions/DairyApplicationPage">
                                   Dairy Application
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </li>
@@ -186,36 +186,36 @@ const NavBar = () => {
                             <a href="#">Mobile Applications</a>
                             <ul>
                               <li>
-                                <a href="home-app-landing-op.html">IRedi</a>
+                                <Link to="/solutions/IRediPage">IRedi</Link>
                               </li>
                               <li>
-                                <a href="home-sass-landing-2-op.html">KarGo</a>
+                                <Link to="/solutions/KarGoPage">KarGo</Link>
                               </li>
 
                               <li>
-                                <a href="home-ai-technology-op.html">
+                                <Link to="/solutions/MonitorMPage">
                                   MonitorM
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="home-ai-technology-op.html">
+                                <Link to="/solutions/JKTourismPage">
                                   J&K Tourism
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="home-cyber-security-2-op.html">
+                                <Link to="/solutions/TourismApplicationPage">
                                   Tourism Application
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="home-ai-technology-op.html">
+                                <Link to="/solutions/SarojEducationPage">
                                   Saroj Education Mobile app
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="home-cyber-security-op.html">
+                                <Link to="/solutions/CommunicationApplicationPage">
                                   Communication Application
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </li>

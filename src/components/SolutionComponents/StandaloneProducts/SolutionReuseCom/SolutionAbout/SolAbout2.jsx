@@ -33,7 +33,7 @@ const SolAbout2 = ({ aboutData }) => {
             </div>
             <p className="mt-n2 mb-25">{aboutData.description}</p>
             <h6 className="text-theme fw-semibold mb-30">
-              Customizable Quiz Creation and Assessment Management
+              {aboutData.featuresTitle}
             </h6>
             <div className="checklist style8 mb-40">
               <ul>

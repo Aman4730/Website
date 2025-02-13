@@ -1,37 +1,6 @@
 import React from "react";
-import faq_11_1 from "../../../../../assets/img/normal/faq_11_1.png";
 
-const faqData = {
-  title: "Talk To About Any",
-  highlight: "Question?",
-  subtitle: "Frequently Asked Questions",
-  image: faq_11_1,
-  faqs: [
-    {
-      question: "What is the difference between SEO and PPC?",
-      answer:
-        "SEO focuses on improving your website's organic ranking in search results, while PPC involves paid advertising to reach your target audience.",
-    },
-    {
-      question: "How much does digital marketing cost?",
-      answer:
-        "The cost of digital marketing varies based on the services required, budget, and business needs.",
-      defaultOpen: true,
-    },
-    {
-      question: "How do I get started with Webteck?",
-      answer:
-        "You can get started by reaching out to our support team, choosing the right service, and setting up your strategy with our experts.",
-    },
-    {
-      question: "What is your process for working with clients?",
-      answer:
-        "We follow a structured approach, starting with consultation, strategy development, execution, and continuous optimization.",
-    },
-  ],
-};
-
-const TalkToAbout5 = () => {
+const TalkToAbout5 = ({ TalkToAbout5Array }) => {
   return (
     <div
       className="position-relative z-index-3 overflow-hidden space"
@@ -41,16 +10,18 @@ const TalkToAbout5 = () => {
         <div className="row gy-5">
           <div className="col-xl-6">
             <div className="title-area">
-              <span className="sub-title sub-title5">{faqData.subtitle}</span>
+              <span className="sub-title sub-title5">
+                {TalkToAbout5Array.subtitle}
+              </span>
               <h2 className="sec-title">
-                {faqData.title}{" "}
+                {TalkToAbout5Array.title}{" "}
                 <span className="text-theme fw-normal">
-                  {faqData.highlight}
+                  {TalkToAbout5Array.highlight}
                 </span>
               </h2>
             </div>
             <div className="accordion-area style5 accordion" id="faqAccordion">
-              {faqData.faqs.map((faq, index) => (
+              {TalkToAbout5Array.faqs.map((faq, index) => (
                 <div
                   key={index}
                   className={`accordion-card style11 ${
@@ -92,7 +63,7 @@ const TalkToAbout5 = () => {
           </div>
           <div className="col-xl-6">
             <div className="faq-image11">
-              <img src={faqData.image} alt="FAQ" />
+              <img src={TalkToAbout5Array.image} alt="FAQ" />
             </div>
           </div>
         </div>

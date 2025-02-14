@@ -24,7 +24,7 @@ const SolAbout1 = ({ aboutData }) => {
                 </div>
                 <h2 className="sec-title">
                   {aboutData.subtitle.split(" ").slice(0, -1).join(" ")}
-                  <span className="text-theme fw-normal">
+                  <span className="text-theme">
                     {" "}
                     {aboutData.subtitle.split(" ").slice(-1)}
                   </span>

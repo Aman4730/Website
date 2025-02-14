@@ -14,6 +14,7 @@ import about_12_1_shape from "../../../assets/img/normal/about_12_1_shape.png";
 import AccessControlIcon from "../../../Imges/QblockIcon/AccessControlIcon.jpg";
 import VersionControlIcon from "../../../Imges/QblockIcon/VersionControlIcon.jpg";
 import TalkToAbout5 from "./SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout5";
+import eduWhyChooseUS from "../../../Imges/eduWhyChooseUS.png";
 import DocumentsStorageIcon from "../../../Imges/QblockIcon/DocumentsStorageIcon.jpg";
 import DocumentsRetrievalIcon from "../../../Imges/QblockIcon/DocumentsRetrievalIcon.jpg";
 import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomationIcon.jpg";
@@ -115,7 +116,7 @@ const TalkToAbout5Array = {
   title: "Talk To About Any",
   highlight: "Question?",
   subtitle: "Frequently Asked Questions",
-  image: faq_11_1,
+  image: eduWhyChooseUS,
   faqs: [
     {
       question: "What is the difference between SEO and PPC?",

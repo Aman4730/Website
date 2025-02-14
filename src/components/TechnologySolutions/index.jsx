@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const TechnologySolutions = () => {
   return (
@@ -155,13 +156,13 @@ const TechnologySolutions = () => {
           </div>
           <div className="col-md-6 col-xl-3">
             <div className="service-btn-area">
-              <a
-                href="service-details.html"
+              <Link
+                to="/services/ApplicationDevelopment"
                 className="th-btn service-btn text-capitalize"
               >
                 View All Services
                 <i className="fa-regular fa-arrow-right ms-2" />
-              </a>
+              </Link>
               <div className="ser-shape">
                 <img src="assets/img/icon/circle.png" alt="" />
               </div>

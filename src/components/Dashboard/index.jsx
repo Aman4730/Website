@@ -11,7 +11,6 @@ const heroData = [
     subtitle: " Tech & Innovation",
     sectionClass: "img-box8 hero-img tilt-active",
     text: "Transform your ideas into reality with our wide range of services designed to maximize impact and value.",
-    style: { marginTop: "100px" },
     img: [
       {
         className: "img1",
@@ -36,6 +35,7 @@ const heroData = [
     subtitle: " Growth",
     sectionClass: "col-lg-6 mb-30 mb-lg-0",
     text: "Stay ahead of the competition by embracing innovative and future-ready solutions tailored for your business needs.",
+    style: { marginTop: "65px" },
     img: [
       {
         className: "img1",
@@ -65,7 +65,6 @@ const heroData = [
     subtitle: "Growth & Success ",
     sectionClass: "img-box8 hero-img tilt-active",
     text: "We help businesses scale, achieve their goals, and succeed in competitive markets with tailored strategies.",
-    style: { marginTop: "100px" },
     img: [
       {
         className: "img1",
@@ -83,12 +82,6 @@ const heroData = [
         alt: "About",
       },
     ],
-  },
-  {
-    img: "assets/img/hero/hero_img_1_1.png",
-    title: "Providing Technology",
-    subtitle: " For Smart IT Solution",
-    text: "Experience cutting-edge technology with us to drive efficiency and innovation in your organization.",
   },
 ];
 
@@ -114,12 +107,13 @@ export default function HeroSection() {
         >
           <div className="th-hero-wrapper hero-1" id="hero">
             {heroData[index].animation === true ? (
-              <div
-                className="img-box8 hero-img tilt-active"
-                style={{ marginTop: "100px" }}
-              >
+              <div className="img-box8 hero-img tilt-active">
                 {heroData[index].img.map((image, idx) => (
-                  <div key={idx} className={image.className}>
+                  <div
+                    key={idx}
+                    className={image.className}
+                    style={heroData[index]?.style}
+                  >
                     <img src={image.src} alt={image.alt} />
                   </div>
                 ))}

@@ -23,7 +23,7 @@ const OurExpertise1 = ({ processSteps, processStepsArray = [] }) => {
           </span>
           <h2 className="sec-title">
             Our Work Process
-            <span className="text-theme fw-normal"> IT Solution</span>
+            <span className="text-theme"> IT Solution</span>
           </h2>
         </div>
         <div className="process-tabs-wrapper">

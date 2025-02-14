@@ -141,6 +141,7 @@ const aboutData = {
   images: [about_2_1, about_2_2, about_2_3],
   shapeImage: about_2_shape,
   titleShape: title_shape_2,
+  disconverMore: "https://youtu.be/ix_OpmpsRBY?si=fhE44BuZ7hRQs25V",
 };
 const QblockPage = () => {
   return (

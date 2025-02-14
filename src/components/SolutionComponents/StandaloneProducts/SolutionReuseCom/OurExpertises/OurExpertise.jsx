@@ -20,8 +20,8 @@ const OurExpertise = ({ ExpertiseArray = {} }) => {
                 </span>
               </div>
               <h2 className="sec-title">
-                More Than 12+ Years Experience We Provide
-                <span className="text-theme fw-normal"> IT Services</span>
+                Impact Overview: What Our Product
+                <span className="text-theme"> Delivers</span>
               </h2>
             </div>
             <p className="mt-n2 mb-25 text-center text-xl-start">
@@ -49,6 +49,7 @@ const OurExpertise = ({ ExpertiseArray = {} }) => {
               <a
                 href="https://youtu.be/ix_OpmpsRBY"
                 className="play-btn popup-video"
+                target="_blank"
               >
                 <i className="fas fa-play" />
               </a>

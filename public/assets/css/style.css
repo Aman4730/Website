@@ -9167,7 +9167,7 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
 .hero-style1 {
   position: relative;
   z-index: 6;
-  padding: 219px 0 219px 0;
+  padding: 100px 0 100px 0;
   max-width: 710px;
 }
 @media (min-width: 1922px) {

@@ -32,7 +32,7 @@ const SolAbout = ({ aboutData }) => {
               <h2 className="sec-title">
                 {aboutData.title} –{" "}
                 {aboutData.subtitle.split(" ").slice(0, -1).join(" ")}
-                <span className="text-theme fw-normal">
+                <span className="text-theme">
                   {" "}
                   {aboutData.subtitle.split(" ").slice(-1)}
                 </span>
@@ -49,7 +49,11 @@ const SolAbout = ({ aboutData }) => {
                 ))}
               </ul>
             </div>
-            <a href="about.html" className="th-btn">
+            <a
+              href="https://youtu.be/ix_OpmpsRBY"
+              target="_blank"
+              className="th-btn"
+            >
               DISCOVER MORE
               <i className="fa-regular fa-arrow-right ms-2" />
             </a>

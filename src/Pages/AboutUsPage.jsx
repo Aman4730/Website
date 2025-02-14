@@ -13,10 +13,10 @@ import { Autoplay, Navigation } from "swiper/modules";
 import sershape from "../assets/img/icon/ser-shape.svg";
 import MartijnHalbesma from "../Imges/MartijnHalbesma.jpg";
 import service_3 from "../assets/img/service/service_3.png";
-import service_2_1 from "../assets/img/icon/service_2_1.svg";
-import service_2_2 from "../assets/img/icon/service_2_2.svg";
+import service_1_2 from "../assets/img/icon/service_1_2.svg";
+import service_3_4 from "../assets/img/icon/service_3_4.svg";
 import service_2_3 from "../assets/img/icon/service_2_3.svg";
-import service_2_4 from "../assets/img/icon/service_2_4.svg";
+import service_3_2 from "../assets/img/icon/service_3_2.svg";
 import YashwantKumarSingh from "../Imges/YashwantKumarSingh.png";
 import VivekKumarSrivastava from "../Imges/VivekKumarSrivastava.jpg";
 import about_feature_1_1 from "../assets/img/icon/about_feature_1_1.svg";
@@ -289,7 +289,7 @@ const AboutUsPage = () => {
                 <div className="service-card2 wow fadeInRight">
                   <div className="service-card2_content">
                     <div className="service-card2_icon">
-                      <img src={service_2_1} alt="Icon" />
+                      <img src={service_1_2} alt="Icon" />
                     </div>
                     <h3 className="box-title">
                       <a href="service-details.html">Mobility Solutions</a>
@@ -303,7 +303,7 @@ const AboutUsPage = () => {
                 <div className="service-card2 wow fadeInRight">
                   <div className="service-card2_content">
                     <div className="service-card2_icon">
-                      <img src={service_2_2} alt="Icon" />
+                      <img src={service_3_4} alt="Icon" />
                     </div>
                     <h3 className="box-title">
                       <a href="service-details.html">Technology Solutions</a>
@@ -331,7 +331,7 @@ const AboutUsPage = () => {
                 <div className="service-card2 wow fadeInRight">
                   <div className="service-card2_content">
                     <div className="service-card2_icon">
-                      <img src={service_2_4} alt="Icon" />
+                      <img src={service_3_2} alt="Icon" />
                     </div>
                     <h3 className="box-title">
                       <a href="service-details.html">Custom Development</a>
@@ -361,9 +361,6 @@ const AboutUsPage = () => {
                     <span className="counter-number">689</span>+ clients across
                     India
                   </h4>
-                  <span className="ser-shape">
-                    <img src={sershape} alt="" />
-                  </span>
                 </div>
               </div>
               <div

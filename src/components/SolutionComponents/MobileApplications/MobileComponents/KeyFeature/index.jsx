@@ -14,7 +14,6 @@ const KeyFeature = () => {
           <h2 className="sec-title">Loved by our customer worldwide</h2>
         </div>
         <div className="slider-area testi-grid2-area">
-          {/* Thumbnail Slider */}
           <Swiper
             modules={[Thumbs]}
             spaceBetween={13}
@@ -38,7 +37,6 @@ const KeyFeature = () => {
             ))}
           </Swiper>
 
-          {/* Main Testimonial Slider */}
           <Swiper
             modules={[Navigation, Thumbs, Autoplay]}
             loop={true}
@@ -90,7 +88,6 @@ const KeyFeature = () => {
             ))}
           </Swiper>
 
-          {/* Navigation Buttons */}
           <button className="slider-arrow slider-prev">
             <i className="far fa-arrow-left" />
           </button>
@@ -98,7 +95,17 @@ const KeyFeature = () => {
             <i className="far fa-arrow-right" />
           </button>
 
-          <div className="testi-line" />
+          <div
+            className="testi-line"
+            style={{
+              position: "absolute",
+              bottom: "150px",
+              left: "50%",
+              transform: "translateX(-50%)",
+              width: "60%",
+              height: "2px",
+            }}
+          />
         </div>
       </div>
     </section>

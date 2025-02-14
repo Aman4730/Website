@@ -4,98 +4,44 @@ import MobileAbout1 from "./MobileAbout/MobileAbout1";
 import MobileAbout2 from "./MobileAbout/MobileAbout2";
 import MobileAbout3 from "./MobileAbout/MobileAbout3";
 import KeyFeature from "./KeyFeature";
-
+import MobileWhyChooseUs from "./MobileWhyChooseUs";
+import about_8_2 from "../../../../assets/img/normal/about_8_2.jpg";
+import about_8_1 from "../../../../assets/img/normal/about_8_1.jpg";
 const MobileComponents = () => {
+  const aboutContent1 = {
+    title: "Built for the next generation of small business",
+    description:
+      "Incorporate visually appealing elements such as high-quality images, videos, or graphics that resonate with the target audience and complement the overall design of the page. Ensure that the landing page is optimized for various devices.",
+    checklist: [
+      ["Easy Customize", "Free updates"],
+      ["Fully Responsive", "Ultimate support"],
+    ],
+    buttonText: "Get Started For Free 14 Days",
+    buttonLink: "contact.html",
+    images: [about_8_1, about_8_2],
+  };
+  const aboutData = [
+    {
+      id: 1,
+      title: "Project Management App",
+      heading:
+        "Download our app and start your free trial to get started today!",
+      description1:
+        "Clearly communicate the benefits of using the app. Explain how it solves a problem or improves the user's life in some way. Focus on the value proposition and what makes the app worth downloading. Include a prominent call-to-action button that encourages visitors to download the app or sign up for a free trial.",
+      description2:
+        "Specify which platforms the app is available on (e.g., iOS, Android) and provide links to download from the respective app stores.",
+      playStoreLink: "#",
+      appleStoreLink: "#",
+      image: download83,
+    },
+  ];
   return (
     <>
-      <MobileAbout />
-      <div className="space-top">
-        <div className="why-sec-4" data-bg-src="assets/img/bg/why_bg_8.png">
-          <div className="container th-container4">
-            <div className="row justify-content-center">
-              <div className="col-xl-5">
-                <div className="title-area text-center">
-                  <span className="sub-title">WHY CHOOSE APP</span>
-                  <h2 className="sec-title">
-                    Why Web<span className="text-theme fw-medium">Teck</span> Is
-                    The Right Choice For You
-                  </h2>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-lg-4">
-                <div className="why-feature-wrap-4-1">
-                  <div className="about-feature style3">
-                    <div className="about-feature_icon">
-                      <img src="assets/img/icon/why-8-1.svg" alt="icon" />
-                    </div>
-                    <div className="media-body">
-                      <h3 className="about-feature_title">
-                        Extensions &amp; Addons
-                      </h3>
-                      <p className="about-feature_text">
-                        Integrate analytics tools such as Google Analytics to
-                        track visitor behavior.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="about-feature style3">
-                    <div className="about-feature_icon">
-                      <img src="assets/img/icon/why-8-2.svg" alt="icon" />
-                    </div>
-                    <div className="media-body">
-                      <h3 className="about-feature_title">Fast &amp; Easy</h3>
-                      <p className="about-feature_text">
-                        Integrate analytics tools such as Google Analytics to
-                        track visitor behavior.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 order-lg-3">
-                <div className="why-feature-wrap-4-2">
-                  <div className="about-feature style3">
-                    <div className="about-feature_icon">
-                      <img src="assets/img/icon/why-8-3.svg" alt="icon" />
-                    </div>
-                    <div className="media-body">
-                      <h3 className="about-feature_title">
-                        Friendly Interface
-                      </h3>
-                      <p className="about-feature_text">
-                        Integrate analytics tools such as Google Analytics to
-                        track visitor behavior.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="about-feature style3">
-                    <div className="about-feature_icon">
-                      <img src="assets/img/icon/why-8-4.svg" alt="icon" />
-                    </div>
-                    <div className="media-body">
-                      <h3 className="about-feature_title">Saved Replies</h3>
-                      <p className="about-feature_text">
-                        Integrate analytics tools such as Google Analytics to
-                        track visitor behavior.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 order-lg-2">
-                <div className="why-thumb-4">
-                  <img src="assets/img/normal/why_8_1.png" alt="img" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <MobileAbout aboutContent={aboutContent1} />
+      <MobileWhyChooseUs />
       <MobileAbout1 />
       <MobileAbout2 />
-      <MobileAbout3 />
+      <MobileAbout3 aboutData={aboutData} />
       <section className="space">
         <div className="container">
           <div className="title-area text-center">

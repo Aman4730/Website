@@ -1,5 +1,7 @@
 import React from "react";
-
+import about_4_1 from "../../assets/img/normal/about_4_1.png";
+import about_4_2 from "../../assets/img/normal/about_4_2.png";
+import about_4_3 from "../../assets/img/normal/about_4_3.png";
 const AboutUS = () => {
   return (
     <div className="container space-top">
@@ -7,13 +9,13 @@ const AboutUS = () => {
         <div className="col-lg-5 mb-30 mb-lg-0">
           <div className="img-box6">
             <div className="img1">
-              <img src="assets/img/normal/about_4_1.png" alt="About" />
+              <img src={about_4_1} alt="About" />
             </div>
             <div className="shape1">
-              <img src="assets/img/normal/about_4_2.png" alt="About" />
+              <img src={about_4_2} alt="About" />
             </div>
             <div className="shape2">
-              <img src="assets/img/normal/about_4_3.png" alt="About" />
+              <img src={about_4_3} alt="About" />
             </div>
             <div className="color-animate" />
           </div>

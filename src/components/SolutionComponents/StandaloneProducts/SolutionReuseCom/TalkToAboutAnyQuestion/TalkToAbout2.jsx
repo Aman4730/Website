@@ -18,7 +18,7 @@ const TalkToAbout2 = ({ TalkToAbout2Array }) => {
               </span>
               <h2 className="sec-title">
                 Talk To About Any
-                <span className="text-theme fw-normal"> Question?</span>
+                <span className="text-theme"> Question?</span>
               </h2>
             </div>
             <div className="accordion-area accordion" id="faqAccordion">

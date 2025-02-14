@@ -28,8 +28,7 @@ const TalkToAbout1 = ({ TalkToAbout1Array }) => {
                 Frequently Asked Questions
               </span>
               <h2 className="sec-title">
-                Have Any{" "}
-                <span className="text-theme fw-normal">Questions?</span>
+                Have Any <span className="text-theme">Questions?</span>
               </h2>
             </div>
             <div className="accordion" id="faqAccordion">

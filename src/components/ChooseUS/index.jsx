@@ -1,5 +1,8 @@
 import React from "react";
-
+import faq_6_1 from "../../assets/img/normal/faq_6_1.jpg";
+import faq_6_2 from "../../assets/img/normal/faq_6_2.jpg";
+import faq_6_3 from "../../assets/img/normal/faq_6_3.jpg";
+import title_shape_2 from "../../assets/img/theme-img/title_shape_2.svg";
 const ChooseUS = () => {
   return (
     <div className="faq-area position-relative space" id="faq-sec">
@@ -8,12 +11,12 @@ const ChooseUS = () => {
           <div className="col-xl-6">
             <div className="faq-img7 mb-xl-0 mt-xl-0 mt-n4 pe-xl-5 me-xl-1">
               <div className="img1">
-                <img src="assets/img/normal/faq_6_1.jpg" alt="About" />
+                <img src={faq_6_1} alt="About" />
                 <div className="img2 jump">
-                  <img src="assets/img/normal/faq_6_2.jpg" alt="About" />
+                  <img src={faq_6_2} alt="About" />
                 </div>
                 <div className="img3 movingX">
-                  <img src="assets/img/normal/faq_6_3.jpg" alt="About" />
+                  <img src={faq_6_3} alt="About" />
                 </div>
               </div>
             </div>
@@ -23,10 +26,7 @@ const ChooseUS = () => {
               <div class="shadow-title">WHY CHOOSE US?</div>
               <span class="sub-title">
                 <div class="icon-masking me-2">
-                  <img
-                    src="assets/img/theme-img/title_shape_2.svg"
-                    alt="shape"
-                  />
+                  <img src={title_shape_2} alt="shape" />
                 </div>
                 WHY CHOOSE US?
               </span>

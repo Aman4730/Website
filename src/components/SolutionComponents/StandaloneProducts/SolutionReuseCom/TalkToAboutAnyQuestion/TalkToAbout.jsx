@@ -15,7 +15,7 @@ const TalkToAbout = ({ TalkToAboutAnyQuestion }) => {
                 <span className="sub-title">Frequently Asked Questions</span>
                 <h2 className="sec-title">
                   Talk To Us About Any
-                  <span className="text-theme fw-normal"> Question?</span>
+                  <span className="text-theme"> Question?</span>
                 </h2>
               </div>
               <div className="accordion style2" id="faqAccordion">

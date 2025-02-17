@@ -12,88 +12,99 @@ import VersionControlIcon from "../../../Imges/QblockIcon/VersionControlIcon.jpg
 import DocumentsStorageIcon from "../../../Imges/QblockIcon/DocumentsStorageIcon.jpg";
 import DocumentsRetrievalIcon from "../../../Imges/QblockIcon/DocumentsRetrievalIcon.jpg";
 import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomationIcon.jpg";
+import AuditTrailsIcon from "../../../Imges/QblockIcon/AuditTrailsIcon.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
 const testimonials = [
   {
-    text: "“Admins manage users, track attendance, handle fees, and generate reports. The system ensures role-based access, monitors payments, and provides academic, financial, and operational insights for efficient college management.”",
+    text: "“DSS optimizes crop procurement by helping buyers choose the best time to purchase, the optimal quantity, and the best price, while ensuring they stay within the planned budget for highly efficient procurement.”",
     img: DocumentsStorageIcon,
-    name: "Comprehensive Admin Panel",
+    name: "Procurement Optimization",
     designation: "",
   },
   {
-    text: "“Teachers can schedule classes, manage attendance in real-time, and submit grades. Students can track performance, ensuring transparency, proper planning, effective learning, and efficient course management.”",
+    text: "“DSS analyzes economic factors, providing monthly procurement models and purchase charts, making it easier for buyers to make informed decisions and optimize their strategies for highly cost-effective crop procurement.”",
     img: VersionControlIcon,
-    name: "Teacher Dashboard",
+    name: "Monthly Procurement Model",
     designation: "",
   },
   {
-    text: "“Students and parents can pay fees online, view class schedules, and track academic performance. This ensures convenience, organization, transparency, efficiency, accessibility, accuracy, and continuous improvement in learning.”",
+    text: "“DSS ensures buyers know the best time to buy crops, the right quantity, and the most economical price, helping them stay within budget and plan procurement with greater efficiency and better accuracy.”",
     img: AccessControlIcon,
-    name: "Student & Parent Portal",
+    name: "Economical Procurement",
     designation: "",
   },
   {
-    text: "“The system supports multiple languages, real-time data sync, and mobile accessibility, ensuring seamless communication, accessibility, and convenience for admins, teachers, students, and parents across various devices and platforms.”",
+    text: "“The system simplifies crop procurement by focusing on economic factors, providing a clear model to help buyers make decisions based on the most cost-effective time and price for their specific needs.”",
     img: DocumentsRetrievalIcon,
-    name: "Secure and User-Friendly Interface",
+    name: "Simplified Buying Procedure",
     designation: "",
   },
   {
-    text: "“The system uses MySQL/PostgreSQL for reliable data management and features a web-based architecture, ensuring scalability, accessibility, and seamless performance across modern browsers on any internet-enabled device.”",
+    text: "“DSS provides valuable insights into the crop procurement process, analyzing market trends and economic factors, helping buyers ensure they purchase at the most economical price and at the right optimal time.”",
     img: WorkflowAutomationIcon,
-    name: "Robust Back-End Architecture",
+    name: "Critical Insights",
+    designation: "",
+  },
+  {
+    text: "“The platform generates detailed procurement models and charts, helping buyers assess purchases at both distributed and cumulative levels, ensuring better planning, decision-making, and effective optimization in the procurement process.”",
+    img: AuditTrailsIcon,
+    name: "Procurement Insights & Charts",
     designation: "",
   },
 ];
+
 const ExpertiseArray = {
-  heading: "Sai Software",
-  para: "Our platform enhances efficiency by streamlining operations, improving communication, and ensuring transparency for all stakeholders in the education ecosystem.",
+  heading: "AgRisk Decision Support System",
+  para: "AgRisk DSS enhances the decision-making process for crop procurement by providing insights into the best purchasing time, optimal quantity, and the best price, ensuring better financial planning and crop management.",
   keyPoints: [
-    { name: "Streamlined Operations", per: "95%" },
-    { name: "Better Communication", per: "98%" },
-    { name: "Efficient Fee Collection", per: "97%" },
-    { name: "Enhanced Transparency", per: "96%" },
-    { name: "Real-Time Data Sync", per: "99%" },
+    { name: "Optimal Procurement Timing", per: "95%" },
+    { name: "Economical Price Management", per: "98%" },
+    { name: "Budget Coherence", per: "97%" },
+    { name: "Improved Decision Making", per: "96%" },
+    { name: "Procurement Analytics", per: "99%" },
   ],
 };
+
 const TalkToAbout1Array = [
   {
-    question: "How does the platform benefit schools and colleges?",
+    question: "How does DSS optimize crop procurement?",
     answer:
-      "Our platform streamlines operations, improves communication, and enhances transparency in managing attendance, fees, and academic records efficiently.",
+      "DSS provides insights into the best time to buy crops, the optimal quantity to procure, and the most cost-effective price, helping buyers make informed decisions and stay within their budget.",
   },
   {
-    question: "Is the platform accessible on mobile devices?",
+    question: "How does the system help with pricing decisions?",
     answer:
-      "Yes, the system is fully responsive and accessible on mobile devices, allowing students, parents, and teachers to stay connected anytime, anywhere.",
+      "DSS analyzes market trends and crop data to recommend the best price for procurement, ensuring that buyers purchase crops at the most economical rates while adhering to budget limits.",
   },
   {
-    question: "How secure is the fee payment system?",
+    question: "What is the significance of the procurement model?",
     answer:
-      "The platform integrates secure online payment options, ensuring safe transactions and reducing delays in fee collection.",
+      "The procurement model generated by DSS provides a detailed chart of distributed and cumulative purchases, helping buyers track their progress and make better purchasing decisions each month.",
   },
   {
-    question: "Can students and parents track academic performance?",
+    question: "Can DSS be used for various crops?",
     answer:
-      "Yes, students and parents can monitor grades, attendance, and fee payments in real-time, ensuring complete transparency and better academic planning.",
+      "Yes, DSS is designed to optimize procurement for multiple crops across the nation, focusing on the economical aspects and ensuring that buyers can apply it to their specific crop needs.",
   },
 ];
+
 const aboutData4 = [
   {
     id: 1,
-    title: "Sai-Software",
-    secTitle: "Software College Fee Management System",
+    title: "AgRisk – Decision Support System",
+    secTitle: "Crop Procurement Optimization",
     description:
-      "Sai-Software brings a revolutionary solution to enhance college operations with a focus on streamlining fee management, improving communication, and simplifying the administrative tasks for all stakeholders.",
+      "AgRisk Decision Support System optimizes crop procurement by analyzing economic aspects, providing a detailed model of when to buy, how much to buy, and at what price, ensuring buyers get the best deal while staying within budget.",
     checklist: [
-      ["Security and Compliance", "Task Management"],
-      ["Reporting and Analytics", "Team Collaboration"],
+      ["Procurement Timing", "Price Optimization"],
+      ["Budget Coherence", "Informed Decision Making"],
     ],
     contactLink: "contact.html",
     images: [about_13_1, about_13_2, about_13_3],
   },
 ];
+
 const DecisionSupportSystemPage = () => {
   return (
     <div className="theme-blue3">

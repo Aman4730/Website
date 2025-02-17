@@ -13,7 +13,7 @@ const SolAbout5 = ({ aboutData }) => {
               <div>
                 <div className="title-area mb-40">
                   <h2 className="sec-title sec-title2">
-                    {item.title} <span>{item.highlight}</span> for Students
+                    {item.title} <span>{item.highlight}</span> 
                   </h2>
                   <p>{item.description}</p>
                 </div>

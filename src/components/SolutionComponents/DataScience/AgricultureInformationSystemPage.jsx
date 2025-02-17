@@ -12,87 +12,104 @@ import SolAbout1 from "../StandaloneProducts/SolutionReuseCom/SolutionAbout/SolA
 import DocumentsRetrievalIcon from "../../../Imges/QblockIcon/DocumentsRetrievalIcon.jpg";
 import OurExpertise from "../StandaloneProducts/SolutionReuseCom/OurExpertises/OurExpertise";
 import TalkToAbout3 from "../StandaloneProducts/SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout3";
+import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomationIcon.jpg";
+import AuditTrailsIcon from "../../../Imges/QblockIcon/AuditTrailsIcon.jpg";
 
 const ExpertiseArray = {
-  heading: "Qblock",
-  para: "Tracks AI procedures on animals, records detailed breeding history and success rates, and generates AI performance reports based on date, breed, and village for effective monitoring and analysis.",
+  heading: "Agriculture Information System (AIS)",
+  para: "AIS is a smart and intelligent information capturing and regulating system that tracks various parameters of crop development, ensuring better management of agricultural production. It analyzes data related to prices, weather, crop cycles, and more to enhance economic outcomes for farmers and organizations.",
   keyPoints: [
-    { name: "Maintains Breed-Specific Data", per: "95%" },
-    { name: "Monitors Breeding Success Rates", per: "99%" },
-    { name: "Generates AI Performance Reports", per: "95%" },
-    { name: "Tracks Farmer Participation", per: "95%" },
-    { name: "Organizes Data by Village", per: "92%" },
+    { name: "Tracks Crop Development Parameters", per: "98%" },
+    { name: "Analyzes Domestic & International Prices", per: "95%" },
+    { name: "Monitors Rainfall & Sowing Times", per: "92%" },
+    { name: "Provides Yield vs Production Insights", per: "94%" },
+    { name: "Tracks Harvesting & Production Trends", per: "96%" },
   ],
 };
+
 const testimonials = [
   {
-    text: "“Tracks AI procedures on animals, records detailed breeding history and success rates, and generates AI performance reports based on date, breed, and village for effective monitoring, analysis, and improvement.”",
+    text: "“The IMS platform allows quick resolution of issues by assigning tasks to responsible persons, reducing the need for email escalations and streamlining communication for better management and faster problem resolution.”",
     img: DocumentsStorageIcon,
-    name: "AI (Artificial Insemination) Management",
+    name: "Issue Assignment",
     designation: "",
   },
   {
-    text: "“Maintains detailed farmer profiles, tracks farmers actively participating in AI programs, and monitors services provided to each farmer for better management, record-keeping, and service optimization efficiency.”",
+    text: "“The live feed allows all members to view issues and contribute their inputs, fostering collaboration among team members. This helps to resolve matters efficiently, ensuring everyone is on the same page and actively engaged.”",
     img: VersionControlIcon,
-    name: "Farmer Management",
+    name: "Live Feed Collaboration",
     designation: "",
   },
   {
-    text: "“Organizes data by village for easy monitoring, analyzes AI program effectiveness across different regions, and tracks farmer participation and engagement to enhance decision-making, improve services, and optimize program outcomes.”",
+    text: "“Rather than email threads, IMS uses a web & Android platform to assign and track issues, ensuring prompt action by designated personnel. This system improves response times and enhances overall operational efficiency.”",
     img: AccessControlIcon,
-    name: "Village-Wise Tracking",
+    name: "Real-time Issue Management",
     designation: "",
   },
   {
-    text: "“Maintains breed-specific data for various livestock species, monitors breeding success rates over time, and generates comprehensive reports for detailed breeding efficiency analysis and improved livestock management.”",
+    text: "“The platform ensures accountability by directly assigning issues to the concerned person, minimizing delays and promoting quick resolutions. This creates a streamlined process where responsibilities are clear, leading to faster problem-solving.”",
     img: DocumentsRetrievalIcon,
-    name: "Breeding Records Management",
+    name: "Efficient Task Resolution",
+    designation: "",
+  },
+  {
+    text: "“The integration of IMS with real-time updates ensures seamless collaboration between team members, reducing miscommunication and enabling faster response times to assigned issues, significantly improving overall operational productivity.”",
+    img: WorkflowAutomationIcon,
+    name: "Real-time Collaboration",
+    designation: "",
+  },
+  {
+    text: "“By automating the issue assignment process, IMS ensures that tasks are swiftly delegated to the responsible personnel, eliminating delays and optimizing workflow efficiency, resulting in a more responsive organization overall.”",
+    img: AuditTrailsIcon,
+    name: "Automated Task Assignment",
     designation: "",
   },
 ];
+
 const TalkToAbout3Array = [
   {
     id: 1,
-    question: "How does SAG improve Artificial Insemination (AI) management?",
+    question: "How does AIS help improve agricultural productivity?",
     answer:
-      "SAG tracks AI procedures, records breeding history, monitors success rates, and generates detailed performance reports by date, breed, and village.",
+      "AIS tracks crop development, analyzes prices, weather, and production data, enabling better strategic decisions to enhance agricultural productivity.",
   },
   {
     id: 2,
-    question: "How does the system help farmers in managing their livestock?",
+    question: "How does IMS improve issue resolution in organizations?",
     answer:
-      "SAG maintains detailed farmer profiles, tracks AI program participation, and provides real-time insights to improve breeding efficiency.",
+      "IMS ensures issues are assigned to the correct person quickly via a web & Android platform, streamlining communication and speeding up resolutions.",
   },
   {
     id: 3,
-    question: "Can SAG track AI success rates and generate reports?",
+    question: "Can AIS track weather patterns and crop development stages?",
     answer:
-      "Yes, the system monitors breeding success rates, keeps detailed records, and provides analytics to help optimize breeding programs.",
+      "Yes, AIS tracks rainfall, sowing times, harvesting stages, and other crop-related parameters for efficient monitoring and analysis.",
   },
   {
     id: 4,
-    question:
-      "How does village-wise tracking benefit agricultural organizations?",
+    question: "How does IMS ensure accountability in issue management?",
     answer:
-      "SAG organizes AI data by village, enabling better monitoring of AI program effectiveness, farmer engagement, and regional breeding trends.",
+      "IMS assigns issues directly to responsible individuals, reducing delays and improving accountability by preventing escalations.",
   },
 ];
+
 const aboutData1 = {
-  title: "SAG",
-  subtitle: "We Deliver Consumer-centric Tech Solutions.",
+  title: "AIS & IMS",
+  subtitle: "Empowering Agriculture & Issue Resolution through Technology",
   description:
-    "We are proud to have successfully developed and deployed the SAG (System for Agricultural Growth), an AI-powered livestock management system designed to revolutionize Artificial Insemination (AI) tracking, farmer management, and breeding records. This platform enables accurate data collection, real-time monitoring, and strategic decision-making to enhance agricultural productivity.",
+    "AIS and IMS are designed to revolutionize agricultural management and issue resolution. AIS leverages AI-powered analytics to track and analyze various crop parameters for enhanced productivity. IMS, on the other hand, optimizes issue management by providing real-time tracking, task assignment, and collaboration among teams to ensure quick resolution.",
   features: [
-    "SAG – AI-powered system for livestock management and breeding records.",
-    "Tracks Artificial Insemination, farmer data, and breeding success.",
-    "Enhances agricultural productivity with real-time data and AI insights.",
+    "AIS – Intelligent system for agricultural data tracking and analysis.",
+    "IMS – Streamlined platform for issue management and resolution.",
+    "Real-time insights for better decision-making and productivity.",
   ],
   images: [about_11_1, about_11_2, about_11_3],
   titleShape: title_shape_2,
   experienceYears: 12,
-  experienceText: "Years of experience in startup building",
+  experienceText: "Years of experience in agricultural tech solutions",
   videoLink: "https://www.youtube.com/watch?v=_sI_Ps7JSEk",
 };
+
 const AgricultureInformationSystemPage = () => {
   return (
     <div>

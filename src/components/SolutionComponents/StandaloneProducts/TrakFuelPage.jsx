@@ -28,31 +28,31 @@ const testimonials = [
     text: "“Track workforce performance in real-time, optimize daily tasks, improve communication, and ensure better field operations with precise data insights, helping businesses boost productivity and manage teams effectively.”",
     img: DocumentsStorageIcon,
     name: "TrakMob",
-    designation: "Salesforce Tracking Solution",
+    designation: "",
   },
   {
     text: "“Simplify school operations with a powerful ERP system that enhances administrative efficiency, automates routine tasks, tracks student performance, and provides seamless communication between teachers, parents, and students.”",
     img: DocumentsRetrievalIcon,
     name: "Eklavya",
-    designation: "School Management Solution",
+    designation: "",
   },
   {
     text: "“Prevent fuel leaks, unauthorized usage, and monitor consumption with real-time tracking. Ensure complete transparency, optimize fuel expenses, detect anomalies early, and reduce wastage with an automated fuel management system.”",
     img: WorkflowAutomationIcon,
     name: "TrakFuel",
-    designation: "Fuel Management System",
+    designation: "",
   },
   {
     text: "“Gain deep insights into student learning, track academic progress, and analyze performance trends with data-driven analytics, fostering a competitive learning environment that encourages growth and skill development.”",
     img: CollaborationToolsIcon,
     name: "Absolute Study",
-    designation: "Student Learning & Competition Platform",
+    designation: "",
   },
   {
     text: "“Optimize logistics operations, monitor supply chain activities, prevent resource mismanagement, and automate tracking to ensure real-time visibility, better planning, reduced delays, and improved efficiency in business workflows.”",
     img: UserGuestDeactivationIcon,
     name: "Trak",
-    designation: "Logistics & Tracking System",
+    designation: "",
   },
 ];
 

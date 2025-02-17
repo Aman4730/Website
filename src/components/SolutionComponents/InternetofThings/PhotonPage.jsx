@@ -24,124 +24,129 @@ import "swiper/css";
 import "swiper/css/pagination";
 const testimonials = [
   {
-    text: "“Effortlessly retrieve and manage comprehensive farmers' data, including detailed land records, crop patterns, historical yield insights, and predictive analytics for improved agricultural decision-making and productivity enhancement.”",
+    text: "“Logimetrix Photon provides real-time visibility and control over solar energy assets, enabling efficient management of the 30 MW Solar portfolio. The solution helps to monitor and improve performance, ensuring optimized energy production.”",
     img: DocumentsStorageIcon,
-    name: "Documents Storage",
+    name: "Solar Energy Monitoring",
     designation: "",
   },
   {
-    text: "Systematically maintain an organized repository of farmers, capturing essential demographic information, landholding specifics, crop cultivation patterns, and historical agricultural data for streamlined management and informed decisions.",
+    text: "“By leveraging IoT and Cyber-Physical Systems, Photon enables scalable and robust solutions for energy management, helping companies streamline operations, reduce costs, and scale their solar divisions quickly.”",
     img: VersionControlIcon,
-    name: "Version Control",
+    name: "Energy Management",
     designation: "",
   },
   {
-    text: "Continuously track and analyze crop cycles, yields, and farming practices, enabling data-driven insights, sustainable agricultural methods, and enhanced productivity for long-term farm management and efficiency.",
+    text: "“Photon's interactive dashboards and big data analytics provide powerful business intelligence, empowering companies to make data-driven decisions and optimize their solar energy management strategies for enhanced efficiency.”",
     img: AccessControlIcon,
-    name: "Access Control",
+    name: "Data Analytics & Insights",
     designation: "",
   },
   {
-    text: "Efficiently monitor and manage financial assistance, government subsidies, and loan disbursements for farmers, ensuring transparent tracking, timely disbursements, and optimized support for agricultural growth and sustainability.",
+    text: "“With real-time monitoring, Photon enables enterprises to optimize their energy resources, automate workflows, and ensure seamless coordination across the entire energy management system, driving sustainability and cost efficiency.”",
     img: DocumentsRetrievalIcon,
-    name: "Documents Retrieval",
-    designation: "",
-  },
-  {
-    text: "Streamline procurement planning, optimize input supply distribution, and enhance logistics management for agricultural produce, ensuring timely availability, cost-efficiency, and effective supply chain coordination to boost farm productivity.",
-    img: WorkflowAutomationIcon,
     name: "Workflow Automation",
     designation: "",
   },
   {
-    text: "Ensure real-time monitoring of stock levels, track inventory, and efficiently manage storage facilities, optimizing resources, reducing wastage, improving efficiency, and ensuring timely access to agricultural supplies and produce.",
+    text: "“Photon’s solution empowers organizations with AI-based reports and predictive analytics, allowing for proactive management of energy assets and improved performance across the entire solar energy portfolio.”",
+    img: WorkflowAutomationIcon,
+    name: "AI-Based Reporting",
+    designation: "",
+  },
+  {
+    text: "“Photon provides end-to-end energy management, offering transparent tracking, automated reporting, and real-time data visualization, which is crucial for large-scale solar power developers and energy managers in the telecom sector.”",
     img: CollaborationToolsIcon,
-    name: "Collaboration Tools",
+    name: "End-to-End Energy Management",
     designation: "",
   },
   {
-    text: "Create comprehensive reports, engaging data visualizations, and trend analyses to provide actionable insights, empowering informed decision-making, optimizing farm operations, and driving sustainable agricultural practices.",
+    text: "“By integrating IoT with cloud and mobile platforms, Photon ensures seamless visibility and control over solar energy systems, enabling businesses to stay ahead of the competition in the rapidly evolving solar energy market.”",
     img: AuditTrailsIcon,
-    name: "Audit Trails",
+    name: "Cloud & Mobile Integration",
     designation: "",
   },
   {
-    text: "Create comprehensive reports, engaging data visualizations, and trend analyses to provide actionable insights, empowering informed decision-making, optimizing farm operations, and driving sustainable agricultural practices.",
+    text: "“Photon’s ability to track and optimize solar energy performance in real-time has led to improved operational efficiency and reduced energy waste, driving sustainability across the renewable energy sector.”",
     img: StorageQuotaManagementIcon,
-    name: "Storage Quota Management",
+    name: "Real-Time Monitoring",
     designation: "",
   },
   {
-    text: "Create comprehensive reports, engaging data visualizations, and trend analyses to provide actionable insights, empowering informed decision-making, optimizing farm operations, and driving sustainable agricultural practices.",
+    text: "“With the Photon solution, enterprises can streamline their solar energy management, allowing for seamless integration, cost reductions, and improved scalability, crucial for fast-growing companies in the solar energy industry.”",
     img: UserGuestDeactivationIcon,
-    name: "User & Guest Deactivation",
+    name: "Scalable Solutions",
     designation: "",
   },
   {
-    text: "Create comprehensive reports, engaging data visualizations, and trend analyses to provide actionable insights, empowering informed decision-making, optimizing farm operations, and driving sustainable agricultural practices.",
+    text: "“Photon's ability to combine data from multiple sources ensures a comprehensive view of solar energy performance, making it easier to monitor, manage, and optimize energy resources across different sites and locations.”",
     img: AutoBackupIcon,
-    name: "Auto-Backup",
+    name: "Comprehensive Energy Insights",
     designation: "",
   },
   {
-    text: "Create comprehensive reports, engaging data visualizations, and trend analyses to provide actionable insights, empowering informed decision-making, optimizing farm operations, and driving sustainable agricultural practices.",
+    text: "“With Photon, energy managers have full control over their solar assets with automated backups, detailed analytics, and real-time alerts, ensuring optimized performance and minimizing downtime across the solar energy network.”",
     img: RecycleBinIcon,
-    name: "Recycle Bin",
+    name: "Automated Alerts & Backups",
     designation: "",
   },
 ];
+
 const ExpertiseArray = {
-  heading: "Qblock",
-  para: "Collaboratively envisioneer user friendly supply chains and cross unit imperative. Authoritativel fabricate competitive resource andholistic. Holisticly restore real time resources whereas standardized networks.",
+  heading: "Logimetrix Photon",
+  para: "Logimetrix Photon is an IoT-based solution designed for real-time monitoring, data analytics, and performance optimization in the solar energy sector. Using advanced AI and machine learning algorithms, it helps businesses make informed decisions, reduce costs, and drive sustainability in energy management.",
   keyPoints: [
-    { name: "Centralized Document", per: "95%" },
-    { name: "Quick & Easy Access", per: "99%" },
-    { name: "Advanced Security & Access Control", per: "95%" },
-    { name: "Automated Workflows", per: "95%" },
-    { name: "Backup & Recovery", per: "92%" },
+    { name: "Real-time Monitoring & Control", per: "98%" },
+    { name: "Predictive Analytics for Energy Optimization", per: "95%" },
+    { name: "Seamless Cloud & Mobile Integration", per: "99%" },
+    { name: "AI-Based Reporting & Insights", per: "96%" },
+    { name: "Scalable & Robust Solutions", per: "94%" },
   ],
 };
+
 const TalkToAbout2Array = [
   {
     id: 1,
-    question: "How does Qblock help in managing documents efficiently?",
+    question: "How does Logimetrix Photon optimize solar energy management?",
     answer:
-      "Qblock provides a centralized, secure platform for storing, organizing, and retrieving documents with advanced search and indexing features.",
+      "Logimetrix Photon provides real-time visibility, predictive analytics, and automated workflows to monitor and optimize solar energy production, improving efficiency and performance.",
   },
   {
     id: 2,
     question:
-      "Is Qblock suitable for enterprises with strict security requirements?",
+      "What makes Photon a scalable solution for solar energy management?",
     answer:
-      "Yes! Qblock offers role-based access control, encryption, audit trails, and automatic backups, ensuring enterprise-grade security and compliance.",
+      "Photon is designed to scale easily, allowing businesses to manage solar energy assets across multiple locations with seamless integration, real-time data visualization, and automated reporting.",
   },
   {
     id: 3,
-    question: "Can multiple users collaborate on documents in real-time?",
+    question: "Can Photon help reduce costs in solar energy management?",
     answer:
-      "Absolutely! Qblock enables teams to share, edit, annotate, and track versions while maintaining a detailed change history.",
+      "Yes, by providing actionable insights, predictive maintenance, and real-time monitoring, Photon helps reduce energy waste, optimize performance, and lower operational costs.",
   },
   {
     id: 4,
-    question: "Does Qblock support integration with other tools?",
+    question:
+      "How does Logimetrix Photon integrate with cloud and mobile platforms?",
     answer:
-      "Yes! Qblock provides seamless integration with a variety of third-party applications, allowing you to automate workflows and enhance productivity.",
+      "Photon uses cloud and mobile technology to ensure remote access, real-time monitoring, and centralized data management, allowing businesses to control and optimize their solar energy systems from anywhere.",
   },
 ];
+
 const aboutData = {
-  title: "QBLOCK",
-  subtitle: "Smart & Secure Document Management System",
+  title: "Photon",
+  subtitle: "Empowering Solar Energy Management with IoT & AI",
   description:
-    "QBLOCK is an advanced DMS that streamlines document storage, retrieval, and collaboration with enterprise-grade security, seamless access, version tracking, and efficient workflows.",
+    "Logimetrix Photon is an advanced IoT and AI-powered solution that provides real-time monitoring, predictive analytics, and performance optimization for solar energy assets. With cloud and mobile integration, it empowers energy managers to make data-driven decisions and reduce costs across large-scale solar projects.",
   features: [
-    "Securely store and organize multiple file formats for easy access.",
-    "Track changes, access past versions, and maintain document history efficiently.",
-    "Control permissions, secure access, and maintain document integrity.",
+    "Real-time monitoring of solar energy assets with predictive analytics.",
+    "AI-based reporting for performance optimization and cost reduction.",
+    "Seamless integration with cloud and mobile platforms for remote management.",
   ],
   images: [about_2_1, about_2_2, about_2_3],
   shapeImage: about_2_shape,
   titleShape: title_shape_2,
 };
+
 const PhotonPage = () => {
   return (
     <div>

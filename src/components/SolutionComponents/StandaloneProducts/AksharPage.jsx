@@ -153,8 +153,8 @@ const TalkToAbout2Array = [
 const aboutData5 = [
   {
     id: 1,
-    title: "Akshar – Education Loans Made Easy",
-    highlight: "Loans",
+    title: "Akshar – Education Loans Made Easy Loans for ",
+    highlight: "Students",
     description:
       "Logimetrix proudly presents Akshar, a cutting-edge financial aid platform designed to simplify the process of securing education loans for students. With seamless integration between students, schools, and lenders, Akshar ensures a transparent, efficient, and user-friendly solution for managing education loans.",
     checklist: [

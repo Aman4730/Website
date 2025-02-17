@@ -101,17 +101,17 @@ const NavBar = () => {
                               </li>
                               <li>
                                 <Link to="/solutions/SaiSoftwarePage">
-                                  Sai-Software (College Fee Mgmt)
+                                  College Fee Management
                                 </Link>
                               </li>
                               <li>
                                 <Link to="/solutions/AksharPage">
-                                  Akshar(Loan Management system)
+                                  Student Finance Management
                                 </Link>
                               </li>
                               <li>
                                 <Link to="/solutions/SAGPage">
-                                  SAG (System for Agricultural Growth)
+                                  Livestock Management
                                 </Link>
                               </li>
 
@@ -132,7 +132,7 @@ const NavBar = () => {
                             <a href="#">ERP Solutions</a>
                             <ul>
                               <li>
-                                <a href="home-startup-company.html">Eklavya</a>
+                                <Link to="/solutions/EklavyaPage">Eklavya</Link>
                               </li>
                             </ul>
                           </li>
@@ -194,11 +194,6 @@ const NavBar = () => {
                               <li>
                                 <Link to="/solutions/MonitorMPage">
                                   MonitorM
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/solutions/JKTourismPage">
-                                  J&K Tourism
                                 </Link>
                               </li>
                               <li>

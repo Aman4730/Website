@@ -22,175 +22,156 @@ import "swiper/css/pagination";
 const FieldQuotationSystemPage = () => {
   const testimonials = [
     {
-      text: "“Seamlessly fetch, manage, and analyze farmers' data, including land details, crop patterns, and yield insights, enabling real-time access to agricultural information for better decision-making, planning, and monitoring by stakeholders.”",
+      text: "DSS optimizes the crop procurement process by advising buyers on the best time to purchase, optimal quantity, and price, all while ensuring adherence to the planned budget for better, smarter purchasing decisions.",
       img: DocumentsStorageIcon,
-      name: "Integration with Krishi Mapper",
+      name: "Procurement Optimization",
       designation: "",
     },
     {
-      text: "“Maintain a well-organized repository of farmers, including demographic information, landholding data, and crop cultivation details, ensuring efficient data management for better planning, analysis, and decision-making in agriculture.”",
+      text: "DSS analyzes economic data, delivering a monthly procurement model with charts, making it easy for buyers to make informed, accurate decisions and optimize their purchasing strategies while staying within strict budget constraints.",
       img: VersionControlIcon,
-      name: "Farmer Database Management",
+      name: "Monthly Procurement Model",
       designation: "",
     },
     {
-      text: "“Monitor crop cycles, yields, and farming practices to enhance agricultural productivity, optimize resource utilization, and support data-driven decision-making for sustainable and efficient farming operations.”",
+      text: "DSS keeps buyers informed about the best time to purchase crops, optimal quantity, and price, enabling better procurement planning, cost savings, and budget adherence for more efficient decision-making across departments.",
       img: AccessControlIcon,
-      name: "Crop & Yield Tracking",
+      name: "Economical Procurement",
       designation: "",
     },
     {
-      text: "“Track and manage financial assistance, government subsidies, and loan disbursements to ensure timely support for farmers, promoting economic stability, increased productivity, and sustainable agricultural growth with data-driven insights.”",
+      text: "DSS simplifies crop procurement by focusing on economic factors, providing buyers with a clear, actionable model to make purchasing decisions based on the optimal time and price for each crop category.",
       img: DocumentsRetrievalIcon,
-      name: "Finance & Subsidy Management",
+      name: "Simplified Buying Procedure",
       designation: "",
     },
     {
-      text: "“Optimize procurement planning, input supply distribution, and logistics for agricultural produce to enhance efficiency, reduce wastage, improve supply chain management, and ensure timely delivery to markets and stakeholders.”",
+      text: "DSS offers valuable insights into the crop procurement process by analyzing factors like market trends, helping buyers purchase at the most economical price and the right time to optimize spending efficiently.",
       img: WorkflowAutomationIcon,
-      name: "Supply Chain & Procurement",
+      name: "Critical Insights",
       designation: "",
     },
     {
-      text: "“Maintain real-time stock levels, track inventory, and manage storage facilities efficiently to prevent shortages, reduce wastage, optimize resource utilization, and ensure seamless supply chain operations in agriculture.”",
-      img: CollaborationToolsIcon,
-      name: "Warehouse & Stock Management",
-      designation: "",
-    },
-    {
-      text: "“Generate insightful reports, data visualizations, and trend analysis to enhance decision-making, improve strategic planning, identify patterns, optimize resource allocation, and drive data-driven solutions for sustainable agricultural growth and efficiency.”",
+      text: "DSS generates procurement models and charts that help buyers assess purchases on distributed and cumulative levels, ensuring better planning, optimized procurement strategies, and more efficient decision-making across departments.",
       img: AuditTrailsIcon,
-      name: "Report & Analytics Dashboard",
-      designation: "",
-    },
-    {
-      text: "“Define user roles, access levels, and permissions to ensure secured data management, prevent unauthorized access, enhance accountability, streamline operations, and maintain data integrity across agricultural information systems.”",
-      img: AuditTrailsIcon,
-      name: "User Access & Role Management",
-      designation: "",
-    },
-    {
-      text: "“Maintain a detailed history of all system transactions to ensure transparency, regulatory compliance, audit readiness, data security, accountability, traceability, fraud prevention, and operational efficiency in agricultural management systems.”",
-      img: AuditTrailsIcon,
-      name: "Audit Logs & Compliance",
-      designation: "",
-    },
-    {
-      text: "“Access data anytime, anywhere with a responsive design and cloud-based storage, ensuring scalability, security, real-time synchronization, seamless user experience, and efficient agricultural data management across multiple devices.”",
-      img: AuditTrailsIcon,
-      name: "Mobile-Friendly & Cloud-Based",
+      name: "Procurement Insights & Charts",
       designation: "",
     },
   ];
+
   const processSteps = [
     {
       id: 1,
-      title: "Smart Data Management",
+      title: "FE/Manager Login",
       step: "STEP-01",
       description:
-        "Effortlessly fetch, organize, and analyze farmers' data, including land details, crop patterns, and yield insights.",
+        "Field Engineer or Manager logs into the system to mark attendance and start their day, ensuring smooth operations from the start.",
       image: process_img_1,
       img: process_img_1,
       checklist: [
-        "Seamless Farmer Data Handling",
-        "Real-time Land & Crop Monitoring",
-        "Data Accuracy & Security",
+        "Login with secure credentials",
+        "Attendance marking",
+        "Start of day tasks",
       ],
     },
     {
       id: 2,
-      title: "Financial Oversight",
+      title: "Product Categorization",
       step: "STEP-02",
       description:
-        "Seamlessly track government subsidies, financial aid, and loan disbursements to support farmers effectively.",
+        "Categorize different products to manage inventory efficiently and track requirements for smooth project execution.",
       image: process_img_2,
       img: process_img_2,
       checklist: [
-        "Monitor Subsidy Distribution",
-        "Ensure Transparent Transactions",
-        "Optimize Loan Disbursement",
+        "Product categorization for easy tracking",
+        "Inventory management",
+        "Seamless requirement uploads",
       ],
     },
     {
       id: 3,
-      title: "Insightful Analytics",
+      title: "Real-Time Quotation & Requirement Upload",
       step: "STEP-03",
       description:
-        "Generate powerful reports, trend analysis, and data visualizations to drive informed agricultural decisions.",
+        "Field officers/engineers upload requirements with images and signatures, allowing real-time quotations from the Head Office for project analysis.",
       image: process_img_3,
       img: process_img_3,
       checklist: [
-        "AI-Powered Data Insights",
-        "Customizable Reports & Charts",
-        "Predictive Farming Trends",
+        "Upload project requirements",
+        "Real-time quotations",
+        "Snaps & Signature for authenticity",
       ],
     },
     {
       id: 4,
-      title: "Anywhere, Anytime Access",
+      title: "Real-Time Project Analysis",
       step: "STEP-04",
       description:
-        "Leverage cloud-based storage and a responsive design for real-time data accessibility on any device.",
+        "Admin and HO can perform real-time analysis of the project and make timely decisions based on the uploaded requirements and quotations.",
       image: process_img_4,
       img: process_img_4,
       checklist: [
-        "Secure Cloud Storage",
-        "Cross-Device Compatibility",
-        "24/7 Data Accessibility",
+        "Real-time project tracking",
+        "Instant feedback from HO",
+        "Efficient decision-making",
       ],
     },
   ];
+
   const processStepsArray = [
-    "Smart Data Management",
-    "Financial Oversight",
-    "Insightful Analytics",
-    "Anywhere, Anytime Access",
+    "FE/Manager Login",
+    "Product Categorization",
+    "Real-Time Quotation & Requirement Upload",
+    "Real-Time Project Analysis",
   ];
+
   const TalkToAboutAnyQuestion = [
     {
       id: 1,
-      question: "How does this system help in tracking farmers' data?",
+      question: "How does the system optimize the procurement process?",
       answer:
-        "Our system provides real-time tracking of farmers' data, including land ownership, crop patterns, and yield insights, ensuring efficient agricultural planning.",
+        "The system helps buyers choose the best time to purchase crops, optimal quantity, and most economical price, all while staying within the planned budget, improving procurement efficiency.",
     },
     {
       id: 2,
-      question: "Can I monitor government subsidies and loan disbursements?",
+      question: "Can field officers upload real-time requirements?",
       answer:
-        "Yes! The system includes tracking for government subsidies, financial aid, and loan disbursements, ensuring transparency and effective financial management.",
+        "Yes! Field officers and engineers can upload real-time requirements, including images and signatures, making the process seamless and timely.",
     },
     {
       id: 3,
-      question: "Does the system support data analytics and reporting?",
+      question: "How does the system help in project analysis?",
       answer:
-        "Absolutely! The system generates insightful reports, trend analysis, and visual data representations to support better agricultural decision-making.",
+        "The system provides real-time data and quotations, allowing Admin and Head Office to perform efficient project analysis, leading to better decision-making.",
     },
     {
       id: 4,
-      question: "How secure is the data stored in the system?",
+      question: "Is there any user access control in the system?",
       answer:
-        "We implement encrypted data storage, role-based access control, and cloud security measures to ensure your information remains protected at all times.",
+        "Yes! The system ensures secure logins, access control, and role-based permissions for field officers, engineers, and admin to ensure smooth operations and data security.",
     },
   ];
+
   const aboutData3 = [
     {
       id: 1,
       images: [about_18_1, about_18_2],
       experienceCount: 689,
-      experienceText: "Happily active client’s",
-      shadowTitle: "Vision Desk",
-      subTitle: "Vision Desk",
-      secTitle: "Comprehensive MIS Portal for Agricultural Data Management",
+      experienceText: "Happily active clients",
+      shadowTitle: "Field Quotation",
+      subTitle: "Field Quotation Management System",
+      secTitle: "Comprehensive Quotation System for Field Engineers",
       description:
-        "VisionDesk is a Management Information System (MIS) Portal designed to streamline agricultural data management by integrating with Krishi Mapper. It provides real-time access to farmers' data and crop details for better decision-making.",
+        "This Field Quotation System allows field officers and engineers to manage project quotations, upload requirements, and track project status in real-time, ensuring smooth operations and enhanced decision-making.",
       checklist: [
-        ["Real-time Data Access", "Krishi Mapper Integration"],
-        ["Data-Driven Solutions", "Informed Decision-Making"],
+        ["Real-Time Data Sync", "Project Quotations"],
+        ["Inventory Management", "Product Categorization"],
       ],
       contactLink: "about.html",
       phone: "+25632542598",
     },
   ];
+
   return (
     <div>
       <MainHeading

@@ -45,6 +45,7 @@ import JammuSmartCityProject from "./components/ServicesComponents/Accomplishmen
 import JammuTourism from "./components/ServicesComponents/Accomplishments/JammuTourism";
 import MOVCDNER from "./components/ServicesComponents/Accomplishments/MOVCDNER";
 import { useEffect } from "react";
+import EklavyaPage from "./components/SolutionComponents/ERPSolutions/EklavyaPage";
 function App() {
   const location = useLocation();
 
@@ -102,7 +103,7 @@ function App() {
           path="/solutions/DairyApplicationPage"
           element={<DairyApplicationPage />}
         />
-
+        <Route path="/solutions/EklavyaPage" element={<EklavyaPage />} />
         {/*Mobile Applications*/}
         <Route path="/solutions/IRediPage" element={<IRediPage />} />
         <Route path="/solutions/JKTourismPage" element={<JKTourismPage />} />

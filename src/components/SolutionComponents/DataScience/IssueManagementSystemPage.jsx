@@ -16,7 +16,7 @@ import VersionControlIcon from "../../../Imges/QblockIcon/VersionControlIcon.jpg
 import DocumentsStorageIcon from "../../../Imges/QblockIcon/DocumentsStorageIcon.jpg";
 import SolAbout5 from "../StandaloneProducts/SolutionReuseCom/SolutionAbout/SolAbout5";
 import DocumentsRetrievalIcon from "../../../Imges/QblockIcon/DocumentsRetrievalIcon.jpg";
-import CollaborationToolsIcon from "../../../Imges/QblockIcon/CollaborationToolsIcon.jpg";
+import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomationIcon.jpg";
 import OurExpertise1 from "../StandaloneProducts/SolutionReuseCom/OurExpertises/OurExpertise1";
 import TalkToAbout2 from "../StandaloneProducts/SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout2";
 import "swiper/css";
@@ -24,155 +24,161 @@ import "swiper/css/pagination";
 
 const testimonials = [
   {
-    text: "“Students can easily apply for education loans through the platform, partnering with registered schools and financial institutions. A transparent process keeps them informed at every stage, ensuring a smooth loan application experience.”",
+    text: "“The IMS platform quickly resolves issues by assigning tasks to the responsible person, reducing the need for email escalations and streamlining communication. This helps improve management, ensure faster resolution, and enhance overall efficiency.”",
     img: DocumentsStorageIcon,
-    name: "Streamlined Loan Application Process",
+    name: "Issue Assignment",
     designation: "",
   },
   {
-    text: "“Schools and institutions can configure loan settings to align with their guidelines and student needs. Both students and institutions can upload necessary documents for a smooth loan application and approval process.”",
+    text: "“The live feed allows all members to view the issues and provide their inputs. This collaborative approach ensures that everyone contributes towards resolving the matter efficiently and effectively, improving team coordination and outcomes.”",
     img: VersionControlIcon,
-    name: "Customizable School Loan Settings",
+    name: "Live Feed Collaboration",
     designation: "",
   },
   {
-    text: "“Students can track loan details, monitor disbursements, and manage EMIs efficiently. Real-time updates ensure transparency, while flexible EMI scheduling helps them stay on top of repayments effortlessly and plan finances better.”",
+    text: "“IMS uses a Web & Android platform to assign and track issues in real-time, which ensures immediate action by the concerned personnel, minimizing delays, increasing productivity, and ensuring accountability across the board.”",
     img: AccessControlIcon,
-    name: "Loan Management & Tracking",
+    name: "Real-time Issue Management",
     designation: "",
   },
   {
-    text: "“Schools can register and manage users, ensuring smooth communication between students and lenders. Students can access personal profiles to manage loan applications, fees, and transaction histories efficiently.”",
+    text: "“By assigning issues directly to the relevant person, the platform ensures accountability and fosters quick resolution, eliminating delays, improving the overall workflow, and enhancing collaboration between team members for faster progress.”",
     img: DocumentsRetrievalIcon,
-    name: "User Registration & Profile Management",
+    name: "Efficient Task Resolution",
     designation: "",
   },
   {
-    text: "“The Akshar mobile app allows students and institutions to manage loans and finances on-the-go, providing easy access to loan details, EMI schedules, profile management, real-time updates, secure transactions, and more.”",
-    img: CollaborationToolsIcon,
-    name: "Mobile Accessibility",
+    text: "“AIS tracks all dynamic and static parameters related to crop development, including weather patterns, sowing dates, and market prices, providing critical insights that help optimize agricultural production and improve decision-making for better results.”",
+    img: WorkflowAutomationIcon,
+    name: "Crop Data Analytics",
     designation: "",
   },
   {
-    text: "“Students and schools receive real-time loan status updates for smooth processing. The app offers customizable loan parameters, enabling flexible loan options tailored to the needs of both institutions and students.”",
+    text: "“AIS captures and regulates data throughout the crop’s life cycle, including yield vs production charts, rainfall patterns, and price trends, enabling better forecasting, optimizing crop yields, and improving market competitiveness for farmers.”",
     img: AuditTrailsIcon,
-    name: "Robust Support for Students and Institutions",
+    name: "Comprehensive Crop Monitoring",
     designation: "",
   },
 ];
+
 const processSteps = [
   {
     id: 1,
-    title: "Real-Time Loan Updates",
+    title: "Real-Time Issue Resolution",
     step: "STEP-01",
     description:
-      "Students and schools receive timely updates on loan status, ensuring smooth processing and transparency.",
+      "IMS assigns issues to the concerned person instantly, reducing email delays and streamlining communication, allowing for rapid issue resolution.",
     image: process_img_1,
     img: process_img_1,
     checklist: [
-      "Instant Loan Status Alerts",
-      "Seamless Communication",
-      "Transparent Processing",
+      "Immediate Issue Assignment",
+      "Efficient Communication Channels",
+      "Quick Task Resolution",
     ],
   },
   {
     id: 2,
-    title: "Customizable Loan Parameters",
+    title: "Comprehensive Crop Analytics",
     step: "STEP-02",
     description:
-      "Flexible loan offerings tailored to the needs of institutions and students for better financial management.",
+      "AIS collects detailed data regarding crop development, such as sowing dates, rainfall patterns, and market prices, to help farmers and businesses make informed decisions.",
     image: process_img_2,
     img: process_img_2,
     checklist: [
-      "Institution-Specific Loan Configurations",
-      "Student-Centric Loan Customization",
-      "Enhanced Financial Flexibility",
+      "Tracks Weather & Price Trends",
+      "Monitors Crop Development",
+      "Provides Yield vs Production Insights",
     ],
   },
   {
     id: 3,
-    title: "Student & Institution Dashboard",
+    title: "Live Feed for Collaboration",
     step: "STEP-03",
     description:
-      "Students can track loans, manage EMIs, and access profiles, while institutions handle user management and communication.",
+      "The live feed feature of IMS allows all stakeholders to contribute to problem-solving, ensuring a collaborative approach to issue resolution.",
     image: process_img_3,
     img: process_img_3,
     checklist: [
-      "Loan & EMI Tracking",
-      "Profile & Transaction Management",
-      "Seamless Institution-Student Interaction",
+      "Real-Time Updates",
+      "Collaborative Problem-Solving",
+      "Improved Stakeholder Interaction",
     ],
   },
   {
     id: 4,
-    title: "Mobile-Friendly Loan Management",
+    title: "Smart Agricultural Insights",
     step: "STEP-04",
     description:
-      "The Akshar mobile app enables students and institutions to manage loans on-the-go with real-time access and secure transactions.",
+      "AIS integrates data from various parameters to provide insights that help optimize crop production and better market competitiveness, ensuring higher agricultural yields.",
     image: process_img_4,
     img: process_img_4,
     checklist: [
-      "Real-Time Loan Access",
-      "Secure Transactions",
-      "Anywhere, Anytime Accessibility",
+      "Data-Driven Insights",
+      "Improved Agricultural Productivity",
+      "Optimized Crop Management",
     ],
   },
 ];
+
 const processStepsArray = [
-  "Real-Time Loan Updates",
-  "Customizable Loan Parameters",
-  "Student & Institution Dashboard",
-  "Mobile-Friendly Loan Management",
+  "Real-Time Issue Resolution",
+  "Comprehensive Crop Analytics",
+  "Live Feed for Collaboration",
+  "Smart Agricultural Insights",
 ];
+
 const TalkToAbout2Array = [
   {
     id: 1,
-    question: "How does Akshar simplify education loans?",
+    question: "How does IMS improve issue management?",
     answer:
-      "Akshar streamlines the loan application process by seamlessly connecting students, schools, and financial institutions, ensuring quick approvals and transparent transactions.",
+      "IMS streamlines issue resolution by assigning tasks to the responsible person in real-time, reducing email escalations, and ensuring faster problem-solving.",
   },
   {
     id: 2,
-    question: "Can students track their loan disbursement?",
+    question: "What role does AIS play in crop management?",
     answer:
-      "Yes! Akshar provides real-time loan status updates, EMI scheduling, and repayment tracking to keep students informed about their financial commitments.",
+      "AIS monitors crop development by tracking parameters like weather patterns, sowing dates, and market prices, helping farmers optimize production and make informed decisions.",
   },
   {
     id: 3,
-    question: "Is there support for schools and institutions?",
+    question: "Can AIS predict future crop trends?",
     answer:
-      "Absolutely! Schools can configure loan settings, upload necessary documents, and manage student applications, making the process more efficient and aligned with institutional policies.",
+      "Yes, AIS tracks various parameters such as rainfall, market trends, and crop yields to provide predictive insights for better decision-making and improved agricultural productivity.",
   },
   {
     id: 4,
-    question: "How secure is Akshar’s platform?",
+    question: "How does the live feed enhance collaboration?",
     answer:
-      "Akshar ensures top-tier security with encrypted data storage, multi-factor authentication, and strict access controls to protect student and institution information.",
+      "The live feed allows all team members to view the issues, offer their insights, and collaborate on resolving matters quickly and efficiently, ensuring active participation from all parties.",
   },
 ];
+
 const aboutData5 = [
   {
     id: 1,
-    title: "Akshar – Education Loans Made Easy",
-    highlight: "Loans",
+    title: "AIS & IMS – Boosting Agricultural",
+    highlight: "Efficiency",
     description:
-      "Logimetrix proudly presents Akshar, a cutting-edge financial aid platform designed to simplify the process of securing education loans for students. With seamless integration between students, schools, and lenders, Akshar ensures a transparent, efficient, and user-friendly solution for managing education loans.",
+      "AIS and IMS bring together advanced analytics and real-time issue management to help farmers and businesses enhance agricultural productivity, optimize crop management, and improve market competitiveness.",
     checklist: [
       [
-        { icon: feature_2_1, text: "Loan Application" },
-        { icon: feature_2_2, text: "School Settings" },
+        { icon: feature_2_1, text: "Issue Assignment" },
+        { icon: feature_2_2, text: "Crop Forecasting" },
       ],
       [
-        { icon: feature_2_3, text: "Loan Tracking" },
-        { icon: feature_2_4, text: "User Management" },
+        { icon: feature_2_3, text: "Live Collaboration" },
+        { icon: feature_2_4, text: "Agri Insights" },
       ],
     ],
-    btnText: "Download Akshar App",
-    btnLink: "download.html",
+
+    btnText: "Explore AIS & IMS",
+    btnLink: "explore_ais_ims.html",
     featureImg: feature_8_1,
-    featureText: "AKSHAR",
+    featureText: "AIS & IMS",
   },
 ];
+
 const IssueManagementSystemPage = () => {
   return (
     <div>

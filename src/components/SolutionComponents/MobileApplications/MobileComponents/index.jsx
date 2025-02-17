@@ -3,10 +3,10 @@ import MobileAbout from "./MobileAbout/MobileAbout";
 import MobileAbout1 from "./MobileAbout/MobileAbout1";
 import MobileAbout2 from "./MobileAbout/MobileAbout2";
 import MobileAbout3 from "./MobileAbout/MobileAbout3";
-import KeyFeature from "./KeyFeature";
 import MobileWhyChooseUs from "./MobileWhyChooseUs";
 import about_8_2 from "../../../../assets/img/normal/about_8_2.jpg";
 import about_8_1 from "../../../../assets/img/normal/about_8_1.jpg";
+import MobileKeyFeature from "./MobileKeyFeature";
 const MobileComponents = () => {
   const aboutContent1 = {
     title: "Built for the next generation of small business",
@@ -32,7 +32,7 @@ const MobileComponents = () => {
         "Specify which platforms the app is available on (e.g., iOS, Android) and provide links to download from the respective app stores.",
       playStoreLink: "#",
       appleStoreLink: "#",
-      image: download83,
+      image: "",
     },
   ];
   return (
@@ -226,7 +226,7 @@ const MobileComponents = () => {
           </div>
         </div>
       </section>
-      <KeyFeature />
+      <MobileKeyFeature />
     </>
   );
 };

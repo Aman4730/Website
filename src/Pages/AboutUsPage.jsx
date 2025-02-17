@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import team from "../Imges/team.jpg";
 import team1 from "../Imges/team1.png";
 import team2 from "../Imges/team2.jpg";
-import team3 from "../Imges/team3.jpg";
+import team6 from "../Imges/team6.png";
 import team4 from "../Imges/team4.jpeg";
 import { Link } from "react-router-dom";
 import BrandSlider from "../components/Brands";
@@ -10,7 +10,6 @@ import star from "../assets/img/icon/star.svg";
 import Sanjay_rai from "../Imges/Sanjay_rai.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
-import sershape from "../assets/img/icon/ser-shape.svg";
 import MartijnHalbesma from "../Imges/MartijnHalbesma.jpg";
 import service_3 from "../assets/img/service/service_3.png";
 import service_1_2 from "../assets/img/icon/service_1_2.svg";
@@ -61,7 +60,7 @@ const teamMembers = [
   {
     name: "Sandipan Basu",
     role: "President & Mentor",
-    image: team3,
+    image: team6,
     socialLinks: {
       facebook: "https://facebook.com/rayanathels",
       twitter: "https://twitter.com/rayanathels",

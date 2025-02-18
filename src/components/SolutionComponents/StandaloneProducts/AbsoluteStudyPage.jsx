@@ -1,20 +1,23 @@
 import React from "react";
 import MainHeading from "../../MainHeading";
 import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
-import faq_11_1 from "../../../assets/img/normal/faq_11_1.png";
+import eduWhyChooseUS from "../../../Imges/eduWhyChooseUS.png";
 import SolAbout2 from "./SolutionReuseCom/SolutionAbout/solAbout2";
 import about_12_1 from "../../../assets/img/normal/about_12_1.jpg";
 import about_12_3 from "../../../assets/img/normal/about_12_3.jpg";
 import about_12_2 from "../../../assets/img/normal/about_12_2.jpg";
-import OurExpertise from "./SolutionReuseCom/OurExpertises/OurExpertise";
+import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
+import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
+import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
+import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
 import AutoBackupIcon from "../../../Imges/QblockIcon/AutoBackupIcon.jpg";
+import OurExpertise1 from "./SolutionReuseCom/OurExpertises/OurExpertise1";
 import about_12_shape from "../../../assets/img/normal/about_12_shape.png";
 import AuditTrailsIcon from "../../../Imges/QblockIcon/AuditTrailsIcon.jpg";
 import about_12_1_shape from "../../../assets/img/normal/about_12_1_shape.png";
 import AccessControlIcon from "../../../Imges/QblockIcon/AccessControlIcon.jpg";
 import VersionControlIcon from "../../../Imges/QblockIcon/VersionControlIcon.jpg";
 import TalkToAbout5 from "./SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout5";
-import eduWhyChooseUS from "../../../Imges/eduWhyChooseUS.png";
 import DocumentsStorageIcon from "../../../Imges/QblockIcon/DocumentsStorageIcon.jpg";
 import DocumentsRetrievalIcon from "../../../Imges/QblockIcon/DocumentsRetrievalIcon.jpg";
 import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomationIcon.jpg";
@@ -86,17 +89,70 @@ const testimonials = [
     designation: "",
   },
 ];
-const ExpertiseArray = {
-  heading: "SAROJ EDUCATION",
-  para: "Collaboratively envisioneer user friendly supply chains and cross unit imperative. Authoritativel fabricate competitive resource andholistic. Holisticly restore real time resources whereas standardized networks.",
-  keyPoints: [
-    { name: "Centralized Document", per: "95%" },
-    { name: "Quick & Easy Access", per: "99%" },
-    { name: "Advanced Security & Access Control", per: "95%" },
-    { name: "Automated Workflows", per: "95%" },
-    { name: "Backup & Recovery", per: "92%" },
-  ],
-};
+const processSteps = [
+  {
+    id: 1,
+    title: "Customizable Quiz Creation",
+    step: "STEP-01",
+    description:
+      "Create highly customizable quizzes tailored for individual or group assessments with flexible formats, personalized difficulty levels, and various question types.",
+    image: process_img_1,
+    img: process_img_1,
+    checklist: [
+      "Customizable Quiz Formats",
+      "Personalized Difficulty Levels",
+      "Diverse Question Types",
+    ],
+  },
+  {
+    id: 2,
+    title: "Question Bank Management",
+    step: "STEP-02",
+    description:
+      "Efficiently manage your question bank by storing, categorizing, and reusing questions, ensuring streamlined test creation and a variety of question formats.",
+    image: process_img_2,
+    img: process_img_2,
+    checklist: [
+      "Store & Categorize Questions",
+      "Reuse Questions Across Quizzes",
+      "Variety of Question Types",
+    ],
+  },
+  {
+    id: 3,
+    title: "Time-Limited & Adaptive Testing",
+    step: "STEP-03",
+    description:
+      "Enable adaptive testing with time-limited assessments, randomizing questions, and adjusting difficulty levels based on user performance to provide a dynamic learning experience.",
+    image: process_img_3,
+    img: process_img_3,
+    checklist: [
+      "Time-Limited Assessments",
+      "Randomized Questions",
+      "Adaptive Difficulty Levels",
+    ],
+  },
+  {
+    id: 4,
+    title: "Detailed Reports & Analytics",
+    step: "STEP-04",
+    description:
+      "Track performance with detailed analytics and reports, providing actionable insights on strengths, weaknesses, and opportunities for improvement.",
+    image: process_img_4,
+    img: process_img_4,
+    checklist: [
+      "Performance Reports",
+      "Actionable Insights",
+      "Data-Driven Evaluation",
+    ],
+  },
+];
+const processStepsArray = [
+  "Customizable Quiz Creation",
+  "Question Bank Management",
+  "Time-Limited & Adaptive Testing",
+  "Detailed Reports & Analytics",
+];
 const aboutData2 = {
   title: "SAROJ EDUCATION",
   subtitle: "The Next-Gen Online Examination Platform",
@@ -113,31 +169,36 @@ const aboutData2 = {
   trialLink: "https://edusaroj.com/home/landing",
 };
 const TalkToAbout5Array = {
-  title: "Talk To About Any",
-  highlight: "Question?",
+  title: "Talk To About SAROJ",
+  highlight: "Questions?",
   subtitle: "Frequently Asked Questions",
-  image: eduWhyChooseUS,
+  image: eduWhyChooseUS, // Use the image relevant to SAROJ
   faqs: [
     {
-      question: "What is the difference between SEO and PPC?",
+      question: "What is SAROJ?",
       answer:
-        "SEO focuses on improving your website's organic ranking in search results, while PPC involves paid advertising to reach your target audience.",
+        "SAROJ is a next-gen online examination platform that ensures secure, efficient, and seamless assessments with AI-driven cheating prevention and real-time proctoring.",
     },
     {
-      question: "How much does digital marketing cost?",
+      question: "How do I create quizzes in SAROJ?",
       answer:
-        "The cost of digital marketing varies based on the services required, budget, and business needs.",
+        "SAROJ allows you to create customizable quizzes tailored to groups or individuals with flexible test formats and time-limited or adaptive difficulty levels.",
       defaultOpen: true,
     },
     {
-      question: "How do I get started with Webteck?",
+      question: "Can I track performance in SAROJ?",
       answer:
-        "You can get started by reaching out to our support team, choosing the right service, and setting up your strategy with our experts.",
+        "Yes, SAROJ provides detailed reports and analytics for each user and group-wise, helping to track performance and identify strengths and weaknesses in assessments.",
     },
     {
-      question: "What is your process for working with clients?",
+      question: "What types of exams can be conducted on SAROJ?",
       answer:
-        "We follow a structured approach, starting with consultation, strategy development, execution, and continuous optimization.",
+        "SAROJ supports multiple exam formats including MCQs and adaptive testing with time limits, question randomization, and performance tracking features.",
+    },
+    {
+      question: "Is SAROJ accessible on multiple devices?",
+      answer:
+        "Yes, SAROJ is accessible from any device – mobile, tablet, or desktop – with secure login for a seamless user experience.",
     },
   ],
 };
@@ -153,7 +214,10 @@ const AbsoluteStudyPage = () => {
       />
       <SolAbout2 aboutData={aboutData2} />
       <KeyFeatures testimonials={testimonials} />
-      <OurExpertise ExpertiseArray={ExpertiseArray} />
+      <OurExpertise1
+        processSteps={processSteps}
+        processStepsArray={processStepsArray}
+      />
       <TalkToAbout5 TalkToAbout5Array={TalkToAbout5Array} />
     </div>
   );

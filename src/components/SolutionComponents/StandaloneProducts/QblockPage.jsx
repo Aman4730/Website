@@ -5,8 +5,11 @@ import about_2_1 from "../../../assets/img/normal/about_2_1.jpg";
 import about_2_2 from "../../../assets/img/normal/about_2_2.jpg";
 import about_2_3 from "../../../assets/img/normal/about_2_3.jpg";
 import SolAbout from "./SolutionReuseCom/SolutionAbout/SolAbout";
+import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
+import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
+import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
+import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
 import about_2_shape from "../../../assets/img/normal/about_2_shape.png";
-import OurExpertise from "./SolutionReuseCom/OurExpertises/OurExpertise";
 import RecycleBinIcon from "../../../Imges/QblockIcon/RecycleBinIcon.jpg";
 import AutoBackupIcon from "../../../Imges/QblockIcon/AutoBackupIcon.jpg";
 import title_shape_2 from "../../../assets/img/theme-img/title_shape_2.svg";
@@ -22,6 +25,7 @@ import UserGuestDeactivationIcon from "../../../Imges/QblockIcon/UserGuestDeacti
 import StorageQuotaManagementIcon from "../../../Imges/QblockIcon/StorageQuotaManagementIcon.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
+import OurExpertise1 from "./SolutionReuseCom/OurExpertises/OurExpertise1";
 const testimonials = [
   {
     text: "“Effortlessly retrieve and manage comprehensive farmers' data, including detailed land records, crop patterns, historical yield insights, and predictive analytics for improved agricultural decision-making and productivity enhancement.”",
@@ -90,17 +94,71 @@ const testimonials = [
     designation: "",
   },
 ];
-const ExpertiseArray = {
-  heading: "Qblock",
-  para: "Collaboratively envisioneer user friendly supply chains and cross unit imperative. Authoritativel fabricate competitive resource andholistic. Holisticly restore real time resources whereas standardized networks.",
-  keyPoints: [
-    { name: "Centralized Document", per: "95%" },
-    { name: "Quick & Easy Access", per: "99%" },
-    { name: "Advanced Security & Access Control", per: "95%" },
-    { name: "Automated Workflows", per: "95%" },
-    { name: "Backup & Recovery", per: "92%" },
-  ],
-};
+const processSteps = [
+  {
+    id: 1,
+    title: "Centralized Document",
+    step: "STEP-01",
+    description:
+      "Ensure seamless organization and centralized access to critical documents, improving efficiency and reducing redundancy.",
+    image: process_img_1,
+    img: process_img_1,
+    checklist: [
+      "Easy Document Organization",
+      "Secure Centralized Storage",
+      "Quick Retrieval & Access",
+    ],
+  },
+  {
+    id: 2,
+    title: "Quick & Easy Access",
+    step: "STEP-02",
+    description:
+      "Experience instant access to important files and data, enhancing productivity and decision-making.",
+    image: process_img_2,
+    img: process_img_2,
+    checklist: [
+      "Fast Document Search",
+      "Real-Time File Access",
+      "Optimized Navigation",
+    ],
+  },
+  {
+    id: 3,
+    title: "Advanced Security & Access Control",
+    step: "STEP-03",
+    description:
+      "Implement multi-layer security with role-based access, encryption, and audit trails for complete protection.",
+    image: process_img_3,
+    img: process_img_3,
+    checklist: [
+      "Role-Based Access Control",
+      "Data Encryption",
+      "Audit Logging & Tracking",
+    ],
+  },
+
+  {
+    id: 4,
+    title: "Backup & Recovery",
+    step: "STEP-05",
+    description:
+      "Safeguard valuable data with automatic backups and robust recovery solutions to prevent data loss.",
+    image: process_img_4,
+    img: process_img_4,
+    checklist: [
+      "Scheduled Automatic Backups",
+      "Disaster Recovery Plan",
+      "Instant Data Restoration",
+    ],
+  },
+];
+const processStepsArray = [
+  "Centralized Document",
+  "Quick & Easy Access",
+  "Advanced Security & Access Control",
+  "Backup & Recovery",
+];
 const TalkToAbout2Array = [
   {
     id: 1,
@@ -152,8 +210,11 @@ const QblockPage = () => {
         breadcrumbs={[{ label: "Home", link: "/" }, { label: "Solution" }]}
       />
       <SolAbout aboutData={aboutData} />
-      <OurExpertise ExpertiseArray={ExpertiseArray} />
       <KeyFeatures testimonials={testimonials} />
+      <OurExpertise1
+        processSteps={processSteps}
+        processStepsArray={processStepsArray}
+      />
       <TalkToAbout2 TalkToAbout2Array={TalkToAbout2Array} />
     </div>
   );

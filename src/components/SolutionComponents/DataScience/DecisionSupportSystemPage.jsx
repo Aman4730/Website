@@ -1,18 +1,22 @@
 import React from "react";
 import MainHeading from "../../MainHeading";
-import KeyFeatures from "../StandaloneProducts/SolutionReuseCom/KeyFeatures";
 import about_13_1 from "../../../assets/img/normal/about_13_1.jpg";
 import about_13_2 from "../../../assets/img/normal/about_13_2.jpg";
 import about_13_3 from "../../../assets/img/normal/about_13_3.jpg";
-import SolAbout4 from "../StandaloneProducts/SolutionReuseCom/SolutionAbout/SolAbout4";
-import OurExpertise from "../StandaloneProducts/SolutionReuseCom/OurExpertises/OurExpertise";
+import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
+import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
+import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
+import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
+import AuditTrailsIcon from "../../../Imges/QblockIcon/AuditTrailsIcon.jpg";
+import KeyFeatures from "../StandaloneProducts/SolutionReuseCom/KeyFeatures";
 import AccessControlIcon from "../../../Imges/QblockIcon/AccessControlIcon.jpg";
-import TalkToAbout1 from "../StandaloneProducts/SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout1";
 import VersionControlIcon from "../../../Imges/QblockIcon/VersionControlIcon.jpg";
 import DocumentsStorageIcon from "../../../Imges/QblockIcon/DocumentsStorageIcon.jpg";
+import SolAbout4 from "../StandaloneProducts/SolutionReuseCom/SolutionAbout/SolAbout4";
 import DocumentsRetrievalIcon from "../../../Imges/QblockIcon/DocumentsRetrievalIcon.jpg";
 import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomationIcon.jpg";
-import AuditTrailsIcon from "../../../Imges/QblockIcon/AuditTrailsIcon.jpg";
+import OurExpertise1 from "../StandaloneProducts/SolutionReuseCom/OurExpertises/OurExpertise1";
+import TalkToAbout1 from "../StandaloneProducts/SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout1";
 import "swiper/css";
 import "swiper/css/pagination";
 const testimonials = [
@@ -53,19 +57,66 @@ const testimonials = [
     designation: "",
   },
 ];
-
-const ExpertiseArray = {
-  heading: "AgRisk Decision Support System",
-  para: "AgRisk DSS enhances the decision-making process for crop procurement by providing insights into the best purchasing time, optimal quantity, and the best price, ensuring better financial planning and crop management.",
-  keyPoints: [
-    { name: "Optimal Procurement Timing", per: "95%" },
-    { name: "Economical Price Management", per: "98%" },
-    { name: "Budget Coherence", per: "97%" },
-    { name: "Improved Decision Making", per: "96%" },
-    { name: "Procurement Analytics", per: "99%" },
-  ],
-};
-
+const processSteps = [
+  {
+    id: 1,
+    title: "Procurement Optimization",
+    step: "STEP-01",
+    description:
+      "DSS optimizes crop procurement by helping buyers choose the best time to purchase, the optimal quantity, and the best price, ensuring efficient procurement while staying within budget.",
+    image: process_img_1,
+    img: process_img_1,
+    checklist: ["Procurement Timing", "Optimal Quantity", "Best Price"],
+  },
+  {
+    id: 2,
+    title: "Monthly Procurement Model",
+    step: "STEP-02",
+    description:
+      "DSS analyzes economic factors and provides monthly procurement models and purchase charts, allowing buyers to make informed decisions for cost-effective crop procurement.",
+    image: process_img_2,
+    img: process_img_2,
+    checklist: [
+      "Economic Analysis",
+      "Monthly Purchase Charts",
+      "Informed Decisions",
+    ],
+  },
+  {
+    id: 3,
+    title: "Economical Procurement",
+    step: "STEP-03",
+    description:
+      "DSS ensures buyers know the best time to buy crops, the right quantity, and the most economical price, helping them stay within budget while optimizing procurement.",
+    image: process_img_3,
+    img: process_img_3,
+    checklist: [
+      "Optimal Procurement Time",
+      "Right Quantity",
+      "Economical Price",
+    ],
+  },
+  {
+    id: 4,
+    title: "Simplified Buying Procedure",
+    step: "STEP-04",
+    description:
+      "The system simplifies crop procurement by focusing on economic factors, providing a clear model to help buyers make decisions based on the most cost-effective time and price.",
+    image: process_img_4,
+    img: process_img_4,
+    checklist: [
+      "Economic Focus",
+      "Simplified Model",
+      "Cost-Effective Decisions",
+    ],
+  },
+];
+const processStepsArray = [
+  "Procurement Optimization",
+  "Monthly Procurement Model",
+  "Economical Procurement",
+  "Simplified Buying Procedure",
+];
 const TalkToAbout1Array = [
   {
     question: "How does DSS optimize crop procurement?",
@@ -88,7 +139,6 @@ const TalkToAbout1Array = [
       "Yes, DSS is designed to optimize procurement for multiple crops across the nation, focusing on the economical aspects and ensuring that buyers can apply it to their specific crop needs.",
   },
 ];
-
 const aboutData4 = [
   {
     id: 1,
@@ -116,7 +166,10 @@ const DecisionSupportSystemPage = () => {
       />
       <SolAbout4 aboutData={aboutData4} />
       <KeyFeatures testimonials={testimonials} />
-      <OurExpertise ExpertiseArray={ExpertiseArray} />
+      <OurExpertise1
+        processSteps={processSteps}
+        processStepsArray={processStepsArray}
+      />
       <TalkToAbout1 TalkToAbout1Array={TalkToAbout1Array} />
     </div>
   );

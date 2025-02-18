@@ -5,7 +5,10 @@ import about_13_1 from "../../../assets/img/normal/about_13_1.jpg";
 import about_13_2 from "../../../assets/img/normal/about_13_2.jpg";
 import about_13_3 from "../../../assets/img/normal/about_13_3.jpg";
 import SolAbout4 from "./SolutionReuseCom/SolutionAbout/SolAbout4";
-import OurExpertise from "./SolutionReuseCom/OurExpertises/OurExpertise";
+import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
+import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
+import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
+import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
 import AccessControlIcon from "../../../Imges/QblockIcon/AccessControlIcon.jpg";
 import TalkToAbout1 from "./SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout1";
 import VersionControlIcon from "../../../Imges/QblockIcon/VersionControlIcon.jpg";
@@ -14,6 +17,7 @@ import DocumentsRetrievalIcon from "../../../Imges/QblockIcon/DocumentsRetrieval
 import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomationIcon.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
+import OurExpertise1 from "./SolutionReuseCom/OurExpertises/OurExpertise1";
 const testimonials = [
   {
     text: "“Admins manage users, track attendance, handle fees, and generate reports. The system ensures role-based access, monitors payments, and provides academic, financial, and operational insights for efficient college management.”",
@@ -46,17 +50,68 @@ const testimonials = [
     designation: "",
   },
 ];
-const ExpertiseArray = {
-  heading: "Sai Software",
-  para: "Our platform enhances efficiency by streamlining operations, improving communication, and ensuring transparency for all stakeholders in the education ecosystem.",
-  keyPoints: [
-    { name: "Streamlined Operations", per: "95%" },
-    { name: "Better Communication", per: "98%" },
-    { name: "Efficient Fee Collection", per: "97%" },
-    { name: "Enhanced Transparency", per: "96%" },
-    { name: "Real-Time Data Sync", per: "99%" },
-  ],
-};
+const processSteps = [
+  {
+    id: 1,
+    title: "Comprehensive Admin Panel",
+    step: "STEP-01",
+    description:
+      "Admins can manage all users, including students, teachers, and parents, ensuring smooth role-based access control. The admin panel also allows for fee structure setup, payment tracking, attendance monitoring, and report generation.",
+    image: process_img_1,
+    img: process_img_1,
+    checklist: ["User Management", "Fee Management", "Attendance Tracking"],
+  },
+  {
+    id: 2,
+    title: "Teacher Dashboard",
+    step: "STEP-02",
+    description:
+      "Teachers can easily schedule and manage classes, track attendance, and submit grades. The dashboard enhances communication and allows for real-time data syncing with students and parents.",
+    image: process_img_2,
+    img: process_img_2,
+    checklist: [
+      "Class Scheduling",
+      "Attendance Management",
+      "Grade Submission",
+    ],
+  },
+  {
+    id: 3,
+    title: "Student & Parent Portal",
+    step: "STEP-03",
+    description:
+      "Students and parents can access academic schedules, view fee payments, track performance, and stay organized with real-time updates and mobile accessibility.",
+    image: process_img_3,
+    img: process_img_3,
+    checklist: [
+      "Fee Payment",
+      "Timetable & Schedule Viewing",
+      "Performance Tracking",
+    ],
+  },
+  {
+    id: 4,
+    title: "Secure & User-Friendly Interface",
+    step: "STEP-04",
+    description:
+      "Sai-Software provides multi-language support, real-time data synchronization, and mobile accessibility to ensure a seamless user experience for all stakeholders.",
+    image: process_img_4,
+    img: process_img_4,
+    checklist: [
+      "Multi-language Support",
+      "Real-Time Data Sync",
+      "Mobile Accessibility",
+    ],
+  },
+];
+
+const processStepsArray = [
+  "Comprehensive Admin Panel",
+  "Teacher Dashboard",
+  "Student & Parent Portal",
+  "Secure & User-Friendly Interface",
+];
+
 const TalkToAbout1Array = [
   {
     question: "How does the platform benefit schools and colleges?",
@@ -105,7 +160,10 @@ const SaiSoftwarePage = () => {
       />
       <SolAbout4 aboutData={aboutData4} />
       <KeyFeatures testimonials={testimonials} />
-      <OurExpertise ExpertiseArray={ExpertiseArray} />
+      <OurExpertise1
+        processSteps={processSteps}
+        processStepsArray={processStepsArray}
+      />
       <TalkToAbout1 TalkToAbout1Array={TalkToAbout1Array} />
     </div>
   );

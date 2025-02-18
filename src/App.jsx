@@ -65,13 +65,16 @@ function App() {
         <Route path="/solutions/LogBooksPage" element={<LogBooksPage />} />
         <Route path="/solutions/edusaroj" element={<AbsoluteStudyPage />} />
         <Route path="/solutions/VisionDeskPage" element={<VisionDeskPage />} />
-        <Route path="/solutions/AksharPage" element={<AksharPage />} />
-        <Route path="/solutions/SAGPage" element={<SAGPage />} />
+        <Route path="/solutions/LivestockManagement" element={<SAGPage />} />
         <Route path="/solutions/TrakFuelPage" element={<TrakFuelPage />} />
         <Route path="/solutions/IManagerPage" element={<IManagerPage />} />
         <Route path="/solutions/CropnetPage" element={<CropnetPage />} />
         <Route
-          path="/solutions/SaiSoftwarePage"
+          path="/solutions/StudentFinanceManagement"
+          element={<AksharPage />}
+        />
+        <Route
+          path="/solutions/CollegeFeeManagement"
           element={<SaiSoftwarePage />}
         />
 

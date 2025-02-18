@@ -5,21 +5,19 @@ import about_2_1 from "../../../assets/img/normal/about_2_1.jpg";
 import about_2_2 from "../../../assets/img/normal/about_2_2.jpg";
 import about_2_3 from "../../../assets/img/normal/about_2_3.jpg";
 import SolAbout from "./SolutionReuseCom/SolutionAbout/SolAbout";
+import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
+import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
+import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
+import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
 import about_2_shape from "../../../assets/img/normal/about_2_shape.png";
-import OurExpertise from "./SolutionReuseCom/OurExpertises/OurExpertise";
-import RecycleBinIcon from "../../../Imges/QblockIcon/RecycleBinIcon.jpg";
-import AutoBackupIcon from "../../../Imges/QblockIcon/AutoBackupIcon.jpg";
+import OurExpertise1 from "./SolutionReuseCom/OurExpertises/OurExpertise1";
 import title_shape_2 from "../../../assets/img/theme-img/title_shape_2.svg";
-import AuditTrailsIcon from "../../../Imges/QblockIcon/AuditTrailsIcon.jpg";
-import AccessControlIcon from "../../../Imges/QblockIcon/AccessControlIcon.jpg";
-import VersionControlIcon from "../../../Imges/QblockIcon/VersionControlIcon.jpg";
 import TalkToAbout2 from "./SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout2";
 import DocumentsStorageIcon from "../../../Imges/QblockIcon/DocumentsStorageIcon.jpg";
 import DocumentsRetrievalIcon from "../../../Imges/QblockIcon/DocumentsRetrievalIcon.jpg";
 import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomationIcon.jpg";
 import CollaborationToolsIcon from "../../../Imges/QblockIcon/CollaborationToolsIcon.jpg";
 import UserGuestDeactivationIcon from "../../../Imges/QblockIcon/UserGuestDeactivationIcon.jpg";
-import StorageQuotaManagementIcon from "../../../Imges/QblockIcon/StorageQuotaManagementIcon.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -56,17 +54,71 @@ const testimonials = [
   },
 ];
 
-const ExpertiseArray = {
-  heading: "Standalone Products",
-  para: "Our suite of solutions empowers businesses with advanced tracking, management, and automation tools to enhance efficiency, security, and performance.",
-  keyPoints: [
-    { name: "Real-time Workforce Tracking", per: "98%" },
-    { name: "Automated School Management", per: "95%" },
-    { name: "Fuel Monitoring & Cost Savings", per: "92%" },
-    { name: "Advanced Learning & Student Insights", per: "90%" },
-    { name: "Optimized Logistics & Resource Management", per: "94%" },
-  ],
-};
+const processSteps = [
+  {
+    id: 1,
+    title: "Real-time Workforce Tracking",
+    step: "STEP-01",
+    description:
+      "Track workforce performance in real-time, optimize task assignments, enhance communication between field staff and managers, and boost productivity with accurate data insights.",
+    image: process_img_1,
+    img: process_img_1,
+    checklist: [
+      "Real-time Performance Monitoring",
+      "Task Optimization",
+      "Enhanced Communication",
+    ],
+  },
+  {
+    id: 2,
+    title: "Automated School Management",
+    step: "STEP-02",
+    description:
+      "Simplify school operations with an ERP system that automates routine tasks, tracks student performance, and ensures seamless communication between teachers, parents, and students.",
+    image: process_img_2,
+    img: process_img_2,
+    checklist: [
+      "Automated Administrative Tasks",
+      "Student Performance Tracking",
+      "Seamless Communication",
+    ],
+  },
+  {
+    id: 3,
+    title: "Fuel Monitoring & Cost Savings",
+    step: "STEP-03",
+    description:
+      "Monitor fuel consumption in real-time, prevent unauthorized usage, ensure transparency, and optimize fuel expenses while detecting anomalies early to reduce wastage.",
+    image: process_img_3,
+    img: process_img_3,
+    checklist: [
+      "Real-time Fuel Tracking",
+      "Unauthorized Usage Prevention",
+      "Cost Optimization",
+    ],
+  },
+  {
+    id: 4,
+    title: "Advanced Learning & Student Insights",
+    step: "STEP-04",
+    description:
+      "Gain deep insights into student learning, analyze performance trends, and foster a competitive learning environment that encourages growth and skill development.",
+    image: process_img_4,
+    img: process_img_4,
+    checklist: [
+      "Student Performance Insights",
+      "Data-driven Analysis",
+      "Growth and Skill Development",
+    ],
+  },
+];
+
+const processStepsArray = [
+  "Real-time Workforce Tracking",
+  "Automated School Management",
+  "Fuel Monitoring & Cost Savings",
+  "Advanced Learning & Student Insights",
+];
 
 const TalkToAbout2Array = [
   {
@@ -125,8 +177,11 @@ const TrakFuelPage = () => {
         breadcrumbs={[{ label: "Home", link: "/" }, { label: "Solution" }]}
       />
       <SolAbout aboutData={aboutData} />
-      <OurExpertise ExpertiseArray={ExpertiseArray} />
       <KeyFeatures testimonials={testimonials} />
+      <OurExpertise1
+        processSteps={processSteps}
+        processStepsArray={processStepsArray}
+      />
       <TalkToAbout2 TalkToAbout2Array={TalkToAbout2Array} />
     </div>
   );

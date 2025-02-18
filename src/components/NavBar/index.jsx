@@ -77,7 +77,24 @@ const NavBar = () => {
                       </li>
                       <li className="menu-item-has-children mega-menu-wrap">
                         <a href="#">Solution</a>
-                        <ul className="mega-menu">
+                        <ul
+                          className="mega-menu"
+                          style={{
+                            backgroundColor: "white",
+                            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+                            padding: "20px",
+                            zIndex: 1000,
+                            maxHeight: "540px",
+                            overflowY: "hidden",
+                            transition: "all 0.3s ease-in-out",
+                          }}
+                          onMouseEnter={(e) => {
+                            e.target.style.overflowY = "auto";
+                          }}
+                          onMouseLeave={(e) => {
+                            e.target.style.overflowY = "hidden";
+                          }}
+                        >
                           <li>
                             <a href="#">Standalone Products</a>
                             <ul style={{ marginBottom: "20px" }}>
@@ -100,17 +117,17 @@ const NavBar = () => {
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/solutions/SaiSoftwarePage">
+                                <Link to="/solutions/CollegeFeeManagement">
                                   College Fee Management
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/solutions/AksharPage">
+                                <Link to="/solutions/StudentFinanceManagement">
                                   Student Finance Management
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/solutions/SAGPage">
+                                <Link to="/solutions/LivestockManagement">
                                   Livestock Management
                                 </Link>
                               </li>
@@ -385,6 +402,22 @@ const NavBar = () => {
           </div>
         </div>
       </header>
+      <style jsx>{`
+        .mega-menu::-webkit-scrollbar {
+          width: 8px;
+        }
+        .mega-menu::-webkit-scrollbar-thumb {
+          background-color: rgba(0, 0, 0, 0.2);
+          border-radius: 4px;
+        }
+        .mega-menu::-webkit-scrollbar-thumb:hover {
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+        .mega-menu::-webkit-scrollbar-track {
+          background-color: #f1f1f1;
+          border-radius: 4px;
+        }
+      `}</style>
     </>
   );
 };

@@ -5,7 +5,11 @@ import SolAbout1 from "./SolutionReuseCom/SolutionAbout/SolAbout1";
 import about_11_1 from "../../../assets/img/normal/about_11_1.jpg";
 import about_11_2 from "../../../assets/img/normal/about_11_2.jpg";
 import about_11_3 from "../../../assets/img/normal/about_11_3.jpg";
-import OurExpertise from "./SolutionReuseCom/OurExpertises/OurExpertise";
+import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
+import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
+import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
+import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
+import OurExpertise1 from "./SolutionReuseCom/OurExpertises/OurExpertise1";
 import title_shape_2 from "../../../assets/img/theme-img/title_shape_2.svg";
 import AccessControlIcon from "../../../Imges/QblockIcon/AccessControlIcon.jpg";
 import VersionControlIcon from "../../../Imges/QblockIcon/VersionControlIcon.jpg";
@@ -13,17 +17,70 @@ import TalkToAbout3 from "./SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout3
 import DocumentsStorageIcon from "../../../Imges/QblockIcon/DocumentsStorageIcon.jpg";
 import DocumentsRetrievalIcon from "../../../Imges/QblockIcon/DocumentsRetrievalIcon.jpg";
 
-const ExpertiseArray = {
-  heading: "Qblock",
-  para: "Tracks AI procedures on animals, records detailed breeding history and success rates, and generates AI performance reports based on date, breed, and village for effective monitoring and analysis.",
-  keyPoints: [
-    { name: "Maintains Breed-Specific Data", per: "95%" },
-    { name: "Monitors Breeding Success Rates", per: "99%" },
-    { name: "Generates AI Performance Reports", per: "95%" },
-    { name: "Tracks Farmer Participation", per: "95%" },
-    { name: "Organizes Data by Village", per: "92%" },
-  ],
-};
+const processSteps = [
+  {
+    id: 1,
+    title: "AI Management",
+    step: "STEP-01",
+    description:
+      "Track and manage Artificial Insemination (AI) procedures on livestock, monitor breeding success rates, and generate AI performance reports to enhance agricultural growth.",
+    image: process_img_1,
+    img: process_img_1,
+    checklist: [
+      "AI Procedure Tracking",
+      "Breeding History Recording",
+      "AI Performance Reports",
+    ],
+  },
+  {
+    id: 2,
+    title: "Farmer Management",
+    step: "STEP-02",
+    description:
+      "Maintain detailed profiles for farmers, track their participation in AI programs, and monitor services provided to each farmer to ensure better engagement and service delivery.",
+    image: process_img_2,
+    img: process_img_2,
+    checklist: [
+      "Farmer Profile Management",
+      "AI Program Participation Tracking",
+      "Service Monitoring",
+    ],
+  },
+  {
+    id: 3,
+    title: "Village-Wise Tracking",
+    step: "STEP-03",
+    description:
+      "Organize and analyze data by village, track AI program effectiveness in different regions, and measure farmer participation and engagement across villages.",
+    image: process_img_3,
+    img: process_img_3,
+    checklist: [
+      "Village Data Organization",
+      "AI Program Effectiveness Analysis",
+      "Farmer Engagement Monitoring",
+    ],
+  },
+  {
+    id: 4,
+    title: "Breeding Records Management",
+    step: "STEP-04",
+    description:
+      "Maintain detailed breeding records for various livestock species, monitor breeding success rates over time, and generate comprehensive reports to analyze breeding efficiency.",
+    image: process_img_4,
+    img: process_img_4,
+    checklist: [
+      "Breed-Specific Data Management",
+      "Breeding Success Rate Monitoring",
+      "Comprehensive Breeding Reports",
+    ],
+  },
+];
+const processStepsArray = [
+  "AI Management",
+  "Farmer Management",
+  "Village-Wise Tracking",
+  "Breeding Records Management",
+];
 const testimonials = [
   {
     text: "“Tracks AI procedures on animals, records detailed breeding history and success rates, and generates AI performance reports based on date, breed, and village for effective monitoring, analysis, and improvement.”",
@@ -103,7 +160,10 @@ const SAGPage = () => {
       />
       <SolAbout1 aboutData={aboutData1} />
       <KeyFeatures testimonials={testimonials} />
-      <OurExpertise ExpertiseArray={ExpertiseArray} />
+      <OurExpertise1
+        processSteps={processSteps}
+        processStepsArray={processStepsArray}
+      />
       <TalkToAbout3 TalkToAbout3Array={TalkToAbout3Array} />
     </div>
   );

@@ -6,8 +6,12 @@ import SolAbout2 from "./SolutionReuseCom/SolutionAbout/solAbout2";
 import about_12_1 from "../../../assets/img/normal/about_12_1.jpg";
 import about_12_3 from "../../../assets/img/normal/about_12_3.jpg";
 import about_12_2 from "../../../assets/img/normal/about_12_2.jpg";
-import OurExpertise from "./SolutionReuseCom/OurExpertises/OurExpertise";
+import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
+import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
+import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
+import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
 import AutoBackupIcon from "../../../Imges/QblockIcon/AutoBackupIcon.jpg";
+import OurExpertise1 from "./SolutionReuseCom/OurExpertises/OurExpertise1";
 import about_12_shape from "../../../assets/img/normal/about_12_shape.png";
 import AuditTrailsIcon from "../../../Imges/QblockIcon/AuditTrailsIcon.jpg";
 import about_12_1_shape from "../../../assets/img/normal/about_12_1_shape.png";
@@ -25,13 +29,13 @@ import "swiper/css/pagination";
 
 const testimonials = [
   {
-    text: "“Streamline dairy operations with automated milk disposal tracking, ensuring efficient supply chain management, accurate record-keeping, and minimal wastage.”",
+    text: "“Streamline dairy operations with automated milk disposal tracking, ensuring efficient supply chain management, accurate record-keeping, and minimal wastage, ultimately improving productivity and reducing losses in the dairy sector.”",
     img: DocumentsStorageIcon,
     name: "Automated Milk Disposal",
     designation: "",
   },
   {
-    text: "“Maintain detailed animal records, including pedigree, health history, and breeding information, to improve livestock management and optimize dairy productivity.”",
+    text: "“Maintain detailed animal records, including pedigree, health history, and breeding information, to enhance livestock management and productivity, ensuring efficient dairy farming and optimized resource allocation for better results.”",
     img: VersionControlIcon,
     name: "Animal Records Management",
     designation: "",
@@ -85,17 +89,70 @@ const testimonials = [
     designation: "",
   },
 ];
-const ExpertiseArray = {
-  heading: "IoT-Enabled Dairy & Agricultural Solutions",
-  para: "Leveraging IoT and data analytics to revolutionize dairy farming and agriculture, ensuring real-time livestock monitoring, efficient milk production, and smart farm management.",
-  keyPoints: [
-    { name: "Automated Dairy Management", per: "98%" },
-    { name: "Livestock Health & Breeding Tracking", per: "96%" },
-    { name: "GIS-Based Agricultural Monitoring", per: "97%" },
-    { name: "Digital Resource & Inventory Management", per: "95%" },
-    { name: "Predictive Crop & Livestock Analytics", per: "96%" },
-  ],
-};
+const processSteps = [
+  {
+    id: 1,
+    title: "Automated Milk Disposal",
+    step: "STEP-01",
+    description:
+      "Streamline dairy operations with automated milk disposal tracking, ensuring efficient supply chain management, accurate record-keeping, and minimal wastage.",
+    image: process_img_1,
+    img: process_img_1,
+    checklist: [
+      "Milk Disposal Tracking",
+      "Supply Chain Management",
+      "Waste Minimization",
+    ],
+  },
+  {
+    id: 2,
+    title: "Animal Records Management",
+    step: "STEP-02",
+    description:
+      "Maintain detailed animal records, including pedigree, health history, and breeding information, to improve livestock management and optimize dairy productivity.",
+    image: process_img_2,
+    img: process_img_2,
+    checklist: [
+      "Pedigree Tracking",
+      "Health History Management",
+      "Breeding Information Recording",
+    ],
+  },
+  {
+    id: 3,
+    title: "Stock & Inventory Management",
+    step: "STEP-03",
+    description:
+      "Track and manage fodder, calcium, minerals, medicines, and other inventory resources efficiently to ensure proper livestock nutrition and health.",
+    image: process_img_3,
+    img: process_img_3,
+    checklist: [
+      "Inventory Management",
+      "Livestock Nutrition Tracking",
+      "Resource Allocation",
+    ],
+  },
+  {
+    id: 4,
+    title: "Cattle Service Register",
+    step: "STEP-04",
+    description:
+      "Monitor cattle breeding cycles, heat dates, and service records while integrating with breeding centers for improved livestock reproduction and productivity.",
+    image: process_img_4,
+    img: process_img_4,
+    checklist: [
+      "Breeding Cycle Monitoring",
+      "Heat Date Tracking",
+      "Service Record Management",
+    ],
+  },
+];
+const processStepsArray = [
+  "Automated Milk Disposal",
+  "Animal Records Management",
+  "Stock & Inventory Management",
+  "Cattle Service Register",
+];
 const aboutData2 = {
   title: "Smart Dairy & Agricultural Management",
   subtitle: "Enhancing Dairy & Agriculture with IoT and Data Analytics",
@@ -158,7 +215,10 @@ const CropnetPage = () => {
       />
       <SolAbout2 aboutData={aboutData2} />
       <KeyFeatures testimonials={testimonials} />
-      <OurExpertise ExpertiseArray={ExpertiseArray} />
+      <OurExpertise1
+        processSteps={processSteps}
+        processStepsArray={processStepsArray}
+      />
       <TalkToAbout5 TalkToAbout5Array={TalkToAbout5Array} />
     </div>
   );

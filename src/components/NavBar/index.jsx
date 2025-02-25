@@ -376,7 +376,7 @@ const NavBar = () => {
                         </ul>
                       </li>
                       <li>
-                        <Link to="/">Carrer</Link>
+                        <Link to="/CarrerPage">Carrer</Link>
                       </li>
                     </ul>
                   </nav>

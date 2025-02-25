@@ -46,6 +46,7 @@ import JammuTourism from "./components/ServicesComponents/Accomplishments/JammuT
 import MOVCDNER from "./components/ServicesComponents/Accomplishments/MOVCDNER";
 import { useEffect } from "react";
 import EklavyaPage from "./components/SolutionComponents/ERPSolutions/EklavyaPage";
+import CarrerPage from "./Pages/CarrerPage";
 function App() {
   const location = useLocation();
 
@@ -180,6 +181,7 @@ function App() {
         {/*Services*/}
 
         <Route path="/contactUs" element={<ContactUs />} />
+        <Route path="/CarrerPage" element={<CarrerPage />} />
       </Routes>
       <Footer />
     </div>

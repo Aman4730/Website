@@ -5,7 +5,10 @@ import process_box_3_2 from "../../../assets/img/icon/process_box_3_2.svg";
 import process_box_3_3 from "../../../assets/img/icon/process_box_3_3.svg";
 const OurDevelopmentMethodology = () => {
   return (
-    <section className="process-area-3 overflow-hidden space-bottom">
+    <section
+      className="process-area-3 overflow-hidden space-bottom"
+      style={{ paddingTop: "50px" }}
+    >
       <div className="container th-container4">
         <div className="title-area text-xl-start text-center">
           <span className="sub-title">Stockie Operation Across the world</span>

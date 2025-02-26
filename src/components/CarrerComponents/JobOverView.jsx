@@ -178,9 +178,16 @@ const chipStyle = {
   },
 };
 
-const JobCards = () => {
+const JobCards = ({ showDetails, handleCardBack }) => {
   return (
     <div>
+      <div
+        className="th-btn"
+        style={{ cursor: "pointer", marginBottom: "10px" }}
+        onClick={showDetails ? handleCardBack : ""}
+      >
+        {showDetails ? "← Return to Overview" : "Explore opportunities →"}
+      </div>
       {jobData.map((job) => (
         <div
           key={job.id}

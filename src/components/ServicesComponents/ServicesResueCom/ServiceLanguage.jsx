@@ -15,7 +15,11 @@ import title_shape_2 from "../../../assets/img/theme-img/title_shape_2.svg";
 import process_line_2 from "../../../assets/img/bg/process_line_2.svg";
 const ServiceLanguage = () => {
   return (
-    <section className="space" id="process-sec">
+    <section
+      className="space"
+      id="process-sec"
+      style={{ background: "#ffffff" }}
+    >
       <div className="container">
         <div className="title-area text-center">
           <div className="shadow-title">PROCESS</div>

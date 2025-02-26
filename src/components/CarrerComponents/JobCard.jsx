@@ -63,12 +63,18 @@ const JobCard = ({ handleCardClick }) => {
     },
   ];
   return (
-    <Grid container spacing={2}>
+    <Grid
+      container
+      spacing={1}
+      sx={{
+        maxWidth: 1450,
+      }}
+    >
       {jobList.map((job, index) => (
         <Grid item xs={12} sm={6} md={4} lg={3} key={job.id}>
           <Card
             sx={{
-              maxWidth: 340,
+              maxWidth: 350,
               transition: "all 0.3s ease",
               transform:
                 hoveredIndex === index ? "translateY(-5px)" : "translateY(0)",
@@ -220,28 +226,8 @@ const JobCard = ({ handleCardClick }) => {
                   }}
                 />
               </Box>
-
               <Stack direction="row" spacing={1}>
-                <Button
-                  variant="contained"
-                  fullWidth
-                  sx={{
-                    borderRadius: 2,
-                    py: 1,
-                    fontWeight: 500,
-                    letterSpacing: "0.02em",
-                    textTransform: "none",
-                    boxShadow: hoveredIndex ? 4 : 1,
-                    bgcolor: hoveredIndex ? "#1565c0" : "#1976d2",
-                    transition: "all 0.2s ease",
-                    "&:hover": {
-                      bgcolor: "#1565c0",
-                      transform: "scale(1.02)",
-                    },
-                  }}
-                >
-                  Apply Now
-                </Button>
+                <spam className="th-btn">Apply Now</spam>
                 <Button
                   variant="outlined"
                   fullWidth
@@ -249,7 +235,6 @@ const JobCard = ({ handleCardClick }) => {
                     color: "text.secondary",
                     borderColor: "divider",
                     borderRadius: 2,
-                    py: 1,
                     fontWeight: 500,
                     letterSpacing: "0.02em",
                     textTransform: "none",

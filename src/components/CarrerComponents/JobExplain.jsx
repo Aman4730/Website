@@ -1,14 +1,15 @@
 import React from "react";
 import { Typography, Box, Grid, IconButton } from "@mui/material";
+import CarrerBackgound from "../../Imges/CarrerBackgound.png";
 
 const JobExplain = () => {
   return (
     <div className="job-explain">
       <img
-        src="https://fastly.picsum.photos/id/7/640/425.jpg?hmac=49zpx8N12DRGL2VBNW5vZ003FxNjTr-qXLwJH0BnDZc"
+        src={CarrerBackgound}
         className="job-bg"
         alt=""
-        style={{ width: "100%", height: "200px", objectFit: "cover" }}
+        style={{ width: "100%", height: "250px", objectFit: "cover" }}
       />
       <div className="job-logos">
         <svg
@@ -16,7 +17,6 @@ const JobExplain = () => {
           viewBox="0 0 32 32"
           style={{
             backgroundColor: "#f76754",
-            borderRadius: "50%",
             padding: 5,
           }}
         >

@@ -652,7 +652,8 @@ body {
 .job-explain {
   background-color: var(--header-bg-color);
   margin-left: 40px;
-  border-radius: 0 0 8px 8px;
+  border-radius: 8px 8px 8px 8px;
+  border: 1px solid lightgray;
 }
 
 .job-bg {

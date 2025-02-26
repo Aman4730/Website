@@ -11,6 +11,7 @@ const ServiceWhatWeDo = ({ services }) => {
       style={{
         display: "flex",
         justifyContent: "center",
+        background: "#ffffff",
       }}
     >
       <div

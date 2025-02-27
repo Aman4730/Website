@@ -47,6 +47,8 @@ import MOVCDNER from "./components/ServicesComponents/Accomplishments/MOVCDNER";
 import { useEffect } from "react";
 import EklavyaPage from "./components/SolutionComponents/ERPSolutions/EklavyaPage";
 import CarrerPage from "./Pages/CarrerPage";
+import GalleryPage from "./Pages/GalleryPage";
+import BlogPage from "./Pages/BlogPage";
 function App() {
   const location = useLocation();
 
@@ -182,6 +184,9 @@ function App() {
 
         <Route path="/contactUs" element={<ContactUs />} />
         <Route path="/CarrerPage" element={<CarrerPage />} />
+
+        <Route path="/Gallery" element={<GalleryPage />} />
+        <Route path="/Blog" element={<BlogPage />} />
       </Routes>
       <Footer />
     </div>

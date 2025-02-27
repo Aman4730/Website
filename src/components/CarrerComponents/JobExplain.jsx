@@ -2,7 +2,7 @@ import React from "react";
 import { Typography, Box, Grid, IconButton } from "@mui/material";
 import CarrerBackgound from "../../Imges/CarrerBackgound.png";
 
-const JobExplain = () => {
+const JobExplain = ({ handleFormOpen }) => {
   return (
     <div className="job-explain">
       <img
@@ -47,23 +47,9 @@ const JobExplain = () => {
                 <path d="M20.8 4.6a5.5 5.5 0 00-7.7 0l-1.1 1-1-1a5.5 5.5 0 00-7.8 7.8l1 1 7.8 7.8 7.8-7.7 1-1.1a5.5 5.5 0 000-7.8z" />
               </svg>
             </IconButton>
-            <IconButton>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="feather feather-share-2"
-              >
-                <circle cx={18} cy={5} r={3} />
-                <circle cx={6} cy={12} r={3} />
-                <circle cx={18} cy={19} r={3} />
-                <path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4" />
-              </svg>
-            </IconButton>
+            <div onClick={handleFormOpen}>
+              <spam className="th-btn">Apply Now</spam>
+            </div>
           </div>
         </div>
         <div className="job-subtitle-wrapper">

@@ -32,7 +32,7 @@ const NavBar = () => {
                 <div className="header-social">
                   <a href="path/to/download" download>
                     <i className="fas fa-download" />
-                    <span style={{ marginLeft: "8px" }}>Download</span>
+                    <span style={{ marginLeft: "8px" }}>Brochure</span>
                   </a>
                   <a
                     href="path/to/download"
@@ -69,11 +69,94 @@ const NavBar = () => {
                 <div className="col-auto">
                   <nav className="main-menu d-none d-lg-inline-block">
                     <ul>
-                      <li>
-                        <Link to="/">Home</Link>
+                      <li className="menu-item-has-children mega-menu-wrap">
+                        <a href="#">What we do</a>
+                        <ul className="mega-menu">
+                          <li>
+                            <a href="#">IT Services</a>
+                            <ul style={{ marginBottom: "20px" }}>
+                              <li>
+                                <Link to="/services/ApplicationDevelopment">
+                                  Application Development
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/services/POCDevelopment">
+                                  POC Development
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/services/ProductOrientedDelivery">
+                                  Product-Oriented Delivery
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/services/EnterpriseApplication">
+                                  Enterprise Application
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/services/ApplicationReengineering">
+                                  Application Re-engineering
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/services/CloudMigration">
+                                  Cloud Migration
+                                </Link>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">Infra Services</a>
+                            <ul>
+                              <li>
+                                <Link to="/services/IndusTowersLimited">
+                                  Indus Towers Limited
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/services/CentralCattleBreedingFarm">
+                                  Central Cattle Breeding Farm (CCBF) Renovation
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/services/OrganicHealthProductsInitiative">
+                                  Organic Health Products Initiative
+                                </Link>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">Accomplishments</a>
+                            <ul>
+                              <li>
+                                <Link to="/services/MOVCDNER">MOVCDNER</Link>
+                              </li>
+                              <li>
+                                <Link to="/services/JammuSmartCityProject">
+                                  Jammu Smart City Project
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/services/AcmeSolarCMSSystem">
+                                  Acme Solar CMS System
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/services/JammuTourism">
+                                  Jammu Tourism
+                                </Link>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
                       </li>
                       <li>
-                        <Link to="/aboutus">About Us</Link>
+                        <Link to="/aboutus">How we do it</Link>
+                      </li>
+                      <li>
+                        <Link to="/aboutus">Why Us</Link>
                       </li>
                       <li className="menu-item-has-children mega-menu-wrap">
                         <a href="#">Solution</a>
@@ -232,146 +315,14 @@ const NavBar = () => {
                           </li>
                         </ul>
                       </li>
-                      <li className="menu-item-has-children mega-menu-wrap">
-                        <a href="#">Services</a>
-                        <ul className="mega-menu">
-                          <li>
-                            <a href="#">IT Services</a>
-                            <ul style={{ marginBottom: "20px" }}>
-                              <li>
-                                <Link to="/services/ApplicationDevelopment">
-                                  Application Development
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/services/POCDevelopment">
-                                  POC Development
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/services/ProductOrientedDelivery">
-                                  Product-Oriented Delivery
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/services/EnterpriseApplication">
-                                  Enterprise Application
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/services/ApplicationReengineering">
-                                  Application Re-engineering
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/services/CloudMigration">
-                                  Cloud Migration
-                                </Link>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a href="#">Infra Services</a>
-                            <ul>
-                              <li>
-                                <Link to="/services/IndusTowersLimited">
-                                  Indus Towers Limited
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/services/CentralCattleBreedingFarm">
-                                  Central Cattle Breeding Farm (CCBF) Renovation
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/services/OrganicHealthProductsInitiative">
-                                  Organic Health Products Initiative
-                                </Link>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a href="#">Accomplishments</a>
-                            <ul>
-                              <li>
-                                <Link to="/services/MOVCDNER">MOVCDNER</Link>
-                              </li>
-                              <li>
-                                <Link to="/services/JammuSmartCityProject">
-                                  Jammu Smart City Project
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/services/AcmeSolarCMSSystem">
-                                  Acme Solar CMS System
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/services/JammuTourism">
-                                  Jammu Tourism
-                                </Link>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="menu-item-has-children">
-                        <a href="#">Pages</a>
-                        <ul className="sub-menu">
-                          <li className="menu-item-has-children">
-                            <a href="#">Shop</a>
-                            <ul className="sub-menu">
-                              <li>
-                                <a href="shop.html">Shop</a>
-                              </li>
-                              <li>
-                                <a href="shop-details.html">Shop Details</a>
-                              </li>
-                              <li>
-                                <a href="cart.html">Cart Page</a>
-                              </li>
-                              <li>
-                                <a href="checkout.html">Checkout</a>
-                              </li>
-                              <li>
-                                <a href="wishlist.html">Wishlist</a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a href="team.html">Team</a>
-                          </li>
-                          <li>
-                            <a href="team-details.html">Team Details</a>
-                          </li>
-                          <li>
-                            <a href="project.html">Project</a>
-                          </li>
-                          <li>
-                            <a href="project-details.html">Project Details</a>
-                          </li>
-                          <li>
-                            <a href="gallery.html">Gallery</a>
-                          </li>
-                          <li>
-                            <a href="pricing.html">Pricing</a>
-                          </li>
-                          <li>
-                            <a href="faq.html">Faq Page</a>
-                          </li>
-                          <li>
-                            <a href="error.html">Error Page</a>
-                          </li>
-                        </ul>
-                      </li>
                       <li className="menu-item-has-children">
                         <a href="#">Blog</a>
                         <ul className="sub-menu">
                           <li>
-                            <a href="blog.html">Blog</a>
+                            <Link to="/Blog">Blog</Link>
                           </li>
                           <li>
-                            <a href="blog-details.html">Blog Details</a>
+                            <Link to="/Gallery">Gallery</Link>
                           </li>
                         </ul>
                       </li>

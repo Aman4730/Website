@@ -8,9 +8,11 @@ import JobExplain from "../components/CarrerComponents/JobExplain";
 import { Grid } from "@mui/material";
 import { motion } from "framer-motion";
 import CarrerAbout from "../components/CarrerComponents/CarrerAbout";
+import CarrerForm from "../components/CarrerComponents/CarrerForm";
 export default function CarrerPage() {
   const [showDetails, setShowDetails] = useState(false);
   const [selectedJob, setSelectedJob] = useState(null);
+  const [open, setOpen] = useState(false);
   const handleCardClick = (job) => {
     setSelectedJob(job);
     setShowDetails(true);
@@ -19,8 +21,15 @@ export default function CarrerPage() {
     setShowDetails(false);
     setSelectedJob(null);
   };
+  const handleFormOpen = () => {
+    setOpen(true);
+  };
+  const handleFormClose = () => {
+    setOpen(false);
+  };
   return (
     <div style={{ background: "#ffffff" }}>
+      <CarrerForm open={open} onClose={handleFormClose} />
       <MainHeading
         title="Carrer"
         subtitle="Carrer"
@@ -34,14 +43,16 @@ export default function CarrerPage() {
             <div className="searched-jobs">
               <Grid container>
                 {!showDetails ? (
-                  <Grid item xs={12} display="flex" justifyContent="center">
-                    <motion.div
-                      initial={{ x: "100%", opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      transition={{ type: "tween", duration: 0.6 }}
-                    >
-                      <JobCard handleCardClick={handleCardClick} />
-                    </motion.div>
+                  <Grid item xs={12}>
+                    <Grid item xs={12} display="flex" justifyContent="center">
+                      <motion.div
+                        initial={{ x: "100%", opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ type: "tween", duration: 0.6 }}
+                      >
+                        <JobCard handleCardClick={handleCardClick} />
+                      </motion.div>
+                    </Grid>
                   </Grid>
                 ) : (
                   <React.Fragment>
@@ -63,7 +74,7 @@ export default function CarrerPage() {
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ type: "tween", duration: 0.8 }}
                       >
-                        <JobExplain />
+                        <JobExplain handleFormOpen={handleFormOpen} />
                       </motion.div>
                     </Grid>
                   </React.Fragment>

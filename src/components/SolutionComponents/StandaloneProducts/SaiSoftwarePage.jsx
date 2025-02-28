@@ -137,7 +137,7 @@ const TalkToAbout1Array = [
 const aboutData4 = [
   {
     id: 1,
-    title: "Sai-Software",
+    title: "College Fee Management",
     secTitle: "Software College Fee Management System",
     description:
       "Sai-Software brings a revolutionary solution to enhance college operations with a focus on streamlining fee management, improving communication, and simplifying the administrative tasks for all stakeholders.",
@@ -153,8 +153,8 @@ const SaiSoftwarePage = () => {
   return (
     <div className="theme-blue3">
       <MainHeading
-        title="SAI SOFTWARE"
-        subtitle="Sai-Software"
+        title="College Fee Management"
+        subtitle="College Fee Management"
         breadcrumbs={[{ label: "Home", link: "/" }, { label: "Solution" }]}
         marginBottom="70px"
       />

@@ -113,8 +113,11 @@ const Footer = () => {
                       <i className="fas fa-envelope"></i>
                     </div>
                     <div className="media-body">
-                      <p href="mailto:info@webteck.com" className="about-text">
-                        info@webteck.com
+                      <p
+                        href="mailto:info@logimetrix.com"
+                        className="about-text"
+                      >
+                        info@logimetrix.com
                       </p>
                     </div>
                   </div>

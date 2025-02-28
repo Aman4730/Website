@@ -49,6 +49,7 @@ import EklavyaPage from "./components/SolutionComponents/ERPSolutions/EklavyaPag
 import CarrerPage from "./Pages/CarrerPage";
 import GalleryPage from "./Pages/GalleryPage";
 import BlogPage from "./Pages/BlogPage";
+import LoginPage from "./components/LoginPage";
 function App() {
   const location = useLocation();
 
@@ -187,6 +188,7 @@ function App() {
 
         <Route path="/Gallery" element={<GalleryPage />} />
         <Route path="/Blog" element={<BlogPage />} />
+        <Route path="/adminlogin" element={<LoginPage />} />
       </Routes>
       <Footer />
     </div>

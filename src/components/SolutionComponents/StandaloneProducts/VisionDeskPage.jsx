@@ -179,7 +179,7 @@ const VisionDeskPage = () => {
       experienceCount: 689,
       experienceText: "Happily active client’s",
       shadowTitle: "Vision Desk",
-      subTitle: "Vision Desk",
+      subTitle: "Vision Desk (MIS Portal)",
       secTitle: "Comprehensive MIS Portal for Agricultural Data Management",
       description:
         "VisionDesk is a Management Information System (MIS) Portal designed to streamline agricultural data management by integrating with Krishi Mapper. It provides real-time access to farmers' data and crop details for better decision-making.",
@@ -195,7 +195,7 @@ const VisionDeskPage = () => {
     <div>
       <MainHeading
         title="VISION DESK"
-        subtitle="VISION DESK"
+        subtitle="VISION DESK (MIS Portal)"
         breadcrumbs={[{ label: "Home", link: "/" }, { label: "Solution" }]}
       />
       <SolAbout3 aboutData={aboutData3} />

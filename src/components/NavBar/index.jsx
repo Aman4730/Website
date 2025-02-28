@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import logimetrixlogo1 from "../../Imges/logimetrixlogo1.png";
 import { Link } from "react-router-dom";
+import MobileMenu from "./MobileMenu";
+import MenuIcon from "@mui/icons-material/Menu";
+import { IconButton, AppBar, Toolbar } from "@mui/material";
+import DashboardIcon from "@mui/icons-material/Dashboard";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import BarChartIcon from "@mui/icons-material/BarChart";
+import DescriptionIcon from "@mui/icons-material/Description";
+import LayersIcon from "@mui/icons-material/Layers";
+
 const NavBar = () => {
+  const [open, setOpen] = useState(false);
+  const [submenuOpen, setSubmenuOpen] = useState({});
+
+  const toggleDrawer = () => setOpen(!open);
+  const handleSubmenuToggle = (index) =>
+    setSubmenuOpen((prev) => ({ ...prev, [index]: !prev[index] }));
   return (
     <>
       <header className="th-header header-layout2">
+        <MobileMenu
+          open={open}
+          toggleDrawer={toggleDrawer}
+          submenuOpen={submenuOpen}
+          handleSubmenuToggle={handleSubmenuToggle}
+        />
         <div className="header-top">
           <div className="container">
             <div className="row justify-content-center justify-content-lg-between align-items-center gy-2">
@@ -13,11 +34,11 @@ const NavBar = () => {
                   <ul>
                     <li>
                       <i className="fas fa-map-location" />
-                      54 NJ-12, Flemington, United States
+                      3/23, Vikas khand, Gomti Nagar ,Lucknow
                     </li>
                     <li>
                       <i className="fas fa-phone" />
-                      <a href="tel:+1539873657">+153-987-3657</a>
+                      <a href="tel:+1539873657">+993-554-0006</a>
                     </li>
                     <li>
                       <i className="fas fa-envelope" />
@@ -33,14 +54,6 @@ const NavBar = () => {
                   <a href="path/to/download" download>
                     <i className="fas fa-download" />
                     <span style={{ marginLeft: "8px" }}>Brochure</span>
-                  </a>
-                  <a
-                    href="path/to/download"
-                    download
-                    style={{ marginLeft: "16px" }}
-                  >
-                    <i className="fas fa-download" />
-                    <span style={{ marginLeft: "8px" }}>Download</span>
                   </a>
                 </div>
               </div>
@@ -160,27 +173,10 @@ const NavBar = () => {
                       </li>
                       <li className="menu-item-has-children mega-menu-wrap">
                         <a href="#">Solution</a>
-                        <ul
-                          className="mega-menu"
-                          style={{
-                            backgroundColor: "white",
-                            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-                            padding: "20px",
-                            zIndex: 1000,
-                            maxHeight: "540px",
-                            overflowY: "hidden",
-                            transition: "all 0.3s ease-in-out",
-                          }}
-                          onMouseEnter={(e) => {
-                            e.target.style.overflowY = "auto";
-                          }}
-                          onMouseLeave={(e) => {
-                            e.target.style.overflowY = "hidden";
-                          }}
-                        >
+                        <ul className="mega-menu">
                           <li>
                             <a href="#">Standalone Products</a>
-                            <ul style={{ marginBottom: "20px" }}>
+                            <ul style={{ marginBottom: "10px" }}>
                               <li>
                                 <Link to="/solutions/qblock">Qblock</Link>
                               </li>
@@ -335,6 +331,7 @@ const NavBar = () => {
                     <button
                       type="button"
                       className="th-menu-toggle d-inline-block d-lg-none"
+                      onClick={toggleDrawer}
                     >
                       <i className="far fa-bars" />
                     </button>

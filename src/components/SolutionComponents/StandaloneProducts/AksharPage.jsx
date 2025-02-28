@@ -156,7 +156,7 @@ const aboutData5 = [
     title: "Akshar – Education Loans Made Easy Loans for ",
     highlight: "Students",
     description:
-      "Logimetrix proudly presents Akshar, a cutting-edge financial aid platform designed to simplify the process of securing education loans for students. With seamless integration between students, schools, and lenders, Akshar ensures a transparent, efficient, and user-friendly solution for managing education loans.",
+      "Logimetrix proudly presents Student Finance Management, a cutting-edge financial aid platform designed to simplify the process of securing education loans for students. With seamless integration between students, schools, and lenders, Student Finance Management ensures a transparent, efficient, and user-friendly solution for managing education loans.",
     checklist: [
       [
         { icon: feature_2_1, text: "Loan Application" },
@@ -170,15 +170,15 @@ const aboutData5 = [
     btnText: "Download Akshar App",
     btnLink: "download.html",
     featureImg: feature_8_1,
-    featureText: "AKSHAR",
+    featureText: "Akshar",
   },
 ];
 const AksharPage = () => {
   return (
     <div>
       <MainHeading
-        title="AKSHAR"
-        subtitle="AKSHAR"
+        title="Student Finance Management"
+        subtitle="Student Finance Management"
         breadcrumbs={[{ label: "Home", link: "/" }, { label: "Solution" }]}
       />
       <SolAbout5 aboutData={aboutData5} />

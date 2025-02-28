@@ -7,7 +7,10 @@ import { Link } from "react-router-dom";
 
 const ServiceAboutUs = ({ aboutFeatures }) => {
   return (
-    <div className="bg-smoke3 th-radius2 m-4 mt-0 mb-0 space" id="about-sec">
+    <div
+      className="bg-smoke3 th-radius2 m-4 mt-0 mb-0 space-top"
+      id="about-sec"
+    >
       <div className="container th-container4">
         <div className="row">
           <div className="col-xl-6 mb-30 mb-xl-0">

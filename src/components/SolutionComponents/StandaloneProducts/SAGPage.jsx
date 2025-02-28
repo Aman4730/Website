@@ -135,12 +135,12 @@ const TalkToAbout3Array = [
   },
 ];
 const aboutData1 = {
-  title: "SAG",
+  title: "Livestock",
   subtitle: "We Deliver Consumer-centric Tech Solutions.",
   description:
-    "We are proud to have successfully developed and deployed the SAG (System for Agricultural Growth), an AI-powered livestock management system designed to revolutionize Artificial Insemination (AI) tracking, farmer management, and breeding records. This platform enables accurate data collection, real-time monitoring, and strategic decision-making to enhance agricultural productivity.",
+    "We are proud to have successfully developed and deployed the Livestock Management, an AI-powered livestock management system designed to revolutionize Artificial Insemination (AI) tracking, farmer management, and breeding records. This platform enables accurate data collection, real-time monitoring, and strategic decision-making to enhance agricultural productivity.",
   features: [
-    "SAG – AI-powered system for livestock management and breeding records.",
+    "Livestock Management – AI-powered system for livestock management and breeding records.",
     "Tracks Artificial Insemination, farmer data, and breeding success.",
     "Enhances agricultural productivity with real-time data and AI insights.",
   ],
@@ -154,8 +154,8 @@ const SAGPage = () => {
   return (
     <div>
       <MainHeading
-        title="SAG"
-        subtitle="SAG"
+        title="Livestock Management"
+        subtitle="Livestock Management"
         breadcrumbs={[{ label: "Home", link: "/" }, { label: "Solution" }]}
       />
       <SolAbout1 aboutData={aboutData1} />

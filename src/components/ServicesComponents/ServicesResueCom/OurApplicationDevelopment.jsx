@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import title_shape_2 from "../../../assets/img/theme-img/title_shape_2.svg";
 
 const OurApplicationDevelopment = ({ applicationservices }) => {
+  const [expandedCard, setExpandedCard] = useState(null);
+
   return (
     <section className="service-area6 space" id="service-sec">
       <div className="container th-container4">
@@ -22,10 +24,11 @@ const OurApplicationDevelopment = ({ applicationservices }) => {
         </div>
         <div className="slider-area">
           <Swiper
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay]}
             spaceBetween={30}
             slidesPerView={1}
             loop={true}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
             navigation={{
               nextEl: ".slider-next",
               prevEl: ".slider-prev",
@@ -39,25 +42,63 @@ const OurApplicationDevelopment = ({ applicationservices }) => {
           >
             {applicationservices.map((service) => (
               <SwiperSlide key={service.id}>
-                <div className="service-item th-ani">
+                <div
+                  className="service-item th-ani"
+                  style={{
+                    height: expandedCard === service.id ? "auto" : "390px",
+                    overflow: "hidden",
+                    transition: "height 0.3s ease",
+                  }}
+                  onMouseLeave={() => setExpandedCard(null)}
+                >
                   <div className="service-item_icon">
                     <img src={service.icon} alt="Icon" />
                   </div>
                   <div className="service-item_content">
-                    <h3 className="box-title">
+                    <h3
+                      className="box-title"
+                      style={{
+                        whiteSpace: "nowrap",
+                        overflow: "hidden",
+                        textOverflow: "ellipsis",
+                      }}
+                    >
                       <a href="service-details.html">{service.title}</a>
                     </h3>
-                    <p className="service-item_text">{service.description}</p>
-                    <a href="service-details.html" className="line-btn">
-                      Read Details
-                    </a>
+                    <p
+                      className="service-item_text"
+                      style={{
+                        display:
+                          expandedCard === service.id ? "block" : "-webkit-box",
+                        WebkitBoxOrient: "vertical",
+                        WebkitLineClamp: 5,
+                        overflow: "hidden",
+                        textOverflow: "ellipsis",
+                      }}
+                    >
+                      {service.description}
+                    </p>
+                    {expandedCard === service.id ? (
+                      <button
+                        className="line-btn see-less"
+                        onClick={() => setExpandedCard(null)}
+                      >
+                        See Less
+                      </button>
+                    ) : (
+                      <button
+                        className="line-btn see-more"
+                        onClick={() => setExpandedCard(service.id)}
+                      >
+                        See More
+                      </button>
+                    )}
                   </div>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
 
-          {/* ✅ Navigation Buttons (Properly Linked) */}
           <button className="slider-arrow slider-prev">
             <i className="far fa-arrow-left" />
           </button>
@@ -66,6 +107,23 @@ const OurApplicationDevelopment = ({ applicationservices }) => {
           </button>
         </div>
       </div>
+      <style jsx>{`
+        .see-more,
+        .see-less {
+          background: #4786e6;
+          color: #fff;
+          padding: 8px 16px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: background 0.3s ease;
+          color: "#ffffff";
+        }
+        .see-more:hover,
+        .see-less:hover {
+          background: #4786e6;
+        }
+      `}</style>
     </section>
   );
 };

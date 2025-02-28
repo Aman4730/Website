@@ -149,7 +149,7 @@ const AboutUsPage = () => {
         <div className="container">
           <div className="breadcumb-content text-center">
             <div className="title-area mb-35">
-              <div className="shadow-title">ABOUT US</div>
+              <div className="shadow-title">Why US</div>
               <span className="sub-title" style={{ color: "white" }}>
                 <div className="icon-masking me-2">
                   <img src={title_shape_2_white} alt="shape" />
@@ -161,7 +161,7 @@ const AboutUsPage = () => {
               <li>
                 <Link to="/">Home</Link>
               </li>
-              <li>About Us</li>
+              <li>Why Us</li>
             </ul>
           </div>
         </div>
@@ -188,7 +188,7 @@ const AboutUsPage = () => {
             <div className="col-xl-6">
               <div className="ps-xxl-4 ms-xl-3">
                 <div class="title-area mb-35 text-center text-xl-start">
-                  <div class="shadow-title">ABOUT US</div>
+                  <div class="shadow-title">Why US</div>
                   <span class="sub-title">
                     <div class="icon-masking me-2">
                       <img

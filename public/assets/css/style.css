@@ -1471,10 +1471,19 @@ textarea.is-invalid {
   width: 100% !important;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  -webkit-transition: opacity 1s, -webkit-transform 1s;
-  transition: opacity 1s, -webkit-transform 1s;
-  transition: transform 1s, opacity 1s;
-  transition: transform 1s, opacity 1s, -webkit-transform 1s;
+  -webkit-transition:
+    opacity 1s,
+    -webkit-transform 1s;
+  transition:
+    opacity 1s,
+    -webkit-transform 1s;
+  transition:
+    transform 1s,
+    opacity 1s;
+  transition:
+    transform 1s,
+    opacity 1s,
+    -webkit-transform 1s;
 }
 .slick-3d-active .slick-3d-next,
 .slick-3d-active .slick-3d-prev,
@@ -12654,7 +12663,9 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
   -webkit-transition: -webkit-transform ease 0.4s;
   transition: -webkit-transform ease 0.4s;
   transition: transform ease 0.4s;
-  transition: transform ease 0.4s, -webkit-transform ease 0.4s;
+  transition:
+    transform ease 0.4s,
+    -webkit-transform ease 0.4s;
 }
 @media (max-width: 1199px) {
   .popup-search-box form {
@@ -23599,13 +23610,17 @@ span.select2-selection.select2-selection--single:focus {
   transform: translate(-50%, -50%);
   pointer-events: none;
   z-index: 999999;
-  -webkit-transition: 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity,
+  -webkit-transition:
+    0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity,
     0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
-  transition: 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity,
+  transition:
+    0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity,
     0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
-  transition: 0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+  transition:
+    0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
     0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
-  transition: 0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+  transition:
+    0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
     0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity,
     0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
 }
@@ -27070,7 +27085,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 .service-btn {
   min-width: 100%;
-  min-height: 350px;
+  min-height: 308px;
   background-color: var(--theme-color);
   border-radius: 30px;
   display: -webkit-box;
@@ -31550,7 +31565,6 @@ span.select2-selection.select2-selection--single:focus {
   transform: rotateY(180deg);
 }
 .process-area6 {
-  background-color: #16181d;
   -webkit-mask-repeat: repeat-x;
   mask-repeat: repeat-x;
   -webkit-mask-size: cover;

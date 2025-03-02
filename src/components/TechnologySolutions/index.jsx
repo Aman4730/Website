@@ -36,7 +36,7 @@ const TechnologySolutions = () => {
                   <img src="assets/img/icon/service_4_1.svg" alt="Icon" />
                 </div>
                 <h3 className="box-title">
-                  <a href="service-details.html">LAMP (PHP/MySQL) Solutions</a>
+                  <a href="service-details.html">LAMP (PHP/MySQL)</a>
                 </h3>
                 <p className="service-box3_text">
                   Robust web applications using the LAMP stack for dynamic sites
@@ -73,7 +73,7 @@ const TechnologySolutions = () => {
                 </div>
                 <h3 className="box-title">
                   <a href="service-details.html">
-                    MERN/MEAN <br /> Solutions
+                    MERN/MEAN <br />
                   </a>
                 </h3>
                 <p className="service-box3_text">
@@ -94,10 +94,7 @@ const TechnologySolutions = () => {
                   <img src="assets/img/icon/service_4_3.svg" alt="Icon" />
                 </div>
                 <h3 className="box-title">
-                  <a href="service-details.html">
-                    Android <br />
-                    Solutions
-                  </a>
+                  <a href="service-details.html">Android</a>
                 </h3>
                 <p className="service-box3_text">
                   Custom Android app development for engaging, high-performance
@@ -117,9 +114,7 @@ const TechnologySolutions = () => {
                   <img src="assets/img/icon/service_4_4.svg" alt="Icon" />
                 </div>
                 <h3 className="box-title">
-                  <a href="service-details.html">
-                    Mobile / Smartphone Solutions
-                  </a>
+                  <a href="service-details.html">Mobile / Smartphone</a>
                 </h3>
                 <p className="service-box3_text">
                   Native and cross-platform mobile apps for iOS and Android,
@@ -139,9 +134,7 @@ const TechnologySolutions = () => {
                   <img src="assets/img/icon/service_4_5.svg" alt="Icon" />
                 </div>
                 <h3 className="box-title">
-                  <a href="service-details.html">
-                    Ruby on Rails (RoR) Solutions
-                  </a>
+                  <a href="service-details.html">Ruby on Rails (RoR)</a>
                 </h3>
                 <p className="service-box3_text">
                   Efficient web applications built with RoR for quick
@@ -154,7 +147,7 @@ const TechnologySolutions = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6 col-xl-3">
+          <div className="col-md-7 col-xl-3">
             <div className="service-btn-area">
               <Link
                 to="/services/ApplicationDevelopment"

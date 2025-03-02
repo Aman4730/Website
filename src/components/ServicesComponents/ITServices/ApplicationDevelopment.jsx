@@ -14,6 +14,15 @@ import service_featured_3 from "../../../assets/img/icon/service_featured_3.svg"
 import service_featured_4 from "../../../assets/img/icon/service_featured_4.svg";
 import OurApplicationDevelopment from "../ServicesResueCom/OurApplicationDevelopment";
 import OurDevelopmentMethodology from "../ServicesResueCom/OurDevelopmentMethodology";
+import node from "../../../Imges/language/node.png";
+import react from "../../../Imges/language/react.png";
+import Angular from "../../../Imges/language/Angular.png";
+import android1 from "../../../Imges/language/android1.png";
+import php3 from "../../../Imges/language/php3.png";
+import Flutter from "../../../Imges/language/Flutter.png";
+import Python from "../../../Imges/language/Python.png";
+import java from "../../../Imges/language/java.png";
+
 const ApplicationDevelopment = () => {
   const aboutFeatures = {
     title: "About our company",
@@ -105,6 +114,48 @@ const ApplicationDevelopment = () => {
         "Using cloud, intelligent automation and AI development services, we’ll help you create digital ecosystems that are operationally resilient so you can quickly adapt your business models and processes to fit the market and, thus, grow your business. Through rigorous business analysis, our development team will design a tailored, cost-effective technology solution that supports your business needs and continuity plan.",
     },
   ];
+  const languages = [
+    {
+      name: "Node.js",
+      img: node,
+      desc: "Fast, scalable, event-driven, non-blocking, real-time, API, JavaScript, backend, lightweight, efficient.",
+    },
+    {
+      name: "React.js",
+      img: react,
+      desc: "Component-based, declarative, UI-library, virtual-DOM, JSX, reusable, hooks, frontend, SPA, interactive.",
+    },
+    {
+      name: "Angular",
+      img: Angular,
+      desc: "TypeScript, MVC, two-way-binding, powerful, scalable, CLI, modular, enterprise, responsive.",
+    },
+    {
+      name: "Android",
+      img: android1,
+      desc: "Mobile, Java, Kotlin, Play-Store, native, performance, UI, app-development, responsive, secure.",
+    },
+    {
+      name: "PHP",
+      img: php3,
+      desc: "Server-side, dynamic, scripting, MySQL, WordPress, Laravel, secure, flexible, backend, open-source.",
+    },
+    {
+      name: "Flutter",
+      img: Flutter,
+      desc: "Cross-platform, UI-kit, Dart, widgets, fast, native-like, mobile, web, performance, beautiful.",
+    },
+    {
+      name: "Python",
+      img: Python,
+      desc: "Versatile, AI, data-science, Django, Flask, scripting, automation, machine-learning, backend, readable.",
+    },
+    {
+      name: "Java",
+      img: java,
+      desc: "OOP, secure, cross-platform, JVM, backend, Android, enterprise, Spring, scalable, robust.",
+    },
+  ];
   return (
     <div>
       <MainHeading
@@ -116,7 +167,7 @@ const ApplicationDevelopment = () => {
       <ServiceWhatWeDo services={services} />
       <Ourworkthatinspired />
       <OurApplicationDevelopment applicationservices={applicationservices} />
-      <ServiceLanguage />
+      <ServiceLanguage languages={languages} />
       <OurDevelopmentMethodology />
     </div>
   );

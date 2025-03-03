@@ -1,6 +1,7 @@
 import React from "react";
 import about_3_1 from "../../../../../assets/img/normal/about_3_1.png";
-import faq_1_1 from "../../../../../assets/img/normal/faq_1_1.png";
+import faq_1_1 from "../../../../../assets/img/normal/about4_1.png";
+// import faq_1_1 from "../../../../../assets/img/normal/faq_1_1.png";
 import title_shape_2 from "../../../../../assets/img/theme-img/title_shape_2.svg";
 const TalkToAbout2 = ({ TalkToAbout2Array }) => {
   return (
@@ -65,7 +66,7 @@ const TalkToAbout2 = ({ TalkToAbout2Array }) => {
                 <span className="mask-icon" />
                 <img src={about_3_1} alt="img" />
               </div>
-              <img src={faq_1_1} alt="Faq" />
+              <img src={about_3_1} alt="Faq" />
             </div>
           </div>
         </div>

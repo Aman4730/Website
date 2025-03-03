@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SolAbout = ({ aboutData }) => {
   return (
@@ -49,14 +50,10 @@ const SolAbout = ({ aboutData }) => {
                 ))}
               </ul>
             </div>
-            <a
-              href="https://youtu.be/ix_OpmpsRBY"
-              target="_blank"
-              className="th-btn"
-            >
-              DISCOVER MORE
+            <Link to={"/contactUs"} className="th-btn">
+              Explore More
               <i className="fa-regular fa-arrow-right ms-2" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

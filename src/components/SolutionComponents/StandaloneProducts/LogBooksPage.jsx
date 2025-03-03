@@ -1,10 +1,12 @@
 import React from "react";
 import MainHeading from "../../MainHeading";
 import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
+
 import about_11_1 from "../../../assets/img/normal/about_11_1.jpg";
 import about_11_2 from "../../../assets/img/normal/about_11_2.jpg";
-import SolAbout1 from "./SolutionReuseCom/SolutionAbout/SolAbout1";
 import about_11_3 from "../../../assets/img/normal/about_11_3.jpg";
+
+import SolAbout1 from "./SolutionReuseCom/SolutionAbout/SolAbout1";
 import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
 import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
 import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
@@ -19,6 +21,11 @@ import DocumentsStorageIcon from "../../../Imges/QblockIcon/DocumentsStorageIcon
 import DocumentsRetrievalIcon from "../../../Imges/QblockIcon/DocumentsRetrievalIcon.jpg";
 import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomationIcon.jpg";
 import CollaborationToolsIcon from "../../../Imges/QblockIcon/CollaborationToolsIcon.jpg";
+
+import log1 from "../../../assets/img/normal/log1.png";
+import log2 from "../../../assets/img/normal/log2.png";
+import log3 from "../../../assets/img/normal/log3.png";
+
 const processSteps = [
   {
     id: 1,
@@ -137,7 +144,8 @@ const aboutData1 = {
     "Monitor passenger drop-offs per trip for better transport planning.",
     "Track fuel consumption and purchases for efficient fleet management.",
   ],
-  images: [about_11_1, about_11_2, about_11_3],
+  images: [log1, log2, log3],
+  // images: [about_11_1, about_11_2, about_11_3],
   titleShape: title_shape_2,
   experienceYears: 12,
   experienceText: "Years of experience in startup building",

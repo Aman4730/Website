@@ -1,6 +1,9 @@
 import React from "react";
-import faq_7_1 from "../../../../../assets/img/normal/faq_7_1.jpg";
-import faq_7_2 from "../../../../../assets/img/normal/faq_7_2.jpg";
+// import faq_7_1 from "../../../../../assets/img/normal/faq_7_1.jpg";
+import faq_7_1 from "../../../../../assets/img/normal/logbookBg.png";
+import faq_7_2 from "../../../../../assets/img/normal/logbook.png";
+// import faq_7_2 from "../../../../../assets/img/normal/faq_7_2.jpg";
+
 const TalkToAbout = ({ TalkToAboutAnyQuestion }) => {
   return (
     <section>

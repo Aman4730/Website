@@ -25,7 +25,7 @@ import java from "../../../Imges/language/java.png";
 
 const ApplicationDevelopment = () => {
   const aboutFeatures = {
-    title: "About our company",
+    title: "Application Development",
     heading: "What you can get with custom application development",
     aboutus:
       "With decades of experience in software development across various industries, we provide specialized technology expertise. Our solutions integrate seamlessly with existing systems, ensuring long-term efficiency. Harnessing the power of Telecommunication & Computer Networking, Banking Software, AgriTech, EduTech, Smart Cities Solutions, AI, data analytics, machine learning, cybersecurity, and cloud consulting, we deliver future-proof solutions tailored to your needs.",

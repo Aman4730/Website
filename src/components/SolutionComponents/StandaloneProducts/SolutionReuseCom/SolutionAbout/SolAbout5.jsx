@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SolAbout5 = ({ aboutData }) => {
   return (
@@ -13,7 +14,7 @@ const SolAbout5 = ({ aboutData }) => {
               <div>
                 <div className="title-area mb-40">
                   <h2 className="sec-title sec-title2">
-                    {item.title} <span>{item.highlight}</span> 
+                    {item.title} <span>{item.highlight}</span>
                   </h2>
                   <p>{item.description}</p>
                 </div>
@@ -31,12 +32,12 @@ const SolAbout5 = ({ aboutData }) => {
                   ))}
                 </div>
                 <div className="btn-wrap">
-                  <a
-                    href={item.btnLink}
+                  <Link
+                    to={"/contactUs"}
                     className="th-btn style-radius text-capitalize"
                   >
-                    {item.btnText}
-                  </a>
+                    Explore More
+                  </Link>
                 </div>
               </div>
             </div>

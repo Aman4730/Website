@@ -4,6 +4,7 @@ import about_11_2 from "../../../../../assets/img/normal/about_11_2.jpg";
 import about_11_3 from "../../../../../assets/img/normal/about_11_3.jpg";
 import title_shape_2 from "../../../../../assets/img/theme-img/title_shape_2.svg";
 import CountUp from "react-countup";
+import { Link } from "react-router-dom";
 
 const SolAbout1 = ({ aboutData }) => {
   return (
@@ -41,13 +42,13 @@ const SolAbout1 = ({ aboutData }) => {
                 </ul>
               </div>
               <div className="about-btn mt-35">
-                <a
-                  href={aboutData.videoLink}
+                <Link
+                  to="/contactUs"
                   className="th-btn popup-video style-radius text-capitalize"
                 >
                   <i className="fa-solid fa-circle-play me-2" />
-                  View Client Stories
-                </a>
+                  Explore More
+                </Link>
               </div>
             </div>
           </div>

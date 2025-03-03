@@ -17,6 +17,8 @@ const NavBar = () => {
   const toggleDrawer = () => setOpen(!open);
   const handleSubmenuToggle = (index) =>
     setSubmenuOpen((prev) => ({ ...prev, [index]: !prev[index] }));
+
+  const token = localStorage.getItem("token");
   return (
     <>
       <header className="th-header header-layout2">
@@ -129,13 +131,13 @@ const NavBar = () => {
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/services/CentralCattleBreedingFarm">
-                                  Central Cattle Breeding Farm (CCBF) Renovation
+                                <Link to="/services/OrganicHealthProductsInitiative">
+                                  Organic Health Products Initiative
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/services/OrganicHealthProductsInitiative">
-                                  Organic Health Products Initiative
+                                <Link to="/services/CentralCattleBreedingFarm">
+                                  Central Cattle Breeding Farm (CCBF) Renovation
                                 </Link>
                               </li>
                             </ul>
@@ -203,11 +205,6 @@ const NavBar = () => {
                               <li>
                                 <Link to="/solutions/StudentFinanceManagement">
                                   Student Finance Management
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/solutions/LivestockManagement">
-                                  Livestock Management
                                 </Link>
                               </li>
 
@@ -325,6 +322,11 @@ const NavBar = () => {
                       <li>
                         <Link to="/CarrerPage">Carrer</Link>
                       </li>
+                      {token && (
+                        <li>
+                          <Link to="/adminpost">Admin Post</Link>
+                        </li>
+                      )}
                     </ul>
                   </nav>
                   <div className="header-button">

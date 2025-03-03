@@ -188,7 +188,7 @@ const VisionDeskPage = () => {
         ["Data-Driven Solutions", "Informed Decision-Making"],
       ],
       contactLink: "about.html",
-      phone: "+25632542598",
+      phone: "+993-554-0006",
     },
   ];
   return (

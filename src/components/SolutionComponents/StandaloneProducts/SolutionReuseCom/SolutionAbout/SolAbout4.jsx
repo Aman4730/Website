@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SolAbout4 = ({ aboutData }) => {
   return (
@@ -35,9 +36,9 @@ const SolAbout4 = ({ aboutData }) => {
                   ))}
                 </div>
                 <div className="btn-wrap">
-                  <a href={item.contactLink} className="th-btn style-radius">
-                    Get Started For Free 14 Days
-                  </a>
+                  <Link to={"/contactUs"} className="th-btn style-radius">
+                    Explore More
+                  </Link>
                 </div>
               </div>
             </div>

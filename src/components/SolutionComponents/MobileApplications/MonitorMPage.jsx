@@ -14,8 +14,10 @@ const aboutContent = {
     ["Easy Customize", "Free updates"],
     ["Fully Responsive", "Ultimate support"],
   ],
-  buttonText: "Get Started For Free 14 Days",
-  buttonLink: "contact.html",
+  // buttonText: "Get Started For Free 14 Days",
+  buttonText: "Explore More",
+  buttonLink: "contactUs",
+  // buttonLink: "contact.html",
   images: [about_8_1, about_8_2],
 };
 const MonitorMPage = () => {

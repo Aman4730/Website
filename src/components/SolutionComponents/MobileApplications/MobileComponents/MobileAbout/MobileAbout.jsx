@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MobileAbout = ({ aboutContent }) => {
   return (
@@ -26,12 +27,9 @@ const MobileAbout = ({ aboutContent }) => {
                 ))}
               </div>
               <div className="btn-wrap">
-                <a
-                  href={aboutContent.buttonLink}
-                  className="th-btn style-radius"
-                >
-                  {aboutContent.buttonText}
-                </a>
+                <Link to={"/contactUs"} className="th-btn style-radius">
+                  Explore More
+                </Link>
               </div>
             </div>
           </div>

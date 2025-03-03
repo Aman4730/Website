@@ -1,16 +1,11 @@
 import React, { useState } from "react";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { postFetchData } from "../../api/Api";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useMutation } from "@tanstack/react-query";
 import loginAnimation from "../../Imges/loginAnimation.gif";
-import {
-  Typography,
-  Checkbox,
-  FormControlLabel,
-  Box,
-  Skeleton,
-} from "@mui/material";
+import { Checkbox, FormControlLabel, Box, Skeleton } from "@mui/material";
 import "./style.css";
 
 const LoginPage = () => {
@@ -22,7 +17,6 @@ const LoginPage = () => {
   });
   const [rememberMe, setRememberMe] = useState(false);
   const [passwordType, setPasswordType] = useState("password");
-  const [error, setError] = useState("");
 
   const togglePassword = () => {
     setPasswordType(passwordType === "password" ? "text" : "password");
@@ -35,37 +29,36 @@ const LoginPage = () => {
   const mutation = useMutation({
     mutationFn: async (loginData) => {
       const response = await postFetchData(
-        `${process.env.REACT_APP_API_URL_LOCAL}/login`,
+        `${import.meta.env.VITE_API_URL_LOCAL}/login`,
         loginData
       );
       return response;
     },
     onSuccess(data) {
-      if (data.success) {
-        toast("Login successfully");
-        setHide(false);
-        localStorage.setItem("token", JSON.stringify(data));
-        localStorage.setItem("tokenData", JSON.stringify(data.token));
+      setHide(false);
+      if (data.status) {
+        toast.success(data.message, { autoClose: 2000 });
+        localStorage.setItem("token", JSON.stringify(data.data.token));
+        localStorage.setItem("user_role", JSON.stringify(data.data.user_role));
         if (rememberMe) {
           localStorage.setItem("rememberMe", JSON.stringify(data));
         }
-        navigate("/");
-        window.location.reload();
+        navigate("/adminpost");
       } else {
-        setHide(false);
-        setError(data.message || "Login failed");
+        toast.error(data.message, { autoClose: 2000 });
       }
     },
-    onError() {
+    onError(error) {
       setHide(false);
-      setError("Invalid Credentials");
+      toast.error(error.response?.data?.message || "Something went wrong", {
+        autoClose: 2000,
+      });
     },
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setData({ ...data, [name]: value });
-    if (error) setError("");
   };
 
   const handleLogin = (e) => {
@@ -74,19 +67,20 @@ const LoginPage = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!data.email || !data.password) {
-      setError("Please enter both email and password.");
+      toast.error("Please enter both email and password.", { autoClose: 2000 });
       setHide(false);
       return;
     }
 
     if (!emailRegex.test(data.email)) {
-      setError("Please enter a valid email.");
+      toast.error("Please enter a valid email.", { autoClose: 2000 });
       setHide(false);
       return;
     }
 
     mutation.mutate(data);
   };
+
   const [loading, setLoading] = useState(true);
 
   return (
@@ -132,9 +126,6 @@ const LoginPage = () => {
                 {passwordType === "password" ? "🙈" : "👁️"}
               </span>
             </div>
-            {error && (
-              <Typography className="error-message">{error}</Typography>
-            )}
             <FormControlLabel
               control={
                 <Checkbox
@@ -150,12 +141,13 @@ const LoginPage = () => {
             </button>
           </form>
           <p className="signup-text">
-            <spam className="d-flex justify-content-center align-items-center">
+            <span className="d-flex justify-content-center align-items-center">
               Start your journey – Log in and take the next step! 🚀✨
-            </spam>
+            </span>
           </p>
         </div>
       </div>
+      <ToastContainer position="bottom-right" autoClose={3000} />
     </div>
   );
 };

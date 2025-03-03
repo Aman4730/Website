@@ -168,7 +168,7 @@ const FieldQuotationSystemPage = () => {
         ["Inventory Management", "Product Categorization"],
       ],
       contactLink: "about.html",
-      phone: "+25632542598",
+      phone: "+993-554-0006",
     },
   ];
 

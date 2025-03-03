@@ -3,6 +3,7 @@ import CountUp from "react-countup";
 
 import title_shape_2 from "../../../../../assets/img/theme-img/title_shape_2.svg";
 import check_4 from "../../../../../assets/img/icon/check_4.svg";
+import { Link } from "react-router-dom";
 
 const SolAbout3 = ({ aboutData }) => {
   return (
@@ -65,12 +66,12 @@ const SolAbout3 = ({ aboutData }) => {
                 ))}
               </div>
               <div className="btn-group style3">
-                <a
-                  href={item.contactLink}
+                <Link
+                  to={"/contactUs"}
                   className="th-btn style-radius text-capitalize"
                 >
                   Contact us
-                </a>
+                </Link>
                 <div className="call-btn">
                   <i className="fas fa-phone" />
                   <div className="media-body">

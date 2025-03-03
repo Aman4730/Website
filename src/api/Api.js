@@ -1,7 +1,8 @@
 import axios from "axios";
 import { toast } from "react-toastify";
-const tokenData = localStorage.getItem("tokenData");
+const tokenData = localStorage.getItem("token");
 const token = JSON.parse(tokenData);
+console.log(token);
 export const getFetch = async (url) => {
   try {
     const response = await axios({

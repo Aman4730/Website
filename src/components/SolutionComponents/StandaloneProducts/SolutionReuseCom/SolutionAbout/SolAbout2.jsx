@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SolAbout2 = ({ aboutData }) => {
   return (
@@ -46,20 +47,13 @@ const SolAbout2 = ({ aboutData }) => {
               </ul>
             </div>
             <div className="btn-group">
-              <a
-                href={aboutData.demoLink}
+              <Link
+                to={"/contactUs"}
                 className="th-btn popup-video style-radius fs-16 text-capitalize"
               >
                 <i className="fa-solid fa-circle-play me-2" />
-                View Demo
-              </a>
-              <a
-                href={aboutData.trialLink}
-                className="th-btn style10 fs-16 text-capitalize"
-                target="_blank"
-              >
-                Try for free
-              </a>
+                Explore More
+              </Link>
             </div>
           </div>
         </div>
@@ -69,3 +63,11 @@ const SolAbout2 = ({ aboutData }) => {
 };
 
 export default SolAbout2;
+
+// <a
+// href={aboutData.trialLink}
+// className="th-btn style10 fs-16 text-capitalize"
+// target="_blank"
+// >
+// Try for free
+// </a>

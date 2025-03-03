@@ -3246,6 +3246,17 @@ hr.title-line {
 .bg-top-center {
   background-size: auto;
   background-position: top center;
+  background: -webkit-linear-gradient(
+    top,
+    rgba(237, 240, 244, 0) 0%,
+    rgba(237, 240, 244, 0.85) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(237, 240, 244, 0) 0%,
+    rgba(237, 240, 244, 0.85) 100%
+  );
+  overflow: hidden;
 }
 .bg-bottom-center {
   background-size: auto;
@@ -29944,7 +29955,6 @@ span.select2-selection.select2-selection--single:focus {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: var(--black-color2);
   opacity: 0.8;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
@@ -29973,7 +29983,7 @@ span.select2-selection.select2-selection--single:focus {
   margin-bottom: -0.5em;
 }
 .project-grid_content {
-  padding: 40px;
+  padding: 25px;
 }
 .project-grid:hover .project-grid_img:before {
   -webkit-transform: scaleX(1);
@@ -31339,7 +31349,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 .process-tabs-tabs .nav-link .step {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15.8px;
   line-height: 19px;
   color: var(--title-color);
   background-color: var(--white-color);
@@ -31369,8 +31379,8 @@ span.select2-selection.select2-selection--single:focus {
   }
 }
 .process-tabs-tabs .nav-link .title {
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 19px;
   line-height: 30px;
   color: var(--title-color);
   background-color: var(--white-color);

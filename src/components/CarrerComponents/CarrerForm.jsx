@@ -10,7 +10,6 @@ import {
   DialogContent,
   useMediaQuery,
   Backdrop,
-  CircularProgress,
 } from "@mui/material";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
@@ -216,7 +215,16 @@ const JobApplicationDrawer = ({ open, onClose }) => {
           helperText={errors.phone}
           sx={{ mb: 2, backgroundColor: "white" }}
         />
-
+        <TextField
+          fullWidth
+          multiline
+          variant="outlined"
+          placeholder="Write a message..."
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          sx={{ mb: 2, "& .MuiOutlinedInput-root": { borderRadius: "10px" } }}
+        />
         <Box
           sx={{
             border: "2px dashed #86abe4",
@@ -256,17 +264,6 @@ const JobApplicationDrawer = ({ open, onClose }) => {
             </Box>
           </label>
         </Box>
-
-        <TextField
-          fullWidth
-          multiline
-          variant="outlined"
-          placeholder="Write a message..."
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          sx={{ mb: 2, "& .MuiOutlinedInput-root": { borderRadius: "10px" } }}
-        />
       </DialogContent>
 
       <DialogActions sx={{ justifyContent: "center", pb: 2 }}>

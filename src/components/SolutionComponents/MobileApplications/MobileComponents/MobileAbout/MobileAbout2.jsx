@@ -1,6 +1,7 @@
 import React from "react";
 import download82 from "../../../../../assets/img/normal/download-8-2.png";
 import download821 from "../../../../../assets/img/normal/download-8-2.1.png";
+import { Link } from "react-router-dom";
 const sections = [
   {
     image1: download82,
@@ -13,12 +14,12 @@ const sections = [
       "Use concise descriptions or bullet points to emphasize what sets your app apart from others in the market.",
     ],
     primaryButton: {
-      text: "Get Started For Free 14 Days",
-      link: "contact.html",
+      text: "Explore More",
+      link: "contactUs",
     },
     secondaryButton: {
       text: "Download app",
-      link: "contact.html",
+      link: "contactUs",
     },
   },
 ];
@@ -50,19 +51,12 @@ const MobileAbout2 = () => {
                 ))}
               </div>
               <div className="btn-wrap">
-                <a
-                  href={section.primaryButton.link}
+                <Link
+                  to={`/${section.primaryButton.link}`}
                   className="th-btn style-radius"
                 >
                   {section.primaryButton.text}
-                </a>
-                <a
-                  href={section.secondaryButton.link}
-                  className="th-btn style-border2 style-radius"
-                >
-                  <i className="far fa-cloud-arrow-down me-2" />
-                  {section.secondaryButton.text}
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import download81 from "../../../../../assets/img/normal/download-8-1.png";
 import download811 from "../../../../../assets/img/normal/download-8-1.1.png";
+import { Link } from "react-router-dom";
 
 const aboutData = {
   subtitle: "Made Easy Way",
@@ -21,16 +22,17 @@ const aboutData = {
   ],
   buttons: [
     {
-      text: "Get Started For Free 14 Days",
+      // text: "Get Started For Free 14 Days",
+      text: "Explore More",
       link: "contact.html",
       style: "th-btn style-radius",
     },
-    {
-      text: "Download app",
-      link: "contact.html",
-      style: "th-btn style-border2 style-radius",
-      icon: "far fa-cloud-arrow-down me-2",
-    },
+    // {
+    //   text: "Download app",
+    //   link: "contact.html",
+    //   style: "th-btn style-border2 style-radius",
+    //   icon: "far fa-cloud-arrow-down me-2",
+    // },
   ],
   images: [download81, download811],
 };
@@ -71,11 +73,12 @@ const MobileAbout1 = () => {
                 ))}
               </div>
             </div>
+
             <div className="btn-wrap">
               {aboutData.buttons.map((button, index) => (
-                <a href={button.link} className={button.style} key={index}>
+                <Link to={"/contactUs"} className={button.style} key={index}>
                   {button.icon && <i className={button.icon} />} {button.text}
-                </a>
+                </Link>
               ))}
             </div>
           </div>

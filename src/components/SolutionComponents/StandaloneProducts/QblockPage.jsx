@@ -1,13 +1,16 @@
 import React from "react";
 import MainHeading from "../../MainHeading";
 import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
-import about_2_1 from "../../../assets/img/normal/about_2_1.jpg";
-import about_2_2 from "../../../assets/img/normal/about_2_2.jpg";
-import about_2_3 from "../../../assets/img/normal/about_2_3.jpg";
+
+import about_2_1 from "../../../assets/img/normal/about1_2.png";
+import about_2_2 from "../../../assets/img/normal/about2.png";
+import about_2_3 from "../../../assets/img/normal/about3_1.png";
 import SolAbout from "./SolutionReuseCom/SolutionAbout/SolAbout";
+
 import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
 import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
 import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
+
 import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
 import about_2_shape from "../../../assets/img/normal/about_2_shape.png";
 import RecycleBinIcon from "../../../Imges/QblockIcon/RecycleBinIcon.jpg";

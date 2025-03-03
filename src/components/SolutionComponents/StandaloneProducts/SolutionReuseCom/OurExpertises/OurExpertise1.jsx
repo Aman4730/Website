@@ -3,6 +3,9 @@ import line3 from "../../../../../assets/img/shape/line-3.png";
 import star2 from "../../../../../assets/img/shape/star-2.png";
 import process_bg_2 from "../../../../../assets/img/bg/process_bg_2.jpg";
 import title_shape_2 from "../../../../../assets/img/theme-img/title_shape_2.svg";
+import { Link } from "react-router-dom";
+import process_img_1 from "../../../../../assets/img/normal/process_img_1.jpg";
+
 const OurExpertise1 = ({ processSteps, processStepsArray = [] }) => {
   return (
     <section
@@ -68,7 +71,7 @@ const OurExpertise1 = ({ processSteps, processStepsArray = [] }) => {
             {processSteps.map((step, index) => (
               <div
                 key={step.id}
-                className={`tab-pane fade ${index === 0 ? "show active" : ""}`}
+                className={`tab-pane ${index === 0 ? "show active" : ""}`}
                 id={`nav-step${step.id}`}
                 role="tabpanel"
               >
@@ -86,12 +89,12 @@ const OurExpertise1 = ({ processSteps, processStepsArray = [] }) => {
                         ))}
                       </ul>
                     </div>
-                    <a href="contact.html" className="th-btn style-radius">
+                    <Link to="/contactUs" className="th-btn style-radius">
                       Explore More
-                    </a>
+                    </Link>
                   </div>
                   <div className="process-image">
-                    <img src={step.img} alt={`Process Step ${step.id}`} />
+                    <img src={process_img_1} alt={`Process Step ${step.id}`} />
                   </div>
                 </div>
               </div>

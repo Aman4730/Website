@@ -1,7 +1,6 @@
 import axios from "axios";
 import { toast } from "react-toastify";
-const tokenData = localStorage.getItem("token");
-const token = JSON.parse(tokenData);
+const token = localStorage.getItem("token");
 console.log(token);
 export const getFetch = async (url) => {
   try {
@@ -20,7 +19,6 @@ export const getFetch = async (url) => {
     if (error.status === 401) {
       localStorage.removeItem("tokenData");
       toast("Token expired Please Login");
-      // window.location.reload();
     }
     return error;
   }
@@ -43,7 +41,6 @@ export const getFetchByLimit = async (url, limit, page) => {
     if (error.status === 401) {
       localStorage.removeItem("tokenData");
       toast("Token expired Please Login");
-      // window.location.reload();
     }
     return error;
   }
@@ -67,7 +64,6 @@ export const getOneFetch = async (url, id) => {
     if (error.status === 401) {
       localStorage.removeItem("tokenData");
       toast("Token expired Please Login");
-      // window.location.reload();
     }
     return error;
   }
@@ -80,7 +76,6 @@ export const getOneFetchByUrl = async (url) => {
       headers: {
         Authorization: `Bearer ${token}`,
       },
-      // withCredentials: true,
     });
     if (response?.status === 200) {
       return response?.data;
@@ -90,7 +85,6 @@ export const getOneFetchByUrl = async (url) => {
     if (error.status === 401) {
       localStorage.removeItem("tokenData");
       toast("Token expired Please Login");
-      // window.location.reload();
     }
     return error;
   }
@@ -117,7 +111,6 @@ export const postFetch = async (url, data) => {
     if (error.status === 401) {
       localStorage.removeItem("tokenData");
       toast("Token expired Please Login");
-      // window.location.reload();
     }
     return error;
   }
@@ -140,7 +133,6 @@ export const postFetchUser = async (url, data) => {
     if (error.status === 401) {
       localStorage.removeItem("tokenData");
       toast("Token expired Please Login");
-      // window.location.reload();
     }
     return error;
   }
@@ -158,7 +150,6 @@ export const postFetchContent = async (url, data) => {
     if (error.status === 401) {
       localStorage.removeItem("tokenData");
       toast("Token expired Please Login");
-      // window.location.reload();
     }
     throw error;
   }
@@ -182,7 +173,6 @@ export const patchFetch = async (url, id, data) => {
     if (error.status === 401) {
       localStorage.removeItem("tokenData");
       toast("Token expired Please Login");
-      // window.location.reload();
     }
     throw error;
   }

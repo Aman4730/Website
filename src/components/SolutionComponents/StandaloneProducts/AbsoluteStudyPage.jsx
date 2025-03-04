@@ -24,6 +24,8 @@ import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomation
 import CollaborationToolsIcon from "../../../Imges/QblockIcon/CollaborationToolsIcon.jpg";
 import UserGuestDeactivationIcon from "../../../Imges/QblockIcon/UserGuestDeactivationIcon.jpg";
 import StorageQuotaManagementIcon from "../../../Imges/QblockIcon/StorageQuotaManagementIcon.jpg";
+import faq_11_1 from "../../../assets/img/normal/faq_11_1.png";
+
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -172,7 +174,7 @@ const TalkToAbout5Array = {
   title: "Talk To About SAROJ",
   highlight: "Questions?",
   subtitle: "Frequently Asked Questions",
-  image: eduWhyChooseUS, // Use the image relevant to SAROJ
+  image: faq_11_1, // Use the image relevant to SAROJ
   faqs: [
     {
       question: "What is SAROJ?",

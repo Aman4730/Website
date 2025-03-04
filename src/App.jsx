@@ -51,6 +51,7 @@ import GalleryPage from "./Pages/GalleryPage";
 import BlogPage from "./Pages/BlogPage";
 import LoginPage from "./components/LoginPage";
 import AdminPostPage from "./Pages/AdminPostPage";
+import AdminDashboard from "./Pages/AdminDashboard";
 function App() {
   const location = useLocation();
 
@@ -191,6 +192,7 @@ function App() {
         <Route path="/Blog" element={<BlogPage />} />
         <Route path="/adminlogin" element={<LoginPage />} />
         <Route path="/adminpost" element={<AdminPostPage />} />
+        <Route path="/AdminDashboard" element={<AdminDashboard />} />
       </Routes>
       <Footer />
     </div>

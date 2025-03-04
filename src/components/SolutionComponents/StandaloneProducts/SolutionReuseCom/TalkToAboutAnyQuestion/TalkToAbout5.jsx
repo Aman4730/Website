@@ -15,7 +15,7 @@ const TalkToAbout5 = ({ TalkToAbout5Array }) => {
               </span>
               <h2 className="sec-title">
                 {TalkToAbout5Array.title}{" "}
-                <span className="text-theme">
+                <span className="text-theme fw-normal">
                   {TalkToAbout5Array.highlight}
                 </span>
               </h2>
@@ -63,13 +63,7 @@ const TalkToAbout5 = ({ TalkToAbout5Array }) => {
           </div>
           <div className="col-xl-6">
             <div className="faq-image11">
-              <img
-                src={TalkToAbout5Array.image}
-                alt="FAQ"
-                style={{
-                  transform: "scaleX(-1)",
-                }}
-              />
+              <img src={TalkToAbout5Array.image} alt="FAQ" />
             </div>
           </div>
         </div>

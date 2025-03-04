@@ -2,7 +2,17 @@ import React from "react";
 import { Typography, Box, Grid, IconButton } from "@mui/material";
 import CarrerBackgound from "../../Imges/CarrerBackgound.png";
 
-const JobExplain = ({ handleFormOpen }) => {
+const JobExplain = ({ handleFormOpen, selectedJob }) => {
+  function getDaysLeft(endDate) {
+    const end = new Date(endDate);
+    const today = new Date();
+
+    const diffTime = end - today;
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+    return diffDays > 0 ? diffDays : 0;
+  }
+
   return (
     <div className="job-explain">
       <img
@@ -30,7 +40,7 @@ const JobExplain = ({ handleFormOpen }) => {
       <div className="job-explain-content">
         <div className="job-title-wrapper">
           <Typography variant="h5" fontWeight={500}>
-            UI/UX Designer
+            {selectedJob.JobName}
           </Typography>
           <div className="job-action">
             <IconButton>
@@ -54,18 +64,25 @@ const JobExplain = ({ handleFormOpen }) => {
         </div>
         <div className="job-subtitle-wrapper">
           <Typography variant="subtitle1" color="textSecondary">
-            Patreon <span className="comp-location">Londontowne, MD.</span>
+            Logimetrix{" "}
+            <span className="comp-location">
+              Lucknow, Uttar Pradesh 226010.
+            </span>
           </Typography>
+
           <Typography variant="body2" color="textSecondary">
-            Posted 8 days ago - <b>98 Applications</b>
+            Posted &nbsp;
+            {getDaysLeft(selectedJob.EndDate) > 0
+              ? `${getDaysLeft(selectedJob.EndDate)} days left`
+              : "Expired"}
           </Typography>
         </div>
         <Grid container spacing={2} sx={{ my: 0.4 }}>
           {[
-            { title: "Experience", value: "Minimum 1 Year" },
-            { title: "Work Level", value: "Senior level" },
-            { title: "Employee Type", value: "Full Time Jobs" },
-            { title: "Offer Salary", value: "$2150.0 / Month" },
+            { title: "Experience", value: `Min ${selectedJob.JobExperience}` },
+            { title: "Job ID", value: selectedJob.JobId },
+            { title: "Employee Type", value: `${selectedJob.JobType} Jobs` },
+            { title: "Offer Salary", value: selectedJob.SalaryRange },
           ].map((item, index) => (
             <Grid item xs={12} sm={6} md={3} key={index}>
               <Box p={2} border={1} borderColor="#ddd" borderRadius={2}>
@@ -90,78 +107,28 @@ const JobExplain = ({ handleFormOpen }) => {
             letterSpacing: "0.5px",
           }}
         >
-          As a Product Designer, you will work within a Product Delivery Team
-          fused with UX, engineering, product and data talent. You will help the
-          team design beautiful interfaces that solve business challenges for
-          our clients. We work with a number of Tier 1 banks on building
-          web-based applications for AML, KYC and Sanctions List management
-          workflows. This role is ideal if you are looking to segue your career
-          into the FinTech or Big Data arenas.
+          {selectedJob.JobDescription}
         </Typography>
         <Typography variant="h6" fontWeight={500} sx={{ mt: 2, mb: 0.4 }}>
           Responsibilities
         </Typography>
-        <Typography
-          variant="body2"
-          color="textSecondary"
-          sx={{ lineHeight: "2em", color: "#495057" }}
-        >
-          As a Product Designer, you will work within a Product Delivery Team
-          fused with UX, engineering, product and data talent.
-        </Typography>
-        {[
-          "3+ years working as a product designer.",
-          "A portfolio that highlights your approach to problem-solving...",
-          "Experience conducting research and building smooth flows.",
-          "Excellent communication skills with a well-defined design process.",
-          "Familiarity with design tools like Sketch and Figma.",
-          "Up-level our overall design and bring consistency to user-facing properties.",
-        ].map((point, index) => (
-          <Typography
+        {selectedJob.JobResponsibilities.map((point, index) => (
+          <Box
             key={index}
-            variant="body2"
-            color="textSecondary"
-            sx={{
-              mt: 1,
-              display: "flex",
-              alignItems: "center",
-            }}
+            sx={{ display: "flex", alignItems: "flex-start", gap: 1, mt: 1 }}
           >
-            🔹 {point}
-          </Typography>
+            <Typography variant="body2" color="textSecondary">
+              🔹
+            </Typography>
+            <Typography variant="body2" color="textSecondary">
+              {point}
+            </Typography>
+          </Box>
         ))}
         <Typography variant="h6" fontWeight={500} sx={{ mt: 2, mb: 0.4 }}>
           Qualification
         </Typography>
-        {[
-          "B.C.A / M.C.A under National University course complete.",
-          "3 or more years of professional design experience",
-          "have already graduated or are currently in any year of study",
-          "Advanced degree or equivalent experience in graphic and web design",
-        ].map((point, index) => (
-          <Typography
-            key={index}
-            variant="body2"
-            color="textSecondary"
-            sx={{
-              mt: 1,
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            🔹 {point}
-          </Typography>
-        ))}
-        <Typography variant="h6" fontWeight={500} sx={{ mt: 2, mb: 0.4 }}>
-          Skill & Experience
-        </Typography>
-        {[
-          "Understanding of key Design Principal",
-          "Proficiency With HTML, CSS, Bootstrap",
-          "Wordpress: 1 year (Required)",
-          "Experience designing and developing responsive design websites",
-          "web designing: 1 year (Preferred)",
-        ].map((point, index) => (
+        {selectedJob.JobQualifications.map((point, index) => (
           <Typography
             key={index}
             variant="body2"

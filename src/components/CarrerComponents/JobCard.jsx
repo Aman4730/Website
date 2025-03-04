@@ -9,72 +9,29 @@ import {
   Stack,
   Grid,
 } from "@mui/material";
+import jobNotFound from "../../Imges/jobNotFound.gif";
 
-const JobCard = ({ handleCardClick }) => {
+const JobCard = ({ handleCardClick, jobData = [], admin, handleEditJob }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const jobList = [
-    {
-      id: 1,
-      title: "UI / UX Designer",
-      experience: "2+ Years",
-      iconBackground: "#4CAF50",
-      description:
-        "The User Experience Designer position exists to create compelling and digital user experience through excellent design...",
-    },
-    {
-      id: 2,
-      title: "Sr. Product Designer",
-      experience: "Min. 1 Year",
-      iconBackground: "#FF9800",
-      description:
-        "The User Experience Designer position exists to create compelling and digital user experience through excellent design...",
-    },
-    {
-      id: 3,
-      title: "User Experience Designer",
-      experience: "5+ Years",
-      iconBackground: "#3F51B5",
-      description:
-        "The User Experience Designer position exists to create compelling and digital user experience through excellent design...",
-    },
-    {
-      id: 4,
-      title: "Product Designer",
-      experience: "5+ Years",
-      iconBackground: "#3F51B5",
-      description:
-        "The User Experience Designer position exists to create compelling and digital user experience through excellent design...",
-    },
-    {
-      id: 5,
-      title: "UI Developer",
-      experience: "5+ Years",
-      iconBackground: "#3F51B5",
-      description:
-        "The User Experience Designer position exists to create compelling and digital user experience through excellent design...",
-    },
-    {
-      id: 6,
-      title: "User Interface Designer",
-      experience: "5+ Years",
-      iconBackground: "#3F51B5",
-      description:
-        "The User Experience Designer position exists to create compelling and digital user experience through excellent design...",
-    },
-  ];
+
+  const jobs = Array.isArray(jobData) && jobData.length > 0 ? jobData : [];
+
   return (
     <Grid
       container
-      spacing={1}
+      spacing={2}
       sx={{
         maxWidth: 1450,
+        margin: "auto",
+        display: "flex",
+        justifyContent: "start",
       }}
     >
-      {jobList.map((job, index) => (
+      {jobs.map((job, index) => (
         <Grid item xs={12} sm={6} md={4} lg={3} key={job.id}>
           <Card
             sx={{
-              maxWidth: 350,
+              width: "100%",
               transition: "all 0.3s ease",
               transform:
                 hoveredIndex === index ? "translateY(-5px)" : "translateY(0)",
@@ -85,11 +42,13 @@ const JobCard = ({ handleCardClick }) => {
               borderRadius: 3,
               overflow: "hidden",
               border: "none",
+              position: "relative",
+              zIndex: hoveredIndex === index ? 10 : 1,
+              margin: "10px 0",
               "&:hover": {
                 cursor: "pointer",
               },
             }}
-            onClick={() => handleCardClick(job)}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
@@ -112,7 +71,8 @@ const JobCard = ({ handleCardClick }) => {
                     alignItems: "center",
                     justifyContent: "center",
                     transition: "all 0.3s ease",
-                    transform: hoveredIndex ? "scale(1.08)" : "scale(1)",
+                    transform:
+                      hoveredIndex === index ? "scale(1.08)" : "scale(1)",
                   }}
                 >
                   <svg
@@ -124,6 +84,7 @@ const JobCard = ({ handleCardClick }) => {
                     <path d="M19.5 3.5L18 2l-1.5 1.5L15 2l-1.5 1.5L12 2l-1.5 1.5L9 2 7.5 3.5 6 2 4.5 3.5 3 2v20l1.5-1.5L6 22l1.5-1.5L9 22l1.5-1.5L12 22l1.5-1.5L15 22l1.5-1.5L18 22l1.5-1.5L21 22V2l-1.5 1.5z" />
                   </svg>
                 </Box>
+
                 <Typography
                   color="text.secondary"
                   sx={{
@@ -149,7 +110,7 @@ const JobCard = ({ handleCardClick }) => {
                   fontSize: "1.25rem",
                 }}
               >
-                {job.title}
+                {job.JobName || "No Title"}
               </Typography>
 
               <Typography
@@ -161,9 +122,16 @@ const JobCard = ({ handleCardClick }) => {
                   fontWeight: 400,
                   letterSpacing: "0.01em",
                   fontSize: "0.875rem",
+                  maxWidth: "100%",
+                  display: "-webkit-box",
+                  WebkitBoxOrient: "vertical",
+                  WebkitLineClamp: 3,
+                  overflow: "hidden",
+                  textOverflow: "ellipsis",
+                  flexGrow: 1,
                 }}
               >
-                {job.description || "No description available."}
+                {job.JobDescription || "No description available."}
               </Typography>
 
               <Box
@@ -175,7 +143,7 @@ const JobCard = ({ handleCardClick }) => {
                 }}
               >
                 <Chip
-                  label="Full Time"
+                  label={job.JobType || "Full-Time"}
                   size="small"
                   sx={{
                     bgcolor: "#e3f2fd",
@@ -183,16 +151,10 @@ const JobCard = ({ handleCardClick }) => {
                     fontWeight: 500,
                     borderRadius: "16px",
                     px: 1,
-                    "&:hover": {
-                      bgcolor: "#bbdefb",
-                      transform: "scale(1.03)",
-                    },
-                    transition: "all 0.2s ease",
-                    transform: hoveredIndex ? "scale(1.03)" : "scale(1)",
                   }}
                 />
                 <Chip
-                  label="Min. 1 Year"
+                  label={job.JobExperience || "Experience Required"}
                   size="small"
                   sx={{
                     bgcolor: "#e3f2fd",
@@ -200,16 +162,10 @@ const JobCard = ({ handleCardClick }) => {
                     fontWeight: 500,
                     borderRadius: "16px",
                     px: 1,
-                    "&:hover": {
-                      bgcolor: "#bbdefb",
-                      transform: "scale(1.03)",
-                    },
-                    transition: "all 0.2s ease",
-                    transform: hoveredIndex ? "scale(1.03)" : "scale(1)",
                   }}
                 />
                 <Chip
-                  label="Senior Level"
+                  label={job.JobId || "Job Id"}
                   size="small"
                   sx={{
                     bgcolor: "#e3f2fd",
@@ -217,17 +173,23 @@ const JobCard = ({ handleCardClick }) => {
                     fontWeight: 500,
                     borderRadius: "16px",
                     px: 1,
-                    "&:hover": {
-                      bgcolor: "#bbdefb",
-                      transform: "scale(1.03)",
-                    },
-                    transition: "all 0.2s ease",
-                    transform: hoveredIndex ? "scale(1.03)" : "scale(1)",
                   }}
                 />
               </Box>
+
               <Stack direction="row" spacing={1}>
-                <spam className="th-btn">Apply Now</spam>
+                <div
+                  className="th-btn"
+                  onClick={() => {
+                    if (admin) {
+                      handleEditJob(job);
+                    } else {
+                      handleCardClick(job);
+                    }
+                  }}
+                >
+                  {admin ? "Update Now" : "Apply Now"}
+                </div>
                 <Button
                   variant="outlined"
                   fullWidth
@@ -245,14 +207,31 @@ const JobCard = ({ handleCardClick }) => {
                       transform: "scale(1.02)",
                     },
                   }}
+                  onClick={() => handleCardClick(job)}
                 >
-                  Messages
+                  Applicants
                 </Button>
               </Stack>
             </CardContent>
           </Card>
         </Grid>
       ))}
+      {!jobData.length > 0 && (
+        <Box
+          sx={{
+            maxWidth: 1450,
+            margin: "auto",
+            display: "flex",
+            justifyContent: "start",
+          }}
+        >
+          <img
+            src={jobNotFound}
+            alt="No Jobs Found"
+            style={{ width: "100%", height: "auto" }}
+          />
+        </Box>
+      )}
     </Grid>
   );
 };

@@ -2,13 +2,6 @@ import React, { useState } from "react";
 import logimetrixlogo1 from "../../Imges/logimetrixlogo1.png";
 import { Link } from "react-router-dom";
 import MobileMenu from "./MobileMenu";
-import MenuIcon from "@mui/icons-material/Menu";
-import { IconButton, AppBar, Toolbar } from "@mui/material";
-import DashboardIcon from "@mui/icons-material/Dashboard";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import BarChartIcon from "@mui/icons-material/BarChart";
-import DescriptionIcon from "@mui/icons-material/Description";
-import LayersIcon from "@mui/icons-material/Layers";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -323,8 +316,16 @@ const NavBar = () => {
                         <Link to="/CarrerPage">Carrer</Link>
                       </li>
                       {token && (
-                        <li>
-                          <Link to="/adminpost">Admin Post</Link>
+                        <li className="menu-item-has-children">
+                          <a href="#">Admin</a>
+                          <ul className="sub-menu">
+                            <li>
+                              <Link to="/adminpost">Job Post</Link>
+                            </li>
+                            <li>
+                              <Link to="/AdminDashboard">Dashboard</Link>
+                            </li>
+                          </ul>
                         </li>
                       )}
                     </ul>

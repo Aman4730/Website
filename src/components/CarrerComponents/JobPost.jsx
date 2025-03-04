@@ -15,62 +15,23 @@ import {
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import CloseIcon from "@mui/icons-material/Close";
 import Responsibilities from "./Responsibilities";
-import { postFetchData } from "../../api/Api";
 
-const JobPost = ({ open, onClose }) => {
+const JobPost = ({
+  open,
+  onClose,
+  editID,
+  formData,
+  handleChange,
+  errors,
+  responsibilities,
+  setResponsibilities,
+  loading,
+  qualifications,
+  setQualifications,
+  handleSubmit,
+  handleUpdateJob,
+}) => {
   const isLargeScreen = useMediaQuery("(min-width: 1024px)");
-  const [formData, setFormData] = useState({
-    jobName: "",
-    experience: "",
-    ctc: "",
-    lastDate: "",
-    jobType: "",
-    location: "",
-    description: "",
-  });
-  const [errors, setErrors] = useState({});
-  const [responsibilities, setResponsibilities] = useState([]);
-  const [qualifications, setQualifications] = useState([]);
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const validateForm = () => {
-    let newErrors = {};
-    Object.keys(formData).forEach((key) => {
-      if (!formData[key].trim()) {
-        newErrors[key] = "This field is required";
-      }
-    });
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
-
-  const handleSubmit = async () => {
-    console.log("dsfsdfsf");
-    if (validateForm()) {
-      setLoading(true);
-      try {
-        const response = await postFetchData(
-          `${import.meta.env.VITE_API_URL_LOCAL}/createJob`,
-          {
-            ...formData,
-            responsibilities,
-            qualifications,
-          }
-        );
-        console.log("Response:", response.data);
-        onClose();
-      } catch (error) {
-        console.error("Error posting job:", error);
-      } finally {
-        setLoading(false);
-      }
-    }
-  };
 
   return (
     <Drawer
@@ -118,11 +79,11 @@ const JobPost = ({ open, onClose }) => {
             <TextField
               fullWidth
               size="small"
-              name="jobName"
-              value={formData.jobName}
+              name="JobName"
+              value={formData.JobName}
               onChange={handleChange}
-              error={!!errors.jobName}
-              helperText={errors.jobName}
+              error={!!errors.JobName}
+              helperText={errors.JobName}
             />
           </Grid>
           <Grid item xs={6}>
@@ -130,11 +91,11 @@ const JobPost = ({ open, onClose }) => {
             <TextField
               fullWidth
               size="small"
-              name="experience"
-              value={formData.experience}
+              name="JobExperience"
+              value={formData.JobExperience}
               onChange={handleChange}
-              error={!!errors.experience}
-              helperText={errors.experience}
+              error={!!errors.JobExperience}
+              helperText={errors.JobExperience}
             />
           </Grid>
           <Grid item xs={6}>
@@ -142,11 +103,11 @@ const JobPost = ({ open, onClose }) => {
             <TextField
               fullWidth
               size="small"
-              name="ctc"
-              value={formData.ctc}
+              name="SalaryRange"
+              value={formData.SalaryRange}
               onChange={handleChange}
-              error={!!errors.ctc}
-              helperText={errors.ctc}
+              error={!!errors.SalaryRange}
+              helperText={errors.SalaryRange}
             />
           </Grid>
           <Grid item xs={6}>
@@ -155,11 +116,11 @@ const JobPost = ({ open, onClose }) => {
               fullWidth
               size="small"
               type="date"
-              name="lastDate"
-              value={formData.lastDate}
+              name="EndDate"
+              value={formData.EndDate}
               onChange={handleChange}
-              error={!!errors.lastDate}
-              helperText={errors.lastDate}
+              error={!!errors.EndDate}
+              helperText={errors.EndDate}
             />
           </Grid>
           <Grid item xs={6}>
@@ -168,11 +129,11 @@ const JobPost = ({ open, onClose }) => {
               select
               fullWidth
               size="small"
-              name="jobType"
-              value={formData.jobType}
+              name="JobType"
+              value={formData.JobType}
               onChange={handleChange}
-              error={!!errors.jobType}
-              helperText={errors.jobType}
+              error={!!errors.JobType}
+              helperText={errors.JobType}
             >
               <MenuItem value="Full-Time">Full-Time</MenuItem>
               <MenuItem value="Part-Time">Part-Time</MenuItem>
@@ -184,11 +145,11 @@ const JobPost = ({ open, onClose }) => {
             <TextField
               fullWidth
               size="small"
-              name="location"
-              value={formData.location}
+              name="JobLocation"
+              value={formData.JobLocation}
               onChange={handleChange}
-              error={!!errors.location}
-              helperText={errors.location}
+              error={!!errors.JobLocation}
+              helperText={errors.JobLocation}
             />
           </Grid>
           <Grid item xs={12}>
@@ -197,11 +158,11 @@ const JobPost = ({ open, onClose }) => {
               fullWidth
               size="small"
               multiline
-              name="description"
-              value={formData.description}
+              name="JobDescription"
+              value={formData.JobDescription}
               onChange={handleChange}
-              error={!!errors.description}
-              helperText={errors.description}
+              error={!!errors.JobDescription}
+              helperText={errors.JobDescription}
             />
           </Grid>
           <Grid item xs={12}>
@@ -233,10 +194,16 @@ const JobPost = ({ open, onClose }) => {
             borderRadius: "10px",
             backgroundColor: "#4786e6",
           }}
-          onClick={handleSubmit}
           disabled={loading}
+          onClick={() => {
+            if (editID) {
+              handleUpdateJob();
+            } else {
+              handleSubmit();
+            }
+          }}
         >
-          Apply Job
+          {editID ? "Update Job" : "Apply Job"}
         </Button>
       </DialogActions>
     </Drawer>

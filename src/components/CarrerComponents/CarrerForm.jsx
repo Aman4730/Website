@@ -17,84 +17,18 @@ import CloseIcon from "@mui/icons-material/Close";
 import { Slide } from "@mui/material";
 import carrerLoder from "../../Imges/carrerLoder.gif";
 
-const JobApplicationDrawer = ({ open, onClose }) => {
+const CarrerForm = ({
+  open,
+  onClose,
+  loading,
+  formData,
+  handleChange,
+  errors,
+  handleFileChange,
+  selectedFile,
+  handleSubmit,
+}) => {
   const isLargeScreen = useMediaQuery("(min-width: 1024px)");
-  const [formData, setFormData] = useState({
-    name: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  const [selectedFile, setSelectedFile] = useState(null);
-  const [errors, setErrors] = useState({});
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    let errorText = "";
-
-    if (name === "email") {
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      errorText = emailPattern.test(value) ? "" : "Enter a valid email";
-    }
-
-    if (name === "phone") {
-      const phonePattern = /^[0-9]{10}$/;
-      errorText = phonePattern.test(value)
-        ? ""
-        : "Enter a valid 10-digit phone number";
-    }
-
-    setFormData((prev) => ({ ...prev, [name]: value }));
-    setErrors((prev) => ({
-      ...prev,
-      [name]: errorText,
-    }));
-  };
-
-  const handleFileChange = (e) => {
-    const file = e.target.files[0];
-    if (file && file.type !== "application/pdf") {
-      setErrors((prev) => ({
-        ...prev,
-        selectedFile: "Only PDF files are allowed",
-      }));
-      setSelectedFile(null);
-    } else {
-      setSelectedFile(file);
-      setErrors((prev) => ({ ...prev, selectedFile: "" }));
-    }
-  };
-
-  const validateForm = () => {
-    let newErrors = {};
-    Object.keys(formData).forEach((key) => {
-      if (!formData[key].trim() && key !== "message") {
-        newErrors[key] = "This field is required";
-      }
-    });
-
-    if (!selectedFile) {
-      newErrors.selectedFile = "CV is required";
-    }
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
-
-  const handleSubmit = () => {
-    if (validateForm()) {
-      setLoading(true);
-      setTimeout(() => {
-        console.log("Form Data:", formData);
-        console.log("Selected File:", selectedFile);
-        setLoading(false);
-        onClose();
-      }, 2000);
-    }
-  };
 
   return (
     <Drawer
@@ -288,4 +222,4 @@ const JobApplicationDrawer = ({ open, onClose }) => {
   );
 };
 
-export default JobApplicationDrawer;
+export default CarrerForm;

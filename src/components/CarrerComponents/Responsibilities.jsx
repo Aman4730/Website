@@ -11,7 +11,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import HomeIcon from "@mui/icons-material/Home";
 
-const Responsibilities = ({ title, items, setItems, loading }) => {
+const Responsibilities = ({ title, items = [], setItems, loading }) => {
   const [inputValue, setInputValue] = useState("");
   const [editIndex, setEditIndex] = useState(null);
 

@@ -142,10 +142,10 @@ const TalkToAbout1Array = [
 const aboutData4 = [
   {
     id: 1,
-    title: "AgRisk – Decision Support System",
+    title: "virtual Matrix",
     secTitle: "Crop Procurement Optimization",
     description:
-      "AgRisk Decision Support System optimizes crop procurement by analyzing economic aspects, providing a detailed model of when to buy, how much to buy, and at what price, ensuring buyers get the best deal while staying within budget.",
+      "Decision Support System optimizes crop procurement by analyzing economic aspects, providing a detailed model of when to buy, how much to buy, and at what price, ensuring buyers get the best deal while staying within budget.",
     checklist: [
       ["Procurement Timing", "Price Optimization"],
       ["Budget Coherence", "Informed Decision Making"],

@@ -2,13 +2,6 @@ import React, { useState } from "react";
 import logimetrixlogo1 from "../../Imges/logimetrixlogo1.png";
 import { Link } from "react-router-dom";
 import MobileMenu from "./MobileMenu";
-import MenuIcon from "@mui/icons-material/Menu";
-import { IconButton, AppBar, Toolbar } from "@mui/material";
-import DashboardIcon from "@mui/icons-material/Dashboard";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import BarChartIcon from "@mui/icons-material/BarChart";
-import DescriptionIcon from "@mui/icons-material/Description";
-import LayersIcon from "@mui/icons-material/Layers";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -168,7 +161,7 @@ const NavBar = () => {
                         </ul>
                       </li>
                       <li>
-                        <Link to="/aboutus">How we do it</Link>
+                        <Link to="/HowWeDoIt">How we do it</Link>
                       </li>
                       <li>
                         <Link to="/aboutus">Why Us</Link>
@@ -177,7 +170,9 @@ const NavBar = () => {
                         <a href="#">Solution</a>
                         <ul className="mega-menu">
                           <li>
-                            <a href="#">Standalone Products</a>
+                            <a href="#">
+                              Standalone Products : Solution & Application
+                            </a>
                             <ul style={{ marginBottom: "10px" }}>
                               <li>
                                 <Link to="/solutions/qblock">Qblock</Link>
@@ -207,12 +202,6 @@ const NavBar = () => {
                                   Student Finance Management
                                 </Link>
                               </li>
-
-                              <li>
-                                <Link to="/solutions/TrakFuelPage">
-                                  TrakFuel
-                                </Link>
-                              </li>
                               <li>
                                 <Link to="/solutions/IManagerPage">
                                   IManager
@@ -220,6 +209,16 @@ const NavBar = () => {
                               </li>
                               <li>
                                 <Link to="/solutions/CropnetPage">Cropnet</Link>
+                              </li>
+                              <li>
+                                <Link to="/solutions/TourismApplicationPage">
+                                  Tourism Application
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/solutions/SarojEducationPage">
+                                  Saroj Education Mobile app
+                                </Link>
                               </li>
                             </ul>
                             <a href="#">ERP Solutions</a>
@@ -230,7 +229,7 @@ const NavBar = () => {
                             </ul>
                           </li>
                           <li>
-                            <a href="#">Data Science</a>
+                            <a href="#">Data Analytics</a>
                             <ul>
                               <li>
                                 <Link to="/solutions/FieldQuotationSystemPage">
@@ -274,38 +273,6 @@ const NavBar = () => {
                               </li>
                             </ul>
                           </li>
-                          <li>
-                            <a href="#">Mobile Applications</a>
-                            <ul>
-                              <li>
-                                <Link to="/solutions/IRediPage">IRedi</Link>
-                              </li>
-                              <li>
-                                <Link to="/solutions/KarGoPage">KarGo</Link>
-                              </li>
-
-                              <li>
-                                <Link to="/solutions/MonitorMPage">
-                                  MonitorM
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/solutions/TourismApplicationPage">
-                                  Tourism Application
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/solutions/SarojEducationPage">
-                                  Saroj Education Mobile app
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/solutions/CommunicationApplicationPage">
-                                  Communication Application
-                                </Link>
-                              </li>
-                            </ul>
-                          </li>
                         </ul>
                       </li>
                       <li className="menu-item-has-children">
@@ -323,8 +290,16 @@ const NavBar = () => {
                         <Link to="/CarrerPage">Carrer</Link>
                       </li>
                       {token && (
-                        <li>
-                          <Link to="/adminpost">Admin Post</Link>
+                        <li className="menu-item-has-children">
+                          <a href="#">Admin</a>
+                          <ul className="sub-menu">
+                            <li>
+                              <Link to="/adminpost">Job Post</Link>
+                            </li>
+                            <li>
+                              <Link to="/AdminDashboard">Dashboard</Link>
+                            </li>
+                          </ul>
                         </li>
                       )}
                     </ul>

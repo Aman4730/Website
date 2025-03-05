@@ -38,12 +38,17 @@ const LoginPage = () => {
       setHide(false);
       if (data.status) {
         toast.success(data.message, { autoClose: 2000 });
-        localStorage.setItem("token", JSON.stringify(data.data.token));
+
+        localStorage.setItem("token", data.data.token);
         localStorage.setItem("user_role", JSON.stringify(data.data.user_role));
+
         if (rememberMe) {
           localStorage.setItem("rememberMe", JSON.stringify(data));
         }
+
         navigate("/adminpost");
+
+        window.location.reload(); // Reload karne se naya token pick hoga
       } else {
         toast.error(data.message, { autoClose: 2000 });
       }

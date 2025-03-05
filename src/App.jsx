@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import Home from "./Pages/Home";
 import AboutUsPage from "./Pages/AboutUsPage";
 import NavBar from "./components/NavBar";
@@ -51,12 +51,16 @@ import GalleryPage from "./Pages/GalleryPage";
 import BlogPage from "./Pages/BlogPage";
 import LoginPage from "./components/LoginPage";
 import AdminPostPage from "./Pages/AdminPostPage";
+import AdminDashboard from "./Pages/AdminDashboard";
+import HowWeDoIt from "./Pages/HowWeDoIt";
 function App() {
   const location = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
+
+  const tokenData = localStorage.getItem("token");
   return (
     <div className="App">
       <CustomCursor />
@@ -125,12 +129,32 @@ function App() {
         {/*Services*/}
 
         <Route path="/contactUs" element={<ContactUs />} />
-        <Route path="/CarrerPage" element={<CarrerPage />} />
-
         <Route path="/Gallery" element={<GalleryPage />} />
         <Route path="/Blog" element={<BlogPage />} />
         <Route path="/adminlogin" element={<LoginPage />} />
-        <Route path="/adminpost" element={<AdminPostPage />} />
+        <Route path="/CarrerPage" element={<CarrerPage />} />
+        <Route path="/HowWeDoIt" element={<HowWeDoIt />} />
+
+        <Route
+          path="/adminpost"
+          element={
+            tokenData?.length > 5 ? (
+              <AdminPostPage />
+            ) : (
+              <Navigate to="/adminlogin" />
+            )
+          }
+        />
+        <Route
+          path="/AdminDashboard"
+          element={
+            tokenData?.length > 5 ? (
+              <AdminDashboard />
+            ) : (
+              <Navigate to="/adminlogin" />
+            )
+          }
+        />
       </Routes>
       <Footer />
     </div>

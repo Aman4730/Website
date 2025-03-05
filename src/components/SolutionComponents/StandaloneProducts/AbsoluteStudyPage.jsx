@@ -33,6 +33,7 @@ import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomation
 import CollaborationToolsIcon from "../../../Imges/QblockIcon/CollaborationToolsIcon.jpg";
 import UserGuestDeactivationIcon from "../../../Imges/QblockIcon/UserGuestDeactivationIcon.jpg";
 import StorageQuotaManagementIcon from "../../../Imges/QblockIcon/StorageQuotaManagementIcon.jpg";
+
 import "swiper/css";
 import "swiper/css/pagination";
 

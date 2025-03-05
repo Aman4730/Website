@@ -16,7 +16,7 @@ const TalkToAbout5 = ({ TalkToAbout5Array }) => {
               </span>
               <h2 className="sec-title">
                 {TalkToAbout5Array.title}{" "}
-                <span className="text-theme">
+                <span className="text-theme fw-normal">
                   {TalkToAbout5Array.highlight}
                 </span>
               </h2>

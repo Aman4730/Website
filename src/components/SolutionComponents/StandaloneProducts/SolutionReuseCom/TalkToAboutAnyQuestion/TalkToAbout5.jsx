@@ -1,4 +1,5 @@
-/* eslint-disable react/prop-types */
+
+import React from "react";
 
 
 const TalkToAbout5 = ({ TalkToAbout5Array }) => {
@@ -64,6 +65,7 @@ const TalkToAbout5 = ({ TalkToAbout5Array }) => {
           </div>
           <div className="col-xl-6">
             <div className="faq-image11">
+
               <img
                 src={TalkToAbout5Array.image}
                 alt="FAQ"
@@ -73,6 +75,7 @@ const TalkToAbout5 = ({ TalkToAbout5Array }) => {
                 }}
 
               />
+
             </div>
           </div>
         </div>

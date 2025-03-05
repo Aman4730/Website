@@ -1,4 +1,5 @@
 
+
 import MainHeading from "../../MainHeading";
 import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
 // import faq_11_1 from "../../../assets/img/normal/faq_11_1.png";
@@ -20,6 +21,19 @@ import cropnet5 from "../../../Imges/cropnet5.png"
 // import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
 // import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
 // import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
+
+import React from "react";
+import MainHeading from "../../MainHeading";
+import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
+import faq_11_1 from "../../../assets/img/normal/faq_11_1.png";
+import SolAbout2 from "./SolutionReuseCom/SolutionAbout/solAbout2";
+import about_12_1 from "../../../assets/img/normal/about_12_1.jpg";
+import about_12_3 from "../../../assets/img/normal/about_12_3.jpg";
+import about_12_2 from "../../../assets/img/normal/about_12_2.jpg";
+import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
+import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
+import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
+import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
 
 import AutoBackupIcon from "../../../Imges/QblockIcon/AutoBackupIcon.jpg";
 import OurExpertise1 from "./SolutionReuseCom/OurExpertises/OurExpertise1";
@@ -108,8 +122,10 @@ const processSteps = [
     step: "STEP-01",
     description:
       "Streamline dairy operations with automated milk disposal tracking, ensuring efficient supply chain management, accurate record-keeping, and minimal wastage.",
+
     image: cropnet2,
     img: cropnet2,
+
     checklist: [
       "Milk Disposal Tracking",
       "Supply Chain Management",
@@ -122,8 +138,10 @@ const processSteps = [
     step: "STEP-02",
     description:
       "Maintain detailed animal records, including pedigree, health history, and breeding information, to improve livestock management and optimize dairy productivity.",
+
     image: cropnet2,
     img: cropnet2,
+
     checklist: [
       "Pedigree Tracking",
       "Health History Management",
@@ -136,8 +154,10 @@ const processSteps = [
     step: "STEP-03",
     description:
       "Track and manage fodder, calcium, minerals, medicines, and other inventory resources efficiently to ensure proper livestock nutrition and health.",
+
     image: cropnet2,
     img: cropnet2,
+
     checklist: [
       "Inventory Management",
       "Livestock Nutrition Tracking",
@@ -150,8 +170,10 @@ const processSteps = [
     step: "STEP-04",
     description:
       "Monitor cattle breeding cycles, heat dates, and service records while integrating with breeding centers for improved livestock reproduction and productivity.",
+
     image: cropnet2,
     img: cropnet2,
+
     checklist: [
       "Breeding Cycle Monitoring",
       "Heat Date Tracking",
@@ -177,7 +199,9 @@ const aboutData2 = {
     "GPS-based land mapping and field monitoring for better resource management.",
     "Smart tracking of seeds, chemicals, and farm inputs to maximize yield and sustainability.",
   ],
+
   images: [cropnet1, cropnet3, cropnet4],
+
   shapeImages: [about_12_shape, about_12_1_shape],
   demoLink: "https://www.youtube.com/watch?v=_sI_Ps7JSEk",
   trialLink: "https://dairycroptech.com/home/landing",
@@ -187,7 +211,9 @@ const TalkToAbout5Array = {
   title: "Talk to Us About Any",
   highlight: "Question?",
   subtitle: "Frequently Asked Questions",
+
   image: cropnet5,
+
   faqs: [
     {
       question:
@@ -218,7 +244,6 @@ const TalkToAbout5Array = {
     },
   ],
 };
-
 
 
 const CropnetPage = () => {

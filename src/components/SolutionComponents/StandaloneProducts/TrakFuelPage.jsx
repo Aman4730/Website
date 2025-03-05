@@ -1,4 +1,6 @@
 
+import React from "react";
+
 import MainHeading from "../../MainHeading";
 import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
 import about_2_1 from "../../../assets/img/normal/about_2_1.jpg";

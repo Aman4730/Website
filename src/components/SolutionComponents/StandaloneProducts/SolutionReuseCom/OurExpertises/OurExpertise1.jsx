@@ -1,8 +1,14 @@
+
+import React from "react";
+
 import line3 from "../../../../../assets/img/shape/line-3.png";
 import star2 from "../../../../../assets/img/shape/star-2.png";
 import process_bg_2 from "../../../../../assets/img/bg/process_bg_2.jpg";
 import title_shape_2 from "../../../../../assets/img/theme-img/title_shape_2.svg";
 import { Link } from "react-router-dom";
+
+import process_img_1 from "../../../../../assets/img/normal/process_img_1.jpg";
+
 
 const OurExpertise1 = ({ processSteps, processStepsArray = [] }) => {
   return (
@@ -92,7 +98,9 @@ const OurExpertise1 = ({ processSteps, processStepsArray = [] }) => {
                     </Link>
                   </div>
                   <div className="process-image">
+
                     <img src={step.image} alt={`Process Step ${step.id}`} />
+
                   </div>
                 </div>
               </div>

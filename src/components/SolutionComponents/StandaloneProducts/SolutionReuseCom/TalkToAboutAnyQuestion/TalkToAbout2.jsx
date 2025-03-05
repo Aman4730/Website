@@ -1,8 +1,7 @@
-/* eslint-disable react/prop-types */
 
-// import about_3_1 from "../../../../../assets/img/normal/about_3_1.png";
-// import faq_1_1 from "../../../../../assets/img/normal/about4_1.png";
-// import faq_1_1 from "../../../../../assets/img/normal/faq_1_1.png";
+import React from "react";
+import about_3_1 from "../../../../../assets/img/normal/about_3_1.png";
+import faq_1_1 from "../../../../../assets/img/normal/about4_1.png";
 
 import title_shape_2 from "../../../../../assets/img/theme-img/title_shape_2.svg";
 const TalkToAbout2 = ({ TalkToAbout2Array }) => {
@@ -24,7 +23,9 @@ const TalkToAbout2 = ({ TalkToAbout2Array }) => {
               </h2>
             </div>
             <div className="accordion-area accordion" id="faqAccordion">
+
               {TalkToAbout2Array?.TalkToAboutArray?.map((faq, index) => (
+
                 <div
                   key={faq.id}
                   className={`accordion-card ${index === 1 ? "active" : ""}`}
@@ -66,9 +67,11 @@ const TalkToAbout2 = ({ TalkToAbout2Array }) => {
             <div className="faq-img tilt-active">
               <div className="img-shape icon-masking">
                 <span className="mask-icon" />
+
                 <img src={TalkToAbout2Array?.img} alt="img" />
               </div>
               <img src={TalkToAbout2Array?.img} alt="Faq" />
+
             </div>
           </div>
         </div>

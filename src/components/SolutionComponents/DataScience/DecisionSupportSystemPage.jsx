@@ -1,4 +1,6 @@
 
+import React from "react";
+
 import MainHeading from "../../MainHeading";
 import about_13_1 from "../../../assets/img/normal/about_13_1.jpg";
 import about_13_2 from "../../../assets/img/normal/about_13_2.jpg";

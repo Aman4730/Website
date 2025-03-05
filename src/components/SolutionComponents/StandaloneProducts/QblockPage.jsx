@@ -1,4 +1,6 @@
 
+import React from "react";
+
 import MainHeading from "../../MainHeading";
 import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
 

@@ -1,4 +1,5 @@
 
+
 import MainHeading from "../../MainHeading";
 import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
 
@@ -19,6 +20,19 @@ import faq_5_3 from "../../../Imges/faq_5_3.jpg";
 // import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
 // import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
 
+
+import React from "react";
+import MainHeading from "../../MainHeading";
+import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
+import about_13_1 from "../../../assets/img/normal/about_13_1.jpg";
+import about_13_2 from "../../../assets/img/normal/about_13_2.jpg";
+import about_13_3 from "../../../assets/img/normal/about_13_3.jpg";
+import SolAbout4 from "./SolutionReuseCom/SolutionAbout/SolAbout4";
+import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
+import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
+import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
+import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
+
 import AccessControlIcon from "../../../Imges/QblockIcon/AccessControlIcon.jpg";
 import TalkToAbout1 from "./SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout1";
 import VersionControlIcon from "../../../Imges/QblockIcon/VersionControlIcon.jpg";
@@ -28,6 +42,7 @@ import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomation
 import "swiper/css";
 import "swiper/css/pagination";
 import OurExpertise1 from "./SolutionReuseCom/OurExpertises/OurExpertise1";
+
 import SolAbout4 from "./SolutionReuseCom/SolutionAbout/SolAbout4";
 
 const testimonials = [
@@ -69,8 +84,10 @@ const processSteps = [
     step: "STEP-01",
     description:
       "Admins can manage all users, including students, teachers, and parents, ensuring smooth role-based access control. The admin panel also allows for fee structure setup, payment tracking, attendance monitoring, and report generation.",
+
     image: sai2,
     img: sai2,
+
     checklist: ["User Management", "Fee Management", "Attendance Tracking"],
   },
   {
@@ -79,8 +96,10 @@ const processSteps = [
     step: "STEP-02",
     description:
       "Teachers can easily schedule and manage classes, track attendance, and submit grades. The dashboard enhances communication and allows for real-time data syncing with students and parents.",
+
     image: sai2,
     img: sai2,
+
     checklist: [
       "Class Scheduling",
       "Attendance Management",
@@ -93,8 +112,10 @@ const processSteps = [
     step: "STEP-03",
     description:
       "Students and parents can access academic schedules, view fee payments, track performance, and stay organized with real-time updates and mobile accessibility.",
+
     image: sai2,
     img: sai2,
+
     checklist: [
       "Fee Payment",
       "Timetable & Schedule Viewing",
@@ -107,8 +128,10 @@ const processSteps = [
     step: "STEP-04",
     description:
       "Sai-Software provides multi-language support, real-time data synchronization, and mobile accessibility to ensure a seamless user experience for all stakeholders.",
+
     image: sai2,
     img: sai2,
+
     checklist: [
       "Multi-language Support",
       "Real-Time Data Sync",
@@ -124,12 +147,14 @@ const processStepsArray = [
   "Secure & User-Friendly Interface",
 ];
 
+
 const TalkToAbout1Array = {
 
   img: faq_5_1,
   img1: faq_5_2,
   img2: faq_5_3,
   TalkToAboutArray: [
+
   {
     question: "How does the platform benefit schools and colleges?",
     answer:
@@ -149,8 +174,10 @@ const TalkToAbout1Array = {
     question: "Can students and parents track academic performance?",
     answer:
       "Yes, students and parents can monitor grades, attendance, and fee payments in real-time, ensuring complete transparency and better academic planning.",
+
   }]
 }
+
 
 const aboutData4 = [
   {

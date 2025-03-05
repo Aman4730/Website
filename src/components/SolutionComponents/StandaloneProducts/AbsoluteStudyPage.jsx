@@ -1,3 +1,4 @@
+
 import MainHeading from "../../MainHeading";
 import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
 
@@ -19,6 +20,20 @@ import edusaroj5 from "../../../Imges/edusaroj1_1.png"
 // import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
 // import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
 // import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
+
+import React from "react";
+import MainHeading from "../../MainHeading";
+import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
+import eduWhyChooseUS from "../../../Imges/eduWhyChooseUS.png";
+import SolAbout2 from "./SolutionReuseCom/SolutionAbout/solAbout2";
+import about_12_1 from "../../../assets/img/normal/about_12_1.jpg";
+import about_12_3 from "../../../assets/img/normal/about_12_3.jpg";
+import about_12_2 from "../../../assets/img/normal/about_12_2.jpg";
+import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
+import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
+import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
+import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
+
 import AutoBackupIcon from "../../../Imges/QblockIcon/AutoBackupIcon.jpg";
 import OurExpertise1 from "./SolutionReuseCom/OurExpertises/OurExpertise1";
 import about_12_shape from "../../../assets/img/normal/about_12_shape.png";
@@ -33,6 +48,9 @@ import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomation
 import CollaborationToolsIcon from "../../../Imges/QblockIcon/CollaborationToolsIcon.jpg";
 import UserGuestDeactivationIcon from "../../../Imges/QblockIcon/UserGuestDeactivationIcon.jpg";
 import StorageQuotaManagementIcon from "../../../Imges/QblockIcon/StorageQuotaManagementIcon.jpg";
+
+import faq_11_1 from "../../../assets/img/normal/faq_11_1.png";
+
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -106,8 +124,10 @@ const processSteps = [
     step: "STEP-01",
     description:
       "Create highly customizable quizzes tailored for individual or group assessments with flexible formats, personalized difficulty levels, and various question types.",
+
     image: edusaroj5,
     img: edusaroj5,
+
     checklist: [
       "Customizable Quiz Formats",
       "Personalized Difficulty Levels",
@@ -120,8 +140,10 @@ const processSteps = [
     step: "STEP-02",
     description:
       "Efficiently manage your question bank by storing, categorizing, and reusing questions, ensuring streamlined test creation and a variety of question formats.",
+
     image: edusaroj5,
     img: edusaroj5,
+
     checklist: [
       "Store & Categorize Questions",
       "Reuse Questions Across Quizzes",
@@ -134,8 +156,10 @@ const processSteps = [
     step: "STEP-03",
     description:
       "Enable adaptive testing with time-limited assessments, randomizing questions, and adjusting difficulty levels based on user performance to provide a dynamic learning experience.",
+
     image: edusaroj5,
     img: edusaroj5,
+
     checklist: [
       "Time-Limited Assessments",
       "Randomized Questions",
@@ -148,8 +172,10 @@ const processSteps = [
     step: "STEP-04",
     description:
       "Track performance with detailed analytics and reports, providing actionable insights on strengths, weaknesses, and opportunities for improvement.",
+
     image: edusaroj5,
     img: edusaroj5,
+
     checklist: [
       "Performance Reports",
       "Actionable Insights",
@@ -173,7 +199,9 @@ const aboutData2 = {
     "SAROJ offers customizable quiz creation and test assignments.",
     "It enables group-wise or individual assessments for better management.",
   ],
+
   images: [edusaroj1, edusaroj2, edusaroj3],
+
   shapeImages: [about_12_shape, about_12_1_shape],
   demoLink: "https://www.youtube.com/watch?v=_sI_Ps7JSEk",
   trialLink: "https://edusaroj.com/home/landing",
@@ -182,7 +210,9 @@ const TalkToAbout5Array = {
   title: "Talk To About SAROJ",
   highlight: "Questions?",
   subtitle: "Frequently Asked Questions",
+
   image: edusaroj4, // Use the image relevant to SAROJ
+
   faqs: [
     {
       question: "What is SAROJ?",

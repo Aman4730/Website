@@ -1,13 +1,24 @@
-import React from "react";
+
 import MainHeading from "../../MainHeading";
 import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
 import SolAbout3 from "./SolutionReuseCom/SolutionAbout/SolAbout3";
-import about_18_1 from "../../../assets/img/normal/about_18_1.jpg";
-import about_18_2 from "../../../assets/img/normal/about_18_2.jpg";
-import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
-import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
-import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
-import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
+
+// import about_18_1 from "../../../assets/img/normal/about_18_1.jpg";
+// import about_18_2 from "../../../assets/img/normal/about_18_2.jpg";
+
+import visiondesk1 from "../../../Imges/visiondesk1.png";
+// import visiondesk2 from "../../../Imges/visiondesk2.png";
+import visiondesk3 from "../../../Imges/visiondesk3.png";
+import visiondesk4 from "../../../Imges/visiondesk4.png";
+import visiondesk5 from "../../../Imges/visiondesk5.png";
+import visiondesk6 from "../../../Imges/visiondesk6.png";
+
+
+// import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
+// import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
+// import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
+// import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
+
 import OurExpertise1 from "./SolutionReuseCom/OurExpertises/OurExpertise1";
 import AuditTrailsIcon from "../../../Imges/QblockIcon/AuditTrailsIcon.jpg";
 import AccessControlIcon from "../../../Imges/QblockIcon/AccessControlIcon.jpg";
@@ -89,8 +100,8 @@ const VisionDeskPage = () => {
       step: "STEP-01",
       description:
         "Effortlessly fetch, organize, and analyze farmers' data, including land details, crop patterns, and yield insights.",
-      image: process_img_1,
-      img: process_img_1,
+      image: visiondesk4,
+      img: visiondesk4,
       checklist: [
         "Seamless Farmer Data Handling",
         "Real-time Land & Crop Monitoring",
@@ -103,8 +114,8 @@ const VisionDeskPage = () => {
       step: "STEP-02",
       description:
         "Seamlessly track government subsidies, financial aid, and loan disbursements to support farmers effectively.",
-      image: process_img_2,
-      img: process_img_2,
+      image: visiondesk4,
+      img: visiondesk4,
       checklist: [
         "Monitor Subsidy Distribution",
         "Ensure Transparent Transactions",
@@ -117,8 +128,8 @@ const VisionDeskPage = () => {
       step: "STEP-03",
       description:
         "Generate powerful reports, trend analysis, and data visualizations to drive informed agricultural decisions.",
-      image: process_img_3,
-      img: process_img_3,
+      image: visiondesk4,
+      img: visiondesk4,
       checklist: [
         "AI-Powered Data Insights",
         "Customizable Reports & Charts",
@@ -131,8 +142,8 @@ const VisionDeskPage = () => {
       step: "STEP-04",
       description:
         "Leverage cloud-based storage and a responsive design for real-time data accessibility on any device.",
-      image: process_img_4,
-      img: process_img_4,
+      image: visiondesk4,
+      img: visiondesk4,
       checklist: [
         "Secure Cloud Storage",
         "Cross-Device Compatibility",
@@ -146,7 +157,11 @@ const VisionDeskPage = () => {
     "Insightful Analytics",
     "Anywhere, Anytime Access",
   ];
-  const TalkToAboutAnyQuestion = [
+  const TalkToAboutAnyQuestion = 
+  {
+    img:visiondesk5,
+    img1:visiondesk6,
+    questionAns:[
     {
       id: 1,
       question: "How does this system help in tracking farmers' data?",
@@ -171,11 +186,11 @@ const VisionDeskPage = () => {
       answer:
         "We implement encrypted data storage, role-based access control, and cloud security measures to ensure your information remains protected at all times.",
     },
-  ];
+  ]}
   const aboutData3 = [
     {
       id: 1,
-      images: [about_18_1, about_18_2],
+      images: [visiondesk1, visiondesk3],
       experienceCount: 689,
       experienceText: "Happily active client’s",
       shadowTitle: "Vision Desk",

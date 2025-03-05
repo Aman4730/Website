@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+
 
 const TalkToAbout5 = ({ TalkToAbout5Array }) => {
   return (
@@ -67,8 +68,10 @@ const TalkToAbout5 = ({ TalkToAbout5Array }) => {
                 src={TalkToAbout5Array.image}
                 alt="FAQ"
                 style={{
-                  transform: "scaleX(-1)",
+                  // transform: "scaleX(-1)",
+                  borderRadius: '10px'
                 }}
+
               />
             </div>
           </div>

@@ -1,4 +1,4 @@
-import React from "react";
+
 import MainHeading from "../../MainHeading";
 import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
 
@@ -29,6 +29,7 @@ import StorageQuotaManagementIcon from "../../../Imges/QblockIcon/StorageQuotaMa
 import "swiper/css";
 import "swiper/css/pagination";
 import OurExpertise1 from "./SolutionReuseCom/OurExpertises/OurExpertise1";
+
 const testimonials = [
   {
     text: "“Effortlessly retrieve and manage comprehensive farmers' data, including detailed land records, crop patterns, historical yield insights, and predictive analytics for improved agricultural decision-making and productivity enhancement.”",
@@ -97,6 +98,7 @@ const testimonials = [
     designation: "",
   },
 ];
+
 const processSteps = [
   {
     id: 1,
@@ -156,12 +158,14 @@ const processSteps = [
     ],
   },
 ];
+
 const processStepsArray = [
   "Centralized Document",
   "Quick & Easy Access",
   "Advanced Security & Access Control",
   "Backup & Recovery",
 ];
+
 const TalkToAbout2Array = [
   {
     id: 1,
@@ -189,6 +193,7 @@ const TalkToAbout2Array = [
       "Yes! Qblock provides seamless integration with a variety of third-party applications, allowing you to automate workflows and enhance productivity.",
   },
 ];
+
 const aboutData = {
   title: "QBLOCK",
   subtitle: "Smart & Secure Document Management System",
@@ -204,6 +209,7 @@ const aboutData = {
   titleShape: title_shape_2,
   disconverMore: "https://youtu.be/ix_OpmpsRBY?si=fhE44BuZ7hRQs25V",
 };
+
 const QblockPage = () => {
   return (
     <div>

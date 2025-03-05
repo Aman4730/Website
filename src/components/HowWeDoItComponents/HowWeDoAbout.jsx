@@ -5,7 +5,7 @@ import about_feature_2_1 from "../../assets/img/icon/about_feature_2_1.svg";
 import about_feature_2_2 from "../../assets/img/icon/about_feature_2_2.svg";
 import { Link } from "react-router-dom";
 
-const HowWeDoItComponents = () => {
+const HowWeDoAbout = () => {
   return (
     <div className="space-bottom" id="about-sec">
       <div className="container th-container4">
@@ -78,4 +78,4 @@ const HowWeDoItComponents = () => {
   );
 };
 
-export default HowWeDoItComponents;
+export default HowWeDoAbout;

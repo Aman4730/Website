@@ -5,9 +5,9 @@ import { Grid } from "@mui/material";
 import { motion } from "framer-motion";
 import JobCard from "../components/CarrerComponents/JobCard";
 import { getFetch, postFetchData, putFetch } from "../api/Api";
-import JobOverView from "../components/CarrerComponents/JobOverView";
 import JobExplain from "../components/CarrerComponents/JobExplain";
 import ApplicantTable from "../components/CarrerComponents/ApplicantTable";
+import { toast, ToastContainer } from "react-toastify";
 
 const AdminPostPage = () => {
   const [open, setOpen] = useState(false);
@@ -89,11 +89,12 @@ const AdminPostPage = () => {
             JobQualifications: qualifications,
           }
         );
-        console.log("Response:", response.data);
+        toast.success(response.message, { autoClose: 2000 });
         handleFormClose();
         fetchData();
       } catch (error) {
         console.error("Error posting job:", error);
+        toast.error(error.response.data.message, { autoClose: 2000 });
       } finally {
         setLoading(false);
       }
@@ -116,14 +117,15 @@ const AdminPostPage = () => {
     try {
       const response = await putFetch(url, updatedData);
       if (response?.status === 200) {
-        console.log("Job Updated Successfully:", response.data);
+        toast.success(response.data.message, { autoClose: 2000 });
         handleFormClose();
         fetchData();
       } else {
-        console.error("Failed to update job:", response);
+        toast.error(response.data.message, { autoClose: 2000 });
       }
     } catch (error) {
       console.error("Error updating job:", error);
+      toast.error(error.response.data.message, { autoClose: 2000 });
     }
   };
   const handleEditJob = (jobData) => {
@@ -156,10 +158,39 @@ const AdminPostPage = () => {
       JobLocation: "",
       JobDescription: "",
     });
+    setEditID(0);
     setErrors({});
     setQualifications([]);
     setResponsibilities([]);
   };
+  const tableHeader = [
+    {
+      id: "cabinet_name",
+      numeric: false,
+      disablePadding: true,
+      label: "Cabinet Name",
+    },
+    {
+      id: "selected_groups",
+      numeric: false,
+      disablePadding: true,
+      label: "Selected Groups",
+    },
+    {
+      id: "selected_users",
+      numeric: false,
+      disablePadding: true,
+      label: "Selected User",
+    },
+
+    {
+      id: "Action",
+      numeric: false,
+      disablePadding: true,
+      label: "Action",
+      style: { marginLeft: "18px" },
+    },
+  ];
   return (
     <div>
       <MainHeading
@@ -230,7 +261,7 @@ const AdminPostPage = () => {
                         xs={12}
                         order={{ xs: 1, sm: 2 }}
                       >
-                        <ApplicantTable />
+                        <ApplicantTable headCells={tableHeader} />
                       </Grid>
                       <motion.div
                         initial={{ x: "100%", opacity: 0 }}
@@ -250,6 +281,7 @@ const AdminPostPage = () => {
           </div>
         </div>
       </div>
+      <ToastContainer position="bottom-left" autoClose={3000} />
     </div>
   );
 };

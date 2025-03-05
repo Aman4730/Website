@@ -137,8 +137,9 @@ export default function CarrerPage() {
       );
 
       const result = await response.json();
+      console.log(result);
       if (result.status) {
-        toast.success("Form submitted successfully");
+        toast.success(result.message, { autoClose: 2000 });
         setFormData({
           name: "",
           lastName: "",
@@ -153,7 +154,7 @@ export default function CarrerPage() {
         toast.error(result.message || "Something went wrong");
       }
     } catch (error) {
-      toast.error("Error submitting form");
+      toast.error(error.response.data.message, { autoClose: 2000 });
     } finally {
       setLoading(false);
     }
@@ -201,16 +202,43 @@ export default function CarrerPage() {
                   </Grid>
                 ) : (
                   <React.Fragment>
-                    <Grid item lg={3} sm={5} xs={12} order={{ xs: 2, sm: 1 }}>
+                    <Grid
+                      item
+                      lg={3}
+                      sm={5}
+                      xs={12}
+                      order={{ xs: 2, sm: 1 }}
+                      sx={{
+                        height: "915px",
+                        overflowY: "auto",
+                        scrollbarWidth: "thin",
+                        scrollbarColor: "#4786e6 #f1f1f1",
+                        "&::-webkit-scrollbar": {
+                          width: "6px",
+                        },
+                        "&::-webkit-scrollbar-track": {
+                          background: "#f1f1f1",
+                          borderRadius: "10px",
+                        },
+                        "&::-webkit-scrollbar-thumb": {
+                          background: "#ff6b6b",
+                          borderRadius: "10px",
+                        },
+                        "&::-webkit-scrollbar-thumb:hover": {
+                          background: "#e63946",
+                        },
+                      }}
+                    >
                       <motion.div
                         initial={{ x: "100%", opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ type: "tween", duration: 0.6 }}
                       >
                         <JobOverView
+                          jobData={jobData}
                           showDetails={showDetails}
                           handleCardBack={handleCardBack}
-                          jobData={jobData}
+                          handleCardClick={handleCardClick}
                         />
                       </motion.div>
                     </Grid>

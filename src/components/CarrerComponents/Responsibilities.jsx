@@ -12,7 +12,6 @@ import EditIcon from "@mui/icons-material/Edit";
 import HomeIcon from "@mui/icons-material/Home";
 
 const Responsibilities = ({ title, items = [], setItems, loading }) => {
-  console.log(items, "sdf");
   const [inputValue, setInputValue] = useState("");
   const [editIndex, setEditIndex] = useState(null);
 

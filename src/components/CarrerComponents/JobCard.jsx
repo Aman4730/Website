@@ -190,27 +190,29 @@ const JobCard = ({ handleCardClick, jobData = [], admin, handleEditJob }) => {
                 >
                   {admin ? "Update Now" : "Apply Now"}
                 </div>
-                <Button
-                  variant="outlined"
-                  fullWidth
-                  sx={{
-                    color: "text.secondary",
-                    borderColor: "divider",
-                    borderRadius: 2,
-                    fontWeight: 500,
-                    letterSpacing: "0.02em",
-                    textTransform: "none",
-                    transition: "all 0.2s ease",
-                    "&:hover": {
-                      bgcolor: "#f5f5f5",
-                      borderColor: "#bdbdbd",
-                      transform: "scale(1.02)",
-                    },
-                  }}
-                  onClick={() => handleCardClick(job)}
-                >
-                  Applicants
-                </Button>
+                {admin && (
+                  <Button
+                    variant="outlined"
+                    fullWidth
+                    sx={{
+                      color: "text.secondary",
+                      borderColor: "divider",
+                      borderRadius: 2,
+                      fontWeight: 500,
+                      letterSpacing: "0.02em",
+                      textTransform: "none",
+                      transition: "all 0.2s ease",
+                      "&:hover": {
+                        bgcolor: "#f5f5f5",
+                        borderColor: "#bdbdbd",
+                        transform: "scale(1.02)",
+                      },
+                    }}
+                    onClick={() => handleCardClick(job)}
+                  >
+                    Applicants
+                  </Button>
+                )}
               </Stack>
             </CardContent>
           </Card>

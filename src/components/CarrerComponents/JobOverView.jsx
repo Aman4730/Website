@@ -14,7 +14,12 @@ const chipStyle = {
   },
 };
 
-const JobOverView = ({ showDetails, handleCardBack, jobData }) => {
+const JobOverView = ({
+  showDetails,
+  handleCardBack,
+  jobData,
+  handleCardClick,
+}) => {
   function getDaysLeft(endDate) {
     const end = new Date(endDate);
     const today = new Date();
@@ -45,6 +50,7 @@ const JobOverView = ({ showDetails, handleCardBack, jobData }) => {
             backgroundColor: "#fff",
             marginBottom: "16px",
           }}
+          onClick={() => handleCardClick(job)}
         >
           <div
             className="job-card overview-card"

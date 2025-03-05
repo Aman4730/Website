@@ -27,7 +27,6 @@ const OurExpertise = ({ ExpertiseArray = {} }) => {
             <p className="mt-n2 mb-25 text-center text-xl-start">
               {ExpertiseArray.para}
             </p>
-            {console.log(ExpertiseArray.keyPoints)}
             {ExpertiseArray.keyPoints.map((data, index) => {
               return (
                 <div className="pe-xxl-4" style={{ marginBottom: "25px" }}>

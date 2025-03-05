@@ -1,7 +1,7 @@
 import axios from "axios";
 import { toast } from "react-toastify";
 const token = localStorage.getItem("token");
-console.log(token);
+
 export const getFetch = async (url) => {
   try {
     const response = await axios({
@@ -15,7 +15,6 @@ export const getFetch = async (url) => {
 
     return response;
   } catch (error) {
-    console.log("ashish", error);
     if (error.status === 401) {
       localStorage.removeItem("tokenData");
       toast("Token expired Please Login");
@@ -102,7 +101,6 @@ export const postFetch = async (url, data) => {
       },
       data,
     });
-    console.log("aspi", response);
 
     if (response) {
       return response;
@@ -308,7 +306,6 @@ export const postFetchData = async (url, data) => {
       data,
       // withCredentials: true,
     });
-    console.log("aspi", response);
     if (response) {
       return response?.data;
     }

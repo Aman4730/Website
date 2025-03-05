@@ -78,6 +78,21 @@ function App() {
         <Route path="/solutions/TrakFuelPage" element={<TrakFuelPage />} />
         <Route path="/solutions/IManagerPage" element={<IManagerPage />} />
         <Route path="/solutions/CropnetPage" element={<CropnetPage />} />
+
+        <Route path="/solutions/StudentFinanceManagement" element={<AksharPage />} />
+        <Route path="/solutions/CollegeFeeManagement" element={<SaiSoftwarePage />} />
+
+        {/*Data Science*/}
+        <Route path="/solutions/AgricultureInformationSystemPage" element={<AgricultureInformationSystemPage />} />
+        <Route path="/solutions/DecisionSupportSystemPage" element={<DecisionSupportSystemPage />} />
+        <Route path="/solutions/FieldQuotationSystemPage" element={<FieldQuotationSystemPage />} />
+        <Route path="/solutions/IssueManagementSystemPage" element={<IssueManagementSystemPage />} />
+
+        {/*Internet of Things (IoT)*/}
+        <Route path="/solutions/MilkAnalyserPage" element={<MilkAnalyserPage />} />
+        <Route path="/solutions/PhotonPage" element={<PhotonPage />} />
+        <Route path="/solutions/DairyApplicationPage" element={<DairyApplicationPage />} />
+
         <Route
           path="/solutions/StudentFinanceManagement"
           element={<AksharPage />}
@@ -115,12 +130,18 @@ function App() {
           path="/solutions/DairyApplicationPage"
           element={<DairyApplicationPage />}
         />
+
         <Route path="/solutions/EklavyaPage" element={<EklavyaPage />} />
         {/*Mobile Applications*/}
         <Route path="/solutions/IRediPage" element={<IRediPage />} />
         <Route path="/solutions/JKTourismPage" element={<JKTourismPage />} />
         <Route path="/solutions/KarGoPage" element={<KarGoPage />} />
         <Route path="/solutions/MonitorMPage" element={<MonitorMPage />} />
+
+        <Route path="/solutions/SarojEducationPage" element={<SarojEducationPage />} />
+        <Route path="/solutions/TourismApplicationPage" element={<TourismApplicationPage />} />
+        <Route path="/solutions/CommunicationApplicationPage" element={<CommunicationApplicationPage />} />
+
         <Route
           path="/solutions/SarojEducationPage"
           element={<SarojEducationPage />}
@@ -133,11 +154,18 @@ function App() {
           path="/solutions/CommunicationApplicationPage"
           element={<CommunicationApplicationPage />}
         />
+
         <Route path="/MobileComponents" element={<MobileComponents />} />
         {/*Solution*/}
 
         {/*Services*/}
         {/*IT Services*/}
+
+        <Route path="/services/ApplicationDevelopment" element={<ApplicationDevelopment />} />
+        <Route  path="/services/ApplicationReengineering" element={<ApplicationReengineering />} />
+        <Route path="/services/EnterpriseApplication" element={<EnterpriseApplication />} />
+        <Route path="/services/ProductOrientedDelivery" element={<ProductOrientedDelivery />} />
+
         <Route
           path="/services/ApplicationDevelopment"
           element={<ApplicationDevelopment />}
@@ -154,11 +182,22 @@ function App() {
           path="/services/ProductOrientedDelivery"
           element={<ProductOrientedDelivery />}
         />
+
         <Route path="/services/CloudMigration" element={<CloudMigration />} />
         <Route path="/services/POCDevelopment" element={<POCDevelopment />} />
         {/*IT Services*/}
 
         {/*Infra Services*/}
+
+        <Route path="/services/IndusTowersLimited" element={<IndusTowersLimited />} />
+        <Route path="/services/CentralCattleBreedingFarm" element={<CentralCattleBreedingFarm />} />
+        <Route path="/services/OrganicHealthProductsInitiative" element={<OrganicHealthProductsInitiative />} />
+        {/*Infra Services*/}
+
+        {/*Accomplishments*/}
+        <Route path="/services/AcmeSolarCMSSystem" element={<AcmeSolarCMSSystem />} />
+        <Route path="/services/JammuSmartCityProject" element={<JammuSmartCityProject />} />
+
         <Route
           path="/services/IndusTowersLimited"
           element={<IndusTowersLimited />}
@@ -182,6 +221,7 @@ function App() {
           path="/services/JammuSmartCityProject"
           element={<JammuSmartCityProject />}
         />
+
         <Route path="/services/JammuTourism" element={<JammuTourism />} />
         <Route path="/services/MOVCDNER" element={<MOVCDNER />} />
         {/*Accomplishments*/}

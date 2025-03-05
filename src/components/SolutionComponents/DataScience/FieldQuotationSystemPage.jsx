@@ -1,11 +1,24 @@
+
+
+import MainHeading from "../../MainHeading";
+import about_18_1 from "../../../assets/img/normal/about_18_1.jpg";
+import about_18_2 from "../../../assets/img/normal/about_18_2.jpg";
+
+
+
 import React from "react";
 import MainHeading from "../../MainHeading";
 import about_18_1 from "../../../assets/img/normal/about_18_1.jpg";
 import about_18_2 from "../../../assets/img/normal/about_18_2.jpg";
+
 import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
 import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
 import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
 import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
+
+
+// import CollaborationToolsIcon from "../../../Imges/QblockIcon/CollaborationToolsIcon.jpg";
+
 import AuditTrailsIcon from "../../../Imges/QblockIcon/AuditTrailsIcon.jpg";
 import KeyFeatures from "../StandaloneProducts/SolutionReuseCom/KeyFeatures";
 import AccessControlIcon from "../../../Imges/QblockIcon/AccessControlIcon.jpg";
@@ -14,7 +27,9 @@ import DocumentsStorageIcon from "../../../Imges/QblockIcon/DocumentsStorageIcon
 import SolAbout3 from "../StandaloneProducts/SolutionReuseCom/SolutionAbout/SolAbout3";
 import DocumentsRetrievalIcon from "../../../Imges/QblockIcon/DocumentsRetrievalIcon.jpg";
 import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomationIcon.jpg";
+
 import CollaborationToolsIcon from "../../../Imges/QblockIcon/CollaborationToolsIcon.jpg";
+
 import OurExpertise1 from "../StandaloneProducts/SolutionReuseCom/OurExpertises/OurExpertise1";
 import TalkToAbout from "../StandaloneProducts/SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout";
 import "swiper/css";
@@ -190,4 +205,6 @@ const FieldQuotationSystemPage = () => {
   );
 };
 
+
 export default FieldQuotationSystemPage;
+

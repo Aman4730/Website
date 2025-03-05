@@ -1,4 +1,6 @@
+
 import React from "react";
+
 import MainHeading from "../../MainHeading";
 import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
 import SolAbout5 from "./SolutionReuseCom/SolutionAbout/SolAbout5";
@@ -8,9 +10,11 @@ import feature_2_2 from "../../../assets/img/icon/feature_2_2.svg";
 import feature_2_4 from "../../../assets/img/icon/feature_2_4.svg";
 import feature_8_1 from "../../../assets/img/normal/feature_8_1.png";
 import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
+
 import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
 import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
 import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
+
 import OurExpertise1 from "./SolutionReuseCom/OurExpertises/OurExpertise1";
 import AuditTrailsIcon from "../../../Imges/QblockIcon/AuditTrailsIcon.jpg";
 import AccessControlIcon from "../../../Imges/QblockIcon/AccessControlIcon.jpg";
@@ -19,6 +23,10 @@ import VersionControlIcon from "../../../Imges/QblockIcon/VersionControlIcon.jpg
 import DocumentsStorageIcon from "../../../Imges/QblockIcon/DocumentsStorageIcon.jpg";
 import DocumentsRetrievalIcon from "../../../Imges/QblockIcon/DocumentsRetrievalIcon.jpg";
 import CollaborationToolsIcon from "../../../Imges/QblockIcon/CollaborationToolsIcon.jpg";
+
+
+import talkabout from "../../../Imges/akshar1.png";
+
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -81,8 +89,10 @@ const processSteps = [
     step: "STEP-02",
     description:
       "Flexible loan offerings tailored to the needs of institutions and students for better financial management.",
-    image: process_img_2,
-    img: process_img_2,
+
+    image: process_img_1,
+    img: process_img_1,
+
     checklist: [
       "Institution-Specific Loan Configurations",
       "Student-Centric Loan Customization",
@@ -95,8 +105,10 @@ const processSteps = [
     step: "STEP-03",
     description:
       "Students can track loans, manage EMIs, and access profiles, while institutions handle user management and communication.",
-    image: process_img_3,
-    img: process_img_3,
+
+    image: process_img_1,
+    img: process_img_1,
+
     checklist: [
       "Loan & EMI Tracking",
       "Profile & Transaction Management",
@@ -109,8 +121,10 @@ const processSteps = [
     step: "STEP-04",
     description:
       "The Akshar mobile app enables students and institutions to manage loans on-the-go with real-time access and secure transactions.",
-    image: process_img_4,
-    img: process_img_4,
+
+    image: process_img_1,
+    img: process_img_1,
+
     checklist: [
       "Real-Time Loan Access",
       "Secure Transactions",
@@ -124,7 +138,11 @@ const processStepsArray = [
   "Student & Institution Dashboard",
   "Mobile-Friendly Loan Management",
 ];
-const TalkToAbout2Array = [
+
+const TalkToAbout2Array = {
+  img: talkabout,
+  TalkToAboutArray: [
+
   {
     id: 1,
     question: "How does Akshar simplify education loans?",
@@ -148,8 +166,10 @@ const TalkToAbout2Array = [
     question: "How secure is Akshar’s platform?",
     answer:
       "Akshar ensures top-tier security with encrypted data storage, multi-factor authentication, and strict access controls to protect student and institution information.",
-  },
-];
+
+  }]
+}
+
 const aboutData5 = [
   {
     id: 1,

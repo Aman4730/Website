@@ -1,4 +1,6 @@
+
 import React from "react";
+
 
 const TalkToAbout5 = ({ TalkToAbout5Array }) => {
   return (
@@ -63,7 +65,17 @@ const TalkToAbout5 = ({ TalkToAbout5Array }) => {
           </div>
           <div className="col-xl-6">
             <div className="faq-image11">
-              <img src={TalkToAbout5Array.image} alt="FAQ" />
+
+              <img
+                src={TalkToAbout5Array.image}
+                alt="FAQ"
+                style={{
+                  // transform: "scaleX(-1)",
+                  borderRadius: '10px'
+                }}
+
+              />
+
             </div>
           </div>
         </div>

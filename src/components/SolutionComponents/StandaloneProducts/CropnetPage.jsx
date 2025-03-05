@@ -1,3 +1,27 @@
+
+
+import MainHeading from "../../MainHeading";
+import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
+// import faq_11_1 from "../../../assets/img/normal/faq_11_1.png";
+import SolAbout2 from "./SolutionReuseCom/SolutionAbout/solAbout2";
+
+// import about_12_1 from "../../../assets/img/normal/about_12_1.jpg";
+// import about_12_3 from "../../../assets/img/normal/about_12_3.jpg";
+// import about_12_2 from "../../../assets/img/normal/about_12_2.jpg";
+
+import cropnet1 from "../../../Imges/cropnet1.png";
+import cropnet2 from "../../../Imges/cropnet2.png"
+import cropnet3 from "../../../Imges/cropnet3.png"
+import cropnet4 from "../../../Imges/cropnet4.png"
+import cropnet5 from "../../../Imges/cropnet5.png"
+
+// import visiondesk6 from "../../../Imges/visiondesk6.png";
+
+// import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
+// import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
+// import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
+// import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
+
 import React from "react";
 import MainHeading from "../../MainHeading";
 import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
@@ -10,6 +34,7 @@ import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
 import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
 import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
 import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
+
 import AutoBackupIcon from "../../../Imges/QblockIcon/AutoBackupIcon.jpg";
 import OurExpertise1 from "./SolutionReuseCom/OurExpertises/OurExpertise1";
 import about_12_shape from "../../../assets/img/normal/about_12_shape.png";
@@ -89,6 +114,7 @@ const testimonials = [
     designation: "",
   },
 ];
+
 const processSteps = [
   {
     id: 1,
@@ -96,8 +122,10 @@ const processSteps = [
     step: "STEP-01",
     description:
       "Streamline dairy operations with automated milk disposal tracking, ensuring efficient supply chain management, accurate record-keeping, and minimal wastage.",
-    image: process_img_1,
-    img: process_img_1,
+
+    image: cropnet2,
+    img: cropnet2,
+
     checklist: [
       "Milk Disposal Tracking",
       "Supply Chain Management",
@@ -110,8 +138,10 @@ const processSteps = [
     step: "STEP-02",
     description:
       "Maintain detailed animal records, including pedigree, health history, and breeding information, to improve livestock management and optimize dairy productivity.",
-    image: process_img_2,
-    img: process_img_2,
+
+    image: cropnet2,
+    img: cropnet2,
+
     checklist: [
       "Pedigree Tracking",
       "Health History Management",
@@ -124,8 +154,10 @@ const processSteps = [
     step: "STEP-03",
     description:
       "Track and manage fodder, calcium, minerals, medicines, and other inventory resources efficiently to ensure proper livestock nutrition and health.",
-    image: process_img_3,
-    img: process_img_3,
+
+    image: cropnet2,
+    img: cropnet2,
+
     checklist: [
       "Inventory Management",
       "Livestock Nutrition Tracking",
@@ -138,8 +170,10 @@ const processSteps = [
     step: "STEP-04",
     description:
       "Monitor cattle breeding cycles, heat dates, and service records while integrating with breeding centers for improved livestock reproduction and productivity.",
-    image: process_img_4,
-    img: process_img_4,
+
+    image: cropnet2,
+    img: cropnet2,
+
     checklist: [
       "Breeding Cycle Monitoring",
       "Heat Date Tracking",
@@ -147,12 +181,14 @@ const processSteps = [
     ],
   },
 ];
+
 const processStepsArray = [
   "Automated Milk Disposal",
   "Animal Records Management",
   "Stock & Inventory Management",
   "Cattle Service Register",
 ];
+
 const aboutData2 = {
   title: "Smart Dairy & Agricultural Management",
   subtitle: "Enhancing Dairy & Agriculture with IoT and Data Analytics",
@@ -163,16 +199,21 @@ const aboutData2 = {
     "GPS-based land mapping and field monitoring for better resource management.",
     "Smart tracking of seeds, chemicals, and farm inputs to maximize yield and sustainability.",
   ],
-  images: [about_12_1, about_12_3, about_12_2],
+
+  images: [cropnet1, cropnet3, cropnet4],
+
   shapeImages: [about_12_shape, about_12_1_shape],
   demoLink: "https://www.youtube.com/watch?v=_sI_Ps7JSEk",
   trialLink: "https://dairycroptech.com/home/landing",
 };
+
 const TalkToAbout5Array = {
   title: "Talk to Us About Any",
   highlight: "Question?",
   subtitle: "Frequently Asked Questions",
-  image: faq_11_1,
+
+  image: cropnet5,
+
   faqs: [
     {
       question:
@@ -203,6 +244,7 @@ const TalkToAbout5Array = {
     },
   ],
 };
+
 
 const CropnetPage = () => {
   return (

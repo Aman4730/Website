@@ -14,40 +14,15 @@ import service_card_1 from "../../../assets/img/icon/service_card_1.svg";
 import service_card_2 from "../../../assets/img/icon/service_card_2.svg";
 import service_card_3 from "../../../assets/img/icon/service_card_3.svg";
 import service_card_4 from "../../../assets/img/icon/service_card_4.svg";
-import project_2_1 from "../../../assets/img/project/project_2_1.jpg";
-import project_2_2 from "../../../assets/img/project/project_2_2.jpg";
-import project_2_3 from "../../../assets/img/project/project_2_3.jpg";
 import infra from "../../../Imges/infra.jpg";
 import infra1 from "../../../Imges/infra1.jpg";
 import infra2 from "../../../Imges/infra2.jpg";
 import infra_why from "../../../Imges/infra_why.jpg";
+import ServiceThreeCard from "../ServicesResueCom/ServiceThreeCard";
+import counter_card_4_1 from "../../../assets/img/icon/counter_card_4_1.svg";
+import counter_card_4_2 from "../../../assets/img/icon/counter_card_4_2.svg";
+import counter_card_4_3 from "../../../assets/img/icon/counter_card_4_3.svg";
 const CentralCattleBreedingFarm = () => {
-  const services = [
-    {
-      img: service_7_1,
-      title: "Agile Product Development",
-      desc: "Stop chasing leads and attract them with targeted campaigns. Webteck's suite of tools, including...",
-      link: "service-details.html",
-    },
-    {
-      img: service_7_2,
-      title: "Continuous Integration",
-      desc: "Increase conversions with AI-powered insights and automation tools for your business success...",
-      link: "service-details.html",
-    },
-    {
-      img: service_7_3,
-      title: "Scalable Architecture",
-      desc: "Maximize your return on investment with data-driven marketing strategies and AI-driven solutions...",
-      link: "service-details.html",
-    },
-    {
-      img: service_7_3,
-      title: "DevOps Integration",
-      desc: "Maximize your return on investment with data-driven marketing strategies and AI-driven solutions...",
-      link: "service-details.html",
-    },
-  ];
   const features = [
     {
       id: 1,
@@ -118,17 +93,42 @@ const CentralCattleBreedingFarm = () => {
     "Eco-friendly waste management",
     "Energy-efficient operations",
   ];
+  const cardData = [
+    {
+      icon: counter_card_4_1,
+      number: "15+",
+      title: "Renovated Structures",
+      description:
+        "Modernized and reinforced buildings for enhanced durability and safety.",
+    },
+    {
+      icon: counter_card_4_2,
+      number: "600m",
+      title: "New Roadways",
+      description:
+        "Developing and expanding road networks for better connectivity.",
+    },
+    {
+      icon: counter_card_4_3,
+      number: "100%",
+      title: "Eco-Friendly Compliance",
+      description:
+        "Ensuring sustainability and environmental responsibility in all projects.",
+    },
+  ];
+
   return (
     <div>
       <MainHeading
         title="Central Cattle Breeding Farm"
         subtitle="Central Cattle Breeding Farm"
-        breadcrumbs={[{ label: "Home", link: "/" }, { label: "Solution" }]}
+        breadcrumbs={[{ label: "Home", link: "/" }, { label: "Services" }]}
       />
       <ServiceAbout2 features={features} />
+      <ServiceThreeCard cardData={cardData} />
+      <ServiceAbout3 data={about3} about3features={about3features} />
       <Services services={services1} />
       <FarmRenovation projects={projects} />
-      <ServiceAbout3 data={about3} about3features={about3features} />
     </div>
   );
 };

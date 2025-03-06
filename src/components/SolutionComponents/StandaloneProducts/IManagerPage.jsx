@@ -18,7 +18,8 @@ import VersionControlIcon from "../../../Imges/QblockIcon/VersionControlIcon.jpg
 import DocumentsStorageIcon from "../../../Imges/QblockIcon/DocumentsStorageIcon.jpg";
 import DocumentsRetrievalIcon from "../../../Imges/QblockIcon/DocumentsRetrievalIcon.jpg";
 import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomationIcon.jpg";
-
+import visiondesk5 from "../../../Imges/visiondesk5.png";
+import visiondesk6 from "../../../Imges/visiondesk6.png";
 const processSteps = [
   {
     id: 1,
@@ -135,32 +136,37 @@ const aboutData1 = {
   videoLink: "https://www.youtube.com/watch?v=_sI_Ps7JSEk",
 };
 
-const TalkToAboutAnyQuestion = [
-  {
-    id: 1,
-    question: "How does the supply chain management system improve efficiency?",
-    answer:
-      "Our system automates transaction recording, optimizes logistics tracking, and provides real-time insights to enhance supply chain operations.",
-  },
-  {
-    id: 2,
-    question: "How does IoT improve milk collection quality?",
-    answer:
-      "IoT-enabled milk collection units reduce adulteration, ensure automated quality testing, and establish transparent farmer-to-factory transactions.",
-  },
-  {
-    id: 3,
-    question: "What industries can benefit from this solution?",
-    answer:
-      "Industries such as Cement, Fertilizer, Cold Storage, and Agriculture can leverage these tools for better operational management and efficiency.",
-  },
-  {
-    id: 4,
-    question: "How does the business intelligence tool help organizations?",
-    answer:
-      "The tool automates data collection, generates real-time reports, and minimizes errors, leading to accurate decision-making and improved business operations.",
-  },
-];
+const TalkToAboutAnyQuestion = {
+  img: visiondesk5,
+  img1: visiondesk6,
+  questionAns: [
+    {
+      id: 1,
+      question:
+        "How does the supply chain management system improve efficiency?",
+      answer:
+        "Our system automates transaction recording, optimizes logistics tracking, and provides real-time insights to enhance supply chain operations.",
+    },
+    {
+      id: 2,
+      question: "How does IoT improve milk collection quality?",
+      answer:
+        "IoT-enabled milk collection units reduce adulteration, ensure automated quality testing, and establish transparent farmer-to-factory transactions.",
+    },
+    {
+      id: 3,
+      question: "What industries can benefit from this solution?",
+      answer:
+        "Industries such as Cement, Fertilizer, Cold Storage, and Agriculture can leverage these tools for better operational management and efficiency.",
+    },
+    {
+      id: 4,
+      question: "How does the business intelligence tool help organizations?",
+      answer:
+        "The tool automates data collection, generates real-time reports, and minimizes errors, leading to accurate decision-making and improved business operations.",
+    },
+  ],
+};
 
 const IManagerPage = () => {
   return (

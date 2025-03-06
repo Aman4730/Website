@@ -1,39 +1,12 @@
-
-import MainHeading from "../../MainHeading";
-import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
-
-import edusaroj4 from "../../../Imges/edusaroj1.png"
-
-// import eduWhyChooseUS from "../../../Imges/eduWhyChooseUS.png";
-
-import SolAbout2 from "./SolutionReuseCom/SolutionAbout/solAbout2";
-
-import edusaroj1 from "../../../Imges/edusaroj4.png"
-import edusaroj2 from "../../../Imges/edusaroj2.png"
-import edusaroj3 from "../../../Imges/edusaroj3.png"
-// import about_12_1 from "../../../assets/img/normal/about_12_1.jpg";
-// import about_12_3 from "../../../assets/img/normal/about_12_3.jpg";
-// import about_12_2 from "../../../assets/img/normal/about_12_2.jpg";
-
-// import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
-import edusaroj5 from "../../../Imges/edusaroj1_1.png"
-// import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
-// import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
-// import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
-
 import React from "react";
 import MainHeading from "../../MainHeading";
+import edusaroj4 from "../../../Imges/edusaroj1.png";
+import edusaroj1 from "../../../Imges/edusaroj4.png";
+import edusaroj2 from "../../../Imges/edusaroj2.png";
+import edusaroj3 from "../../../Imges/edusaroj3.png";
+import edusaroj5 from "../../../Imges/edusaroj1_1.png";
 import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
-import eduWhyChooseUS from "../../../Imges/eduWhyChooseUS.png";
 import SolAbout2 from "./SolutionReuseCom/SolutionAbout/solAbout2";
-import about_12_1 from "../../../assets/img/normal/about_12_1.jpg";
-import about_12_3 from "../../../assets/img/normal/about_12_3.jpg";
-import about_12_2 from "../../../assets/img/normal/about_12_2.jpg";
-import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
-import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
-import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
-import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
-
 import AutoBackupIcon from "../../../Imges/QblockIcon/AutoBackupIcon.jpg";
 import OurExpertise1 from "./SolutionReuseCom/OurExpertises/OurExpertise1";
 import about_12_shape from "../../../assets/img/normal/about_12_shape.png";
@@ -48,10 +21,6 @@ import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomation
 import CollaborationToolsIcon from "../../../Imges/QblockIcon/CollaborationToolsIcon.jpg";
 import UserGuestDeactivationIcon from "../../../Imges/QblockIcon/UserGuestDeactivationIcon.jpg";
 import StorageQuotaManagementIcon from "../../../Imges/QblockIcon/StorageQuotaManagementIcon.jpg";
-
-import faq_11_1 from "../../../assets/img/normal/faq_11_1.png";
-
-
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -211,7 +180,7 @@ const TalkToAbout5Array = {
   highlight: "Questions?",
   subtitle: "Frequently Asked Questions",
 
-  image: edusaroj4, // Use the image relevant to SAROJ
+  image: edusaroj4,
 
   faqs: [
     {

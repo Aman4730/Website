@@ -1,10 +1,16 @@
 import React from "react";
-import WorkingProcess from "../../workingProcess";
+import HowWeDoItComponents from "../../HowWeDoItComponents/HowWeDoItComponents";
+import MainHeading from "../../MainHeading";
 
 const MOVCDNER = () => {
   return (
     <div>
-      <WorkingProcess />
+      <MainHeading
+        title="MOVCDNER"
+        subtitle="Mission Organic Value Chain Development for North East Region"
+        breadcrumbs={[{ label: "Home", link: "/" }, { label: "Services" }]}
+      />
+      <HowWeDoItComponents />
     </div>
   );
 };

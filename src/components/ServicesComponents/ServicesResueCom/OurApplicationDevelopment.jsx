@@ -58,13 +58,15 @@ const OurApplicationDevelopment = ({ applicationservices }) => {
                     <h3
                       className="box-title"
                       style={{
-                        whiteSpace: "nowrap",
+                        whiteSpace:
+                          expandedCard === service.id ? "normal" : "nowrap",
                         overflow: "hidden",
                         textOverflow: "ellipsis",
                       }}
                     >
                       <a href="service-details.html">{service.title}</a>
                     </h3>
+
                     <p
                       className="service-item_text"
                       style={{

@@ -2,7 +2,7 @@ import React from "react";
 
 const ServiceAbout2 = ({ features }) => {
   return (
-    <div className="position-relative overflow-hidden space">
+    <div className="position-relative overflow-hidden space-top">
       <div className="container th-container4">
         <div className="feature-wrap9 style2">
           {features.map((feature) => (

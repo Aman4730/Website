@@ -1,16 +1,21 @@
 import React from "react";
+import SEO from "../../../Imges/SEO1.jpg";
 import MainHeading from "../../MainHeading";
+import Digital from "../../../Imges/Digital.jpg";
+import blog_1_1 from "../../../assets/img/blog/blog_1_1.jpg";
+import blog_1_2 from "../../../assets/img/blog/blog_1_2.jpg";
+import blog_1_3 from "../../../assets/img/blog/blog_1_3.jpg";
+import blog_1_4 from "../../../assets/img/blog/blog_1_4.jpg";
 import ServiceAboutUs from "../ServicesResueCom/ServiceAboutUs";
+import SuccessStories from "../ServicesResueCom/SuccessStories";
 import ServiceLanguage from "../ServicesResueCom/ServiceLanguage";
 import ServiceWhatWeDo2 from "../ServicesResueCom/ServiceWhatWeDo2";
-import node from "../../../Imges/language/node.png";
-import react from "../../../Imges/language/react.png";
-import Angular from "../../../Imges/language/Angular.png";
-import android1 from "../../../Imges/language/android1.png";
-import SuccessStories from "../ServicesResueCom/SuccessStories";
 import service_7_1 from "../../../assets/img/icon/service_7_1.svg";
 import service_7_2 from "../../../assets/img/icon/service_7_2.svg";
 import service_7_3 from "../../../assets/img/icon/service_7_3.svg";
+import DataCentralization from "../../../Imges/DataCentralization.jpg";
+import ScalabilitySecurity from "../../../Imges/ScalabilitySecurity.png";
+
 const EnterpriseApplication = () => {
   const aboutFeatures = {
     title: "Enterprise Application Solutions",
@@ -28,7 +33,6 @@ const EnterpriseApplication = () => {
       },
     ],
   };
-
   const services = [
     {
       img: service_7_1,
@@ -52,31 +56,70 @@ const EnterpriseApplication = () => {
   const languages = [
     {
       name: "Digital Transformation",
-      img: node,
+      img: SEO,
       desc: "Modernize legacy systems with cloud-native architectures",
     },
     {
       name: "Process Optimization",
-      img: react,
+      img: Digital,
       desc: "Automate workflows across business units",
     },
     {
       name: "Data Centralization",
-      img: Angular,
+      img: DataCentralization,
       desc: "Unified data platform for enterprise-wide insights",
     },
     {
       name: "Scalability & Security",
-      img: android1,
+      img: ScalabilitySecurity,
       desc: "Ensure enterprise growth with robust, secure, and scalable solutions",
     },
   ];
+  const blogData = {
+    title: "Recent POD Success",
+    subtitle: "Success & Stories",
+    shadowTitle: "Update",
+    posts: [
+      {
+        img: blog_1_1,
+        date: "15 Jan, 2024",
+        comments: 2,
+        title: "Enterprise SaaS Platform",
+        link: "/contactUs",
+        desc: "60% faster time-to-market with agile development and cloud-native architecture.",
+      },
+      {
+        img: blog_1_2,
+        date: "16 Jan, 2024",
+        comments: 3,
+        title: "Mobile Banking Solution",
+        link: "/contactUs",
+        desc: "2M+ users onboarded within the first 6 months, ensuring seamless transactions and security.",
+      },
+      {
+        img: blog_1_3,
+        date: "17 Jan, 2024",
+        comments: 2,
+        title: "AI E-Commerce Analytics",
+        link: "/contactUs",
+        desc: "30% increase in customer retention through data-driven insights and personalized recommendations.",
+      },
+      {
+        img: blog_1_4,
+        date: "19 Jan, 2024",
+        comments: 4,
+        title: "Telehealth App",
+        link: "/contactUs",
+        desc: "Reduced patient wait times by 50% with an intuitive and secure digital consultation platform.",
+      },
+    ],
+  };
   return (
     <div>
       <MainHeading
         title="Enterprise Application Solutions"
         subtitle="Enterprise Application Solutions"
-        breadcrumbs={[{ label: "Home", link: "/" }, { label: "Solution" }]}
+        breadcrumbs={[{ label: "Home", link: "/" }, { label: "Services" }]}
       />
       <ServiceAboutUs aboutFeatures={aboutFeatures} />
       <ServiceWhatWeDo2
@@ -84,7 +127,7 @@ const EnterpriseApplication = () => {
         sectionTitle="Enterprise Application Solutions"
       />
       <ServiceLanguage languages={languages} />
-      <SuccessStories />
+      <SuccessStories data={blogData} />
     </div>
   );
 };

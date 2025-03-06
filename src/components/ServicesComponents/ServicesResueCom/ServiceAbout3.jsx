@@ -2,7 +2,7 @@ import React from "react";
 
 const ServiceAbout3 = ({ data, about3features }) => {
   return (
-    <div className="position-relative overflow-hidden">
+    <div className="position-relative space-top overflow-hidden">
       <div className="container th-container4">
         {data.map((item, index) => (
           <div key={index} className="feature-wrap9 style2 mb-5">

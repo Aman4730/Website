@@ -21,6 +21,7 @@ import OurExpertise1 from "../StandaloneProducts/SolutionReuseCom/OurExpertises/
 import TalkToAbout2 from "../StandaloneProducts/SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout2";
 import "swiper/css";
 import "swiper/css/pagination";
+import talkabout from "../../../Imges/akshar1.png";
 
 const testimonials = [
   {
@@ -127,32 +128,35 @@ const processStepsArray = [
   "Smart Agricultural Insights",
 ];
 
-const TalkToAbout2Array = [
-  {
-    id: 1,
-    question: "How does IMS improve issue management?",
-    answer:
-      "IMS streamlines issue resolution by assigning tasks to the responsible person in real-time, reducing email escalations, and ensuring faster problem-solving.",
-  },
-  {
-    id: 2,
-    question: "What role does AIS play in crop management?",
-    answer:
-      "AIS monitors crop development by tracking parameters like weather patterns, sowing dates, and market prices, helping farmers optimize production and make informed decisions.",
-  },
-  {
-    id: 3,
-    question: "Can AIS predict future crop trends?",
-    answer:
-      "Yes, AIS tracks various parameters such as rainfall, market trends, and crop yields to provide predictive insights for better decision-making and improved agricultural productivity.",
-  },
-  {
-    id: 4,
-    question: "How does the live feed enhance collaboration?",
-    answer:
-      "The live feed allows all team members to view the issues, offer their insights, and collaborate on resolving matters quickly and efficiently, ensuring active participation from all parties.",
-  },
-];
+const TalkToAbout2Array = {
+  img: talkabout,
+  TalkToAboutArray: [
+    {
+      id: 1,
+      question: "How does IMS improve issue management?",
+      answer:
+        "IMS streamlines issue resolution by assigning tasks to the responsible person in real-time, reducing email escalations, and ensuring faster problem-solving.",
+    },
+    {
+      id: 2,
+      question: "What role does AIS play in crop management?",
+      answer:
+        "AIS monitors crop development by tracking parameters like weather patterns, sowing dates, and market prices, helping farmers optimize production and make informed decisions.",
+    },
+    {
+      id: 3,
+      question: "Can AIS predict future crop trends?",
+      answer:
+        "Yes, AIS tracks various parameters such as rainfall, market trends, and crop yields to provide predictive insights for better decision-making and improved agricultural productivity.",
+    },
+    {
+      id: 4,
+      question: "How does the live feed enhance collaboration?",
+      answer:
+        "The live feed allows all team members to view the issues, offer their insights, and collaborate on resolving matters quickly and efficiently, ensuring active participation from all parties.",
+    },
+  ],
+};
 
 const aboutData5 = [
   {

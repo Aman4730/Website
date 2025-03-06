@@ -1,12 +1,3 @@
-
-
-import MainHeading from "../../MainHeading";
-import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
-import SolAbout3 from "./SolutionReuseCom/SolutionAbout/SolAbout3";
-
-// import about_18_1 from "../../../assets/img/normal/about_18_1.jpg";
-// import about_18_2 from "../../../assets/img/normal/about_18_2.jpg";
-
 import visiondesk1 from "../../../Imges/visiondesk1.png";
 // import visiondesk2 from "../../../Imges/visiondesk2.png";
 import visiondesk3 from "../../../Imges/visiondesk3.png";
@@ -14,12 +5,10 @@ import visiondesk4 from "../../../Imges/visiondesk4.png";
 import visiondesk5 from "../../../Imges/visiondesk5.png";
 import visiondesk6 from "../../../Imges/visiondesk6.png";
 
-
 // import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
 // import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
 // import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
 // import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
-
 
 import React from "react";
 import MainHeading from "../../MainHeading";
@@ -179,43 +168,40 @@ const VisionDeskPage = () => {
     "Anywhere, Anytime Access",
   ];
 
-  const TalkToAboutAnyQuestion = 
-  {
-    img:visiondesk5,
-    img1:visiondesk6,
-    questionAns:[
-
-    {
-      id: 1,
-      question: "How does this system help in tracking farmers' data?",
-      answer:
-        "Our system provides real-time tracking of farmers' data, including land ownership, crop patterns, and yield insights, ensuring efficient agricultural planning.",
-    },
-    {
-      id: 2,
-      question: "Can I monitor government subsidies and loan disbursements?",
-      answer:
-        "Yes! The system includes tracking for government subsidies, financial aid, and loan disbursements, ensuring transparency and effective financial management.",
-    },
-    {
-      id: 3,
-      question: "Does the system support data analytics and reporting?",
-      answer:
-        "Absolutely! The system generates insightful reports, trend analysis, and visual data representations to support better agricultural decision-making.",
-    },
-    {
-      id: 4,
-      question: "How secure is the data stored in the system?",
-      answer:
-        "We implement encrypted data storage, role-based access control, and cloud security measures to ensure your information remains protected at all times.",
-    },
-
-  ]}
+  const TalkToAboutAnyQuestion = {
+    img: visiondesk5,
+    img1: visiondesk6,
+    questionAns: [
+      {
+        id: 1,
+        question: "How does this system help in tracking farmers' data?",
+        answer:
+          "Our system provides real-time tracking of farmers' data, including land ownership, crop patterns, and yield insights, ensuring efficient agricultural planning.",
+      },
+      {
+        id: 2,
+        question: "Can I monitor government subsidies and loan disbursements?",
+        answer:
+          "Yes! The system includes tracking for government subsidies, financial aid, and loan disbursements, ensuring transparency and effective financial management.",
+      },
+      {
+        id: 3,
+        question: "Does the system support data analytics and reporting?",
+        answer:
+          "Absolutely! The system generates insightful reports, trend analysis, and visual data representations to support better agricultural decision-making.",
+      },
+      {
+        id: 4,
+        question: "How secure is the data stored in the system?",
+        answer:
+          "We implement encrypted data storage, role-based access control, and cloud security measures to ensure your information remains protected at all times.",
+      },
+    ],
+  };
   const aboutData3 = [
     {
       id: 1,
       images: [visiondesk1, visiondesk3],
-
 
       experienceCount: 689,
       experienceText: "Happily active client’s",

@@ -1,13 +1,4 @@
-
-
-import MainHeading from "../../MainHeading";
-import about_18_1 from "../../../assets/img/normal/about_18_1.jpg";
-import about_18_2 from "../../../assets/img/normal/about_18_2.jpg";
-
-
-
 import React from "react";
-import MainHeading from "../../MainHeading";
 import about_18_1 from "../../../assets/img/normal/about_18_1.jpg";
 import about_18_2 from "../../../assets/img/normal/about_18_2.jpg";
 
@@ -15,7 +6,6 @@ import process_img_1 from "../../../assets/img/normal/process_img_1.jpg";
 import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
 import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
 import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
-
 
 // import CollaborationToolsIcon from "../../../Imges/QblockIcon/CollaborationToolsIcon.jpg";
 
@@ -29,11 +19,13 @@ import DocumentsRetrievalIcon from "../../../Imges/QblockIcon/DocumentsRetrieval
 import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomationIcon.jpg";
 
 import CollaborationToolsIcon from "../../../Imges/QblockIcon/CollaborationToolsIcon.jpg";
-
+import visiondesk5 from "../../../Imges/visiondesk5.png";
+import visiondesk6 from "../../../Imges/visiondesk6.png";
 import OurExpertise1 from "../StandaloneProducts/SolutionReuseCom/OurExpertises/OurExpertise1";
 import TalkToAbout from "../StandaloneProducts/SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout";
 import "swiper/css";
 import "swiper/css/pagination";
+import MainHeading from "../../MainHeading";
 const FieldQuotationSystemPage = () => {
   const testimonials = [
     {
@@ -140,32 +132,36 @@ const FieldQuotationSystemPage = () => {
     "Real-Time Project Analysis",
   ];
 
-  const TalkToAboutAnyQuestion = [
-    {
-      id: 1,
-      question: "How does the system optimize the procurement process?",
-      answer:
-        "The system helps buyers choose the best time to purchase crops, optimal quantity, and most economical price, all while staying within the planned budget, improving procurement efficiency.",
-    },
-    {
-      id: 2,
-      question: "Can field officers upload real-time requirements?",
-      answer:
-        "Yes! Field officers and engineers can upload real-time requirements, including images and signatures, making the process seamless and timely.",
-    },
-    {
-      id: 3,
-      question: "How does the system help in project analysis?",
-      answer:
-        "The system provides real-time data and quotations, allowing Admin and Head Office to perform efficient project analysis, leading to better decision-making.",
-    },
-    {
-      id: 4,
-      question: "Is there any user access control in the system?",
-      answer:
-        "Yes! The system ensures secure logins, access control, and role-based permissions for field officers, engineers, and admin to ensure smooth operations and data security.",
-    },
-  ];
+  const TalkToAboutAnyQuestion = {
+    img: visiondesk5,
+    img1: visiondesk6,
+    questionAns: [
+      {
+        id: 1,
+        question: "How does the system optimize the procurement process?",
+        answer:
+          "The system helps buyers choose the best time to purchase crops, optimal quantity, and most economical price, all while staying within the planned budget, improving procurement efficiency.",
+      },
+      {
+        id: 2,
+        question: "Can field officers upload real-time requirements?",
+        answer:
+          "Yes! Field officers and engineers can upload real-time requirements, including images and signatures, making the process seamless and timely.",
+      },
+      {
+        id: 3,
+        question: "How does the system help in project analysis?",
+        answer:
+          "The system provides real-time data and quotations, allowing Admin and Head Office to perform efficient project analysis, leading to better decision-making.",
+      },
+      {
+        id: 4,
+        question: "Is there any user access control in the system?",
+        answer:
+          "Yes! The system ensures secure logins, access control, and role-based permissions for field officers, engineers, and admin to ensure smooth operations and data security.",
+      },
+    ],
+  };
 
   const aboutData3 = [
     {
@@ -205,6 +201,4 @@ const FieldQuotationSystemPage = () => {
   );
 };
 
-
 export default FieldQuotationSystemPage;
-

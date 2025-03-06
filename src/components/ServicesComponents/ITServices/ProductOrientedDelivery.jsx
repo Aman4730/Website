@@ -13,15 +13,58 @@ import service_featured_2 from "../../../assets/img/icon/service_featured_2.svg"
 import service_featured_3 from "../../../assets/img/icon/service_featured_3.svg";
 import service_featured_4 from "../../../assets/img/icon/service_featured_4.svg";
 import ServiceWhatWeDo2 from "../ServicesResueCom/ServiceWhatWeDo2";
-import node from "../../../Imges/language/node.png";
+import Kubernetes from "../../../Imges/language/Kubernetes.jpg";
 import react from "../../../Imges/language/react.png";
-import Angular from "../../../Imges/language/Angular.png";
-import android1 from "../../../Imges/language/android1.png";
+import AWS from "../../../Imges/language/AWS.png";
+import docker from "../../../Imges/language/docker.jpg";
 import SuccessStories from "../ServicesResueCom/SuccessStories";
 import service_7_1 from "../../../assets/img/icon/service_7_1.svg";
 import service_7_2 from "../../../assets/img/icon/service_7_2.svg";
 import service_7_3 from "../../../assets/img/icon/service_7_3.svg";
+import blog_1_1 from "../../../assets/img/blog/blog_1_1.jpg";
+import blog_1_2 from "../../../assets/img/blog/blog_1_2.jpg";
+import blog_1_3 from "../../../assets/img/blog/blog_1_3.jpg";
+import blog_1_4 from "../../../assets/img/blog/blog_1_4.jpg";
 const ProductOrientedDelivery = () => {
+  const blogData = {
+    title: "Recent POD Success",
+    subtitle: "Success & Stories",
+    shadowTitle: "Update",
+    posts: [
+      {
+        img: blog_1_1,
+        date: "15 Jan, 2024",
+        comments: 2,
+        title: "Enterprise SaaS Platform",
+        link: "/contactUs",
+        desc: "60% faster time-to-market with agile development and cloud-native architecture.",
+      },
+      {
+        img: blog_1_2,
+        date: "16 Jan, 2024",
+        comments: 3,
+        title: "Mobile Banking Solution",
+        link: "/contactUs",
+        desc: "2M+ users onboarded within the first 6 months, ensuring seamless transactions and security.",
+      },
+      {
+        img: blog_1_3,
+        date: "17 Jan, 2024",
+        comments: 2,
+        title: "AI E-Commerce Analytics",
+        link: "/contactUs",
+        desc: "30% increase in customer retention through data-driven insights and personalized recommendations.",
+      },
+      {
+        img: blog_1_4,
+        date: "19 Jan, 2024",
+        comments: 4,
+        title: "Telehealth App",
+        link: "/contactUs",
+        desc: "Reduced patient wait times by 50% with an intuitive and secure digital consultation platform.",
+      },
+    ],
+  };
   const aboutFeatures = {
     title: "Product Oriented Delivery",
     heading: "What’s behind LOGIMETRIX guaranteed delivery",
@@ -66,32 +109,33 @@ const ProductOrientedDelivery = () => {
   ];
   const languages = [
     {
-      name: "Node.js",
-      img: node,
-      desc: "Fast, scalable, event-driven, non-blocking, real-time, API, JavaScript, backend, lightweight, efficient.",
-    },
-    {
       name: "React.js",
       img: react,
-      desc: "Component-based, declarative, UI-library, virtual-DOM, JSX, reusable, hooks, frontend, SPA, interactive.",
+      desc: "A JavaScript library for building user interfaces using a component-based approach with a virtual DOM for efficient rendering.",
     },
     {
-      name: "Angular",
-      img: Angular,
-      desc: "TypeScript, MVC, two-way-binding, powerful, scalable, CLI, modular, enterprise, responsive.",
+      name: "Kubernetes",
+      img: Kubernetes,
+      desc: "A container orchestration platform that automates deployment, scaling, and management of containerized applications in cloud environments.",
     },
     {
-      name: "Android",
-      img: android1,
-      desc: "Mobile, Java, Kotlin, Play-Store, native, performance, UI, app-development, responsive, secure.",
+      name: "AWS",
+      img: AWS,
+      desc: "A comprehensive cloud computing service that provides scalable infrastructure, storage, and computing power for enterprises and developers.",
+    },
+    {
+      name: "Docker",
+      img: docker,
+      desc: "A lightweight containerization platform that simplifies application deployment by ensuring consistency across multiple environments efficiently.",
     },
   ];
+
   return (
     <div>
       <MainHeading
         title="Product Oriented Delivery"
         subtitle="Product Oriented Delivery"
-        breadcrumbs={[{ label: "Home", link: "/" }, { label: "Solution" }]}
+        breadcrumbs={[{ label: "Home", link: "/" }, { label: "Services" }]}
       />
       <ServiceAboutUs aboutFeatures={aboutFeatures} />
       <ServiceWhatWeDo2
@@ -99,7 +143,7 @@ const ProductOrientedDelivery = () => {
         sectionTitle="Our Product Delivery Features"
       />
       <ServiceLanguage languages={languages} />
-      <SuccessStories />
+      <SuccessStories data={blogData} />
     </div>
   );
 };

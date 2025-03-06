@@ -65,23 +65,6 @@ const SolAbout3 = ({ aboutData }) => {
                   </div>
                 ))}
               </div>
-              <div className="btn-group style3">
-                <Link
-                  to={"/contactUs"}
-                  className="th-btn style-radius text-capitalize"
-                >
-                  Contact us
-                </Link>
-                <div className="call-btn">
-                  <i className="fas fa-phone" />
-                  <div className="media-body">
-                    <span className="btn-text">Call Now!</span>
-                    <a href={`tel:${item.phone}`} className="btn-title">
-                      ({item.phone})
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         ))}

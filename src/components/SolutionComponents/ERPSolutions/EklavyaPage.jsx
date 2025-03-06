@@ -1,4 +1,3 @@
-
 import React from "react";
 
 import MainHeading from "../../MainHeading";
@@ -17,6 +16,8 @@ import DocumentsRetrievalIcon from "../../../Imges/QblockIcon/DocumentsRetrieval
 import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomationIcon.jpg";
 import OurExpertise1 from "../StandaloneProducts//SolutionReuseCom/OurExpertises/OurExpertise1";
 import TalkToAbout from "../StandaloneProducts//SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout";
+import visiondesk5 from "../../../Imges/visiondesk5.png";
+import visiondesk6 from "../../../Imges/visiondesk6.png";
 import "swiper/css";
 import "swiper/css/pagination";
 const EklavyaPage = () => {
@@ -116,32 +117,36 @@ const EklavyaPage = () => {
     "Collaborative Communication",
     "Cloud-Based Access",
   ];
-  const TalkToAboutAnyQuestion = [
-    {
-      id: 1,
-      question: "How does Eklavya improve school operations?",
-      answer:
-        "Eklavya automates routine administrative tasks, tracks student performance, and ensures smooth communication between all stakeholders, making school operations more efficient.",
-    },
-    {
-      id: 2,
-      question: "Can Eklavya help with student performance analysis?",
-      answer:
-        "Yes! Eklavya provides in-depth analytics, performance tracking, and customizable reports to monitor and improve student progress.",
-    },
-    {
-      id: 3,
-      question: "How does Eklavya ensure data security?",
-      answer:
-        "We use encrypted cloud storage and role-based access control to ensure that school data remains secure and confidential.",
-    },
-    {
-      id: 4,
-      question: "Can Eklavya be accessed remotely?",
-      answer:
-        "Yes! Eklavya is cloud-based, so you can access the system anytime and from anywhere with a mobile-friendly interface for ease of use.",
-    },
-  ];
+  const TalkToAboutAnyQuestion = {
+    img: visiondesk5,
+    img1: visiondesk6,
+    questionAns: [
+      {
+        id: 1,
+        question: "How does Eklavya improve school operations?",
+        answer:
+          "Eklavya automates routine administrative tasks, tracks student performance, and ensures smooth communication between all stakeholders, making school operations more efficient.",
+      },
+      {
+        id: 2,
+        question: "Can Eklavya help with student performance analysis?",
+        answer:
+          "Yes! Eklavya provides in-depth analytics, performance tracking, and customizable reports to monitor and improve student progress.",
+      },
+      {
+        id: 3,
+        question: "How does Eklavya ensure data security?",
+        answer:
+          "We use encrypted cloud storage and role-based access control to ensure that school data remains secure and confidential.",
+      },
+      {
+        id: 4,
+        question: "Can Eklavya be accessed remotely?",
+        answer:
+          "Yes! Eklavya is cloud-based, so you can access the system anytime and from anywhere with a mobile-friendly interface for ease of use.",
+      },
+    ],
+  };
   const aboutData3 = [
     {
       id: 1,

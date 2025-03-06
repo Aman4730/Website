@@ -3,7 +3,7 @@ import check_2 from "../../../assets/img/icon/check_2.svg";
 import about_14_1 from "../../../assets/img/normal/about_14_1.jpg";
 import about_14_2 from "../../../assets/img/normal/about_14_2.jpg";
 import title_shape_2 from "../../../assets/img/theme-img/title_shape_2.svg";
-import { Link } from "react-router-dom";
+import about_shape from "../../../assets/img/shape/about_shape.png";
 
 const ServiceAboutUs = ({ aboutFeatures }) => {
   return (
@@ -59,28 +59,11 @@ const ServiceAboutUs = ({ aboutFeatures }) => {
                 </div>
               ))}
             </div>
-            <div className="btn-group style3">
-              <Link
-                to="/contactUs"
-                className="th-btn style-radius text-capitalize"
-              >
-                Contact us
-              </Link>
-              <div className="call-btn">
-                <i className="fas fa-phone" />
-                <div className="media-body">
-                  <span className="btn-text">Call Now!</span>
-                  <a href="tel:+25632542598" className="btn-title">
-                    (+256) 3254 2598
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
       <div className="shape-mockup" data-bottom="0%" data-right="0%">
-        <img src="assets/img/shape/about_shape.png" alt="shape" />
+        <img src={about_shape} alt="shape" />
       </div>
     </div>
   );

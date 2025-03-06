@@ -10,6 +10,10 @@ import MainHeading from "../../MainHeading";
 import faq_11_1 from "../../../assets/img/normal/faq_11_1.png";
 import SolAbout3 from "../../SolutionComponents/StandaloneProducts/SolutionReuseCom/SolutionAbout/SolAbout3";
 import TalkToAbout5 from "../../SolutionComponents/StandaloneProducts/SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout5";
+import ServiceThreeCard from "../ServicesResueCom/ServiceThreeCard";
+import counter_card_4_1 from "../../../assets/img/icon/counter_card_4_1.svg";
+import counter_card_4_2 from "../../../assets/img/icon/counter_card_4_2.svg";
+import counter_card_4_3 from "../../../assets/img/icon/counter_card_4_3.svg";
 const OrganicHealthProductsInitiative = () => {
   const aboutData1 = {
     title: "Organic Health",
@@ -23,7 +27,6 @@ const OrganicHealthProductsInitiative = () => {
     experienceText: "Years of experience in startup building",
     videoLink: "https://www.youtube.com/watch?v=_sI_Ps7JSEk",
   };
-
   const aboutData3 = [
     {
       id: 1,
@@ -37,8 +40,8 @@ const OrganicHealthProductsInitiative = () => {
         "At Logimetrix Techsolutions, we aim to redefine industry standards through innovation and customer-centric solutions, contributing to a growing organic market. Our commitment to sustainability ensures that every product meets high-quality standards while supporting eco-friendly practices.",
       checklist: [
         [
-          "Ethically Sourced Organic Raw Materials",
-          "Strong Vendor Partnerships",
+          "Ethically sourced organic raw materials",
+          "Strong vendor partnerships for widespread distribution",
         ],
         [
           "Eco-Friendly & Sustainable Packaging",
@@ -78,15 +81,39 @@ const OrganicHealthProductsInitiative = () => {
       },
     ],
   };
+  const cardData = [
+    {
+      icon: counter_card_4_1,
+      number: "15+",
+      title: "Renovated Structures",
+      description:
+        "Modernized and reinforced buildings for enhanced durability and safety.",
+    },
+    {
+      icon: counter_card_4_2,
+      number: "600m",
+      title: "New Roadways",
+      description:
+        "Developing and expanding road networks for better connectivity.",
+    },
+    {
+      icon: counter_card_4_3,
+      number: "100%",
+      title: "Quality Compliance",
+      description:
+        "Maintaining high standards and regulatory adherence in every project.",
+    },
+  ];
 
   return (
     <div>
       <MainHeading
         title="Organic Health Products Initiative"
         subtitle="Organic Health Products Initiative"
-        breadcrumbs={[{ label: "Home", link: "/" }, { label: "Solution" }]}
+        breadcrumbs={[{ label: "Home", link: "/" }, { label: "Services" }]}
       />
       <SolAbout1 aboutData={aboutData1} />
+      <ServiceThreeCard cardData={cardData} />
       <SolAbout3 aboutData={aboutData3} />
       <TalkToAbout5 TalkToAbout5Array={TalkToAbout5Array} />
     </div>

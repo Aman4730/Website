@@ -1,14 +1,4 @@
-
-
-import MainHeading from "../../MainHeading";
-import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
-
-import about_13_1 from "../../../assets/img/normal/about_13_1.jpg";
-import about_13_2 from "../../../assets/img/normal/about_13_2.jpg";
-import about_13_3 from "../../../assets/img/normal/about_13_3.jpg";
-
-import sai2  from "../../../Imges/sai2.png";
-
+import sai2 from "../../../Imges/sai2.png";
 
 import faq_5_1 from "../../../Imges/sai1.png";
 // import faq_5_1 from "../../../../../assets/img/normal/faq_5_1.jpg";
@@ -19,7 +9,6 @@ import faq_5_3 from "../../../Imges/faq_5_3.jpg";
 // import process_img_2 from "../../../assets/img/normal/process_img_2.jpg";
 // import process_img_3 from "../../../assets/img/normal/process_img_3.jpg";
 // import process_img_4 from "../../../assets/img/normal/process_img_4.jpg";
-
 
 import React from "react";
 import MainHeading from "../../MainHeading";
@@ -42,8 +31,6 @@ import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomation
 import "swiper/css";
 import "swiper/css/pagination";
 import OurExpertise1 from "./SolutionReuseCom/OurExpertises/OurExpertise1";
-
-import SolAbout4 from "./SolutionReuseCom/SolutionAbout/SolAbout4";
 
 const testimonials = [
   {
@@ -147,37 +134,33 @@ const processStepsArray = [
   "Secure & User-Friendly Interface",
 ];
 
-
 const TalkToAbout1Array = {
-
   img: faq_5_1,
   img1: faq_5_2,
   img2: faq_5_3,
   TalkToAboutArray: [
-
-  {
-    question: "How does the platform benefit schools and colleges?",
-    answer:
-      "Our platform streamlines operations, improves communication, and enhances transparency in managing attendance, fees, and academic records efficiently.",
-  },
-  {
-    question: "Is the platform accessible on mobile devices?",
-    answer:
-      "Yes, the system is fully responsive and accessible on mobile devices, allowing students, parents, and teachers to stay connected anytime, anywhere.",
-  },
-  {
-    question: "How secure is the fee payment system?",
-    answer:
-      "The platform integrates secure online payment options, ensuring safe transactions and reducing delays in fee collection.",
-  },
-  {
-    question: "Can students and parents track academic performance?",
-    answer:
-      "Yes, students and parents can monitor grades, attendance, and fee payments in real-time, ensuring complete transparency and better academic planning.",
-
-  }]
-}
-
+    {
+      question: "How does the platform benefit schools and colleges?",
+      answer:
+        "Our platform streamlines operations, improves communication, and enhances transparency in managing attendance, fees, and academic records efficiently.",
+    },
+    {
+      question: "Is the platform accessible on mobile devices?",
+      answer:
+        "Yes, the system is fully responsive and accessible on mobile devices, allowing students, parents, and teachers to stay connected anytime, anywhere.",
+    },
+    {
+      question: "How secure is the fee payment system?",
+      answer:
+        "The platform integrates secure online payment options, ensuring safe transactions and reducing delays in fee collection.",
+    },
+    {
+      question: "Can students and parents track academic performance?",
+      answer:
+        "Yes, students and parents can monitor grades, attendance, and fee payments in real-time, ensuring complete transparency and better academic planning.",
+    },
+  ],
+};
 
 const aboutData4 = [
   {

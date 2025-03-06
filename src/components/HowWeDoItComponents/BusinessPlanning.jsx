@@ -15,7 +15,7 @@ const BusinessPlanning = () => {
             </div>
             News &amp; Blog
           </span>
-          <h2 className="sec-title">Webteck Blog &amp; News</h2>
+          <h2 className="sec-title">Integrated Business &amp; Planning</h2>
         </div>
         <div className="row gx-30 gy-30">
           <div className="col-xl-6">
@@ -25,14 +25,17 @@ const BusinessPlanning = () => {
               </div>
               <div className="blog-content">
                 <h3 className="box-title">
-                  <a href="blog-details.html">
-                    Many of those products offer the potential...
-                  </a>
+                  <a href="blog-details.html">Integrated Business & Planning</a>
                 </h3>
                 <p className="blog-text">
-                  Praesent tempor mollis aliquet rhoncus vestibulum ridiculus
-                  vivamus, donec ac vehicula interdum congue scelerisque duis
-                  lacinia, conubia egestas...
+                  Logimetrix specializes in designing and implementing
+                  integrated business planning solutions to maximize business
+                  value and provide deep insights into business performance. We
+                  combine best practices in planning processes, powerful and
+                  scalable model design, data architectures and strategies, and
+                  reporting and analytics tools to drive client results and
+                  lasting value. Below is a sample of our technical
+                  partnerships.
                 </p>
                 <a href="blog-details.html" className="line-btn">
                   Learn More
@@ -59,11 +62,13 @@ const BusinessPlanning = () => {
               </div>
               <div className="blog-content">
                 <h3 className="box-title">
-                  <a href="blog-details.html">
-                    Webteck Wins Award for Excellence in Cloud Migration
-                    Services
-                  </a>
+                  <a href="blog-details.html">Anaplan</a>
                 </h3>
+                <p className="blog-text">
+                  Anaplan is driving a new age of connected planning.
+                  Organizations use Anaplan’s platform to make better decisions
+                  and drive planning.
+                </p>
                 <a href="blog-details.html" className="line-btn">
                   Learn More
                   <i className="fa-regular fa-arrow-right" />
@@ -87,11 +92,13 @@ const BusinessPlanning = () => {
               </div>
               <div className="blog-content">
                 <h3 className="box-title">
-                  <a href="blog-details.html">
-                    Webteck Announces Partnership with Leading Technology
-                    Company
-                  </a>
+                  <a href="blog-details.html">Oracle PBCS</a>
                 </h3>
+                <p className="blog-text">
+                  Oracle PBCS enables enterprise planning and budgeting with
+                  scalability, simplicity, and accuracy for quick
+                  decision-making
+                </p>
                 <a href="blog-details.html" className="line-btn">
                   Learn More
                   <i className="fa-regular fa-arrow-right" />

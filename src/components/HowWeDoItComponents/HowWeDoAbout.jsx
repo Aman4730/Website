@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const HowWeDoAbout = () => {
   return (
-    <div className="space-bottom" id="about-sec">
+    <div id="about-sec">
       <div className="container th-container4">
         <div className="row">
           <div className="col-xl-6 mb-30 mb-xl-0">
@@ -25,16 +25,15 @@ const HowWeDoAbout = () => {
                 </div>
                 How we do it
               </span>
-              <h2 className="sec-title">
-                Optimize your marketing efforts with Logimetrix's streamlined
-                solutions
-              </h2>
+              <h2 className="sec-title">Modern Data & Analytics Platforms</h2>
             </div>
             <p className="mt-n2 mb-25">
-              Logimetrix is dedicated to revolutionizing marketing through
-              cutting-edge technology, aiming to empower businesses to achieve
-              unparalleled success in the digital landscape. What sets
-              Logimetrix apart is its deep expertise in leveraging advanced.
+              Logimetrix leverages a technology-agnostic approach to delivering
+              data solutions. We combine the best practices of a Modern Data
+              Architecture with the use of appropriate technologies best suited
+              to deliver individual client outcomes. We work with leading
+              technology platforms and are consistently looking for new ways to
+              drive client results through modern capabilities.
             </p>
             <div className="about-feature-wrap style5">
               <div>
@@ -44,7 +43,7 @@ const HowWeDoAbout = () => {
                   </div>
                   <div className="media-body">
                     <h3 className="about-feature_title">
-                      Skyrocketing Conversion Rates
+                      Technology-agnostic solutions
                     </h3>
                   </div>
                 </div>
@@ -54,7 +53,7 @@ const HowWeDoAbout = () => {
                   </div>
                   <div className="media-body">
                     <h3 className="about-feature_title">
-                      Massive Lead Growth Rates
+                      Modern data architecture
                     </h3>
                   </div>
                 </div>

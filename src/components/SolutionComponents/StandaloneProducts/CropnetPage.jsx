@@ -1,19 +1,14 @@
-
-
-import MainHeading from "../../MainHeading";
 import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
-// import faq_11_1 from "../../../assets/img/normal/faq_11_1.png";
-import SolAbout2 from "./SolutionReuseCom/SolutionAbout/solAbout2";
 
 // import about_12_1 from "../../../assets/img/normal/about_12_1.jpg";
 // import about_12_3 from "../../../assets/img/normal/about_12_3.jpg";
 // import about_12_2 from "../../../assets/img/normal/about_12_2.jpg";
 
 import cropnet1 from "../../../Imges/cropnet1.png";
-import cropnet2 from "../../../Imges/cropnet2.png"
-import cropnet3 from "../../../Imges/cropnet3.png"
-import cropnet4 from "../../../Imges/cropnet4.png"
-import cropnet5 from "../../../Imges/cropnet5.png"
+import cropnet2 from "../../../Imges/cropnet2.png";
+import cropnet3 from "../../../Imges/cropnet3.png";
+import cropnet4 from "../../../Imges/cropnet4.png";
+import cropnet5 from "../../../Imges/cropnet5.png";
 
 // import visiondesk6 from "../../../Imges/visiondesk6.png";
 
@@ -24,7 +19,6 @@ import cropnet5 from "../../../Imges/cropnet5.png"
 
 import React from "react";
 import MainHeading from "../../MainHeading";
-import KeyFeatures from "./SolutionReuseCom/KeyFeatures";
 import faq_11_1 from "../../../assets/img/normal/faq_11_1.png";
 import SolAbout2 from "./SolutionReuseCom/SolutionAbout/solAbout2";
 import about_12_1 from "../../../assets/img/normal/about_12_1.jpg";
@@ -244,7 +238,6 @@ const TalkToAbout5Array = {
     },
   ],
 };
-
 
 const CropnetPage = () => {
   return (

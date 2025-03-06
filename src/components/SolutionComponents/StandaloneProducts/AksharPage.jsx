@@ -1,4 +1,3 @@
-
 import React from "react";
 
 import MainHeading from "../../MainHeading";
@@ -23,7 +22,6 @@ import VersionControlIcon from "../../../Imges/QblockIcon/VersionControlIcon.jpg
 import DocumentsStorageIcon from "../../../Imges/QblockIcon/DocumentsStorageIcon.jpg";
 import DocumentsRetrievalIcon from "../../../Imges/QblockIcon/DocumentsRetrievalIcon.jpg";
 import CollaborationToolsIcon from "../../../Imges/QblockIcon/CollaborationToolsIcon.jpg";
-
 
 import talkabout from "../../../Imges/akshar1.png";
 
@@ -56,7 +54,7 @@ const testimonials = [
     designation: "",
   },
   {
-    text: "“The Akshar mobile app allows students and institutions to manage loans and finances on-the-go, providing easy access to loan details, EMI schedules, profile management, real-time updates, secure transactions, and more.”",
+    text: "“The Student Finance Management mobile app allows students and institutions to manage loans and finances on-the-go, providing easy access to loan details, EMI schedules, profile management, real-time updates, secure transactions, and more.”",
     img: CollaborationToolsIcon,
     name: "Mobile Accessibility",
     designation: "",
@@ -120,7 +118,7 @@ const processSteps = [
     title: "Mobile-Friendly Loan Management",
     step: "STEP-04",
     description:
-      "The Akshar mobile app enables students and institutions to manage loans on-the-go with real-time access and secure transactions.",
+      "The Student Finance Management mobile app enables students and institutions to manage loans on-the-go with real-time access and secure transactions.",
 
     image: process_img_1,
     img: process_img_1,
@@ -142,39 +140,38 @@ const processStepsArray = [
 const TalkToAbout2Array = {
   img: talkabout,
   TalkToAboutArray: [
-
-  {
-    id: 1,
-    question: "How does Akshar simplify education loans?",
-    answer:
-      "Akshar streamlines the loan application process by seamlessly connecting students, schools, and financial institutions, ensuring quick approvals and transparent transactions.",
-  },
-  {
-    id: 2,
-    question: "Can students track their loan disbursement?",
-    answer:
-      "Yes! Akshar provides real-time loan status updates, EMI scheduling, and repayment tracking to keep students informed about their financial commitments.",
-  },
-  {
-    id: 3,
-    question: "Is there support for schools and institutions?",
-    answer:
-      "Absolutely! Schools can configure loan settings, upload necessary documents, and manage student applications, making the process more efficient and aligned with institutional policies.",
-  },
-  {
-    id: 4,
-    question: "How secure is Akshar’s platform?",
-    answer:
-      "Akshar ensures top-tier security with encrypted data storage, multi-factor authentication, and strict access controls to protect student and institution information.",
-
-  }]
-}
+    {
+      id: 1,
+      question: "How does Student Finance Management simplify education loans?",
+      answer:
+        "Student Finance Management streamlines the loan application process by seamlessly connecting students, schools, and financial institutions, ensuring quick approvals and transparent transactions.",
+    },
+    {
+      id: 2,
+      question: "Can students track their loan disbursement?",
+      answer:
+        "Yes! Student Finance Management provides real-time loan status updates, EMI scheduling, and repayment tracking to keep students informed about their financial commitments.",
+    },
+    {
+      id: 3,
+      question: "Is there support for schools and institutions?",
+      answer:
+        "Absolutely! Schools can configure loan settings, upload necessary documents, and manage student applications, making the process more efficient and aligned with institutional policies.",
+    },
+    {
+      id: 4,
+      question: "How secure is Student Finance Management platform?",
+      answer:
+        "Student Finance Management ensures top-tier security with encrypted data storage, multi-factor authentication, and strict access controls to protect student and institution information.",
+    },
+  ],
+};
 
 const aboutData5 = [
   {
     id: 1,
-    title: "Akshar – Education Loans Made Easy Loans for ",
-    highlight: "Students",
+    title: "Student Finance Management – Easy Education Loans ",
+    highlight: " Students",
     description:
       "Logimetrix proudly presents Student Finance Management, a cutting-edge financial aid platform designed to simplify the process of securing education loans for students. With seamless integration between students, schools, and lenders, Student Finance Management ensures a transparent, efficient, and user-friendly solution for managing education loans.",
     checklist: [
@@ -190,7 +187,7 @@ const aboutData5 = [
     btnText: "Download Akshar App",
     btnLink: "download.html",
     featureImg: feature_8_1,
-    featureText: "Akshar",
+    featureText: "Finance",
   },
 ];
 const AksharPage = () => {

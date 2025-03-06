@@ -1,4 +1,3 @@
-
 import React from "react";
 
 import MainHeading from "../../MainHeading";
@@ -31,6 +30,7 @@ import StorageQuotaManagementIcon from "../../../Imges/QblockIcon/StorageQuotaMa
 import "swiper/css";
 import "swiper/css/pagination";
 import OurExpertise1 from "./SolutionReuseCom/OurExpertises/OurExpertise1";
+import talkabout from "../../../Imges/akshar1.png";
 
 const testimonials = [
   {
@@ -168,33 +168,36 @@ const processStepsArray = [
   "Backup & Recovery",
 ];
 
-const TalkToAbout2Array = [
-  {
-    id: 1,
-    question: "How does Qblock help in managing documents efficiently?",
-    answer:
-      "Qblock provides a centralized, secure platform for storing, organizing, and retrieving documents with advanced search and indexing features.",
-  },
-  {
-    id: 2,
-    question:
-      "Is Qblock suitable for enterprises with strict security requirements?",
-    answer:
-      "Yes! Qblock offers role-based access control, encryption, audit trails, and automatic backups, ensuring enterprise-grade security and compliance.",
-  },
-  {
-    id: 3,
-    question: "Can multiple users collaborate on documents in real-time?",
-    answer:
-      "Absolutely! Qblock enables teams to share, edit, annotate, and track versions while maintaining a detailed change history.",
-  },
-  {
-    id: 4,
-    question: "Does Qblock support integration with other tools?",
-    answer:
-      "Yes! Qblock provides seamless integration with a variety of third-party applications, allowing you to automate workflows and enhance productivity.",
-  },
-];
+const TalkToAbout2Array = {
+  img: talkabout,
+  TalkToAboutArray: [
+    {
+      id: 1,
+      question: "How does Qblock help in managing documents efficiently?",
+      answer:
+        "Qblock provides a centralized, secure platform for storing, organizing, and retrieving documents with advanced search and indexing features.",
+    },
+    {
+      id: 2,
+      question:
+        "Is Qblock suitable for enterprises with strict security requirements?",
+      answer:
+        "Yes! Qblock offers role-based access control, encryption, audit trails, and automatic backups, ensuring enterprise-grade security and compliance.",
+    },
+    {
+      id: 3,
+      question: "Can multiple users collaborate on documents in real-time?",
+      answer:
+        "Absolutely! Qblock enables teams to share, edit, annotate, and track versions while maintaining a detailed change history.",
+    },
+    {
+      id: 4,
+      question: "Does Qblock support integration with other tools?",
+      answer:
+        "Yes! Qblock provides seamless integration with a variety of third-party applications, allowing you to automate workflows and enhance productivity.",
+    },
+  ],
+};
 
 const aboutData = {
   title: "QBLOCK",

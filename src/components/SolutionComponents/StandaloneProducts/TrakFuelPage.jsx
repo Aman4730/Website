@@ -1,4 +1,3 @@
-
 import React from "react";
 
 import MainHeading from "../../MainHeading";
@@ -22,6 +21,7 @@ import CollaborationToolsIcon from "../../../Imges/QblockIcon/CollaborationTools
 import UserGuestDeactivationIcon from "../../../Imges/QblockIcon/UserGuestDeactivationIcon.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
+import talkabout from "../../../Imges/akshar1.png";
 
 const testimonials = [
   {
@@ -122,38 +122,42 @@ const processStepsArray = [
   "Advanced Learning & Student Insights",
 ];
 
-const TalkToAbout2Array = [
-  {
-    id: 1,
-    question: "How does TrakMob improve workforce management?",
-    answer:
-      "TrakMob allows businesses to track employee activities in real time, optimize task assignments, and enhance communication between field staff and managers.",
-  },
-  {
-    id: 2,
-    question: "Can Eklavya streamline school operations effectively?",
-    answer:
-      "Yes! Eklavya offers an all-in-one ERP system for school administration, making it easier for principals, teachers, and staff to manage daily operations, student data, and reports.",
-  },
-  {
-    id: 3,
-    question: "How does TrakFuel help in fuel cost management?",
-    answer:
-      "TrakFuel provides real-time fuel tracking, preventing unauthorized usage and ensuring transparency in fuel consumption, saving organizations significant costs.",
-  },
-  {
-    id: 4,
-    question: "Is Absolute Study beneficial for student performance analysis?",
-    answer:
-      "Absolutely! Absolute Study provides deep insights into student performance, competitive analysis, and interactive learning opportunities for better academic growth.",
-  },
-  {
-    id: 5,
-    question: "How does Trak optimize logistics?",
-    answer:
-      "Trak offers an advanced tracking solution that ensures efficient delivery management, inventory control, and optimized resource utilization for supply chain operations.",
-  },
-];
+const TalkToAbout2Array = {
+  img: talkabout,
+  TalkToAboutArray: [
+    {
+      id: 1,
+      question: "How does TrakMob improve workforce management?",
+      answer:
+        "TrakMob allows businesses to track employee activities in real time, optimize task assignments, and enhance communication between field staff and managers.",
+    },
+    {
+      id: 2,
+      question: "Can Eklavya streamline school operations effectively?",
+      answer:
+        "Yes! Eklavya offers an all-in-one ERP system for school administration, making it easier for principals, teachers, and staff to manage daily operations, student data, and reports.",
+    },
+    {
+      id: 3,
+      question: "How does TrakFuel help in fuel cost management?",
+      answer:
+        "TrakFuel provides real-time fuel tracking, preventing unauthorized usage and ensuring transparency in fuel consumption, saving organizations significant costs.",
+    },
+    {
+      id: 4,
+      question:
+        "Is Absolute Study beneficial for student performance analysis?",
+      answer:
+        "Absolutely! Absolute Study provides deep insights into student performance, competitive analysis, and interactive learning opportunities for better academic growth.",
+    },
+    {
+      id: 5,
+      question: "How does Trak optimize logistics?",
+      answer:
+        "Trak offers an advanced tracking solution that ensures efficient delivery management, inventory control, and optimized resource utilization for supply chain operations.",
+    },
+  ],
+};
 
 const aboutData = {
   title: "Our Solutions",

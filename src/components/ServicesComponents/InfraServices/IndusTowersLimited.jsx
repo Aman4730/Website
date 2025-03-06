@@ -19,6 +19,8 @@ import project_2_2 from "../../../assets/img/project/project_2_2.jpg";
 import project_2_3 from "../../../assets/img/project/project_2_3.jpg";
 import infra_why from "../../../Imges/infra_why.jpg";
 import TalkToAbout from "../../SolutionComponents/StandaloneProducts/SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout";
+import visiondesk5 from "../../../Imges/visiondesk5.png";
+import visiondesk6 from "../../../Imges/visiondesk6.png";
 const IndusTowersLimited = () => {
   const services = [
     {
@@ -74,12 +76,42 @@ const IndusTowersLimited = () => {
       desc: "Integrated with smart automation to enhance precision, reduce manual work, and boost overall productivity.",
     },
   ];
+  const TalkToAboutAnyQuestion = {
+    img: visiondesk5,
+    img1: visiondesk6,
+    questionAns: [
+      {
+        id: 1,
+        question: "How does Eklavya improve school operations?",
+        answer:
+          "Eklavya automates routine administrative tasks, tracks student performance, and ensures smooth communication between all stakeholders, making school operations more efficient.",
+      },
+      {
+        id: 2,
+        question: "Can Eklavya help with student performance analysis?",
+        answer:
+          "Yes! Eklavya provides in-depth analytics, performance tracking, and customizable reports to monitor and improve student progress.",
+      },
+      {
+        id: 3,
+        question: "How does Eklavya ensure data security?",
+        answer:
+          "We use encrypted cloud storage and role-based access control to ensure that school data remains secure and confidential.",
+      },
+      {
+        id: 4,
+        question: "Can Eklavya be accessed remotely?",
+        answer:
+          "Yes! Eklavya is cloud-based, so you can access the system anytime and from anywhere with a mobile-friendly interface for ease of use.",
+      },
+    ],
+  };
   return (
     <div>
       <MainHeading
         title="Indus Towers Limited"
         subtitle="Indus Towers Limited"
-        breadcrumbs={[{ label: "Home", link: "/" }, { label: "Solution" }]}
+        breadcrumbs={[{ label: "Home", link: "/" }, { label: "Services" }]}
       />
       <ServiceAbout2 features={features} />
       <ServiceWhatWeDo2
@@ -87,7 +119,7 @@ const IndusTowersLimited = () => {
         sectionTitle="Our Achievements in Telecom Infrastructure"
       />
       <FarmRenovation projects={projects} />
-      <TalkToAbout />
+      <TalkToAbout TalkToAboutAnyQuestion={TalkToAboutAnyQuestion} />
     </div>
   );
 };

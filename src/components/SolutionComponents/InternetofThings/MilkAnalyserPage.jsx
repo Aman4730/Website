@@ -19,6 +19,8 @@ import WorkflowAutomationIcon from "../../../Imges/QblockIcon/WorkflowAutomation
 import CollaborationToolsIcon from "../../../Imges/QblockIcon/CollaborationToolsIcon.jpg";
 import OurExpertise1 from "../StandaloneProducts/SolutionReuseCom/OurExpertises/OurExpertise1";
 import TalkToAbout from "../StandaloneProducts/SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout";
+import visiondesk5 from "../../../Imges/visiondesk5.png";
+import visiondesk6 from "../../../Imges/visiondesk6.png";
 const processSteps = [
   {
     id: 1,
@@ -143,32 +145,36 @@ const aboutData1 = {
   experienceText: "Years of experience in startup building",
   videoLink: "https://www.youtube.com/watch?v=_sI_Ps7JSEk",
 };
-const TalkToAboutAnyQuestion = [
-  {
-    id: 1,
-    question: "How does this system help in tracking vehicles?",
-    answer:
-      "Our system provides real-time tracking of vehicles, showing when they start, stop, and their exact route, ensuring complete visibility.",
-  },
-  {
-    id: 2,
-    question: "Can I monitor fuel consumption and expenses?",
-    answer:
-      "Yes! The system includes fuel tracking and reporting, helping you manage consumption and reduce operational costs.",
-  },
-  {
-    id: 3,
-    question: "Does the system support trip history and reporting?",
-    answer:
-      "Absolutely! You can access detailed trip reports, including distance covered, stops made, and passenger drop-offs, all exportable in CSV format.",
-  },
-  {
-    id: 4,
-    question: "How secure is the data stored in the system?",
-    answer:
-      "We implement secure cloud storage, role-based access controls, and encrypted data transmission, ensuring your information stays protected.",
-  },
-];
+const TalkToAboutAnyQuestion = {
+  img: visiondesk5,
+  img1: visiondesk6,
+  questionAns: [
+    {
+      id: 1,
+      question: "How does this system help in tracking vehicles?",
+      answer:
+        "Our system provides real-time tracking of vehicles, showing when they start, stop, and their exact route, ensuring complete visibility.",
+    },
+    {
+      id: 2,
+      question: "Can I monitor fuel consumption and expenses?",
+      answer:
+        "Yes! The system includes fuel tracking and reporting, helping you manage consumption and reduce operational costs.",
+    },
+    {
+      id: 3,
+      question: "Does the system support trip history and reporting?",
+      answer:
+        "Absolutely! You can access detailed trip reports, including distance covered, stops made, and passenger drop-offs, all exportable in CSV format.",
+    },
+    {
+      id: 4,
+      question: "How secure is the data stored in the system?",
+      answer:
+        "We implement secure cloud storage, role-based access controls, and encrypted data transmission, ensuring your information stays protected.",
+    },
+  ],
+};
 
 const MilkAnalyserPage = () => {
   return (

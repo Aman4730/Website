@@ -3,13 +3,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 
 import title_shape_2 from "../../../assets/img/theme-img/title_shape_2.svg";
 
 const ServiceWhatWeDo2 = ({ sectionTitle, services }) => {
   return (
-    <section className="service-sec15 space" id="service-sec">
+    <section className="service-sec15 space-top" id="service-sec">
       <div className="container th-container4">
         <div className="row justify-content-center">
           <div className="col-lg-6 col-md-7 col-sm-10 px-xl-4">

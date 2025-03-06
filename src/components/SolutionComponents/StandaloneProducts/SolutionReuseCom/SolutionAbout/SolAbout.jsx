@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const SolAbout = ({ aboutData }) => {
+const SolAbout = ({ aboutData = [] }) => {
   return (
     <div className="space" id="about-sec">
       <div className="container">

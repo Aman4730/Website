@@ -22,6 +22,8 @@ import StorageQuotaManagementIcon from "../../../Imges/QblockIcon/StorageQuotaMa
 import TalkToAbout2 from "../StandaloneProducts/SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout2";
 import "swiper/css";
 import "swiper/css/pagination";
+import talkabout from "../../../Imges/akshar1.png";
+
 const testimonials = [
   {
     text: "“Logimetrix Photon provides real-time visibility and control over solar energy assets, enabling efficient management of the 30 MW Solar portfolio. The solution helps to monitor and improve performance, ensuring optimized energy production.”",
@@ -103,34 +105,37 @@ const ExpertiseArray = {
   ],
 };
 
-const TalkToAbout2Array = [
-  {
-    id: 1,
-    question: "How does Logimetrix Photon optimize solar energy management?",
-    answer:
-      "Logimetrix Photon provides real-time visibility, predictive analytics, and automated workflows to monitor and optimize solar energy production, improving efficiency and performance.",
-  },
-  {
-    id: 2,
-    question:
-      "What makes Photon a scalable solution for solar energy management?",
-    answer:
-      "Photon is designed to scale easily, allowing businesses to manage solar energy assets across multiple locations with seamless integration, real-time data visualization, and automated reporting.",
-  },
-  {
-    id: 3,
-    question: "Can Photon help reduce costs in solar energy management?",
-    answer:
-      "Yes, by providing actionable insights, predictive maintenance, and real-time monitoring, Photon helps reduce energy waste, optimize performance, and lower operational costs.",
-  },
-  {
-    id: 4,
-    question:
-      "How does Logimetrix Photon integrate with cloud and mobile platforms?",
-    answer:
-      "Photon uses cloud and mobile technology to ensure remote access, real-time monitoring, and centralized data management, allowing businesses to control and optimize their solar energy systems from anywhere.",
-  },
-];
+const TalkToAbout2Array = {
+  img: talkabout,
+  TalkToAboutArray: [
+    {
+      id: 1,
+      question: "How does Logimetrix Photon optimize solar energy management?",
+      answer:
+        "Logimetrix Photon provides real-time visibility, predictive analytics, and automated workflows to monitor and optimize solar energy production, improving efficiency and performance.",
+    },
+    {
+      id: 2,
+      question:
+        "What makes Photon a scalable solution for solar energy management?",
+      answer:
+        "Photon is designed to scale easily, allowing businesses to manage solar energy assets across multiple locations with seamless integration, real-time data visualization, and automated reporting.",
+    },
+    {
+      id: 3,
+      question: "Can Photon help reduce costs in solar energy management?",
+      answer:
+        "Yes, by providing actionable insights, predictive maintenance, and real-time monitoring, Photon helps reduce energy waste, optimize performance, and lower operational costs.",
+    },
+    {
+      id: 4,
+      question:
+        "How does Logimetrix Photon integrate with cloud and mobile platforms?",
+      answer:
+        "Photon uses cloud and mobile technology to ensure remote access, real-time monitoring, and centralized data management, allowing businesses to control and optimize their solar energy systems from anywhere.",
+    },
+  ],
+};
 
 const aboutData = {
   title: "Photon",

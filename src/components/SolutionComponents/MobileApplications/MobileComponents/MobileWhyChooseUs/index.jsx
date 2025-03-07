@@ -5,9 +5,10 @@ import why83 from "../../../../../assets/img/icon/why-8-3.svg";
 import why84 from "../../../../../assets/img/icon/why-8-4.svg";
 import why_8_1 from "../../../../../assets/img/normal/why_8_1.png";
 import why_bg_8 from "../../../../../assets/img/bg/why_bg_8.png";
+
 const MobileWhyChooseUs = () => {
   return (
-    <div className="space-top">
+    <div className="">
       <div
         className="why-sec-4"
         style={{
@@ -20,11 +21,17 @@ const MobileWhyChooseUs = () => {
           <div className="row justify-content-center">
             <div className="col-xl-5">
               <div className="title-area text-center">
-                <span className="sub-title">WHY CHOOSE APP</span>
+                <span className="sub-title">SYSTEM ARCHITECTURE</span>
                 <h2 className="sec-title">
-                  Why Web<span className="text-theme fw-medium">Teck</span> Is
-                  The Right Choice For You
+                  Role-Based{" "}
+                  <span className="text-theme fw-medium">Access Matrix</span>
                 </h2>
+                <p>
+                  Our sophisticated access control system ensures secure and
+                  efficient platform utilization across all user categories. The
+                  architecture follows Zero Trust principles with multi-factor
+                  authentication and granular permission controls.
+                </p>
               </div>
             </div>
           </div>
@@ -36,12 +43,10 @@ const MobileWhyChooseUs = () => {
                     <img src={why81} alt="icon" />
                   </div>
                   <div className="media-body">
-                    <h3 className="about-feature_title">
-                      Extensions &amp; Addons
-                    </h3>
+                    <h3 className="about-feature_title">City Officials</h3>
                     <p className="about-feature_text">
-                      Integrate analytics tools such as Google Analytics to
-                      track visitor behavior.
+                      Access to AI-powered dashboards for informed
+                      decision-making and urban planning.
                     </p>
                   </div>
                 </div>
@@ -50,10 +55,12 @@ const MobileWhyChooseUs = () => {
                     <img src={why82} alt="icon" />
                   </div>
                   <div className="media-body">
-                    <h3 className="about-feature_title">Fast &amp; Easy</h3>
+                    <h3 className="about-feature_title">
+                      Emergency Responders
+                    </h3>
                     <p className="about-feature_text">
-                      Integrate analytics tools such as Google Analytics to
-                      track visitor behavior.
+                      Real-time incident visualization and automated workflow
+                      for faster disaster response.
                     </p>
                   </div>
                 </div>
@@ -66,10 +73,10 @@ const MobileWhyChooseUs = () => {
                     <img src={why83} alt="icon" />
                   </div>
                   <div className="media-body">
-                    <h3 className="about-feature_title">Friendly Interface</h3>
+                    <h3 className="about-feature_title">IT Administrators</h3>
                     <p className="about-feature_text">
-                      Integrate analytics tools such as Google Analytics to
-                      track visitor behavior.
+                      System management, data security enforcement, and
+                      infrastructure maintenance.
                     </p>
                   </div>
                 </div>
@@ -78,10 +85,10 @@ const MobileWhyChooseUs = () => {
                     <img src={why84} alt="icon" />
                   </div>
                   <div className="media-body">
-                    <h3 className="about-feature_title">Saved Replies</h3>
+                    <h3 className="about-feature_title">Secure Access</h3>
                     <p className="about-feature_text">
-                      Integrate analytics tools such as Google Analytics to
-                      track visitor behavior.
+                      The system follows Zero Trust principles with multi-factor
+                      authentication for enhanced security.
                     </p>
                   </div>
                 </div>

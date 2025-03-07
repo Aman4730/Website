@@ -152,9 +152,7 @@ const NavBar = () => {
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/services/JammuTourism">
-                                  Jammu Tourism
-                                </Link>
+                                <Link to="/services/SAG">SAG</Link>
                               </li>
                             </ul>
                           </li>
@@ -163,8 +161,19 @@ const NavBar = () => {
                       <li>
                         <Link to="/HowWeDoIt">How we do it</Link>
                       </li>
-                      <li>
-                        <Link to="/aboutus">Why Us</Link>
+
+                      <li className="menu-item-has-children">
+                        <a href="#">About Company</a>
+                        <ul className="sub-menu">
+                          <li>
+                            <Link to="/aboutus">WHY CHOOSE US ?</Link>
+                          </li>
+                          <li>
+                            <Link to="/OurLegacyLeadership">
+                              OUR LEGACY & LEADERSHIP
+                            </Link>
+                          </li>
+                        </ul>
                       </li>
                       <li className="menu-item-has-children mega-menu-wrap">
                         <a href="#">Solution</a>

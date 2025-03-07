@@ -145,7 +145,7 @@ const NAV_ITEMS = [
           {
             title: "Jammu Tourism",
             icon: <TravelExploreIcon />,
-            segment: "/services/JammuTourism",
+            segment: "/services/SAG",
           },
         ],
       },

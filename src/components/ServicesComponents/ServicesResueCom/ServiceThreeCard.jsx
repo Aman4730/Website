@@ -1,8 +1,10 @@
 import React from "react";
 
-const ServiceThreeCard = ({ cardData }) => {
+const ServiceThreeCard = ({ cardData, space }) => {
   return (
-    <div className="counter-area-4 overflow-hidden">
+    <div
+      className={`counter-area-4 overflow-hidden ${space ? "space-bottom" : ""}`}
+    >
       <div className="container th-container5">
         <div className="counter-card4-wrap">
           {cardData.map((card, index) => (

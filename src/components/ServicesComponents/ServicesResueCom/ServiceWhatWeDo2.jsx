@@ -6,10 +6,11 @@ import "swiper/css/pagination";
 import { Navigation, Autoplay } from "swiper/modules";
 
 import title_shape_2 from "../../../assets/img/theme-img/title_shape_2.svg";
+import { Link } from "react-router-dom";
 
 const ServiceWhatWeDo2 = ({ sectionTitle, services }) => {
   return (
-    <section className="service-sec15 space-top" id="service-sec">
+    <section className="service-sec15 space" id="service-sec">
       <div className="container th-container4">
         <div className="row justify-content-center">
           <div className="col-lg-6 col-md-7 col-sm-10 px-xl-4">
@@ -30,7 +31,7 @@ const ServiceWhatWeDo2 = ({ sectionTitle, services }) => {
             loop={true}
             spaceBetween={20}
             slidesPerView={1}
-            autoplay={{ delay: 6000 }}
+            autoplay={{ delay: 3000 }}
             breakpoints={{
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
@@ -47,10 +48,10 @@ const ServiceWhatWeDo2 = ({ sectionTitle, services }) => {
                     <a href={service.link}>{service.title}</a>
                   </h3>
                   <p className="service_card4_text">{service.desc}</p>
-                  <a href={service.link} className="line-btn">
+                  <Link to={service.link} className="line-btn">
                     Read Details{" "}
                     <i className="fa-regular fa-arrow-right ms-2"></i>
-                  </a>
+                  </Link>
                 </div>
               </SwiperSlide>
             ))}

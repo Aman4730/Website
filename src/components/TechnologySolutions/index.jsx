@@ -36,17 +36,13 @@ const TechnologySolutions = () => {
                   <img src="assets/img/icon/service_4_1.svg" alt="Icon" />
                 </div>
                 <h3 className="box-title">
-                  <a href="service-details.html">LAMP (PHP/MySQL)</a>
+                  <a href="service-details.html">Web Development</a>
                 </h3>
                 <p className="service-box3_text">
-                  Robust web applications using the LAMP stack for dynamic sites
-                  and
-                  <br /> e-commerce.
+                  Build high-performance apps with LAMP, MERN/MEAN, and RoR.
+                  Develop native & cross-platform mobile solutions for iOS and
+                  Android.
                 </p>
-                <a href="service-details.html" className="line-btn">
-                  Learn More
-                  <i className="fa-regular fa-arrow-right" />
-                </a>
               </div>
             </div>
           </div>
@@ -77,13 +73,10 @@ const TechnologySolutions = () => {
                   </a>
                 </h3>
                 <p className="service-box3_text">
-                  Full-stack JavaScript framework for fast, scalable web
-                  applications and real-time features.
+                  Leverage Big Data (Hadoop, Spark), data warehousing, and ETL
+                  for smarter decisions. Unlock insights with powerful Business
+                  Intelligence (BI) solutions.
                 </p>
-                <a href="service-details.html" className="line-btn">
-                  Learn More
-                  <i className="fa-regular fa-arrow-right" />
-                </a>
               </div>
             </div>
           </div>
@@ -94,16 +87,13 @@ const TechnologySolutions = () => {
                   <img src="assets/img/icon/service_4_3.svg" alt="Icon" />
                 </div>
                 <h3 className="box-title">
-                  <a href="service-details.html">Android</a>
+                  <a href="service-details.html">AI & Machine Learning</a>
                 </h3>
                 <p className="service-box3_text">
-                  Custom Android app development for engaging, high-performance
-                  mobile applications.
+                  Drive intelligent automation with AI agents, chatbots, and
+                  deep learning. Leverage NLP for language understanding and
+                  computer vision for image recognition.
                 </p>
-                <a href="service-details.html" className="line-btn">
-                  Learn More
-                  <i className="fa-regular fa-arrow-right" />
-                </a>
               </div>
             </div>
           </div>
@@ -114,16 +104,13 @@ const TechnologySolutions = () => {
                   <img src="assets/img/icon/service_4_4.svg" alt="Icon" />
                 </div>
                 <h3 className="box-title">
-                  <a href="service-details.html">Mobile / Smartphone</a>
+                  <a href="service-details.html">Cybersecurity</a>
                 </h3>
                 <p className="service-box3_text">
-                  Native and cross-platform mobile apps for iOS and Android,
-                  ensuring optimal user experiences.
+                  Protect digital assets with penetration testing, threat
+                  analysis, and incident response. Ensure compliance with ISO,
+                  GDPR, NIST, and enhance security with SOC solutions.
                 </p>
-                <a href="service-details.html" className="line-btn">
-                  Learn More
-                  <i className="fa-regular fa-arrow-right" />
-                </a>
               </div>
             </div>
           </div>
@@ -134,16 +121,13 @@ const TechnologySolutions = () => {
                   <img src="assets/img/icon/service_4_5.svg" alt="Icon" />
                 </div>
                 <h3 className="box-title">
-                  <a href="service-details.html">Ruby on Rails (RoR)</a>
+                  <a href="service-details.html">Cloud & DevOps</a>
                 </h3>
                 <p className="service-box3_text">
-                  Efficient web applications built with RoR for quick
-                  development and scalability.
+                  Scale IT with AWS, Azure, and Google Cloud. Streamline
+                  deployment with Kubernetes, Docker, CI/CD, serverless,
+                  microservices, automation, scalability, security, & DevOps .
                 </p>
-                <a href="service-details.html" className="line-btn">
-                  Learn More
-                  <i className="fa-regular fa-arrow-right" />
-                </a>
               </div>
             </div>
           </div>

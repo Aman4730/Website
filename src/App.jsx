@@ -42,7 +42,7 @@ import IndusTowersLimited from "./components/ServicesComponents/InfraServices/In
 import OrganicHealthProductsInitiative from "./components/ServicesComponents/InfraServices/OrganicHealthProductsInitiative";
 import AcmeSolarCMSSystem from "./components/ServicesComponents/Accomplishments/AcmeSolarCMSSystem";
 import JammuSmartCityProject from "./components/ServicesComponents/Accomplishments/JammuSmartCityProject";
-import JammuTourism from "./components/ServicesComponents/Accomplishments/JammuTourism";
+import SAG from "./components/ServicesComponents/Accomplishments/SAG";
 import MOVCDNER from "./components/ServicesComponents/Accomplishments/MOVCDNER";
 import { useEffect } from "react";
 import EklavyaPage from "./components/SolutionComponents/ERPSolutions/EklavyaPage";
@@ -53,6 +53,7 @@ import LoginPage from "./components/LoginPage";
 import AdminPostPage from "./Pages/AdminPostPage";
 import AdminDashboard from "./Pages/AdminDashboard";
 import HowWeDoIt from "./Pages/HowWeDoIt";
+import OurLegacyLeadership from "./Pages/OurLegacyLeadership";
 function App() {
   const location = useLocation();
 
@@ -68,6 +69,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUsPage />} />
+        <Route path="/OurLegacyLeadership" element={<OurLegacyLeadership />} />
         {/*Solution*/}
         {/*Standalone Products*/}
         <Route path="/solutions/qblock" element={<QblockPage />} />
@@ -79,19 +81,43 @@ function App() {
         <Route path="/solutions/IManagerPage" element={<IManagerPage />} />
         <Route path="/solutions/CropnetPage" element={<CropnetPage />} />
 
-        <Route path="/solutions/StudentFinanceManagement" element={<AksharPage />} />
-        <Route path="/solutions/CollegeFeeManagement" element={<SaiSoftwarePage />} />
+        <Route
+          path="/solutions/StudentFinanceManagement"
+          element={<AksharPage />}
+        />
+        <Route
+          path="/solutions/CollegeFeeManagement"
+          element={<SaiSoftwarePage />}
+        />
 
         {/*Data Science*/}
-        <Route path="/solutions/AgricultureInformationSystemPage" element={<AgricultureInformationSystemPage />} />
-        <Route path="/solutions/DecisionSupportSystemPage" element={<DecisionSupportSystemPage />} />
-        <Route path="/solutions/FieldQuotationSystemPage" element={<FieldQuotationSystemPage />} />
-        <Route path="/solutions/IssueManagementSystemPage" element={<IssueManagementSystemPage />} />
+        <Route
+          path="/solutions/AgricultureInformationSystemPage"
+          element={<AgricultureInformationSystemPage />}
+        />
+        <Route
+          path="/solutions/DecisionSupportSystemPage"
+          element={<DecisionSupportSystemPage />}
+        />
+        <Route
+          path="/solutions/FieldQuotationSystemPage"
+          element={<FieldQuotationSystemPage />}
+        />
+        <Route
+          path="/solutions/IssueManagementSystemPage"
+          element={<IssueManagementSystemPage />}
+        />
 
         {/*Internet of Things (IoT)*/}
-        <Route path="/solutions/MilkAnalyserPage" element={<MilkAnalyserPage />} />
+        <Route
+          path="/solutions/MilkAnalyserPage"
+          element={<MilkAnalyserPage />}
+        />
         <Route path="/solutions/PhotonPage" element={<PhotonPage />} />
-        <Route path="/solutions/DairyApplicationPage" element={<DairyApplicationPage />} />
+        <Route
+          path="/solutions/DairyApplicationPage"
+          element={<DairyApplicationPage />}
+        />
 
         <Route
           path="/solutions/StudentFinanceManagement"
@@ -138,9 +164,18 @@ function App() {
         <Route path="/solutions/KarGoPage" element={<KarGoPage />} />
         <Route path="/solutions/MonitorMPage" element={<MonitorMPage />} />
 
-        <Route path="/solutions/SarojEducationPage" element={<SarojEducationPage />} />
-        <Route path="/solutions/TourismApplicationPage" element={<TourismApplicationPage />} />
-        <Route path="/solutions/CommunicationApplicationPage" element={<CommunicationApplicationPage />} />
+        <Route
+          path="/solutions/SarojEducationPage"
+          element={<SarojEducationPage />}
+        />
+        <Route
+          path="/solutions/TourismApplicationPage"
+          element={<TourismApplicationPage />}
+        />
+        <Route
+          path="/solutions/CommunicationApplicationPage"
+          element={<CommunicationApplicationPage />}
+        />
 
         <Route
           path="/solutions/SarojEducationPage"
@@ -161,10 +196,22 @@ function App() {
         {/*Services*/}
         {/*IT Services*/}
 
-        <Route path="/services/ApplicationDevelopment" element={<ApplicationDevelopment />} />
-        <Route  path="/services/ApplicationReengineering" element={<ApplicationReengineering />} />
-        <Route path="/services/EnterpriseApplication" element={<EnterpriseApplication />} />
-        <Route path="/services/ProductOrientedDelivery" element={<ProductOrientedDelivery />} />
+        <Route
+          path="/services/ApplicationDevelopment"
+          element={<ApplicationDevelopment />}
+        />
+        <Route
+          path="/services/ApplicationReengineering"
+          element={<ApplicationReengineering />}
+        />
+        <Route
+          path="/services/EnterpriseApplication"
+          element={<EnterpriseApplication />}
+        />
+        <Route
+          path="/services/ProductOrientedDelivery"
+          element={<ProductOrientedDelivery />}
+        />
 
         <Route
           path="/services/ApplicationDevelopment"
@@ -188,15 +235,6 @@ function App() {
         {/*IT Services*/}
 
         {/*Infra Services*/}
-
-        <Route path="/services/IndusTowersLimited" element={<IndusTowersLimited />} />
-        <Route path="/services/CentralCattleBreedingFarm" element={<CentralCattleBreedingFarm />} />
-        <Route path="/services/OrganicHealthProductsInitiative" element={<OrganicHealthProductsInitiative />} />
-        {/*Infra Services*/}
-
-        {/*Accomplishments*/}
-        <Route path="/services/AcmeSolarCMSSystem" element={<AcmeSolarCMSSystem />} />
-        <Route path="/services/JammuSmartCityProject" element={<JammuSmartCityProject />} />
 
         <Route
           path="/services/IndusTowersLimited"
@@ -222,7 +260,31 @@ function App() {
           element={<JammuSmartCityProject />}
         />
 
-        <Route path="/services/JammuTourism" element={<JammuTourism />} />
+        <Route
+          path="/services/IndusTowersLimited"
+          element={<IndusTowersLimited />}
+        />
+        <Route
+          path="/services/CentralCattleBreedingFarm"
+          element={<CentralCattleBreedingFarm />}
+        />
+        <Route
+          path="/services/OrganicHealthProductsInitiative"
+          element={<OrganicHealthProductsInitiative />}
+        />
+        {/*Infra Services*/}
+
+        {/*Accomplishments*/}
+        <Route
+          path="/services/AcmeSolarCMSSystem"
+          element={<AcmeSolarCMSSystem />}
+        />
+        <Route
+          path="/services/JammuSmartCityProject"
+          element={<JammuSmartCityProject />}
+        />
+
+        <Route path="/services/SAG" element={<SAG />} />
         <Route path="/services/MOVCDNER" element={<MOVCDNER />} />
         {/*Accomplishments*/}
 

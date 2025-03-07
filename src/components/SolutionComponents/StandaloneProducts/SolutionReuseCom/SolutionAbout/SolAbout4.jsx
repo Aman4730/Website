@@ -1,10 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const SolAbout4 = ({ aboutData }) => {
+const SolAbout4 = ({ aboutData, nospace }) => {
   return (
     <div>
-      <div className="container th-container4" style={{ marginTop: "-120px" }}>
+      <div
+        className="container th-container4"
+        style={{ marginTop: !nospace && "-120px" }}
+      >
         {aboutData.map((item) => (
           <div
             className="row justify-content-between align-items-center flex-row-reverse"

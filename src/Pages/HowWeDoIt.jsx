@@ -9,12 +9,16 @@ import service_7_2 from "../assets/img/icon/service_7_2.svg";
 import service_7_3 from "../assets/img/icon/service_7_3.svg";
 import OurDevelopmentMethodology from "../components/ServicesComponents/ServicesResueCom/OurDevelopmentMethodology";
 import ServiceLanguage from "../components/ServicesComponents/ServicesResueCom/ServiceLanguage";
-import react from "../Imges/language/react.png";
-import Angular from "../Imges/language/Angular.png";
-import HowWeDo from "../Imges/HowWeDo.png";
+import HowWeDo from "../Imges/language/HowWeDo.png";
+import HowWeDo1 from "../Imges/language/HowWeDo1.png";
+import HowWeDo2 from "../Imges/language/HowWeDo2.png";
+import HowWeDo3 from "../Imges/language/HowWeDo3.png";
 import process_box_3_1 from "../assets/img/icon/process_box_3_1.svg";
 import process_box_3_2 from "../assets/img/icon/process_box_3_2.svg";
 import process_box_3_3 from "../assets/img/icon/process_box_3_3.svg";
+import blog_12_1 from "../assets/img/blog/blog_12_1.jpg";
+import blog_1_2 from "../assets/img/blog/blog_1_2.jpg";
+import blog_12_3 from "../assets/img/blog/blog_12_3.jpg";
 const HowWeDoIt = () => {
   const services = [
     {
@@ -74,28 +78,18 @@ const HowWeDoIt = () => {
     },
     {
       name: "Analyze the Client's Pain Points",
-      img: react,
+      img: HowWeDo3,
       desc: "Identifying inefficiencies, pain points, and areas of improvement to ensure a clear understanding of business challenges.",
     },
     {
       name: "Create Custom or Tailored Solutions",
-      img: Angular,
+      img: HowWeDo2,
       desc: "Crafting scalable, efficient, and sustainable software solutions based on gathered insights and unique business requirements.",
     },
     {
       name: "Take Feedback and Iterate",
-      img: Angular,
+      img: HowWeDo1,
       desc: "Presenting the developed solution for feedback, making necessary improvements to align perfectly with business needs.",
-    },
-    {
-      name: "Grow Together",
-      img: Angular,
-      desc: "Building long-term relationships, optimizing solutions as the business evolves, and ensuring continued success.",
-    },
-    {
-      name: "Deliver Excellence",
-      img: Angular,
-      desc: "Ensuring a high-quality, fully functional solution with ongoing maintenance and innovation for long-term success.",
     },
   ];
   const processData = {
@@ -129,6 +123,39 @@ const HowWeDoIt = () => {
       },
     ],
   };
+  const businessInfo = {
+    title: "Role-Based Access Matrix",
+    Subtitle: "Secure & Efficient Platform Utilization",
+    BusinessData: [
+      {
+        id: 1,
+        title: "Farmers",
+        description:
+          "Access to essential farming resources, real-time weather updates, and market prices to enhance productivity. Get expert advice, monitor crop health, optimize irrigation, access government schemes, receive pest alerts, and track soil quality insights. Utilize AI-driven analytics for better yield predictions, manage farm expenses efficiently, access digital marketplaces for selling produce, receive automated fertilizer recommendations, explore modern farming techniques, track climate patterns, and get real-time alerts on disease outbreaks.",
+        image: blog_12_3,
+        date: "25 Feb, 2024",
+        author: "Logimetrix Team",
+      },
+      {
+        id: 2,
+        title: "Policymakers",
+        description:
+          "Comprehensive dashboard for tracking farming trends, analyzing policy impact, and making data-driven decisions. Includes market insights, subsidy distribution, and climate adaptation strategies.",
+        image: blog_12_1,
+        date: "20 Apr, 2024",
+        author: "AgriTech Team",
+      },
+      {
+        id: 3,
+        title: "Admins",
+        description:
+          "Full control over user roles, content moderation, and system configurations to maintain platform security. Supports audit logs, automated reports, and user activity tracking.",
+        image: blog_1_2,
+        date: "20 Apr, 2024",
+        author: "AgriTech Team",
+      },
+    ],
+  };
   return (
     <div>
       <MainHeading
@@ -143,7 +170,7 @@ const HowWeDoIt = () => {
         services={services}
         sectionTitle="Our Product Delivery Features"
       />
-      <BusinessPlanning />
+      <BusinessPlanning blogData={businessInfo} space={true} />
       <CustomerRelationship />
       <OurDevelopmentMethodology processData={processData} />
     </div>

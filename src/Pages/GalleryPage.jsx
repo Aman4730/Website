@@ -14,7 +14,6 @@ const GalleryPage = () => {
         breadcrumbs={[{ label: "Home", link: "/" }, { label: "Blog" }]}
       />
       <CaseStudies />
-      <TeamMembers />
       <WhyChooseUsGal />
       <Photos />
     </div>

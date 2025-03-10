@@ -4,10 +4,6 @@ import MainHeading from "../../MainHeading";
 import ServiceWhatWeDo1 from "../ServicesResueCom/ServiceWhatWeDo1";
 import SuccessStories from "../ServicesResueCom/SuccessStories";
 import ConnectTeam from "../../ConnectTeam";
-import blog_1_1 from "../../../assets/img/blog/blog_1_1.jpg";
-import blog_1_2 from "../../../assets/img/blog/blog_1_2.jpg";
-import blog_1_3 from "../../../assets/img/blog/blog_1_3.jpg";
-import blog_1_4 from "../../../assets/img/blog/blog_1_4.jpg";
 import about_17_1 from "../../../assets/img/normal/about_17_1.png";
 import about_17_2 from "../../../assets/img/normal/about_17_2.png";
 import process_2_1 from "../../../assets/img/icon/process_2_1.svg";
@@ -15,50 +11,55 @@ import process_2_2 from "../../../assets/img/icon/process_2_2.svg";
 import process_2_3 from "../../../assets/img/icon/process_2_3.svg";
 import process_2_4 from "../../../assets/img/icon/process_2_4.svg";
 import processshape from "../../../assets/img/bg/process-shape.png";
+import POC from "../../../Imges/POC.png";
+import POC1 from "../../../Imges/POC1.png";
+import POC2 from "../../../Imges/POC2.png";
+import POC3 from "../../../Imges/POC3.png";
+import POC4 from "../../../Imges/POC4.png";
 const POCDevelopment = () => {
   const blogData = {
-    title: "Recent POD Success",
+    title: "Recent POC Success",
     subtitle: "Success & Stories",
-    shadowTitle: "Update",
+    shadowTitle: "Success",
     posts: [
       {
-        img: blog_1_1,
+        img: POC,
         date: "15 Jan, 2024",
         comments: 2,
         title: "AI-Powered Supply Chain Optimization",
-        link: "blog-details.html",
+        link: "/contactUs",
         desc: "35% reduction in operational costs by predictive analytics and automation.",
       },
       {
-        img: blog_1_2,
+        img: POC1,
         date: "16 Jan, 2024",
         comments: 3,
         title: "Blockchain-Based Digital Identity System",
-        link: "blog-details.html",
+        link: "/contactUs",
         desc: "Zero fraud incidents ensuring secure and verifiable identities.",
       },
       {
-        img: blog_1_3,
+        img: POC2,
         date: "17 Jan, 2024",
         comments: 2,
         title: "IoT-Enabled Smart Warehouse Management",
-        link: "blog-details.html",
+        link: "/contactUs",
         desc: "25% improvement in inventory accuracy with real-time tracking.",
       },
       {
-        img: blog_1_4,
+        img: POC3,
         date: "19 Jan, 2024",
         comments: 4,
         title: "NLP-Based Customer Support Automation",
-        link: "blog-details.html",
+        link: "/contactUs",
         desc: "50% reduction in response time using AI-powered chatbots.",
       },
       {
-        img: blog_1_4,
+        img: POC4,
         date: "19 Jan, 2024",
         comments: 4,
         title: "Edge Computing for Real-Time Data Processing",
-        link: "blog-details.html",
+        link: "/contactUs",
         desc: "Achieved ultra-low latency for industrial automation applications.",
       },
     ],
@@ -77,7 +78,7 @@ const POCDevelopment = () => {
         desc: "Rapid execution with quality intact.",
       },
       {
-        number: "150k",
+        number: "150",
         unit: "+",
         title: "Successful PoCs",
         desc: "Proven track record in emerging technologies, driving innovation and excellence.",

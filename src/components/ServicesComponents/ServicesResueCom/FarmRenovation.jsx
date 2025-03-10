@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Swiper from "swiper";
 import "swiper/css";
 import title_shape_2 from "../../../assets/img/theme-img/title_shape_2.svg";
+import { Link } from "react-router-dom";
 
 const FarmRenovation = ({ projects }) => {
   useEffect(() => {
@@ -54,7 +55,7 @@ const FarmRenovation = ({ projects }) => {
                     </div>
                     <div className="project-grid_content">
                       <h3 className="box-title">
-                        <a href="project-details.html">{project.title}</a>
+                        <Link to="/contactUs">{project.title}</Link>
                       </h3>
                       <p className="project-grid_text text-muted">
                         {project.desc}

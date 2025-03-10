@@ -17,7 +17,7 @@ const MobileComponents = () => {
       ["Fully Responsive", "Ultimate support"],
     ],
     buttonText: "Get Started For Free 14 Days",
-    buttonLink: "contact.html",
+    buttonLink: "/contactUs",
     images: [about_8_1, about_8_2],
   };
   const aboutData = [
@@ -108,13 +108,13 @@ const MobileComponents = () => {
                 <div className="swiper-slide">
                   <div className="testi-card2">
                     <p className="testi-card2_text">
-                      I've had the pleasure of working with Webteck for the past
-                      year, and I can confidently say that they have been
+                      I've had the pleasure of working with logimetrix for the
+                      past year, and I can confidently say that they have been
                       instrumental in the success of our IT initiatives. As a
                       startup, we needed a technology partner that could not
                       only meet our immediate needs but also grow with us as we
-                      expand our business. Webteck has exceeded our expectations
-                      on every front.
+                      expand our business. logimetrix has exceeded our
+                      expectations on every front.
                     </p>
                     <div className="testi-card2_profile">
                       <div className="testi-card2_content">

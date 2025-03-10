@@ -9,6 +9,7 @@ import team_4_2 from "../../../assets/img/team/team_4_2.jpg";
 import team_4_3 from "../../../assets/img/team/team_4_3.jpg";
 import team_4_4 from "../../../assets/img/team/team_4_4.jpg";
 import team_bg_5 from "../../../assets/img/bg/team_bg_5.jpg";
+import { Link } from "react-router-dom";
 
 const teamMembers = [
   { img: team_4_1, name: "Honey Deep", role: "Chief Officer" },
@@ -78,7 +79,7 @@ const TeamMembers = () => {
                       </div>
                       <div className="media-body">
                         <h3 className="box-title">
-                          <a href="team-details.html">{member.name}</a>
+                          <Link to="/contactUs">{member.name}</Link>
                         </h3>
                         <span className="team-desig">{member.role}</span>
                       </div>

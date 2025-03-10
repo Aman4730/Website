@@ -235,17 +235,17 @@ const AboutUsPage = () => {
                   </div>
                 </div>
                 <div className="btn-group">
-                  <a href="about.html" className="th-btn">
+                  <Link to="/contactUs" className="th-btn">
                     DISCOVER MORE
                     <i className="fa-regular fa-arrow-right ms-2" />
-                  </a>
+                  </Link>
                   <div className="call-btn">
                     <div className="play-btn">
                       <i className="fas fa-phone" />
                     </div>
                     <div className="media-body">
                       <span className="btn-text">Call Us On:</span>
-                      <a href="tel:+19088000393" className="btn-title">
+                      <a href="tel:+9935540006" className="btn-title">
                         +91 9935540006
                       </a>
                     </div>
@@ -291,7 +291,7 @@ const AboutUsPage = () => {
                       <img src={service_1_2} alt="Icon" />
                     </div>
                     <h3 className="box-title">
-                      <a href="service-details.html">Mobility Solutions</a>
+                      <Link to="/contactUs">Mobility Solutions</Link>
                     </h3>
                     <p className="service-card2_text">
                       Custom mobile apps for Android, iOS, and Windows that
@@ -305,7 +305,7 @@ const AboutUsPage = () => {
                       <img src={service_3_4} alt="Icon" />
                     </div>
                     <h3 className="box-title">
-                      <a href="service-details.html">Technology Solutions</a>
+                      <Link to="/contactUs">Technology Solutions</Link>
                     </h3>
                     <p className="service-card2_text">
                       Enterprise-grade software architectures built with
@@ -319,7 +319,7 @@ const AboutUsPage = () => {
                       <img src={service_2_3} alt="Icon" />
                     </div>
                     <h3 className="box-title">
-                      <a href="service-details.html">Research & Analytics</a>
+                      <Link to="/contactUs">Research & Analytics</Link>
                     </h3>
                     <p className="service-card2_text">
                       Transform your raw data into actionable insights through
@@ -333,7 +333,7 @@ const AboutUsPage = () => {
                       <img src={service_3_2} alt="Icon" />
                     </div>
                     <h3 className="box-title">
-                      <a href="service-details.html">Custom Development</a>
+                      <Link to="/contactUs">Custom Development</Link>
                     </h3>
                     <p className="service-card2_text">
                       Tailor-made solutions designed specifically for your
@@ -554,7 +554,7 @@ const AboutUsPage = () => {
                         )}
                       </div>
                       <h3 className="box-title">
-                        <a href="team-details.html">{member.name}</a>
+                        <Link to="/contactUs">{member.name}</Link>
                       </h3>
                       <span className="team-desig">{member.role}</span>
                     </div>

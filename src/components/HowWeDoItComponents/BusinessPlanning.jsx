@@ -1,5 +1,6 @@
 import React from "react";
 import title_shape_2 from "../../assets/img/theme-img/title_shape_2.svg";
+import { Link } from "react-router-dom";
 
 const BusinessPlanning = ({ blogData, space }) => {
   return (
@@ -28,16 +29,11 @@ const BusinessPlanning = ({ blogData, space }) => {
               </div>
               <div className="blog-content">
                 <h3 className="box-title">
-                  <a href="blog-details.html">
-                    {blogData.BusinessData[0].title}
-                  </a>
+                  <Link to="/contactUs">{blogData.BusinessData[0].title}</Link>
                 </h3>
                 <p className="blog-text">
                   {blogData.BusinessData[0].description}
                 </p>
-                <a href="blog-details.html" className="line-btn">
-                  Learn More <i className="fa-regular fa-arrow-right" />
-                </a>
               </div>
             </div>
           </div>
@@ -54,12 +50,9 @@ const BusinessPlanning = ({ blogData, space }) => {
                 </div>
                 <div className="blog-content">
                   <h3 className="box-title">
-                    <a href="blog-details.html">{blog.title}</a>
+                    <Link to="/contactUs">{blog.title}</Link>
                   </h3>
                   <p className="blog-text">{blog.description}</p>
-                  <a href="blog-details.html" className="line-btn">
-                    Learn More <i className="fa-regular fa-arrow-right" />
-                  </a>
                 </div>
               </div>
             ))}

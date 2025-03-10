@@ -24,7 +24,7 @@ const aboutData = {
     {
       // text: "Get Started For Free 14 Days",
       text: "Explore More",
-      link: "contact.html",
+      link: "/contactUs",
       style: "th-btn style-radius",
     },
     // {

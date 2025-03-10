@@ -1,5 +1,6 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import title_shape_2 from "../../assets/img/theme-img/title_shape_2.svg";
 const CustomerRelationship = () => {
   return (
     <div className="overflow-hidden space-bottom">
@@ -9,18 +10,11 @@ const CustomerRelationship = () => {
             <div className="title-area">
               <span className="sub-title text-capitalize fs-20">
                 <div className="icon-masking me-2">
-                  <span
-                    className="mask-icon"
-                    data-mask-src="assets/img/theme-img/title_shape_5.svg"
-                  />
-                  <img
-                    src="assets/img/theme-img/title_shape_5.svg"
-                    alt="shape"
-                  />
+                  <img src={title_shape_2} alt="shape" />
                 </div>
                 Company Benifits
               </span>
-              <h2 className="sec-title">Why Choose Webteck IT Consulting</h2>
+              <h2 className="sec-title">Why Choose Logimetrix IT Consulting</h2>
               <p className="mb-25">
                 Our team is compriseds of seasoneds IT professionals with
                 industry certifications and a wealth of experience. We stay at
@@ -45,10 +39,6 @@ const CustomerRelationship = () => {
                 <ul>
                   <li>
                     <img src="assets/img/icon/check_3.svg" alt="" />
-                    Client-Centric Partnership
-                  </li>
-                  <li>
-                    <img src="assets/img/icon/check_3.svg" alt="" />
                     24/7 Hour Support
                   </li>
                 </ul>
@@ -56,12 +46,12 @@ const CustomerRelationship = () => {
             </div>
             <div className="feature-wrap">
               <div className="btn-wrap">
-                <a
-                  href="about.html"
+                <Link
+                  to="/contactUs"
                   className="th-btn style-radius text-capitalize"
                 >
                   Learn More
-                </a>
+                </Link>
               </div>
             </div>
           </div>

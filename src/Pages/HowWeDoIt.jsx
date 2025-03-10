@@ -24,50 +24,50 @@ const HowWeDoIt = () => {
     {
       img: service_7_1,
       title: "Google Cloud Platform",
-      desc: "Stop chasing leads and attract them with targeted campaigns. Webteck's suite of tools, including...",
-      link: "service-details.html",
+      desc: "Stop chasing leads and attract them with targeted campaigns. logimetrix's suite of tools, including...",
+      link: "/contactUs",
     },
     {
       img: service_7_2,
       title: "Amazon Web Services",
       desc: "Increase conversions with AI-powered insights and automation tools for your business success...",
-      link: "service-details.html",
+      link: "/contactUs",
     },
     {
       img: service_7_3,
       title: "Microsoft Azure",
       desc: "Maximize your return on investment with data-driven marketing strategies and AI-driven solutions...",
-      link: "service-details.html",
+      link: "/contactUs",
     },
     {
       img: service_7_3,
       title: "Snowflake",
       desc: "Maximize your return on investment with data-driven marketing strategies and AI-driven solutions...",
-      link: "service-details.html",
+      link: "/contactUs",
     },
     {
       img: service_7_1,
       title: "Tableau",
-      desc: "Stop chasing leads and attract them with targeted campaigns. Webteck's suite of tools, including...",
-      link: "service-details.html",
+      desc: "Stop chasing leads and attract them with targeted campaigns. logimetrix's suite of tools, including...",
+      link: "/contactUs",
     },
     {
       img: service_7_2,
       title: "Microsoft PowerBI",
       desc: "Increase conversions with AI-powered insights and automation tools for your business success...",
-      link: "service-details.html",
+      link: "/contactUs",
     },
     {
       img: service_7_3,
       title: "ThoughtSpot",
       desc: "Maximize your return on investment with data-driven marketing strategies and AI-driven solutions...",
-      link: "service-details.html",
+      link: "/contactUs",
     },
     {
       img: service_7_3,
       title: "Databricks",
       desc: "Maximize your return on investment with data-driven marketing strategies and AI-driven solutions...",
-      link: "service-details.html",
+      link: "/contactUs",
     },
   ];
   const languages = [
@@ -98,61 +98,28 @@ const HowWeDoIt = () => {
     description:
       "Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy.",
     buttonText: "Get Started Now",
-    buttonLink: "contact.html",
+    buttonLink: "/contactUs",
     steps: [
       {
         id: 1,
         img: process_box_3_1,
         title: "Finance Security",
         desc: "Party we years to order allow asked of. We so opinion friends me message as delight. sit abet pulvinar arco dap bus.",
-        link: "service-details.html",
+        link: "/contactUs",
       },
       {
         id: 2,
         img: process_box_3_2,
         title: "Synchronization",
         desc: "His defective nor convinced residence own. Connection has put impossible own apartments boisterous.",
-        link: "service-details.html",
+        link: "/contactUs",
       },
       {
         id: 3,
         img: process_box_3_3,
         title: "Cloud Drive",
         desc: "From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly.",
-        link: "service-details.html",
-      },
-    ],
-  };
-  const businessInfo = {
-    title: "Role-Based Access Matrix",
-    Subtitle: "Secure & Efficient Platform Utilization",
-    BusinessData: [
-      {
-        id: 1,
-        title: "Farmers",
-        description:
-          "Access to essential farming resources, real-time weather updates, and market prices to enhance productivity. Get expert advice, monitor crop health, optimize irrigation, access government schemes, receive pest alerts, and track soil quality insights. Utilize AI-driven analytics for better yield predictions, manage farm expenses efficiently, access digital marketplaces for selling produce, receive automated fertilizer recommendations, explore modern farming techniques, track climate patterns, and get real-time alerts on disease outbreaks.",
-        image: blog_12_3,
-        date: "25 Feb, 2024",
-        author: "Logimetrix Team",
-      },
-      {
-        id: 2,
-        title: "Policymakers",
-        description:
-          "Comprehensive dashboard for tracking farming trends, analyzing policy impact, and making data-driven decisions. Includes market insights, subsidy distribution, and climate adaptation strategies.",
-        image: blog_12_1,
-        date: "20 Apr, 2024",
-        author: "AgriTech Team",
-      },
-      {
-        id: 3,
-        title: "Admins",
-        description:
-          "Full control over user roles, content moderation, and system configurations to maintain platform security. Supports audit logs, automated reports, and user activity tracking.",
-        image: blog_1_2,
-        date: "20 Apr, 2024",
-        author: "AgriTech Team",
+        link: "/contactUs",
       },
     ],
   };
@@ -170,7 +137,6 @@ const HowWeDoIt = () => {
         services={services}
         sectionTitle="Our Product Delivery Features"
       />
-      <BusinessPlanning blogData={businessInfo} space={true} />
       <CustomerRelationship />
       <OurDevelopmentMethodology processData={processData} />
     </div>

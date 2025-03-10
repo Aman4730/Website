@@ -4,6 +4,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import title_shape_2 from "../../../assets/img/theme-img/title_shape_2.svg";
+import { Link } from "react-router-dom";
 
 const OurApplicationDevelopment = ({ applicationservices }) => {
   const [expandedCard, setExpandedCard] = useState(null);
@@ -64,7 +65,7 @@ const OurApplicationDevelopment = ({ applicationservices }) => {
                         textOverflow: "ellipsis",
                       }}
                     >
-                      <a href="service-details.html">{service.title}</a>
+                      <Link to="/contactUs">{service.title}</Link>
                     </h3>
 
                     <p

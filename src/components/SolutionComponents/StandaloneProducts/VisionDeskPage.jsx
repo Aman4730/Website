@@ -214,7 +214,7 @@ const VisionDeskPage = () => {
         ["Real-time Data Access", "Krishi Mapper Integration"],
         ["Data-Driven Solutions", "Informed Decision-Making"],
       ],
-      contactLink: "about.html",
+      contactLink: "/contactUs",
       phone: "+993-554-0006",
     },
   ];

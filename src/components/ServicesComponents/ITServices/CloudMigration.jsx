@@ -28,7 +28,7 @@ import process_box_3_3 from "../../../assets/img/icon/process_box_3_3.svg";
 const CloudMigration = () => {
   const aboutFeatures = {
     title: "Cloud Migration Services",
-    heading: "Enhance Efficiency with LOGIMETRIX’ Cloud Migration",
+    heading: "Enhance Efficiency with LOGIMETRIX Cloud Migration",
     aboutus:
       "We specialize in seamless cloud transitions, optimizing infrastructure for better scalability, security, and cost efficiency. Our solutions integrate effortlessly with existing systems, ensuring enhanced reliability and performance.",
     asd: [
@@ -48,28 +48,28 @@ const CloudMigration = () => {
       title: "Assessment and Design",
       description:
         "We collaborate to classify applications, design infrastructure, and craft a migration plan with security, scalability, and integration .",
-      link: "service-details.html",
+      link: "/contactUs",
     },
     {
       img: service_featured_2,
       title: "Implementation",
       description:
         "Our migration strategy ensures seamless transitions with no business disruption, leveraging DevOps best practices for reliability and efficiency.",
-      link: "service-details.html",
+      link: "/contactUs",
     },
     {
       img: service_featured_3,
       title: "Optimisation",
       description:
         "We refine cloud adoption by optimizing costs, scaling critical applications, and containerizing workloads for enhanced performance and flexibility.",
-      link: "service-details.html",
+      link: "/contactUs",
     },
     {
       img: service_featured_4,
       title: "Support",
       description:
         "Post-migration, we offer centralized monitoring, resource management, and ongoing maintenance to ensure system stability and efficiency.",
-      link: "service-details.html",
+      link: "/contactUs",
     },
   ];
   const processData = {
@@ -78,28 +78,28 @@ const CloudMigration = () => {
     description:
       "Move to the cloud for better agility, scalability, security, and cost optimization. Stay ahead in the competitive market with a robust cloud strategy.",
     buttonText: "Learn More",
-    buttonLink: "cloud-migration.html",
+    buttonLink: "/contactUs",
     steps: [
       {
         id: 1,
         img: process_box_3_1,
         title: "Operational Agility",
         desc: "Respond faster to market changes with elastic cloud infrastructure that adapts to your business needs.",
-        link: "service-details.html",
+        link: "/contactUs",
       },
       {
         id: 2,
         img: process_box_3_2,
         title: "Seamless Scalability",
         desc: "Auto-scale resources based on real-time demand, ensuring optimal performance and efficiency.",
-        link: "service-details.html",
+        link: "/contactUs",
       },
       {
         id: 3,
         img: process_box_3_3,
         title: "Enterprise Security",
         desc: "Bank-grade security with continuous monitoring to protect your data and business operations.",
-        link: "service-details.html",
+        link: "/contactUs",
       },
     ],
   };

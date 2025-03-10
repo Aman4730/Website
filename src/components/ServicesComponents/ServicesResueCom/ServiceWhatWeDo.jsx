@@ -4,6 +4,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import title_shape_2 from "../../../assets/img/theme-img/title_shape_2.svg";
+import { Link } from "react-router-dom";
 
 const ServiceWhatWeDo = ({ services }) => {
   return (
@@ -66,13 +67,13 @@ const ServiceWhatWeDo = ({ services }) => {
                         />
                       </div>
                       <h3 className="box-title">
-                        <a href={service.link}>{service.title}</a>
+                        <Link to={service.link}>{service.title}</Link>
                       </h3>
                       <p className="service-featured_text">
                         {service.description}
                       </p>
-                      <a
-                        href={service.link}
+                      <Link
+                        to={service.link}
                         className="icon-btn"
                         style={{
                           position: "absolute",
@@ -83,7 +84,7 @@ const ServiceWhatWeDo = ({ services }) => {
                         }}
                       >
                         <i className="fa-regular fa-arrow-right" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </SwiperSlide>

@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ServiceAbout2 = ({ features }) => {
   return (
-    <div className="position-relative overflow-hidden space-top">
+    <div className="position-relative overflow-hidden space">
       <div className="container th-container4">
         <div className="feature-wrap9 style2">
           {features.map((feature) => (
@@ -27,12 +28,12 @@ const ServiceAbout2 = ({ features }) => {
                   </h1>
                   <p className="mb-40">{feature.description}</p>
                   <div className="btn-wrap">
-                    <a
-                      href={feature.link}
+                    <Link
+                      to={feature.link}
                       className="th-btn style-radius text-capitalize"
                     >
                       view details
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

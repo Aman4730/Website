@@ -21,37 +21,37 @@ const MOVCDNER = () => {
       img: service_7_1,
       title: "Real-time Organic Farming Monitoring",
       desc: "Track organic farming activities in real-time to ensure sustainable practices and optimize productivity.",
-      link: "service-details.html",
+      link: "/contactUs",
     },
     {
       img: service_7_2,
       title: "Seamless Government Database Integration",
       desc: "Effortlessly exchange data with government systems for compliance, transparency, and better decision-making.",
-      link: "service-details.html",
+      link: "/contactUs",
     },
     {
       img: service_7_3,
       title: "Mobile-Friendly Farmer Access",
       desc: "Enable farmers to access crucial information on-the-go with an intuitive mobile-friendly interface.",
-      link: "service-details.html",
+      link: "/contactUs",
     },
     {
       img: service_7_2,
       title: "Data Analytics for Policymakers",
       desc: "Provide policymakers with actionable insights through a powerful analytics dashboard for better planning.",
-      link: "service-details.html",
+      link: "/contactUs",
     },
     {
       img: service_7_3,
       title: "AI-Driven Crop Health Analysis",
       desc: "Leverage AI insights to monitor soil health, detect pests, and analyze crop conditions for improved yield.",
-      link: "service-details.html",
+      link: "/contactUs",
     },
     {
       img: service_7_1,
       title: "Weather-Based Farming Recommendations",
       desc: "Offer farmers real-time weather updates and customized farming advice to optimize agricultural practices.",
-      link: "service-details.html",
+      link: "/contactUs",
     },
   ];
   const businessInfo = {

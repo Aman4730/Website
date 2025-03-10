@@ -8,18 +8,18 @@ const sections = [
     image2: download821,
     subtitle: "Easy User Experience",
     title: "Better cash control with",
-    highlight: "WebTeck Flow",
+    highlight: "logimetrix Flow",
     description: [
       "Provide a brief overview of the app's purpose and key features.",
       "Use concise descriptions or bullet points to emphasize what sets your app apart from others in the market.",
     ],
     primaryButton: {
       text: "Explore More",
-      link: "contactUs",
+      link: "/contactUs",
     },
     secondaryButton: {
       text: "Download app",
-      link: "contactUs",
+      link: "/contactUs",
     },
   },
 ];

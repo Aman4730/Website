@@ -90,7 +90,7 @@ const AbsoluteStudyPage = () => {
                   View Demo
                 </a>
                 <a
-                  href="contact.html"
+                  href="/contactUs"
                   className="th-btn style10 fs-16 text-capitalize"
                 >
                   Try for free

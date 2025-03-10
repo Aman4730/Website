@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const ServiceWhatWeDo2 = ({ sectionTitle, services }) => {
   return (
-    <section className="service-sec15 space" id="service-sec">
+    <section className="service-sec15 space-bottom" id="service-sec">
       <div className="container th-container4">
         <div className="row justify-content-center">
           <div className="col-lg-6 col-md-7 col-sm-10 px-xl-4">
@@ -45,7 +45,7 @@ const ServiceWhatWeDo2 = ({ sectionTitle, services }) => {
                     <img src={service.img} alt="Icon" />
                   </div>
                   <h3 className="box-title">
-                    <a href={service.link}>{service.title}</a>
+                    <Link to={service.link}>{service.title}</Link>
                   </h3>
                   <p className="service_card4_text">{service.desc}</p>
                   <Link to={service.link} className="line-btn">

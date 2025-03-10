@@ -48,12 +48,12 @@ const ContactUs = () => {
                 <div className="contact-info_icon">
                   <i className="fas fa-location-dot" />
                 </div>
+
                 <div className="media-body">
-                  <h4 className="box-title">Our Office Address</h4>
                   <span className="contact-info_text">
-                    Burnsville, MN 55337 Streat,
+                    Vikas Khand, Gomti Nagar,
                     <br />
-                    United States
+                    Lucknow, Uttar Pradesh 226010
                   </span>
                 </div>
               </div>
@@ -66,8 +66,8 @@ const ContactUs = () => {
                 <div className="media-body">
                   <h4 className="box-title">Call Us Anytime</h4>
                   <span className="contact-info_text">
-                    <a href="tel:+65485965789">(+65) - 48596 - 5789</a>
-                    <a href="tel:+65485965789">+65-48596-5789</a>
+                    <a href="tel:+9935540006">(+91) - 99355 - 40006</a>
+                    <a href="tel:+9935876555">+91-99358-76555</a>
                   </span>
                 </div>
               </div>
@@ -80,10 +80,9 @@ const ContactUs = () => {
                 <div className="media-body">
                   <h4 className="box-title">Send An Email</h4>
                   <span className="contact-info_text">
-                    <a href="mailto:info.example@gmail.com">
-                      info.example@gmail.com
+                    <a href="mailto:info@logimetrix.co.in">
+                      info@logimetrix.co.in
                     </a>
-                    <a href="mailto:info@webteck.com">info@webteck.com</a>
                   </span>
                 </div>
               </div>

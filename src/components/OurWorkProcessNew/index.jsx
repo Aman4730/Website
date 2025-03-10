@@ -49,7 +49,7 @@ const OurWorkProcessNew = () => {
                   </a>
                   <a className="author" href="blog.html">
                     <i className="far fa-user" />
-                    By Webteck
+                    By Logimetrix
                   </a>
                 </div>
               </div>
@@ -63,7 +63,7 @@ const OurWorkProcessNew = () => {
               <div className="blog-content">
                 <h3 className="box-title">
                   <a href="blog-details.html">
-                    Webteck Wins Award for Excellence in Cloud Migration
+                    Logimetrix Wins Award for Excellence in Cloud Migration
                     Services
                   </a>
                 </h3>
@@ -75,7 +75,7 @@ const OurWorkProcessNew = () => {
                 <div className="blog-meta">
                   <a className="author" href="blog.html">
                     <i className="far fa-user" />
-                    By Webteck
+                    By Logimetrix
                   </a>
                   <a href="blog.html">
                     <i className="far fa-calendar" />
@@ -91,7 +91,7 @@ const OurWorkProcessNew = () => {
               <div className="blog-content">
                 <h3 className="box-title">
                   <a href="blog-details.html">
-                    Webteck Announces Partnership with Leading Technology
+                    Logimetrix Announces Partnership with Leading Technology
                     Company
                   </a>
                 </h3>
@@ -103,7 +103,7 @@ const OurWorkProcessNew = () => {
                 <div className="blog-meta">
                   <a className="author" href="blog.html">
                     <i className="far fa-user" />
-                    By Webteck
+                    By Logimetrix
                   </a>
                   <a href="blog.html">
                     <i className="far fa-calendar" />

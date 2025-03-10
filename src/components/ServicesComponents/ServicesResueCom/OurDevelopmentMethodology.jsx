@@ -35,9 +35,9 @@ const OurDevelopmentMethodology = ({ processData }) => {
                   <div className="process-card_number">{step.id}</div>
                   <h2 className="box-title">{step.title}</h2>
                   <p className="process-card_text">{step.desc}</p>
-                  <a href={step.link} className="link-btn">
+                  <Link to={step.link} className="link-btn">
                     Learn More <i className="fas fa-arrow-right" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}

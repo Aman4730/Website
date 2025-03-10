@@ -29,16 +29,16 @@ const NavBar = () => {
                   <ul>
                     <li>
                       <i className="fas fa-map-location" />
-                      3/23, Vikas khand, Gomti Nagar ,Lucknow
+                      3/204, Vikas khand, Gomti Nagar ,Lucknow
                     </li>
                     <li>
                       <i className="fas fa-phone" />
-                      <a href="tel:+1539873657">+993-554-0006</a>
+                      <a href="tel:+9935540006">+993-554-0006</a>
                     </li>
                     <li>
                       <i className="fas fa-envelope" />
-                      <a href="mailto:info@logimetrix.com">
-                        info@logimetrix.com
+                      <a href="mailto:info@logimetrix.co.in">
+                        info@logimetrix.co.in
                       </a>
                     </li>
                   </ul>
@@ -84,32 +84,32 @@ const NavBar = () => {
                             <a href="#">IT Services</a>
                             <ul style={{ marginBottom: "20px" }}>
                               <li>
-                                <Link to="/services/ApplicationDevelopment">
+                                <Link to="/ApplicationDevelopment">
                                   Application Development
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/services/POCDevelopment">
+                                <Link to="/POCDevelopment">
                                   POC Development
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/services/ProductOrientedDelivery">
+                                <Link to="/ProductOrientedDelivery">
                                   Product-Oriented Delivery
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/services/EnterpriseApplication">
+                                <Link to="/EnterpriseApplication">
                                   Enterprise Application
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/services/ApplicationReengineering">
+                                <Link to="/ApplicationReengineering">
                                   Application Re-engineering
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/services/CloudMigration">
+                                <Link to="/CloudMigration">
                                   Cloud Migration
                                 </Link>
                               </li>
@@ -119,17 +119,17 @@ const NavBar = () => {
                             <a href="#">Infra Services</a>
                             <ul>
                               <li>
-                                <Link to="/services/IndusTowersLimited">
+                                <Link to="/IndusTowersLimited">
                                   Indus Towers Limited
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/services/OrganicHealthProductsInitiative">
+                                <Link to="/OrganicHealthProductsInitiative">
                                   Organic Health Products Initiative
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/services/CentralCattleBreedingFarm">
+                                <Link to="/CentralCattleBreedingFarm">
                                   Central Cattle Breeding Farm (CCBF) Renovation
                                 </Link>
                               </li>
@@ -139,20 +139,20 @@ const NavBar = () => {
                             <a href="#">Accomplishments</a>
                             <ul>
                               <li>
-                                <Link to="/services/MOVCDNER">MOVCDNER</Link>
+                                <Link to="/MOVCDNER">MOVCDNER</Link>
                               </li>
                               <li>
-                                <Link to="/services/JammuSmartCityProject">
+                                <Link to="/JammuSmartCityProject">
                                   Jammu Smart City Project
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/services/AcmeSolarCMSSystem">
+                                <Link to="/AcmeSolarCMSSystem">
                                   Acme Solar CMS System
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/services/SAG">SAG</Link>
+                                <Link to="/SAG">SAG</Link>
                               </li>
                             </ul>
                           </li>
@@ -161,8 +161,10 @@ const NavBar = () => {
                       <li>
                         <Link to="/HowWeDoIt">How we do it</Link>
                       </li>
-
-                      <li className="menu-item-has-children">
+                      <li>
+                        <Link to="/aboutus">Why Us</Link>
+                      </li>
+                      {/*  <li className="menu-item-has-children">
                         <a href="#">About Company</a>
                         <ul className="sub-menu">
                           <li>
@@ -174,7 +176,7 @@ const NavBar = () => {
                             </Link>
                           </li>
                         </ul>
-                      </li>
+                      </li>*/}
                       <li className="menu-item-has-children mega-menu-wrap">
                         <a href="#">Solution</a>
                         <ul className="mega-menu">
@@ -184,48 +186,42 @@ const NavBar = () => {
                             </a>
                             <ul style={{ marginBottom: "10px" }}>
                               <li>
-                                <Link to="/solutions/qblock">Qblock</Link>
+                                <Link to="/qblock">Qblock</Link>
                               </li>
                               <li>
-                                <Link to="/solutions/LogBooksPage">
-                                  LogBooks
-                                </Link>
+                                <Link to="/LogBooksPage">LogBooks</Link>
                               </li>
                               <li>
-                                <Link to="/solutions/edusaroj">
-                                  Saroj Education
-                                </Link>
+                                <Link to="/edusaroj">Saroj Education</Link>
                               </li>
                               <li>
-                                <Link to="/solutions/VisionDeskPage">
+                                <Link to="/VisionDeskPage">
                                   VisionDesk (MIS Portal)
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/solutions/CollegeFeeManagement">
+                                <Link to="/CollegeFeeManagement">
                                   College Fee Management
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/solutions/StudentFinanceManagement">
+                                <Link to="/StudentFinanceManagement">
                                   Student Finance Management
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/solutions/IManagerPage">
-                                  IManager
-                                </Link>
+                                <Link to="/IManagerPage">IManager</Link>
                               </li>
                               <li>
-                                <Link to="/solutions/CropnetPage">Cropnet</Link>
+                                <Link to="/CropnetPage">Cropnet</Link>
                               </li>
                               <li>
-                                <Link to="/solutions/TourismApplicationPage">
+                                <Link to="/TourismApplicationPage">
                                   Tourism Application
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/solutions/SarojEducationPage">
+                                <Link to="/SarojEducationPage">
                                   Saroj Education Mobile app
                                 </Link>
                               </li>
@@ -233,7 +229,7 @@ const NavBar = () => {
                             <a href="#">ERP Solutions</a>
                             <ul>
                               <li>
-                                <Link to="/solutions/EklavyaPage">Eklavya</Link>
+                                <Link to="/EklavyaPage">Eklavya</Link>
                               </li>
                             </ul>
                           </li>
@@ -241,22 +237,22 @@ const NavBar = () => {
                             <a href="#">Data Analytics</a>
                             <ul>
                               <li>
-                                <Link to="/solutions/FieldQuotationSystemPage">
+                                <Link to="/FieldQuotationSystemPage">
                                   Field Quotation System
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/solutions/DecisionSupportSystemPage">
+                                <Link to="/DecisionSupportSystemPage">
                                   Decision Support System
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/solutions/IssueManagementSystemPage">
+                                <Link to="/IssueManagementSystemPage">
                                   Issue Management System
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/solutions/AgricultureInformationSystemPage">
+                                <Link to="/AgricultureInformationSystemPage">
                                   Agriculture Information System
                                 </Link>
                               </li>
@@ -266,17 +262,17 @@ const NavBar = () => {
                             <a href="#">Internet of Things (IoT)</a>
                             <ul>
                               <li>
-                                <Link to="/solutions/PhotonPage">
+                                <Link to="/PhotonPage">
                                   Photon (Centralized Solar Solution)
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/solutions/MilkAnalyserPage">
+                                <Link to="/MilkAnalyserPage">
                                   Milk Analyser
                                 </Link>
                               </li>
                               <li>
-                                <Link to="/solutions/DairyApplicationPage">
+                                <Link to="/DairyApplicationPage">
                                   Dairy Application
                                 </Link>
                               </li>
@@ -307,6 +303,42 @@ const NavBar = () => {
                             </li>
                             <li>
                               <Link to="/AdminDashboard">Dashboard</Link>
+                            </li>
+                            <li>
+                              <button
+                                onClick={() => {
+                                  localStorage.removeItem("token");
+                                  localStorage.removeItem("user_role");
+                                  window.location.href = "/";
+                                }}
+                                style={{
+                                  background: "none",
+                                  border: "none",
+                                  cursor: "pointer",
+                                  color: "#141d38",
+                                  font: "Barlow, sans-serif",
+                                  padding: "0",
+                                  margin: "0",
+                                  textAlign: "left",
+                                  width: "100%",
+                                  display: "flex",
+                                  alignItems: "center",
+                                  gap: "8px",
+                                  fontWeight: 500,
+                                }}
+                                onMouseEnter={(e) =>
+                                  (e.target.style.color = "#4786e6")
+                                }
+                                onMouseLeave={(e) =>
+                                  (e.target.style.color = "#141d38")
+                                }
+                              >
+                                <i
+                                  className="fa fa-sign-out"
+                                  style={{ color: "#4786e6" }}
+                                ></i>{" "}
+                                Logout
+                              </button>
                             </li>
                           </ul>
                         </li>

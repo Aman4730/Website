@@ -124,7 +124,7 @@ const AcmeSolarCMSSystem = () => {
         ["Energy Optimization", "Fault Detection"],
         ["Performance Tracking", "Smart Distribution"],
       ],
-      contactLink: "contact.html",
+      contactLink: "/contactUs",
       images: [about_13_1, about_13_2, about_13_3],
     },
   ];

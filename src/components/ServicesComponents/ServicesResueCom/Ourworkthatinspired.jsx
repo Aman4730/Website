@@ -6,6 +6,7 @@ import project_4_1 from "../../../assets/img/project/project_4_1.jpg";
 import project_4_2 from "../../../assets/img/project/project_4_2.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -48,12 +49,12 @@ const Ourworkthatinspired = () => {
               </h2>
             </div>
             <div className="project-btn">
-              <a
-                href="project.html"
+              <Link
+                to="/contactUs"
                 className="th-btn style-border style-radius"
               >
                 View All Stories
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-xl-8">
@@ -82,13 +83,13 @@ const Ourworkthatinspired = () => {
                       <div className="project-content">
                         <div className="media-body">
                           <h3 className="box-title">
-                            <a href="project-details.html">{project.title}</a>
+                            <Link to="/contactUs">{project.title}</Link>
                           </h3>
                           <div className="project-tags">
                             {project.tags.map((tag, idx) => (
-                              <a key={idx} href="project-details.html">
+                              <Link key={idx} to="/contactUs">
                                 {tag}
-                              </a>
+                              </Link>
                             ))}
                           </div>
                         </div>

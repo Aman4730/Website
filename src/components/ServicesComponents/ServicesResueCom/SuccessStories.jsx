@@ -36,7 +36,6 @@ const SuccessStories = ({ data }) => {
         {data.posts.length > 0 ? (
           <Swiper
             modules={[Navigation, Autoplay]}
-            loop={true}
             spaceBetween={20}
             slidesPerView={1}
             autoplay={{ delay: 3000 }}
@@ -50,21 +49,33 @@ const SuccessStories = ({ data }) => {
             {data.posts.map((post, index) => (
               <SwiperSlide key={index}>
                 <div className="blog-card">
-                  <div className="blog-img">
-                    <img src={post.img} alt="blog" />
+                  <div
+                    className="blog-img"
+                    style={{ height: "200px", overflow: "hidden" }}
+                  >
+                    <img
+                      src={post.img}
+                      alt="blog"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
                   </div>
+
                   <div className="blog-content">
                     <h3 className="box-title">
                       <Link to={post.link}>{post.title}</Link>
                     </h3>
                     <p className="blog-text">{post.desc}</p>
                     <div className="blog-bottom">
-                      <a href="blog.html" className="author">
-                        <img src={author11} alt="author" /> By Themeholy
-                      </a>
-                      <a href={post.link} className="line-btn">
-                        Read More <i className="fas fa-arrow-right" />
-                      </a>
+                      <Link to="/contactUs" className="author">
+                        <img src={author11} alt="author" /> By Logimetrix
+                      </Link>
+                      <Link to={post.link} className="line-btn">
+                        Explore more <i className="fas fa-arrow-right" />
+                      </Link>
                     </div>
                   </div>
                 </div>

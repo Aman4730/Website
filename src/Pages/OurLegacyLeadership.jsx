@@ -291,7 +291,7 @@ const OurLegacyLeadership = () => {
                         )}
                       </div>
                       <h3 className="box-title">
-                        <a href="team-details.html">{member.name}</a>
+                        <Link to="/contactUs">{member.name}</Link>
                       </h3>
                       <span className="team-desig">{member.role}</span>
                     </div>

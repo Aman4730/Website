@@ -21,37 +21,37 @@ const SAG = () => {
       img: service_7_1,
       title: "AI (Artificial Insemination) Management",
       desc: "Tracks AI procedures, breeding history, and success rates, generating performance reports by date, breed, and village.",
-      link: "service-details.html",
+      link: "/contactUs",
     },
     {
       img: service_7_2,
       title: "Farmer Management",
       desc: "Maintains detailed farmer profiles, tracks AI program participation, and monitors services provided to each farmer.",
-      link: "service-details.html",
+      link: "/contactUs",
     },
     {
       img: service_7_3,
       title: "Village-Wise Tracking",
       desc: "Organizes data by village, analyzes AI program effectiveness across regions, and tracks farmer engagement levels.",
-      link: "service-details.html",
+      link: "/contactUs",
     },
     {
       img: service_7_2,
       title: "Breeding Records Management",
       desc: "Maintains breed-specific data, monitors breeding success rates over time, and generates reports for breeding efficiency analysis.",
-      link: "service-details.html",
+      link: "/contactUs",
     },
     {
       img: service_7_3,
       title: "Cattle Health & Vaccination Tracking",
       desc: "Maintains health records of cattle, tracks vaccination schedules, and alerts farmers about upcoming vaccinations to ensure livestock well-being.",
-      link: "service-details.html",
+      link: "/contactUs",
     },
     {
       img: service_7_1,
       title: "Genetic Performance Analysis",
       desc: "Analyzes AI success rates based on genetics, tracks lineage and offspring performance, and provides insights to improve breeding strategies for higher productivity.",
-      link: "service-details.html",
+      link: "/contactUs",
     },
   ];
 

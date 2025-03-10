@@ -8,7 +8,7 @@ import ServiceWhatWeDo2 from "../ServicesResueCom/ServiceWhatWeDo2";
 import service_7_1 from "../../../assets/img/icon/service_7_1.svg";
 import service_7_2 from "../../../assets/img/icon/service_7_2.svg";
 import service_7_3 from "../../../assets/img/icon/service_7_3.svg";
-import featureimg121 from "../../../assets/img/normal/feature-img-12-1.png";
+import featureimg121 from "../../../assets/img/normal/feature-img-12-3.png";
 import featureimg122 from "../../../assets/img/normal/feature-img-12-2.png";
 import service_card_1 from "../../../assets/img/icon/service_card_1.svg";
 import service_card_2 from "../../../assets/img/icon/service_card_2.svg";
@@ -31,7 +31,7 @@ const CentralCattleBreedingFarm = () => {
         "The Central Cattle Breeding Farm (CCBF) site is undergoing extensive construction and renovation activities to enhance its functionality and infrastructure. Key work areas include old cow shades, loafing areas, a quarantine center, administrative buildings, and other auxiliary structures.",
       image1: featureimg121,
       image2: featureimg122,
-      link: "about.html",
+      link: "/contactUs",
     },
   ];
   const services1 = [
@@ -83,7 +83,7 @@ const CentralCattleBreedingFarm = () => {
       description:
         "The Central Cattle Breeding Farm is a cornerstone of the dairy industry, and its modernization ensures:",
       buttonText: "View Details",
-      buttonLink: "about.html",
+      buttonLink: "/contactUs",
       images: [infra_why],
     },
   ];

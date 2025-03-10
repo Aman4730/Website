@@ -71,32 +71,32 @@ const NAV_ITEMS = [
           {
             title: "App Development",
             icon: <IntegrationInstructionsIcon />,
-            segment: "/services/ApplicationDevelopment",
+            segment: "/ApplicationDevelopment",
           },
           {
             title: "POC Development",
             icon: <DesignServicesIcon />,
-            segment: "/services/POCDevelopment",
+            segment: "/POCDevelopment",
           },
           {
             title: "Product Delivery",
             icon: <SettingsApplicationsIcon />,
-            segment: "/services/ProductOrientedDelivery",
+            segment: "/ProductOrientedDelivery",
           },
           {
             title: "Enterprise Application",
             icon: <CorporateFareIcon />,
-            segment: "/services/EnterpriseApplication",
+            segment: "/EnterpriseApplication",
           },
           {
             title: "Application Re-design",
             icon: <DesignServicesIcon />,
-            segment: "/services/ApplicationReengineering",
+            segment: "/ApplicationReengineering",
           },
           {
             title: "Cloud Migration",
             icon: <CloudQueueIcon />,
-            segment: "/services/CloudMigration",
+            segment: "/CloudMigration",
           },
         ],
       },
@@ -108,17 +108,17 @@ const NAV_ITEMS = [
           {
             title: "Indus Towers Limited",
             icon: <ApartmentIcon />,
-            segment: "/services/IndusTowersLimited",
+            segment: "/IndusTowersLimited",
           },
           {
             title: "CCBF Renovation",
             icon: <CorporateFareIcon />,
-            segment: "/services/CentralCattleBreedingFarm",
+            segment: "/CentralCattleBreedingFarm",
           },
           {
             title: "Organic Health Initiative",
             icon: <LocalHospitalIcon />,
-            segment: "/services/OrganicHealthProductsInitiative",
+            segment: "/OrganicHealthProductsInitiative",
           },
         ],
       },
@@ -130,22 +130,22 @@ const NAV_ITEMS = [
           {
             title: "MOVCDNER",
             icon: <InsightsIcon />,
-            segment: "/services/MOVCDNER",
+            segment: "/MOVCDNER",
           },
           {
             title: "Jammu Smart City",
             icon: <ApartmentIcon />,
-            segment: "/services/JammuSmartCityProject",
+            segment: "/JammuSmartCityProject",
           },
           {
             title: "Acme Solar CMS System",
             icon: <SolarPowerIcon />,
-            segment: "/services/AcmeSolarCMSSystem",
+            segment: "/AcmeSolarCMSSystem",
           },
           {
             title: "Jammu Tourism",
             icon: <TravelExploreIcon />,
-            segment: "/services/SAG",
+            segment: "/SAG",
           },
         ],
       },
@@ -165,52 +165,52 @@ const NAV_ITEMS = [
         children: [
           {
             title: "Qblock",
-            segment: "/solutions/qblock",
+            segment: "/qblock",
             icon: <AppBlockingIcon />,
           },
           {
             title: "LogBooks",
-            segment: "/solutions/LogBooksPage",
+            segment: "/LogBooksPage",
             icon: <MenuBookIcon />,
           },
           {
             title: "Saroj Education",
-            segment: "/solutions/edusaroj",
+            segment: "/edusaroj",
             icon: <SchoolIcon />,
           },
           {
             title: "VisionDesk (MIS)",
-            segment: "/solutions/VisionDeskPage",
+            segment: "/VisionDeskPage",
             icon: <DashboardIcon />,
           },
           {
             title: "College Fee Mgmt",
-            segment: "/solutions/CollegeFeeManagement",
+            segment: "/CollegeFeeManagement",
             icon: <AttachMoneyIcon />,
           },
           {
             title: "Student Finance Mgmt",
-            segment: "/solutions/StudentFinanceManagement",
+            segment: "/StudentFinanceManagement",
             icon: <AttachMoneyIcon />,
           },
           {
             title: "Livestock Mgmt",
-            segment: "/solutions/LivestockManagement",
+            segment: "/LivestockManagement",
             icon: <AgricultureIcon />,
           },
           {
             title: "TrakFuel",
-            segment: "/solutions/TrakFuelPage",
+            segment: "/TrakFuelPage",
             icon: <LocalGasStationIcon />,
           },
           {
             title: "IManager",
-            segment: "/solutions/IManagerPage",
+            segment: "/IManagerPage",
             icon: <ManageAccountsIcon />,
           },
           {
             title: "Cropnet",
-            segment: "/solutions/CropnetPage",
+            segment: "/CropnetPage",
             icon: <AgricultureIcon />,
           },
         ],
@@ -222,7 +222,7 @@ const NAV_ITEMS = [
         children: [
           {
             title: "Eklavya",
-            segment: "/solutions/EklavyaPage",
+            segment: "/EklavyaPage",
             icon: <SchoolIcon />,
           },
         ],
@@ -234,22 +234,22 @@ const NAV_ITEMS = [
         children: [
           {
             title: "Field Quotation System",
-            segment: "/solutions/FieldQuotationSystemPage",
+            segment: "/FieldQuotationSystemPage",
             icon: <FormatQuoteIcon />,
           },
           {
             title: "Decision Support System",
-            segment: "/solutions/DecisionSupportSystemPage",
+            segment: "/DecisionSupportSystemPage",
             icon: <SupportIcon />,
           },
           {
             title: "Issue Management System",
-            segment: "/solutions/IssueManagementSystemPage",
+            segment: "/IssueManagementSystemPage",
             icon: <SupportIcon />,
           },
           {
             title: "Agriculture Information System",
-            segment: "/solutions/AgricultureInformationSystemPage",
+            segment: "/AgricultureInformationSystemPage",
             icon: <AgricultureIcon />,
           },
         ],
@@ -261,17 +261,17 @@ const NAV_ITEMS = [
         children: [
           {
             title: "Photon (Centralized Solar Solution)",
-            segment: "/solutions/PhotonPage",
+            segment: "/PhotonPage",
             icon: <WbSunnyIcon />,
           },
           {
             title: "Milk Analyser",
-            segment: "/solutions/MilkAnalyserPage",
+            segment: "/MilkAnalyserPage",
             icon: <LocalDrinkIcon />,
           },
           {
             title: "Dairy Application",
-            segment: "/solutions/DairyApplicationPage",
+            segment: "/DairyApplicationPage",
             icon: <IcecreamIcon />,
           },
         ],
@@ -283,32 +283,22 @@ const NAV_ITEMS = [
         children: [
           {
             title: "IRedi",
-            segment: "/solutions/IRediPage",
+            segment: "/IRediPage",
             icon: <MobileFriendlyIcon />,
           },
           {
-            title: "KarGo",
-            segment: "/solutions/KarGoPage",
-            icon: <DirectionsCarIcon />,
-          },
-          {
-            title: "MonitorM",
-            segment: "/solutions/MonitorMPage",
-            icon: <MonitorHeartIcon />,
-          },
-          {
             title: "Tourism Application",
-            segment: "/solutions/TourismApplicationPage",
+            segment: "/TourismApplicationPage",
             icon: <TravelExploreIcon />,
           },
           {
             title: "Saroj Education Mobile app",
-            segment: "/solutions/SarojEducationPage",
+            segment: "/SarojEducationPage",
             icon: <SchoolIcon />,
           },
           {
             title: "Communication Application",
-            segment: "/solutions/CommunicationApplicationPage",
+            segment: "/CommunicationApplicationPage",
             icon: <ChatIcon />,
           },
         ],

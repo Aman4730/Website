@@ -1,4 +1,3 @@
-
 import React from "react";
 import MobileAbout from "./MobileComponents/MobileAbout/MobileAbout";
 
@@ -17,7 +16,7 @@ const aboutContent = {
     ["Fully Responsive", "Ultimate support"],
   ],
   buttonText: "Get Started For Free 14 Days",
-  buttonLink: "contact.html",
+  buttonLink: "/contactUs",
   images: [about_8_1, about_8_2],
 };
 const SarojEducationPage = () => {

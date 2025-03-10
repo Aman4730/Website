@@ -10,40 +10,46 @@ import hero_bg_2_2 from "../../assets/img/hero/hero_bg_2_2.jpg";
 import hero_bg_2_3 from "../../assets/img/hero/hero_bg_2_3.jpg";
 import hero_shape_2_2 from "../../assets/img/hero/hero_shape_2_2.png";
 import hero_shape_2_3 from "../../assets/img/hero/hero_shape_2_3.png";
+import dashboardbg1 from "../../Imges/dashboardbg1.png";
+import dashboardbg2 from "../../Imges/dashboardbg2.png";
+import dashboardbg3 from "../../Imges/dashboardbg3.png";
+import dashboardbg4 from "../../Imges/dashboardbg4.png";
 import Dashboard from "../../Imges/Dashboard.png";
+import { Link } from "react-router-dom";
+import { useRef } from "react";
 
 const slides = [
   {
     id: 1,
-    bg: hero_bg_2_1,
+    bg: dashboardbg1,
     subtitle: "Logimetrix Overview",
     title1: "Your Trusted Partner in Software Delivery",
     text: "We combine cutting-edge technology with industry expertise to design and develop full-cycle, custom software solutions that bring your vision to life.",
   },
   {
     id: 2,
-    bg: hero_bg_2_2,
+    bg: dashboardbg2,
     subtitle: "Data & AI",
     title1: "Unlock the Power of Data and AI",
     text: "Leverage advanced analytics to gain deep insights into customer behavior and maximize your business potential.",
   },
   {
     id: 3,
-    bg: hero_bg_2_3,
+    bg: dashboardbg3,
     subtitle: "IT Services",
     title1: "Deliver Industry-Leading IT Services",
     text: "Strategically address risks while unlocking the full potential of Big Data for the IT services sector with our custom software solutions",
   },
   {
     id: 4,
-    bg: hero_bg_2_2,
+    bg: dashboardbg4,
     subtitle: "Infrastructure Services",
     title1: "Robust Enterprise-Grade Network Solutions",
     text: "Ensure seamless operations with 24/7 monitoring, management, and implementation of critical infrastructure.",
   },
 ];
 
-export default function HeroSection() {
+export default function HeroSection({ scrollToAbout }) {
   return (
     <div className="th-hero-wrapper hero-2" id="hero">
       <div className="slider-area">
@@ -83,14 +89,14 @@ export default function HeroSection() {
                     {title2 && <h1 className="hero-title">{title2}</h1>}
                     <p className="hero-text">{text}</p>
                     <div className="btn-group">
-                      <a href="about.html" className="th-btn style3">
+                      <button onClick={scrollToAbout} className="th-btn style3">
                         DISCOVER MORE{" "}
                         <i className="fa-regular fa-arrow-right ms-2" />
-                      </a>
-                      <a href="contact.html" className="th-btn style2">
+                      </button>
+                      <Link to="/contactUs" className="th-btn style2">
                         CONTACT US{" "}
                         <i className="fa-regular fa-arrow-right ms-2" />
-                      </a>
+                      </Link>
                     </div>
                   </motion.div>
                 </div>

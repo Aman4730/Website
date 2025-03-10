@@ -178,7 +178,7 @@ const FieldQuotationSystemPage = () => {
         ["Real-Time Data Sync", "Project Quotations"],
         ["Inventory Management", "Product Categorization"],
       ],
-      contactLink: "about.html",
+      contactLink: "/contactUs",
       phone: "+993-554-0006",
     },
   ];

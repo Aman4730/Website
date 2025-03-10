@@ -173,7 +173,7 @@ const aboutData4 = [
       ["Security and Compliance", "Task Management"],
       ["Reporting and Analytics", "Team Collaboration"],
     ],
-    contactLink: "contact.html",
+    contactLink: "/contactUs",
     images: [about_13_1, about_13_2, about_13_3],
   },
 ];

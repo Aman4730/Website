@@ -2,6 +2,7 @@ import React from "react";
 import download_bg_83 from "../../../../../assets/img/bg/download_bg_8-3.png";
 import playstorebtn from "../../../../../assets/img/theme-img/play-store-btn.png";
 import applebtn from "../../../../../assets/img/theme-img/apple-btn.png";
+import { Link } from "react-router-dom";
 
 const MobileAbout3 = ({ aboutData }) => {
   return (
@@ -25,18 +26,18 @@ const MobileAbout3 = ({ aboutData }) => {
                   <p>{item.description2}</p>
                 </div>
                 <div className="btn-group mt-30">
-                  <a
-                    href={item.playStoreLink}
+                  <Link
+                    to={item.playStoreLink}
                     className="th-btn style7 style-radius"
                   >
                     <img src={playstorebtn} alt="Play Store" />
-                  </a>
-                  <a
-                    href={item.appleStoreLink}
+                  </Link>
+                  <Link
+                    to={item.appleStoreLink}
                     className="th-btn style7 style-radius"
                   >
                     <img src={applebtn} alt="App Store" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

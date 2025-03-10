@@ -48,7 +48,7 @@ const OrganicHealthProductsInitiative = () => {
           "Innovative Consumer Awareness Strategies",
         ],
       ],
-      contactLink: "about.html",
+      contactLink: "/contactUs",
       phone: "+993-554-0006",
     },
   ];

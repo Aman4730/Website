@@ -22,7 +22,7 @@ const aboutContent = {
     ["Real-Time Data Processing", "Cross-Functional Agile Team"],
   ],
   buttonText: "Learn More",
-  buttonLink: "contact.html",
+  buttonLink: "/contactUs",
   images: [about_8_1, about_8_2],
 };
 const services = [
@@ -30,37 +30,37 @@ const services = [
     img: service_7_1,
     title: "System Integration & Data Center Solutions",
     desc: "Comprehensive data center survey, design, installation, and deployment of advanced infrastructure.",
-    link: "service-details.html",
+    link: "/contactUs",
   },
   {
     img: service_7_2,
     title: "Emergency & Disaster Management Hub",
     desc: "GIS-based real-time incident visualization, AI-driven automation, and multi-source data aggregation.",
-    link: "service-details.html",
+    link: "/contactUs",
   },
   {
     img: service_7_3,
     title: "Cybersecurity & Data Protection",
     desc: "Industrial-grade cybersecurity, data archiving, proactive threat detection, and security monitoring.",
-    link: "service-details.html",
+    link: "/contactUs",
   },
   {
     img: service_7_1,
     title: "Smart City Analytics & Decision-Making",
     desc: "AI-powered dashboards, real-time data correlation, and seamless collaboration for urban resilience.",
-    link: "service-details.html",
+    link: "/contactUs",
   },
   {
     img: service_7_2,
     title: "Edge Computing & IoT Connectivity",
     desc: "Enables real-time data processing at the edge, reducing latency and enhancing system efficiency for smart infrastructure.",
-    link: "service-details.html",
+    link: "/contactUs",
   },
   {
     img: service_7_3,
     title: "Automated Workflow & Predictive Maintenance",
     desc: "AI-driven automation streamlines operations, while predictive analytics minimize downtime and optimize resource utilization.",
-    link: "service-details.html",
+    link: "/contactUs",
   },
 ];
 const cardData = [

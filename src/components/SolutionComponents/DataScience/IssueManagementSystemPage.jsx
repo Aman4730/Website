@@ -177,7 +177,7 @@ const aboutData5 = [
     ],
 
     btnText: "Explore AIS & IMS",
-    btnLink: "explore_ais_ims.html",
+    btnLink: "/contactUs",
     featureImg: feature_8_1,
     featureText: "AIS & IMS",
   },

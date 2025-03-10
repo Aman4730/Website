@@ -16,7 +16,7 @@ const aboutContent = {
   ],
   // buttonText: "Get Started For Free 14 Days",
   buttonText: "Explore More",
-  buttonLink: "contactUs",
+  buttonLink: "/contactUs",
   // buttonLink: "contact.html",
   images: [about_8_1, about_8_2],
 };

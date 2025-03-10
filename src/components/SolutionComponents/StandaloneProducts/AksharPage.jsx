@@ -185,7 +185,7 @@ const aboutData5 = [
       ],
     ],
     btnText: "Download Akshar App",
-    btnLink: "download.html",
+    btnLink: "/contactUs",
     featureImg: feature_8_1,
     featureText: "Finance",
   },

@@ -1,6 +1,7 @@
 import React from "react";
 import footerLogo from "../../Imges/footerLogo.png";
 import footer_shape_2 from "../../assets/img/shape/footer_shape_2.svg";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="footer-wrapper footer-layout1">
@@ -31,19 +32,16 @@ const Footer = () => {
                     solutions.
                   </p>
                   <div className="th-social">
-                    <a href="https://www.facebook.com/">
+                    <a href="https://www.facebook.com/LogimetrixTechsolutions/">
                       <i className="fab fa-facebook-f" />
                     </a>
-                    <a href="https://www.twitter.com/">
+                    <a href="https://x.com/logimetrix">
                       <i className="fab fa-twitter" />
                     </a>
-                    <a href="https://www.linkedin.com/">
+                    <a href="https://www.linkedin.com/company/logimetrix-pvt-ltd-/posts/?feedView=all">
                       <i className="fab fa-linkedin-in" />
                     </a>
-                    <a href="https://www.whatsapp.com/">
-                      <i className="fab fa-whatsapp" />
-                    </a>
-                    <a href="https://www.youtube.com/">
+                    <a href="https://www.youtube.com/@logimetrixtechsolutions4572">
                       <i className="fab fa-youtube" />
                     </a>
                   </div>
@@ -59,29 +57,29 @@ const Footer = () => {
                 <div className="menu-all-pages-container">
                   <ul className="menu">
                     <li>
-                      <a href="/aboutus">
+                      <Link to="/aboutus">
                         <p className="about-text">About Us</p>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="team.html">
+                      <Link to="/contactUs">
                         <p className="about-text">Meet Our Team</p>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="project.html">
+                      <Link to="/qblock">
                         <p className="about-text">Our Projects</p>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="faq.html">
+                      <Link to="/contactUs">
                         <p className="about-text">Help &amp; FAQs</p>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="contact.html">
+                      <Link to="/contactUs">
                         <p className="about-text">Contact Us</p>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -114,10 +112,10 @@ const Footer = () => {
                     </div>
                     <div className="media-body">
                       <p
-                        href="mailto:info@logimetrix.com"
+                        href="mailto:info@logimetrix.co.in"
                         className="about-text"
                       >
-                        info@logimetrix.com
+                        info@logimetrix.co.in
                       </p>
                     </div>
                   </div>
@@ -147,7 +145,7 @@ const Footer = () => {
                 <div className="menu-all-pages-container">
                   <ul className="menu">
                     <li>
-                      <a href="service-details.html">LUCKNOW OFFICE</a>
+                      <Link to="/contactUs">LUCKNOW OFFICE</Link>
                     </li>
                     <li>
                       <p className="about-footer-text">
@@ -156,7 +154,7 @@ const Footer = () => {
                       </p>
                     </li>
                     <li>
-                      <a href="service-details.html">DELHI OFFICE</a>
+                      <Link to="/contactUs">DELHI OFFICE</Link>
                     </li>
                     <li>
                       <p className="about-footer-text">
@@ -164,7 +162,7 @@ const Footer = () => {
                       </p>
                     </li>
                     <li>
-                      <a href="service-details.html">BANGLORE OFFICE</a>
+                      <Link to="/contactUs">BANGLORE OFFICE</Link>
                     </li>
                     <li>
                       <p className="about-footer-text">

@@ -162,7 +162,7 @@ const EklavyaPage = () => {
         ["Automated Administrative Tasks", "Real-time Student Data Management"],
         ["Customizable Reports", "Efficient Parent-Teacher Communication"],
       ],
-      contactLink: "about.html",
+      contactLink: "/contactUs",
       phone: "+993-554-0006",
     },
   ];

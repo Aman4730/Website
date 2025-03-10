@@ -47,28 +47,28 @@ const ApplicationDevelopment = () => {
       title: "Scalable Solutions",
       description:
         "Build applications that grow with your business, ensuring long-term success, adaptability, efficiency, and seamless performance.",
-      link: "service-details.html",
+      link: "/contactUs",
     },
     {
       img: service_featured_2,
       title: "Robust Security",
       description:
         "Protect your data with enterprise-grade security measures, encryption, compliance, risk management, and advanced threat detection systems.",
-      link: "service-details.html",
+      link: "/contactUs",
     },
     {
       img: service_featured_3,
       title: "Cloud Integration",
       description:
         "Seamlessly integrate with cloud platforms for maximum flexibility, scalability, efficiency, collaboration, automation, and optimized resource allocation.",
-      link: "service-details.html",
+      link: "/contactUs",
     },
     {
       img: service_featured_4,
       title: "Data-Driven Insights",
       description:
         "Leverage analytics to make informed business decisions, enhance productivity, optimize growth, maximize revenue, and improve operational efficiency.",
-      link: "service-details.html",
+      link: "/contactUs",
     },
   ];
   const applicationservices = [
@@ -170,21 +170,21 @@ const ApplicationDevelopment = () => {
         img: process_box_3_1,
         title: "Discovery & Planning",
         desc: "Requirement analysis, project scoping, strategic planning, and ensuring application quality through rigorous testing and debugging.",
-        link: "service-details.html",
+        link: "/contactUs",
       },
       {
         id: 2,
         img: process_box_3_2,
         title: "UI/UX Design & Development",
         desc: "Crafting intuitive and visually appealing designs while implementing robust and scalable solutions using modern frameworks.",
-        link: "service-details.html",
+        link: "/contactUs",
       },
       {
         id: 3,
         img: process_box_3_3,
         title: "Deployment & Synchronization",
         desc: "Ensuring seamless integration, cloud synchronization, and security for optimal performance and scalability.",
-        link: "service-details.html",
+        link: "/contactUs",
       },
     ],
   };

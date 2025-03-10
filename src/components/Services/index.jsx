@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import service_grid_bg from "../../assets/img/bg/service_grid_bg.png";
+import { Link } from "react-router-dom";
 const Services = ({ services }) => {
   return (
     <section className="bg-top-center z-index-common space  service-section">
@@ -33,12 +34,12 @@ const Services = ({ services }) => {
                   </div>
                   <div className="service-grid_content">
                     <h3 className="box-title">
-                      <a href="service-details.html">{service.title}</a>
+                      <Link to="/contactUs">{service.title}</Link>
                     </h3>
                     <p className="service-grid_text">{service.description}</p>
-                    <a href="service-details.html" className="th-btn">
+                    <Link to="/contactUs" className="th-btn">
                       Read More <i className="fas fa-arrow-right ms-2" />
-                    </a>
+                    </Link>
                     <div className="bg-shape">
                       <img src={service_grid_bg} alt="bg" />
                     </div>

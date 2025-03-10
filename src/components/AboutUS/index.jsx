@@ -2,9 +2,10 @@ import React from "react";
 import about_4_1 from "../../assets/img/normal/about_4_1.png";
 import about_4_2 from "../../assets/img/normal/about_4_2.png";
 import about_4_3 from "../../assets/img/normal/about_4_3.png";
-const AboutUS = () => {
+import { Link } from "react-router-dom";
+const AboutUS = ({ aboutSectionRef }) => {
   return (
-    <div className="container space-top">
+    <div className="container space-top" ref={aboutSectionRef} id="about">
       <div className="row align-items-center">
         <div className="col-lg-5 mb-30 mb-lg-0">
           <div className="img-box6">
@@ -69,10 +70,10 @@ const AboutUS = () => {
               </ul>
             </div>
 
-            <a href="about.html" className="th-btn">
+            <Link to="/aboutus" className="th-btn">
               ABOUT MORE
               <i className="fa-regular fa-arrow-right ms-2" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

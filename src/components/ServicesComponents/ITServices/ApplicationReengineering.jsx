@@ -14,6 +14,10 @@ import process_2_2 from "../../../assets/img/icon/process_2_2.svg";
 import process_2_3 from "../../../assets/img/icon/process_2_3.svg";
 import process_2_4 from "../../../assets/img/icon/process_2_4.svg";
 import processshape from "../../../assets/img/bg/process-shape.png";
+import reeng from "../../../Imges/reeng.png";
+import reeng1 from "../../../Imges/reeng3.png";
+import reeng2 from "../../../Imges/reeng2.png";
+import reeng3 from "../../../Imges/reeng1.png";
 const ApplicationReengineering = () => {
   const blogData = {
     title: "Success Stories",
@@ -22,7 +26,7 @@ const ApplicationReengineering = () => {
     shadowTitle: "Case Studies",
     posts: [
       {
-        img: blog_1_1,
+        img: reeng1,
         date: "01 Assessment",
         comments: "Comprehensive system audit and gap analysis.",
         title: "Identifying Key Improvement Areas",
@@ -30,7 +34,7 @@ const ApplicationReengineering = () => {
         desc: "Thorough evaluation of existing architecture to identify gaps and modernization opportunities.",
       },
       {
-        img: blog_1_2,
+        img: reeng,
         date: "02 Planning",
         comments: "Roadmap creation with modernization strategy.",
         title: "Structured Approach for Seamless Transition",
@@ -38,7 +42,7 @@ const ApplicationReengineering = () => {
         desc: "Developing a strategic roadmap for risk-free, incremental migration and seamless modernization.",
       },
       {
-        img: blog_1_3,
+        img: reeng2,
         date: "03 Migration",
         comments: "Incremental transition to modern architecture.",
         title: "Smooth and Secure System Upgrades",
@@ -46,7 +50,7 @@ const ApplicationReengineering = () => {
         desc: "Executing a well-defined transformation process while ensuring business continuity and security.",
       },
       {
-        img: blog_1_4,
+        img: reeng3,
         date: "04 Optimization",
         comments: "Performance tuning and cloud integration.",
         title: "Maximizing Efficiency and Reliability",
@@ -69,8 +73,8 @@ const ApplicationReengineering = () => {
         desc: "Seamless migration and faster deployment of cloud-native architectures.",
       },
       {
-        number: "3x",
-        unit: "+",
+        number: "3",
+        unit: "x",
         title: "Speed Performance Boost",
         desc: "Optimized application execution with enhanced resource efficiency.",
       },

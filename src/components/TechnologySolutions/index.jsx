@@ -36,7 +36,7 @@ const TechnologySolutions = () => {
                   <img src="assets/img/icon/service_4_1.svg" alt="Icon" />
                 </div>
                 <h3 className="box-title">
-                  <a href="service-details.html">Web Development</a>
+                  <Link to="/contactUs">Web Development</Link>
                 </h3>
                 <p className="service-box3_text">
                   Build high-performance apps with LAMP, MERN/MEAN, and RoR.
@@ -68,9 +68,9 @@ const TechnologySolutions = () => {
                   <img src="assets/img/icon/service_4_2.svg" alt="Icon" />
                 </div>
                 <h3 className="box-title">
-                  <a href="service-details.html">
+                  <Link to="/contactUs">
                     MERN/MEAN <br />
-                  </a>
+                  </Link>
                 </h3>
                 <p className="service-box3_text">
                   Leverage Big Data (Hadoop, Spark), data warehousing, and ETL
@@ -87,7 +87,7 @@ const TechnologySolutions = () => {
                   <img src="assets/img/icon/service_4_3.svg" alt="Icon" />
                 </div>
                 <h3 className="box-title">
-                  <a href="service-details.html">AI & Machine Learning</a>
+                  <Link to="/contactUs">AI & Machine Learning</Link>
                 </h3>
                 <p className="service-box3_text">
                   Drive intelligent automation with AI agents, chatbots, and
@@ -104,7 +104,7 @@ const TechnologySolutions = () => {
                   <img src="assets/img/icon/service_4_4.svg" alt="Icon" />
                 </div>
                 <h3 className="box-title">
-                  <a href="service-details.html">Cybersecurity</a>
+                  <Link to="/contactUs">Cybersecurity</Link>
                 </h3>
                 <p className="service-box3_text">
                   Protect digital assets with penetration testing, threat
@@ -121,7 +121,7 @@ const TechnologySolutions = () => {
                   <img src="assets/img/icon/service_4_5.svg" alt="Icon" />
                 </div>
                 <h3 className="box-title">
-                  <a href="service-details.html">Cloud & DevOps</a>
+                  <Link to="/contactUs">Cloud & DevOps</Link>
                 </h3>
                 <p className="service-box3_text">
                   Scale IT with AWS, Azure, and Google Cloud. Streamline
@@ -134,7 +134,7 @@ const TechnologySolutions = () => {
           <div className="col-md-7 col-xl-3">
             <div className="service-btn-area">
               <Link
-                to="/services/ApplicationDevelopment"
+                to="/ApplicationDevelopment"
                 className="th-btn service-btn text-capitalize"
               >
                 View All Services

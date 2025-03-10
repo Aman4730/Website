@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ServiceAbout3 = ({ data, about3features }) => {
   return (
@@ -31,12 +32,12 @@ const ServiceAbout3 = ({ data, about3features }) => {
                     </ul>
                   </div>
                   <div className="btn-wrap">
-                    <a
-                      href={item.buttonLink}
+                    <Link
+                      to={item.buttonLink}
                       className="th-btn style-radius text-capitalize"
                     >
                       {item.buttonText}
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -25,12 +25,16 @@ import java from "../../../Imges/language/java.png";
 import process_box_3_1 from "../../../assets/img/icon/process_box_3_1.svg";
 import process_box_3_2 from "../../../assets/img/icon/process_box_3_2.svg";
 import process_box_3_3 from "../../../assets/img/icon/process_box_3_3.svg";
+import about_14_1 from "../../../assets/img/normal/about_14_1.jpg";
+import about_14_2 from "../../../assets/img/normal/about_14_2.jpg";
+import cloudmigration from "../../../Imges/cloudmigration1.jpg";
 const CloudMigration = () => {
   const aboutFeatures = {
     title: "Cloud Migration Services",
     heading: "Enhance Efficiency with LOGIMETRIX Cloud Migration",
     aboutus:
       "We specialize in seamless cloud transitions, optimizing infrastructure for better scalability, security, and cost efficiency. Our solutions integrate effortlessly with existing systems, ensuring enhanced reliability and performance.",
+    img: [cloudmigration, about_14_2],
     asd: [
       {
         title: "Free Consultation",
@@ -110,7 +114,7 @@ const CloudMigration = () => {
         subtitle="Cloud Migration Services"
         breadcrumbs={[{ label: "Home", link: "/" }, { label: "Services" }]}
       />
-      <ServiceAboutUs aboutFeatures={aboutFeatures} />
+      <ServiceAboutUs aboutFeatures={aboutFeatures} hideVideo={true} />
       <ServiceWhatWeDo services={services} />
       <OurDevelopmentMethodology processData={processData} />
     </div>

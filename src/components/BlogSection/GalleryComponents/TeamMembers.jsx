@@ -1,25 +1,35 @@
-import React from "react";
-import MainHeading from "../../MainHeading";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import team_4_1 from "../../../assets/img/team/team_4_1.jpg";
-import team_4_2 from "../../../assets/img/team/team_4_2.jpg";
-import team_4_3 from "../../../assets/img/team/team_4_3.jpg";
-import team_4_4 from "../../../assets/img/team/team_4_4.jpg";
 import team_bg_5 from "../../../assets/img/bg/team_bg_5.jpg";
+import vivek from "../../../Imges/vivek.jpg";
+import amankr from "../../../Imges/amankr.jpg";
+import vishal from "../../../Imges/vishal.jpg";
+import sumit from "../../../Imges/sumit.jpg";
+import ajay from "../../../Imges/ajay.jpg";
+import deepak from "../../../Imges/deepak.jpg";
+import harsh from "../../../Imges/harsh.jpg";
+import infraemp from "../../../Imges/infraemp.jpg";
+import amansingh from "../../../Imges/amansingh.jpg";
 import { Link } from "react-router-dom";
 
 const teamMembers = [
-  { img: team_4_1, name: "Honey Deep", role: "Chief Officer" },
-  { img: team_4_2, name: "Mac Alexixe", role: "CEO, Founder" },
-  { img: team_4_3, name: "Alex Julian", role: "Instructor" },
-  { img: team_4_4, name: "Jenifer Lopez", role: "Instructor" },
-  { img: team_4_1, name: "Henry Joseph", role: "Senior Instructor" },
+  { img: vivek, name: "Vivek Kumar Shukla", role: "Team Lead" },
+  { img: amankr, name: "Aman Kumar", role: "Senior Manager" },
+  { img: vishal, name: "Vishal Lengare", role: "Senior Developer" },
+  { img: sumit, name: "Sumit Verma", role: "Senior Developer" },
+  { img: ajay, name: "Ajay Pathak ", role: "Senior Developer" },
+  { img: deepak, name: "Deepak Sahu", role: "Senior Developer" },
+  { img: harsh, name: "Harsh Gupta", role: "Senior Developer" },
+  { img: infraemp, name: "Saroj Singh", role: "Project Coordinator" },
+  { img: amansingh, name: "Aman Singh", role: "Senior Developer" },
 ];
 
 const TeamMembers = () => {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
   return (
     <>
       <section
@@ -44,9 +54,21 @@ const TeamMembers = () => {
           </div>
           <div className="slider-area">
             <Swiper
-              modules={[Navigation]}
-              navigation
+              modules={[Navigation, Autoplay]}
               spaceBetween={20}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
+              navigation={{
+                prevEl: prevRef.current,
+                nextEl: nextRef.current,
+              }}
+              onBeforeInit={(swiper) => {
+                swiper.params.navigation.prevEl = prevRef.current;
+                swiper.params.navigation.nextEl = nextRef.current;
+              }}
+              loop={true}
               breakpoints={{
                 0: { slidesPerView: 1 },
                 576: { slidesPerView: 1 },
@@ -59,26 +81,40 @@ const TeamMembers = () => {
               {teamMembers.map((member, index) => (
                 <SwiperSlide key={index}>
                   <div className="th-team team-card3 style2">
-                    <div className="team-img">
-                      <img src={member.img} alt="Team" />
+                    <div className="team-img" style={{ flexShrink: 0 }}>
+                      <img
+                        src={member.img}
+                        alt="Team"
+                        style={{
+                          objectFit: "cover",
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                          height: "300px",
+                          width: "100%",
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                        }}
+                      />
                     </div>
-                    <div className="box-content">
-                      <div className="social-links">
-                        <a target="_blank" href="https://facebook.com/">
-                          <i className="fab fa-facebook-f" />
-                        </a>
-                        <a target="_blank" href="https://twitter.com/">
-                          <i className="fab fa-twitter" />
-                        </a>
-                        <a target="_blank" href="https://instagram.com/">
-                          <i className="fab fa-instagram" />
-                        </a>
+                    <div
+                      className="box-content"
+                      style={{ padding: "15px", textAlign: "center" }}
+                    >
+                      <div
+                        className="social-links"
+                        style={{ marginBottom: "10px" }}
+                      >
                         <a target="_blank" href="https://linkedin.com/">
-                          <i className="fab fa-linkedin-in" />
+                          <i class="fab fa-linkedin-in"></i>
                         </a>
                       </div>
+
                       <div className="media-body">
-                        <h3 className="box-title">
+                        <h3
+                          className="box-title"
+                          style={{ marginBottom: "5px" }}
+                        >
                           <Link to="/contactUs">{member.name}</Link>
                         </h3>
                         <span className="team-desig">{member.role}</span>
@@ -88,6 +124,12 @@ const TeamMembers = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
+            <button ref={prevRef} className="slider-arrow style3 slider-prev">
+              <i className="far fa-arrow-left" />
+            </button>
+            <button ref={nextRef} className="slider-arrow style3 slider-next">
+              <i className="far fa-arrow-right" />
+            </button>
           </div>
         </div>
       </section>

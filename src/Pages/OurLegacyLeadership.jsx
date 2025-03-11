@@ -16,6 +16,7 @@ import "jquery-circle-progress";
 import "swiper/css";
 import "swiper/css/navigation";
 import TeamMembers from "../components/BlogSection/GalleryComponents/TeamMembers";
+import { Link } from "react-router-dom";
 const teamMembers = [
   {
     name: "Shantanu Kumar",

@@ -5,6 +5,7 @@ import why83 from "../../../../../assets/img/icon/why-8-3.svg";
 import why84 from "../../../../../assets/img/icon/why-8-4.svg";
 import why_8_1 from "../../../../../assets/img/normal/why_8_1.png";
 import why_bg_8 from "../../../../../assets/img/bg/why_bg_8.png";
+import jammuimg1 from "../../../../../Imges/jammuimg1.png";
 
 const MobileWhyChooseUs = () => {
   return (
@@ -96,7 +97,7 @@ const MobileWhyChooseUs = () => {
             </div>
             <div className="col-lg-4 order-lg-2">
               <div className="why-thumb-4">
-                <img src={why_8_1} alt="img" />
+                <img src={jammuimg1} alt="img" />
               </div>
             </div>
           </div>

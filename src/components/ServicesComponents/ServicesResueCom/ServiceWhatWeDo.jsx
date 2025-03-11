@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const ServiceWhatWeDo = ({ services }) => {
   return (
-    <section className="space-top">
+    <section>
       <div className="title-area text-center">
         <span className="sub-title">
           <div className="icon-masking me-2">

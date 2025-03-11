@@ -164,7 +164,7 @@ const NavBar = () => {
                       <li>
                         <Link to="/aboutus">Why Us</Link>
                       </li>
-                      {/*  <li className="menu-item-has-children">
+                      <li className="menu-item-has-children">
                         <a href="#">About Company</a>
                         <ul className="sub-menu">
                           <li>
@@ -176,7 +176,7 @@ const NavBar = () => {
                             </Link>
                           </li>
                         </ul>
-                      </li>*/}
+                      </li>
                       <li className="menu-item-has-children mega-menu-wrap">
                         <a href="#">Solution</a>
                         <ul className="mega-menu">

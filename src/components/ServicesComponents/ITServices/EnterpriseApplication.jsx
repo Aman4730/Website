@@ -19,12 +19,17 @@ import enterprise from "../../../Imges/enterprise.png";
 import enterprise1 from "../../../Imges/enterprise1.png";
 import enterprise2 from "../../../Imges/enterprise2.png";
 import enterprise3 from "../../../Imges/enterprise3.png";
+import enterprise4 from "../../../Imges/enterprise4.png";
+import enterprise5 from "../../../Imges/enterprise5.png";
+import about_14_1 from "../../../assets/img/normal/about_14_1.jpg";
+import about_14_2 from "../../../assets/img/normal/about_14_2.jpg";
 const EnterpriseApplication = () => {
   const aboutFeatures = {
     title: "Enterprise Application Solutions",
     heading: "What you get with LOGIMETRIX enterprise applications",
     aboutus:
       "We provide top-tier enterprise solutions with customization options and expert support. With 12+ years of experience, we specialize in custom software and seamless integrations across industries like finance, logistics, healthcare, and more. Our certified team partners with SAP, Microsoft, Odoo, and Salesforce to deliver secure, high-performance solutions.",
+    img: [enterprise4, about_14_2],
     asd: [
       {
         title: "Fast & Flexible",
@@ -124,7 +129,7 @@ const EnterpriseApplication = () => {
         subtitle="Enterprise Application Solutions"
         breadcrumbs={[{ label: "Home", link: "/" }, { label: "Services" }]}
       />
-      <ServiceAboutUs aboutFeatures={aboutFeatures} />
+      <ServiceAboutUs aboutFeatures={aboutFeatures} hide={true} />
       <ServiceWhatWeDo2
         services={services}
         sectionTitle="Enterprise Application Solutions"

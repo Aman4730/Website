@@ -68,17 +68,6 @@ const teamMembers = [
       linkedin: "https://www.linkedin.com/in/sandipan-basu-b67323335/",
     },
   },
-  {
-    name: "Yash Trivedi",
-    role: "BDE",
-    image: team2,
-    socialLinks: {
-      facebook: "https://facebook.com/rayanathels",
-      twitter: "https://twitter.com/rayanathels",
-      instagram: "https://instagram.com/rayanathels",
-      linkedin: "https://www.linkedin.com/in/yashtrivedibd/",
-    },
-  },
 ];
 const testimonials = [
   {
@@ -476,11 +465,7 @@ const AboutUsPage = () => {
 
           <div className="slider-area">
             <Swiper
-              modules={[Navigation, Autoplay]}
-              navigation={{
-                nextEl: ".slider-next",
-                prevEl: ".slider-prev",
-              }}
+              modules={[Autoplay]}
               loop={true}
               autoplay={{
                 delay: 3000,
@@ -562,13 +547,6 @@ const AboutUsPage = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-
-            <button className="slider-arrow style3 slider-prev">
-              <i className="far fa-arrow-left" />
-            </button>
-            <button className="slider-arrow style3 slider-next">
-              <i className="far fa-arrow-right" />
-            </button>
           </div>
         </div>
       </section>

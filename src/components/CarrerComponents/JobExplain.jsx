@@ -139,7 +139,12 @@ const JobExplain = ({ handleFormOpen, selectedJob }) => {
               alignItems: "center",
             }}
           >
-            🔹 {point}
+            <Typography variant="body2" color="textSecondary">
+              🔹
+            </Typography>
+            <Typography variant="body2" color="textSecondary">
+              {point}
+            </Typography>
           </Typography>
         ))}
       </div>

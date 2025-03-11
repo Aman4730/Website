@@ -4,7 +4,7 @@ import "swiper/css";
 import title_shape_2 from "../../../assets/img/theme-img/title_shape_2.svg";
 import { Link } from "react-router-dom";
 
-const FarmRenovation = ({ projects }) => {
+const FarmRenovation = ({ projects, space }) => {
   useEffect(() => {
     new Swiper("#projectSlider2", {
       loop: true,
@@ -24,7 +24,7 @@ const FarmRenovation = ({ projects }) => {
   }, []);
 
   return (
-    <section className="space" id="project-sec">
+    <section className={space ? "" : "space"} id="project-sec">
       <div className="container">
         <div className="title-area text-center mb-5">
           <div className="shadow-title">PROJECTS</div>

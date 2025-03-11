@@ -1,38 +1,37 @@
 import React from "react";
 import check_2 from "../../../assets/img/icon/check_2.svg";
-import about_14_1 from "../../../assets/img/normal/about_14_1.jpg";
-import about_14_2 from "../../../assets/img/normal/about_14_2.jpg";
 import title_shape_2 from "../../../assets/img/theme-img/title_shape_2.svg";
 import about_shape from "../../../assets/img/shape/about_shape.png";
 
-const ServiceAboutUs = ({ aboutFeatures }) => {
+const ServiceAboutUs = ({ aboutFeatures, hide, hideVideo }) => {
   return (
-    <div
-      className="bg-smoke3 th-radius2 m-4 mt-0 mb-0 space-top"
-      id="about-sec"
-    >
+    <div className="bg-smoke3 th-radius2 m-4 mt-0 mb-0 space" id="about-sec">
       <div className="container th-container4">
         <div className="row">
           <div className="col-xl-6 mb-30 mb-xl-0">
             <div className="img-box16 pe-xl-5">
               <div className="img1">
-                <img src={about_14_1} alt="About" />
+                <img src={aboutFeatures.img[0]} alt="About" />
               </div>
-              <div className="img2">
-                <img src={about_14_2} alt="About" />
-                <a
-                  href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
-                  className="play-btn popup-video"
-                >
-                  <i className="fas fa-play" />
-                </a>
-              </div>
-              <div className="year-counter style2">
-                <h3 className="year-counter_number">
-                  <span className="counter-number">12</span>k+
-                </h3>
-                <p className="year-counter_text">Happily active client’s</p>
-              </div>
+              {!hideVideo && (
+                <div className="img2">
+                  <img src={aboutFeatures.img[1]} alt="About" />
+                  <a
+                    href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
+                    className="play-btn popup-video"
+                  >
+                    <i className="fas fa-play" />
+                  </a>
+                </div>
+              )}
+              {!hide && (
+                <div className="year-counter style2">
+                  <h3 className="year-counter_number">
+                    <span className="counter-number">12</span>k+
+                  </h3>
+                  <p className="year-counter_text">Happily active client’s</p>
+                </div>
+              )}
             </div>
           </div>
           <div className="col-xl-6">

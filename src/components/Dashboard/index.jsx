@@ -4,19 +4,21 @@ import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
-
-import hero_bg_2_1 from "../../assets/img/hero/hero_bg_2_1.jpg";
-import hero_bg_2_2 from "../../assets/img/hero/hero_bg_2_2.jpg";
-import hero_bg_2_3 from "../../assets/img/hero/hero_bg_2_3.jpg";
 import hero_shape_2_2 from "../../assets/img/hero/hero_shape_2_2.png";
 import hero_shape_2_3 from "../../assets/img/hero/hero_shape_2_3.png";
 import dashboardbg1 from "../../Imges/dashboardbg1.png";
 import dashboardbg2 from "../../Imges/dashboardbg2.png";
 import dashboardbg3 from "../../Imges/dashboardbg3.png";
 import dashboardbg4 from "../../Imges/dashboardbg4.png";
-import Dashboard from "../../Imges/Dashboard.png";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { useRef } from "react";
+
+const preloadImages = (imageArray) => {
+  imageArray.forEach((image) => {
+    const img = new Image();
+    img.src = image;
+  });
+};
 
 const slides = [
   {
@@ -50,6 +52,10 @@ const slides = [
 ];
 
 export default function HeroSection({ scrollToAbout }) {
+  useEffect(() => {
+    preloadImages([dashboardbg1, dashboardbg2, dashboardbg3, dashboardbg4]);
+  }, []);
+
   return (
     <div className="th-hero-wrapper hero-2" id="hero">
       <div className="slider-area">
@@ -83,9 +89,7 @@ export default function HeroSection({ scrollToAbout }) {
                     transition={{ duration: 1, ease: "easeOut" }}
                   >
                     <span className="hero-subtitle">{subtitle}</span>
-                    <h1 className="hero-title" style={{ width: "700px" }}>
-                      {title1}
-                    </h1>
+                    <h1 className="hero-title">{title1}</h1>
                     {title2 && <h1 className="hero-title">{title2}</h1>}
                     <p className="hero-text">{text}</p>
                     <div className="btn-group">
@@ -115,10 +119,10 @@ export default function HeroSection({ scrollToAbout }) {
 
       <div className="hero-shape1" />
       <div className="hero-shape2">
-        <img src={hero_shape_2_2} alt="shape" />
+        <img src={hero_shape_2_2} alt="shape" loading="lazy" />
       </div>
       <div className="hero-shape3">
-        <img src={hero_shape_2_3} alt="shape" />
+        <img src={hero_shape_2_3} alt="shape" loading="lazy" />
       </div>
     </div>
   );

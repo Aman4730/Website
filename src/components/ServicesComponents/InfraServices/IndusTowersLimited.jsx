@@ -21,6 +21,7 @@ import infra_why from "../../../Imges/infra_why.jpg";
 import TalkToAbout from "../../SolutionComponents/StandaloneProducts/SolutionReuseCom/TalkToAboutAnyQuestion/TalkToAbout";
 import visiondesk5 from "../../../Imges/visiondesk5.png";
 import visiondesk6 from "../../../Imges/visiondesk6.png";
+import indus from "../../../Imges/indus.png";
 const IndusTowersLimited = () => {
   const services = [
     {
@@ -62,20 +63,21 @@ const IndusTowersLimited = () => {
   const projects = [
     {
       img: project_2_1,
-      title: "Modern Cattle Shelters",
-      desc: "Designed for maximum airflow and spacious layouts, ensuring a healthier and stress-free environment for cattle.",
+      title: "New Construction",
+      desc: "Development of Greenfield sites with modern infrastructure, ensuring efficiency and sustainability from the ground up.",
     },
     {
       img: project_2_2,
-      title: "Eco-Friendly Infrastructure",
-      desc: "Built with sustainable materials to minimize environmental impact while maximizing durability and efficiency.",
+      title: "Maintenance",
+      desc: "Implementation of preventive maintenance strategies to extend the lifespan of critical infrastructure and reduce downtime.",
     },
     {
-      img: project_2_3,
-      title: "Advanced Facilities",
-      desc: "Integrated with smart automation to enhance precision, reduce manual work, and boost overall productivity.",
+      img: indus,
+      title: "System Upgrades",
+      desc: "Upgrading systems for 5G readiness, enhancing connectivity, and ensuring seamless integration with future technologies.",
     },
   ];
+
   const TalkToAboutAnyQuestion = {
     img: visiondesk5,
     img1: visiondesk6,
@@ -118,7 +120,7 @@ const IndusTowersLimited = () => {
         services={services}
         sectionTitle="Our Achievements in Telecom Infrastructure"
       />
-      <FarmRenovation projects={projects} />
+      <FarmRenovation projects={projects} space={true} />
       <TalkToAbout TalkToAboutAnyQuestion={TalkToAboutAnyQuestion} />
     </div>
   );

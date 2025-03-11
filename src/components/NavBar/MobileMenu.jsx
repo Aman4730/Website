@@ -29,22 +29,18 @@ import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import ApartmentIcon from "@mui/icons-material/Apartment";
 import SolarPowerIcon from "@mui/icons-material/SolarPower";
 import InsightsIcon from "@mui/icons-material/Insights";
-import StarIcon from "@mui/icons-material/Star";
-import ArticleIcon from "@mui/icons-material/Article";
 import PersonSearchIcon from "@mui/icons-material/PersonSearch";
 import WorkIcon from "@mui/icons-material/Work";
 import SettingsApplicationsIcon from "@mui/icons-material/SettingsApplications";
 import StorageIcon from "@mui/icons-material/Storage";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import RouterIcon from "@mui/icons-material/Router";
-import SmartphoneIcon from "@mui/icons-material/Smartphone";
 import AppBlockingIcon from "@mui/icons-material/AppBlocking"; // Qblock
 import MenuBookIcon from "@mui/icons-material/MenuBook"; // LogBooks
 import SchoolIcon from "@mui/icons-material/School"; // Saroj Education, College Fee, Student Finance
 import DashboardIcon from "@mui/icons-material/Dashboard"; // VisionDesk
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney"; // College Fee Management, Student Finance
 import AgricultureIcon from "@mui/icons-material/Agriculture"; // Livestock Management, Cropnet, Agriculture Information System
-import LocalGasStationIcon from "@mui/icons-material/LocalGasStation"; // TrakFuel
 import ManageAccountsIcon from "@mui/icons-material/ManageAccounts"; // IManager
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote"; // Field Quotation System
 import SupportIcon from "@mui/icons-material/Support"; // Decision Support System, Issue Management System
@@ -52,12 +48,10 @@ import WbSunnyIcon from "@mui/icons-material/WbSunny"; // Photon (Solar)
 import LocalDrinkIcon from "@mui/icons-material/LocalDrink"; // Milk Analyser
 import IcecreamIcon from "@mui/icons-material/Icecream"; // Dairy Application
 import TravelExploreIcon from "@mui/icons-material/TravelExplore"; // Tourism Application
-import ChatIcon from "@mui/icons-material/Chat"; // Communication Application
-import DirectionsCarIcon from "@mui/icons-material/DirectionsCar"; // KarGo
-import MonitorHeartIcon from "@mui/icons-material/MonitorHeart"; // MonitorM
-import MobileFriendlyIcon from "@mui/icons-material/MobileFriendly"; // IRedi
+import PhotoLibraryIcon from "@mui/icons-material/PhotoLibrary";
+import DescriptionIcon from "@mui/icons-material/Description";
 const NAV_ITEMS = [
-  { title: "Home", icon: <HomeIcon />, segment: "home" },
+  { title: "Home", icon: <HomeIcon />, segment: "/" },
   {
     title: "What we do",
     icon: <BuildIcon />,
@@ -151,7 +145,7 @@ const NAV_ITEMS = [
       },
     ],
   },
-  { title: "How we do it", icon: <InfoIcon />, segment: "/aboutus" },
+  { title: "How we do it", icon: <InfoIcon />, segment: "/HowWeDoIt" },
   { title: "Why Us", icon: <InfoIcon />, segment: "/aboutus" },
   {
     title: "Solution",
@@ -194,16 +188,6 @@ const NAV_ITEMS = [
             icon: <AttachMoneyIcon />,
           },
           {
-            title: "Livestock Mgmt",
-            segment: "/LivestockManagement",
-            icon: <AgricultureIcon />,
-          },
-          {
-            title: "TrakFuel",
-            segment: "/TrakFuelPage",
-            icon: <LocalGasStationIcon />,
-          },
-          {
             title: "IManager",
             segment: "/IManagerPage",
             icon: <ManageAccountsIcon />,
@@ -212,6 +196,16 @@ const NAV_ITEMS = [
             title: "Cropnet",
             segment: "/CropnetPage",
             icon: <AgricultureIcon />,
+          },
+          {
+            title: "Tourism Application",
+            segment: "/TourismApplicationPage",
+            icon: <TravelExploreIcon />,
+          },
+          {
+            title: "Saroj Education Mobile app",
+            segment: "/SarojEducationPage",
+            icon: <SchoolIcon />,
           },
         ],
       },
@@ -276,36 +270,25 @@ const NAV_ITEMS = [
           },
         ],
       },
+    ],
+  },
+  {
+    title: "Blog",
+    icon: <DescriptionIcon />, // Default Icon
+    segment: "Solu-Mobile",
+    children: [
       {
-        title: "Mobile Applications",
-        icon: <SmartphoneIcon />,
-        segment: "Solu-Mobile",
-        children: [
-          {
-            title: "IRedi",
-            segment: "/IRediPage",
-            icon: <MobileFriendlyIcon />,
-          },
-          {
-            title: "Tourism Application",
-            segment: "/TourismApplicationPage",
-            icon: <TravelExploreIcon />,
-          },
-          {
-            title: "Saroj Education Mobile app",
-            segment: "/SarojEducationPage",
-            icon: <SchoolIcon />,
-          },
-          {
-            title: "Communication Application",
-            segment: "/CommunicationApplicationPage",
-            icon: <ChatIcon />,
-          },
-        ],
+        title: "Blog",
+        segment: "/blog",
+        icon: <TravelExploreIcon />, // Blog ke liye ArticleIcon
+      },
+      {
+        title: "Gallery",
+        segment: "/Gallery",
+        icon: <PhotoLibraryIcon />, // Gallery ke liye PhotoLibraryIcon
       },
     ],
   },
-  { title: "Blog", icon: <ArticleIcon />, segment: "/blog" },
   { title: "Career", icon: <PersonSearchIcon />, segment: "/CarrerPage" },
 ];
 

@@ -17,6 +17,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import TeamMembers from "../components/BlogSection/GalleryComponents/TeamMembers";
 import { Link } from "react-router-dom";
+import OurJourney from "../components/OurJourney";
+import Awards from "../components/Newsroom/Awards";
 const teamMembers = [
   {
     name: "Shantanu Kumar",
@@ -27,17 +29,6 @@ const teamMembers = [
       twitter: "https://twitter.com/rayanathels",
       instagram: "https://instagram.com/rayanathels",
       linkedin: "https://www.linkedin.com/in/shantanurai/",
-    },
-  },
-  {
-    name: "Richa Rai",
-    role: "CTO",
-    image: team,
-    socialLinks: {
-      facebook: "https://facebook.com/rayanathels",
-      twitter: "https://twitter.com/rayanathels",
-      instagram: "https://instagram.com/rayanathels",
-      linkedin: "https://www.linkedin.com/in/richa-rai-94036123/",
     },
   },
   {
@@ -52,6 +43,17 @@ const teamMembers = [
     },
   },
   {
+    name: "Richa Rai",
+    role: "CTO",
+    image: team,
+    socialLinks: {
+      facebook: "https://facebook.com/rayanathels",
+      twitter: "https://twitter.com/rayanathels",
+      instagram: "https://instagram.com/rayanathels",
+      linkedin: "https://www.linkedin.com/in/richa-rai-94036123/",
+    },
+  },
+  {
     name: "Sandipan Basu",
     role: "President & Mentor",
     image: team6,
@@ -60,17 +62,6 @@ const teamMembers = [
       twitter: "https://twitter.com/rayanathels",
       instagram: "https://instagram.com/rayanathels",
       linkedin: "https://www.linkedin.com/in/sandipan-basu-b67323335/",
-    },
-  },
-  {
-    name: "Yash Trivedi",
-    role: "BDE",
-    image: team2,
-    socialLinks: {
-      facebook: "https://facebook.com/rayanathels",
-      twitter: "https://twitter.com/rayanathels",
-      instagram: "https://instagram.com/rayanathels",
-      linkedin: "https://www.linkedin.com/in/yashtrivedibd/",
     },
   },
 ];
@@ -103,7 +94,7 @@ const OurLegacyLeadership = () => {
           { label: "Our Legacy Leadership" },
         ]}
       />
-      <section className="team-sec space-bottom">
+      <section className="team-sec">
         <div
           class="why-sec-v2"
           style={{
@@ -180,136 +171,115 @@ const OurLegacyLeadership = () => {
             </div>
           </div>
         </div>
-        <div className="container z-index-common space">
-          <div class="title-area mb-35 text-center">
-            <div class="shadow-title">Meet Our Leaders</div>
-            <span class="sub-title">
-              <div class="icon-masking me-2">
-                <img src={title_shape_2} alt="shape" />
-              </div>
-              Meet Our Leaders
-            </span>
-            <h2 class="sec-title">
-              See Our Skilled Expert
-              <span class="text-theme"> Leaders.</span>
-            </h2>
-          </div>
+        <section className="team-sec space">
+          <div className="container z-index-common">
+            <div class="title-area mb-35 text-center">
+              <div class="shadow-title">Meet Our Leaders</div>
+              <span class="sub-title">
+                <div class="icon-masking me-2">
+                  <img
+                    src="assets/img/theme-img/title_shape_2.svg"
+                    alt="shape"
+                  />
+                </div>
+                Meet Our Leaders
+              </span>
+              <h2 class="sec-title">
+                See Our Skilled Expert
+                <span class="text-theme"> Team.</span>
+              </h2>
+            </div>
 
-          <div className="slider-area">
-            <Swiper
-              modules={[Navigation, Autoplay]}
-              navigation={{
-                nextEl: ".slider-next",
-                prevEl: ".slider-prev",
-              }}
-              loop={true}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-              }}
-              breakpoints={{
-                0: { slidesPerView: 1 },
-                576: { slidesPerView: 1 },
-                768: { slidesPerView: 2 },
-                992: { slidesPerView: 3 },
-                1200: { slidesPerView: 4 },
-              }}
-              className="th-slider has-shadow"
-            >
-              {teamMembers.map((member, index) => (
-                <SwiperSlide key={index}>
-                  <div
-                    className="th-team team-card"
-                    style={{
-                      marginRight: "20px",
-                    }}
-                  >
-                    <div className="team-img">
-                      <img
-                        src={member.image}
-                        alt={member.name}
-                        style={{
-                          width: "100%",
-                          height: "300px",
-                          objectFit: "cover",
-                        }}
-                      />
-                    </div>
+            <div className="slider-area">
+              <Swiper
+                modules={[Autoplay]}
+                loop={true}
+                autoplay={{
+                  delay: 3000,
+                  disableOnInteraction: false,
+                }}
+                breakpoints={{
+                  0: { slidesPerView: 1 },
+                  576: { slidesPerView: 1 },
+                  768: { slidesPerView: 2 },
+                  992: { slidesPerView: 3 },
+                  1200: { slidesPerView: 4 },
+                }}
+                className="th-slider has-shadow"
+              >
+                {teamMembers.map((member, index) => (
+                  <SwiperSlide key={index}>
                     <div
-                      className="team-content"
+                      className="th-team team-card"
                       style={{
-                        backgroundImage: `url(${DNS})`, // Default background GIF (DNS)
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                        backgroundColor: "white", // Set the background color to white by default
-                        transition:
-                          "background-image 0.3s ease-in-out, background-color 0.3s ease-in-out", // Smooth transition for both image and color
+                        marginRight: "20px",
                       }}
-                      onMouseEnter={
-                        (e) =>
-                          (e.currentTarget.style.backgroundImage = `url(${DNS})`) // Replace with hover image URL
-                      }
-                      onMouseLeave={
-                        (e) => (e.currentTarget.style.backgroundColor = "white") // Change background to white on mouse leave
-                      }
                     >
-                      <div className="team-social">
-                        {member.socialLinks.facebook && (
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={member.socialLinks.facebook}
-                          >
-                            <i className="fab fa-facebook-f" />
-                          </a>
-                        )}
-                        {member.socialLinks.twitter && (
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={member.socialLinks.twitter}
-                          >
-                            <i className="fab fa-twitter" />
-                          </a>
-                        )}
-                        {member.socialLinks.instagram && (
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={member.socialLinks.instagram}
-                          >
-                            <i className="fab fa-instagram" />
-                          </a>
-                        )}
-                        {member.socialLinks.linkedin && (
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={member.socialLinks.linkedin}
-                          >
-                            <i className="fab fa-linkedin-in" />
-                          </a>
-                        )}
+                      <div className="team-img">
+                        <img
+                          src={member.image}
+                          alt={member.name}
+                          style={{
+                            width: "100%",
+                            height: "300px",
+                            objectFit: "cover",
+                          }}
+                        />
                       </div>
-                      <h3 className="box-title">
-                        <Link to="/contactUs">{member.name}</Link>
-                      </h3>
-                      <span className="team-desig">{member.role}</span>
+                      <div className="team-content">
+                        <div className="team-social">
+                          {member.socialLinks.facebook && (
+                            <a
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              href={member.socialLinks.facebook}
+                            >
+                              <i className="fab fa-facebook-f" />
+                            </a>
+                          )}
+                          {member.socialLinks.twitter && (
+                            <a
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              href={member.socialLinks.twitter}
+                            >
+                              <i className="fab fa-twitter" />
+                            </a>
+                          )}
+                          {member.socialLinks.instagram && (
+                            <a
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              href={member.socialLinks.instagram}
+                            >
+                              <i className="fab fa-instagram" />
+                            </a>
+                          )}
+                          {member.socialLinks.linkedin && (
+                            <a
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              href={member.socialLinks.linkedin}
+                            >
+                              <i className="fab fa-linkedin-in" />
+                            </a>
+                          )}
+                        </div>
+                        <h3 className="box-title">
+                          <Link to="/contactUs">{member.name}</Link>
+                        </h3>
+                        <span className="team-desig">{member.role}</span>
+                      </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-
-            <button className="slider-arrow style3 slider-prev">
-              <i className="far fa-arrow-left" />
-            </button>
-            <button className="slider-arrow style3 slider-next">
-              <i className="far fa-arrow-right" />
-            </button>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
           </div>
-        </div>
+        </section>
         <TeamMembers />
+        <OurJourney />
+        <Awards />
       </section>
     </>
   );

@@ -23,52 +23,8 @@ import about_feature_1_2 from "../assets/img/icon/about_feature_1_2.svg";
 import title_shape_2_white from "../assets/img/theme-img/title_shape_2_white.svg";
 import "swiper/css";
 import "swiper/css/navigation";
-const teamMembers = [
-  {
-    name: "Shantanu Kumar",
-    role: "Founder",
-    image: team1,
-    socialLinks: {
-      facebook: "https://facebook.com/rayanathels",
-      twitter: "https://twitter.com/rayanathels",
-      instagram: "https://instagram.com/rayanathels",
-      linkedin: "https://www.linkedin.com/in/shantanurai/",
-    },
-  },
-  {
-    name: "Richa Rai",
-    role: "CTO",
-    image: team,
-    socialLinks: {
-      facebook: "https://facebook.com/rayanathels",
-      twitter: "https://twitter.com/rayanathels",
-      instagram: "https://instagram.com/rayanathels",
-      linkedin: "https://www.linkedin.com/in/richa-rai-94036123/",
-    },
-  },
-  {
-    name: "Vipul Rai",
-    role: "CEO",
-    image: team4,
-    socialLinks: {
-      facebook: "https://facebook.com/rayanathels",
-      twitter: "https://twitter.com/rayanathels",
-      instagram: "https://instagram.com/rayanathels",
-      linkedin: "https://www.linkedin.com/in/vipul-rai/",
-    },
-  },
-  {
-    name: "Sandipan Basu",
-    role: "President & Mentor",
-    image: team6,
-    socialLinks: {
-      facebook: "https://facebook.com/rayanathels",
-      twitter: "https://twitter.com/rayanathels",
-      instagram: "https://instagram.com/rayanathels",
-      linkedin: "https://www.linkedin.com/in/sandipan-basu-b67323335/",
-    },
-  },
-];
+import EmployeeTestimonial from "../components/EmployeeTestimonial";
+
 const testimonials = [
   {
     img: Sanjay_rai,
@@ -446,110 +402,6 @@ const AboutUsPage = () => {
           </div>
         </div>
       </div>
-      {/* Team Members Section */}
-      <section className="team-sec space">
-        <div className="container z-index-common">
-          <div class="title-area mb-35 text-center">
-            <div class="shadow-title">TEAM MEMBER</div>
-            <span class="sub-title">
-              <div class="icon-masking me-2">
-                <img src="assets/img/theme-img/title_shape_2.svg" alt="shape" />
-              </div>
-              TEAM MEMBER
-            </span>
-            <h2 class="sec-title">
-              See Our Skilled Expert
-              <span class="text-theme"> Team.</span>
-            </h2>
-          </div>
-
-          <div className="slider-area">
-            <Swiper
-              modules={[Autoplay]}
-              loop={true}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-              }}
-              breakpoints={{
-                0: { slidesPerView: 1 },
-                576: { slidesPerView: 1 },
-                768: { slidesPerView: 2 },
-                992: { slidesPerView: 3 },
-                1200: { slidesPerView: 4 },
-              }}
-              className="th-slider has-shadow"
-            >
-              {teamMembers.map((member, index) => (
-                <SwiperSlide key={index}>
-                  <div
-                    className="th-team team-card"
-                    style={{
-                      marginRight: "20px",
-                    }}
-                  >
-                    <div className="team-img">
-                      <img
-                        src={member.image}
-                        alt={member.name}
-                        style={{
-                          width: "100%",
-                          height: "300px",
-                          objectFit: "cover",
-                        }}
-                      />
-                    </div>
-                    <div className="team-content">
-                      <div className="team-social">
-                        {member.socialLinks.facebook && (
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={member.socialLinks.facebook}
-                          >
-                            <i className="fab fa-facebook-f" />
-                          </a>
-                        )}
-                        {member.socialLinks.twitter && (
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={member.socialLinks.twitter}
-                          >
-                            <i className="fab fa-twitter" />
-                          </a>
-                        )}
-                        {member.socialLinks.instagram && (
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={member.socialLinks.instagram}
-                          >
-                            <i className="fab fa-instagram" />
-                          </a>
-                        )}
-                        {member.socialLinks.linkedin && (
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={member.socialLinks.linkedin}
-                          >
-                            <i className="fab fa-linkedin-in" />
-                          </a>
-                        )}
-                      </div>
-                      <h3 className="box-title">
-                        <Link to="/contactUs">{member.name}</Link>
-                      </h3>
-                      <span className="team-desig">{member.role}</span>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-        </div>
-      </section>
       {/* Brands Logos */}
       <div style={{ marginBottom: "120px" }}>
         <BrandSlider />
@@ -700,23 +552,7 @@ const AboutUsPage = () => {
           </div>
         </div>
       </section>
-      <div className="scroll-top">
-        <svg
-          className="progress-circle svg-content"
-          width="100%"
-          height="100%"
-          viewBox="-1 -1 102 102"
-        >
-          <path
-            d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
-            style={{
-              transition: "stroke-dashoffset 10ms linear 0s",
-              strokeDasharray: "307.919, 307.919",
-              strokeDashoffset: "307.919",
-            }}
-          />
-        </svg>
-      </div>
+      <EmployeeTestimonial />
     </>
   );
 };

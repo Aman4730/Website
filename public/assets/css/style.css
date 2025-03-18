@@ -18114,6 +18114,7 @@ span.select2-selection.select2-selection--single:focus {
   background-size: auto;
   background-position: bottom left;
   overflow: hidden;
+  padding-top: 20px;
 }
 @media (max-width: 575px) {
   .team-card {

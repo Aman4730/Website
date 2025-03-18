@@ -54,6 +54,7 @@ import AdminPostPage from "./Pages/AdminPostPage";
 import AdminDashboard from "./Pages/AdminDashboard";
 import HowWeDoIt from "./Pages/HowWeDoIt";
 import OurLegacyLeadership from "./Pages/OurLegacyLeadership";
+import BlogApprovalPage from "./components/BlogApprovalPage";
 
 function App() {
   const location = useLocation();
@@ -63,6 +64,8 @@ function App() {
   }, [location.pathname]);
 
   const tokenData = localStorage.getItem("token");
+  const user_role = JSON.parse(localStorage.getItem("user_role"));
+
   return (
     <div className="App">
       <CustomCursor />
@@ -226,7 +229,7 @@ function App() {
         <Route
           path="/adminpost"
           element={
-            tokenData?.length > 5 ? (
+            user_role == "Recruiter" ? (
               <AdminPostPage />
             ) : (
               <Navigate to="/adminlogin" />
@@ -236,8 +239,18 @@ function App() {
         <Route
           path="/AdminDashboard"
           element={
-            tokenData?.length > 5 ? (
+            user_role == "Recruiter" ? (
               <AdminDashboard />
+            ) : (
+              <Navigate to="/adminlogin" />
+            )
+          }
+        />
+        <Route
+          path="/BlogApprovalPage"
+          element={
+            user_role == "Admin" ? (
+              <BlogApprovalPage />
             ) : (
               <Navigate to="/adminlogin" />
             )

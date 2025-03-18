@@ -11,7 +11,8 @@ const NavBar = () => {
   const handleSubmenuToggle = (index) =>
     setSubmenuOpen((prev) => ({ ...prev, [index]: !prev[index] }));
 
-  const token = localStorage.getItem("token");
+  const user_role = JSON.parse(localStorage.getItem("user_role"));
+
   return (
     <>
       <header className="th-header header-layout2">
@@ -161,9 +162,6 @@ const NavBar = () => {
                       <li>
                         <Link to="/HowWeDoIt">How we do it</Link>
                       </li>
-                      <li>
-                        <Link to="/aboutus">Why Us</Link>
-                      </li>
                       <li className="menu-item-has-children">
                         <a href="#">About Company</a>
                         <ul className="sub-menu">
@@ -294,7 +292,7 @@ const NavBar = () => {
                       <li>
                         <Link to="/CarrerPage">Carrer</Link>
                       </li>
-                      {token && (
+                      {user_role == "Recruiter" && (
                         <li className="menu-item-has-children">
                           <a href="#">Admin</a>
                           <ul className="sub-menu">
@@ -304,6 +302,53 @@ const NavBar = () => {
                             <li>
                               <Link to="/AdminDashboard">Dashboard</Link>
                             </li>
+                            <li>
+                              <button
+                                onClick={() => {
+                                  localStorage.removeItem("token");
+                                  localStorage.removeItem("user_role");
+                                  window.location.href = "/";
+                                }}
+                                style={{
+                                  background: "none",
+                                  border: "none",
+                                  cursor: "pointer",
+                                  color: "#141d38",
+                                  font: "Barlow, sans-serif",
+                                  padding: "0",
+                                  margin: "0",
+                                  textAlign: "left",
+                                  width: "100%",
+                                  display: "flex",
+                                  alignItems: "center",
+                                  gap: "8px",
+                                  fontWeight: 500,
+                                }}
+                                onMouseEnter={(e) =>
+                                  (e.target.style.color = "#4786e6")
+                                }
+                                onMouseLeave={(e) =>
+                                  (e.target.style.color = "#141d38")
+                                }
+                              >
+                                <i
+                                  className="fa fa-sign-out"
+                                  style={{ color: "#4786e6" }}
+                                ></i>{" "}
+                                Logout
+                              </button>
+                            </li>
+                          </ul>
+                        </li>
+                      )}
+                      {user_role == "Admin" && (
+                        <li className="menu-item-has-children">
+                          <a href="#">Admin</a>
+                          <ul className="sub-menu">
+                            <li>
+                              <Link to="/BlogApprovalPage">Blog Approval</Link>
+                            </li>
+
                             <li>
                               <button
                                 onClick={() => {

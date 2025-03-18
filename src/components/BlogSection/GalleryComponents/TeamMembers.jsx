@@ -33,7 +33,7 @@ const TeamMembers = () => {
   return (
     <>
       <section
-        className="overflow-hidden bg-top-center th-radius3 m-4 mt-0 mb-0 space position-relative"
+        className="overflow-hidden bg-top-center th-radius3 m-4 mt-0 mb-0 space position-relative space-bottom"
         id="testi-sec"
       >
         <div

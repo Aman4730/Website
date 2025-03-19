@@ -2,15 +2,17 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import author11 from "../../../assets/img/blog/author-1-1.png";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import noBlog from "../../../Imges/noBlog.gif";
+import noBlog from "../../../Imges/noBlog1.jpg";
 import CreateBlog from "./CreateBlog";
 import { toast, ToastContainer } from "react-toastify";
 const blogsPerPage = 3;
 const BlogComponents = () => {
-  const [blogData, setBlogData] = useState([]);
   const [open, setOpen] = useState(false);
+  const [errors, setErrors] = useState({});
+  const [blogData, setBlogData] = useState([]);
   const [loading, setLoading] = useState(false);
-
+  const [fileError, setFileError] = useState("");
+  const [selectedFile, setSelectedFile] = useState(null);
   const [formData, setFormData] = useState({
     BlogTitle: "",
     BlogCategory: "",
@@ -18,11 +20,6 @@ const BlogComponents = () => {
     AuthorName: "",
     message: "",
   });
-  console.log(formData, "=formData");
-  const [selectedFile, setSelectedFile] = useState(null);
-  console.log(selectedFile, "==selectedFile");
-  const [errors, setErrors] = useState({});
-  const [fileError, setFileError] = useState("");
   useEffect(() => {
     fetchData();
   }, []);
@@ -69,7 +66,6 @@ const BlogComponents = () => {
   };
   const handleFileChange = (e) => {
     const file = e.target.files[0];
-    console.log(file, "dfdf");
     if (!file) return;
 
     const validFormats = ["image/jpeg", "image/jpg", "image/png"];
@@ -121,8 +117,6 @@ const BlogComponents = () => {
       );
 
       const result = await response.json();
-      console.log(response, "ffdf");
-      console.log(result, "result");
       if (result.status) {
         toast.success(result.message, { autoClose: 2000 });
         handleFormClose();
@@ -181,7 +175,6 @@ const BlogComponents = () => {
                     className="th-blog blog-single has-post-thumbnail"
                     key={index}
                   >
-                    {console.log(currentBlogs, "==currentBlogs")}
                     {blog.imageBase64 && (
                       <div className="blog-img">
                         <img
@@ -218,7 +211,7 @@ const BlogComponents = () => {
                   <img
                     src={noBlog}
                     alt="No Blogs Available"
-                    style={{ width: "500px" }}
+                    style={{ width: "600px" }}
                   />
                   <h3
                     style={{

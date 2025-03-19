@@ -70,7 +70,7 @@ const AboutUS = ({ aboutSectionRef }) => {
               </ul>
             </div>
 
-            <Link to="/aboutus" className="th-btn">
+            <Link to="/whyUs" className="th-btn">
               ABOUT MORE
               <i className="fa-regular fa-arrow-right ms-2" />
             </Link>

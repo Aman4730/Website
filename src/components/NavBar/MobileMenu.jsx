@@ -146,7 +146,7 @@ const NAV_ITEMS = [
     ],
   },
   { title: "How we do it", icon: <InfoIcon />, segment: "/HowWeDoIt" },
-  { title: "Why Us", icon: <InfoIcon />, segment: "/aboutus" },
+  { title: "Why Us", icon: <InfoIcon />, segment: "/whyUs" },
   {
     title: "Solution",
     icon: <WorkIcon />,

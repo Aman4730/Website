@@ -9,7 +9,7 @@ import { Grid } from "@mui/material";
 import { motion } from "framer-motion";
 import CarrerAbout from "../components/CarrerComponents/CarrerAbout";
 import CarrerForm from "../components/CarrerComponents/CarrerForm";
-import { getFetch, postFetchData } from "../api/Api";
+import { getFetch } from "../api/Api";
 import { toast, ToastContainer } from "react-toastify";
 export default function CarrerPage() {
   const [showDetails, setShowDetails] = useState(false);

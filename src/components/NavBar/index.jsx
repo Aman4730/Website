@@ -166,7 +166,7 @@ const NavBar = () => {
                         <a href="#">About Company</a>
                         <ul className="sub-menu">
                           <li>
-                            <Link to="/aboutus">WHY CHOOSE US ?</Link>
+                            <Link to="/whyUs">WHY CHOOSE US ?</Link>
                           </li>
                           <li>
                             <Link to="/OurLegacyLeadership">

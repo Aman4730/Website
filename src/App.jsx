@@ -72,7 +72,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/aboutus" element={<AboutUsPage />} />
+        <Route path="/whyUs" element={<AboutUsPage />} />
         <Route path="/OurLegacyLeadership" element={<OurLegacyLeadership />} />
         {/*Solution*/}
         {/*Standalone Products*/}

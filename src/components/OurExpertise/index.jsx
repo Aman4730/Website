@@ -51,8 +51,8 @@ const OurExpertise = () => {
                   Web Development
                 </h2>
                 <p className="process-card_text">
-                  Delivering exceptional web development solutions, trusted by
-                  leading companies worldwide.
+                  Delivering exceptional and innovative web development
+                  solutions, trusted by leading companies worldwide.
                 </p>
               </div>
             </div>
@@ -66,8 +66,8 @@ const OurExpertise = () => {
                   Apps Development
                 </h2>
                 <p className="process-card_text">
-                  Delivering innovative app solutions that exceed expectations
-                  for top companies.
+                  Delivering innovative, scalable, and impactful app solutions
+                  that exceed expectations for top companies.
                 </p>
               </div>
             </div>

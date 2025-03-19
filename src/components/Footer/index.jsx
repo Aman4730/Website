@@ -57,7 +57,7 @@ const Footer = () => {
                 <div className="menu-all-pages-container">
                   <ul className="menu">
                     <li>
-                      <Link to="/aboutus">
+                      <Link to="/whyUs">
                         <p className="about-text">About Us</p>
                       </Link>
                     </li>

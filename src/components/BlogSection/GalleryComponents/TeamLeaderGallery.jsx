@@ -4,6 +4,8 @@ import project_11_2 from "../../../assets/img/project/project_11_2.jpg";
 import project_11_3 from "../../../assets/img/project/project_11_3.jpg";
 import project_11_4 from "../../../assets/img/project/project_11_4.jpg";
 import shan from "../../../Imges/GalleryImg/shan.png";
+import photo21 from "../../../Imges/GalleryImg/photo21.jpeg";
+import photo22 from "../../../Imges/GalleryImg/photo23.jpeg";
 
 const TeamLeaderGallery = () => {
   return (
@@ -17,17 +19,25 @@ const TeamLeaderGallery = () => {
           <div className="col-md-6 col-xxl-auto filter-item">
             <div className="project-card style3">
               <div className="project-img">
-                <img src={project_11_1} alt="project image" />
+                <img
+                  src={photo21}
+                  alt="project image"
+                  style={{
+                    width: "678px",
+                    height: "682px",
+                    objectFit: "cover",
+                  }}
+                />
               </div>
               <div className="project-content-wrap">
                 <div className="project-content">
-                  <p className="project-subtitle">Digital Marketing</p>
+                  <p className="project-subtitle">Founded by</p>
                   <h3 className="box-title">
-                    <a href="project-details.html">Social Media Marketing</a>
+                    <a href="project-details.html"> Shantanu Kumar</a>
                   </h3>
                 </div>
               </div>
-              <a href={project_11_1} className="icon-btn popup-image">
+              <a href={photo21} className="icon-btn popup-image">
                 <i className="fa-solid fa-arrow-up-right" />
               </a>
             </div>
@@ -41,13 +51,13 @@ const TeamLeaderGallery = () => {
                   </div>
                   <div className="project-content-wrap">
                     <div className="project-content">
-                      <p className="project-subtitle">Digital Marketing</p>
+                      <p className="project-subtitle">Jammu</p>
                       <h3 className="box-title">
-                        <a href="project-details.html">Website developments</a>
+                        <a href="project-details.html">Smart City Initiative</a>
                       </h3>
                     </div>
                   </div>
-                  <a href={project_11_2} className="icon-btn popup-image">
+                  <a href={shan} className="icon-btn popup-image">
                     <i className="fa-solid fa-arrow-up-right" />
                   </a>
                 </div>
@@ -55,7 +65,15 @@ const TeamLeaderGallery = () => {
               <div className="col-md-6">
                 <div className="project-card style3">
                   <div className="project-img">
-                    <img src={project_11_3} alt="project image" />
+                    <img
+                      src={photo22}
+                      alt="project image"
+                      style={{
+                        width: "327px",
+                        height: "278px",
+                        objectFit: "cover",
+                      }}
+                    />
                   </div>
                   <div className="project-content-wrap">
                     <div className="project-content">

@@ -187,6 +187,15 @@ const Timeline = () => {
           ))}
         </div>
       </div>
+      <style>
+        {`
+    @media (max-width: 768px) {
+      .year-item {
+        display: none;
+      }
+    }
+  `}
+      </style>
     </div>
   );
 };

@@ -5,31 +5,70 @@ const Awards = () => {
   return (
     <div className="main-container">
       <main className="responsive-wrapper">
+        <div className="row justify-content-center">
+          <div className="col-lg-8">
+            <div className="title-area text-center">
+              <div className="title-area mb-35 text-center">
+                <div className="shadow-title">Newsroom</div>
+                <span className="sub-title">
+                  <div className="icon-masking me-2">
+                    <img
+                      src="assets/img/theme-img/title_shape_2.svg"
+                      alt="shape"
+                    />
+                  </div>
+                  News & Recognition
+                </span>
+                <h2 className="sec-title">
+                  Celebrating Achievements &
+                  <span className="text-theme"> Contributions.</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="magazine-layout">
           <div className="magazine-column">
             <article className="article">
               <h2 className="article-title article-title--large">
                 <a href="#" className="article-link">
-                  The First Signs of{" "}
-                  <mark className="mark mark--primary">Alcoholic Liver</mark>{" "}
-                  Damage Are Not in the Liver
+                  Logimetrix Techsolutions:{" "}
+                  <mark className="mark mark--primary">
+                    Transforming Businesses
+                  </mark>{" "}
+                  Through Scalable SaaS Solutions
                 </a>
               </h2>
               <div className="article-excerpt">
                 <p>
-                  The combination of my father's death and my personal back
-                  ground lit a fire in me to know more
+                  Recognized as one of the{" "}
+                  <strong>
+                    20 Most Promising SaaS Solutions Providers – 2017
+                  </strong>
+                  , Logimetrix Techsolutions specializes in delivering scalable,
+                  easily deployable, and ready-to-use SaaS solutions for
+                  enterprises.
                 </p>
-                <p>He was admitted to the hospital on June 24, 2016.</p>
+                <p>
+                  With a strong focus on AI, IoT, and cloud computing,
+                  Logimetrix offers products like <strong>TrakMob</strong>{" "}
+                  (Workforce Performance Management), <strong>TrakFuel</strong>{" "}
+                  (Fuel Monitoring System), and <strong>Eklavya</strong> (School
+                  Management System).
+                </p>
               </div>
               <div className="article-author">
                 <div className="article-author-img">
-                  <img src="https://assets.codepen.io/285131/author-3.png" />
+                  <img
+                    src="https://assets.codepen.io/285131/author-3.png"
+                    alt="Shantanu Kumar"
+                  />
                 </div>
                 <div className="article-author-info">
                   <dl>
-                    <dt>David Sherof</dt>
-                    <dd>Reporter</dd>
+                    <dt>Shantanu Kumar</dt>
+                    <dd>Founder & CEO</dd>
                   </dl>
                 </div>
               </div>
@@ -37,14 +76,12 @@ const Awards = () => {
             <article className="article">
               <h2 className="article-title article-title--medium">
                 <a href="#" className="article-link">
-                  The Founder's Guide to Actually Understanding Users Nowadays
+                  Logimetrix Techsolutions: Driving Innovation in{" "}
+                  <mark className="mark mark--primary">SaaS Solutions</mark>
                 </a>
               </h2>
               <div className="article-creditation">
-                <p>
-                  By Johnathan O'Connell, Andrew Van Dam, Aaron Gregg and Alyssa
-                  Fowers
-                </p>
+                <p>By Vipul Rai, CEO, Logimetrix Techsolutions</p>
               </div>
             </article>
           </div>
@@ -55,16 +92,32 @@ const Awards = () => {
               </figure>
               <h2 className="article-title article-title--medium">
                 <a href="#" className="article-link">
-                  How 7 Lines of Code Turned Into a $36 Billion Empire
+                  Logimetrix Techsolutions: Transforming{" "}
+                  <mark className="mark mark--primary">SaaS Landscape</mark>
                 </a>
               </h2>
               <div className="article-excerpt">
                 <p>
-                  Yeah, it's safe to say these guys have a great sense of humor,
-                  which isn't really suprising for us considering their
-                  seemingly absurd solution to online payments. Instead of
-                  chasing 1000-hour programming contracts to build clunky
-                  payments solutions for each individual client, the Collison...
+                  Logimetrix Techsolutions is revolutionizing the SaaS industry
+                  with scalable, AI-powered solutions that cater to diverse
+                  business needs. By leveraging cutting-edge technologies like
+                  IoT, AI, and cloud computing, they help businesses streamline
+                  operations and boost efficiency.
+                </p>
+                <p>
+                  Their flagship products, such as TrakMob for workforce
+                  performance management, TrakFuel for fuel monitoring, and
+                  Eklavya for school management, have set new standards in
+                  digital transformation. These solutions empower organizations
+                  by providing real-time analytics, automation, and enhanced
+                  decision-making capabilities.
+                </p>
+                <p>
+                  Founded by Shantanu Kumar, Logimetrix Techsolutions remains at
+                  the forefront of innovation, continually adapting to the
+                  ever-evolving technological landscape. Their commitment to
+                  delivering cost-effective, high-performance SaaS applications
+                  has earned them a reputation as a leading technology provider.
                 </p>
               </div>
               <div className="article-author">
@@ -73,8 +126,8 @@ const Awards = () => {
                 </div>
                 <div className="article-author-info">
                   <dl>
-                    <dt>James Robert</dt>
-                    <dd>Editor</dd>
+                    <dt>Shantanu Kumar</dt>
+                    <dd>Founder, Logimetrix Techsolutions</dd>
                   </dl>
                 </div>
               </div>
@@ -93,7 +146,7 @@ const Awards = () => {
                 </a>
               </h2>
               <div className="article-creditation">
-                <p>By Jonathan O'Connell</p>
+                <p>By Shantanu Kumar</p>
               </div>
             </article>
             <article className="article">
@@ -106,22 +159,24 @@ const Awards = () => {
                 </a>
               </h2>
               <div className="article-creditation">
-                <p>By Jonathan O'Connell</p>
+                <p>By Shantanu Kumar</p>
               </div>
             </article>
           </div>
+
           <div className="magazine-column">
             <article className="article">
               <h2 className="article-title article-title--medium">
                 <a href="#" className="article-link">
-                  Traveller Visiting Ice Cave With Amazing Eye-Catching Scenes
+                  Cutting-Edge Software Solutions Transforming Businesses
                 </a>
               </h2>
               <div className="article-excerpt">
                 <p>
-                  Slack has become indispensible for many businesses operation
-                  remotely during the pandemic. Here's what the acquisition
-                  could mean for users...
+                  Logimetrix Techsolutions Pvt. Ltd. specializes in delivering
+                  innovative and customized software solutions that empower
+                  businesses to scale efficiently and stay ahead in the digital
+                  era.
                 </p>
               </div>
               <div className="article-author">
@@ -130,8 +185,8 @@ const Awards = () => {
                 </div>
                 <div className="article-author-info">
                   <dl>
-                    <dt>James Robert</dt>
-                    <dd>Editor</dd>
+                    <dt>Rahul Sharma</dt>
+                    <dd>Senior Developer</dd>
                   </dl>
                 </div>
               </div>
@@ -203,12 +258,12 @@ const Awards = () => {
                     </g>
                   </g>
                 </svg>
-                <span>Post Reports / Podcast</span>
+                <span>Technology Insights / Software Development</span>
               </small>
               <h2 className="article-title article-title--medium">
                 <a href="#" className="article-link">
-                  Things to Do After 6 P.M Will Enrich{" "}
-                  <mark className="mark mark--tertiary">Your Life</mark>
+                  The Future of AI in Business: How Automation is Reshaping
+                  Industries
                 </a>
               </h2>
               <div className="article-podcast-player">
@@ -225,10 +280,10 @@ const Awards = () => {
                   </svg>
                 </button>
                 <div className="podcast-progression"></div>
-                <span className="podcast-time">23:45</span>
+                <span className="podcast-time">18:30</span>
               </div>
               <div className="article-podcast-info">
-                Apple Podcasts, Google Podcasts, Stitcher
+                Available on Spotify, Apple Podcasts, and Google Podcasts
               </div>
               <div className="article-author">
                 <div className="article-author-img">
@@ -236,8 +291,8 @@ const Awards = () => {
                 </div>
                 <div className="article-author-info">
                   <dl>
-                    <dt>David Sherof</dt>
-                    <dd>Reporter</dd>
+                    <dt>Neha Verma</dt>
+                    <dd>Technology Journalist</dd>
                   </dl>
                 </div>
               </div>

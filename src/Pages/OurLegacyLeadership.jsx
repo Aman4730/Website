@@ -126,32 +126,20 @@ const OurLegacyLeadership = () => {
                     Founder's Message
                   </span>
                   <h2 class="sec-title">
-                    A Vision for
-                    <span class="text-theme"> Innovation </span>& Excellence
+                    Pioneering
+                    <span class="text-theme"> Innovation </span> & Excellence
                   </h2>
                 </div>
                 <p class="mt-n2 mb-30">
-                  At Logimetrix, we embarked on a mission to drive digital
-                  transformation with innovation and excellence. Our commitment
-                  to technology, integrity, and impact fuels our growth. With a
-                  passionate team, we strive to create scalable solutions,
-                  bridge gaps, and shape a smarter, more connected future.
+                  At Logimetrix, we believe in pushing the boundaries of
+                  technology to create intelligent, scalable, and future-ready
+                  solutions. Our journey is fueled by innovation, integrity, and
+                  a relentless pursuit of excellence. With a visionary mindset
+                  and a passionate team, we are committed to transforming
+                  industries, empowering businesses, and shaping a smarter, more
+                  connected world.
                 </p>
                 <div class="feature-circle-wrap">
-                  <div class="feature-circle">
-                    <div class="progressbar" data-path-color="#684DF4">
-                      <div class="circle" data-percent="90">
-                        <div class="circle-num"></div>
-                      </div>
-                    </div>
-                    <div class="media-body">
-                      <h3 class="feature-circle_title">Business Growth</h3>
-                      <p class="feature-circle_text">
-                        Empowering businesses with cutting-edge solutions to
-                        accelerate success.
-                      </p>
-                    </div>
-                  </div>
                   <div class="feature-circle">
                     <div class="progressbar" data-path-color="#684DF4">
                       <div class="circle" data-percent="95">
@@ -159,10 +147,24 @@ const OurLegacyLeadership = () => {
                       </div>
                     </div>
                     <div class="media-body">
-                      <h3 class="feature-circle_title">Superior Quality</h3>
+                      <h3 class="feature-circle_title">Empowering Growth</h3>
                       <p class="feature-circle_text">
-                        Delivering high-performance products that redefine
-                        industry standards.
+                        Driving success through digital transformation and
+                        strategic innovation.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="feature-circle">
+                    <div class="progressbar" data-path-color="#684DF4">
+                      <div class="circle" data-percent="98">
+                        <div class="circle-num"></div>
+                      </div>
+                    </div>
+                    <div class="media-body">
+                      <h3 class="feature-circle_title">Unmatched Quality</h3>
+                      <p class="feature-circle_text">
+                        Delivering cutting-edge solutions with precision,
+                        performance, and excellence.
                       </p>
                     </div>
                   </div>

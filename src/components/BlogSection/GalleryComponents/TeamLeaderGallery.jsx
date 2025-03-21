@@ -6,6 +6,7 @@ import project_11_4 from "../../../assets/img/project/project_11_4.jpg";
 import shan from "../../../Imges/GalleryImg/shan.png";
 import photo21 from "../../../Imges/GalleryImg/photo21.jpeg";
 import photo22 from "../../../Imges/GalleryImg/photo23.jpeg";
+import { Link } from "react-router-dom";
 
 const TeamLeaderGallery = () => {
   return (
@@ -33,11 +34,16 @@ const TeamLeaderGallery = () => {
                 <div className="project-content">
                   <p className="project-subtitle">Founded by</p>
                   <h3 className="box-title">
-                    <a href="project-details.html"> Shantanu Kumar</a>
+                    <a href="/contactus"> Shantanu Kumar</a>
                   </h3>
                 </div>
               </div>
-              <a href={photo21} className="icon-btn popup-image">
+              <a
+                href={photo21}
+                className="icon-btn popup-image"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fa-solid fa-arrow-up-right" />
               </a>
             </div>
@@ -53,11 +59,18 @@ const TeamLeaderGallery = () => {
                     <div className="project-content">
                       <p className="project-subtitle">Jammu</p>
                       <h3 className="box-title">
-                        <a href="project-details.html">Smart City Initiative</a>
+                        <Link to="/JammuSmartCityProject">
+                          Smart City Initiative
+                        </Link>
                       </h3>
                     </div>
                   </div>
-                  <a href={shan} className="icon-btn popup-image">
+                  <a
+                    href={shan}
+                    className="icon-btn popup-image"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="fa-solid fa-arrow-up-right" />
                   </a>
                 </div>
@@ -77,13 +90,18 @@ const TeamLeaderGallery = () => {
                   </div>
                   <div className="project-content-wrap">
                     <div className="project-content">
-                      <p className="project-subtitle">Digital Marketing</p>
+                      <p className="project-subtitle">CEO</p>
                       <h3 className="box-title">
-                        <a href="project-details.html">Website Design</a>
+                        <a href="/contactus">Vipul Rai</a>
                       </h3>
                     </div>
                   </div>
-                  <a href={project_11_3} className="icon-btn popup-image">
+                  <a
+                    href={photo22}
+                    className="icon-btn popup-image"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="fa-solid fa-arrow-up-right" />
                   </a>
                 </div>
@@ -97,11 +115,16 @@ const TeamLeaderGallery = () => {
                     <div className="project-content">
                       <p className="project-subtitle">Digital Marketing</p>
                       <h3 className="box-title">
-                        <a href="project-details.html">SEO Optimization</a>
+                        <a href="/contactus">SEO Optimization</a>
                       </h3>
                     </div>
                   </div>
-                  <a href={project_11_4} className="icon-btn popup-image">
+                  <a
+                    href={project_11_4}
+                    className="icon-btn popup-image"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="fa-solid fa-arrow-up-right" />
                   </a>
                 </div>

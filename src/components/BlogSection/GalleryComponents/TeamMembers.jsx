@@ -13,6 +13,7 @@ import deepak from "../../../Imges/deepak.jpg";
 import harsh from "../../../Imges/harsh.jpg";
 import infraemp from "../../../Imges/infraemp.jpg";
 import amansingh from "../../../Imges/amansingh.jpg";
+import Anoop from "../../../Imges/Anoop.jpg";
 import { Link } from "react-router-dom";
 
 const teamMembers = [
@@ -25,6 +26,7 @@ const teamMembers = [
   { img: harsh, name: "Harsh Gupta", role: "Senior Developer" },
   { img: infraemp, name: "Saroj Singh", role: "Project Coordinator" },
   { img: amansingh, name: "Aman Singh", role: "Senior Developer" },
+  { img: Anoop, name: "Anoop Chaudhary", role: "Senior Developer" },
 ];
 
 const TeamMembers = () => {

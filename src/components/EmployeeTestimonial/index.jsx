@@ -10,23 +10,27 @@ import testi_2_1 from "../../assets/img/testimonial/testi_2_1.jpg";
 import testi_2_2 from "../../assets/img/testimonial/testi_2_2.jpg";
 import testi_2_3 from "../../assets/img/testimonial/testi_2_3.jpg";
 import quote_left_2 from "../../assets/img/icon/quote_left_2.svg";
+import amansingh from "../../Imges/amansingh.jpg";
 
 const EmployeeTestimonial = () => {
   const testimonials = [
     {
-      image: testi_2_1,
-      name: "David Farnandes",
-      designation: "CEO at Anaton",
+      image: amansingh,
+      name: "Aman Singh",
+      designation: "Developer",
+      desc: "Logimetrix Techsolutions Pvt. Ltd. excels in IT solutions, offering innovation, reliability, and top-notch technology services with professional expertise and excellence.",
     },
     {
       image: testi_2_2,
       name: "Jackline Techie",
       designation: "CEO at Kormola",
+      desc: "Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration.",
     },
     {
       image: testi_2_3,
       name: "Abraham Khalil",
       designation: "CEO at Rimasu",
+      desc: "Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration.",
     },
   ];
 
@@ -82,17 +86,21 @@ const EmployeeTestimonial = () => {
               <SwiperSlide key={index}>
                 <div className="testi-box">
                   <div className="testi-box_img">
-                    <img src={testimonial.image} alt="Avatar" />
+                    <img
+                      src={testimonial.image}
+                      alt="Avatar"
+                      style={{
+                        width: "180px",
+                        height: "180px",
+                        objectFit: "cover",
+                      }}
+                    />
                     <div className="testi-box_quote">
                       <img src={quote_left_2} alt="quote" />
                     </div>
                   </div>
                   <div className="testi-box_content">
-                    <p className="testi-box_text">
-                      Objectively visualize error-free technology for B2B
-                      alignment. Monotonectally harness an expanded array of
-                      models via effective collaboration.
-                    </p>
+                    <p className="testi-box_text">{testimonial.desc}</p>
                     <div className="testi-box_review">
                       {Array(5)
                         .fill()

@@ -30,7 +30,7 @@ const Services = ({ services }) => {
               <SwiperSlide key={index}>
                 <div className="service-grid">
                   <div className="service-grid_icon">
-                    <img src={service.img} alt="Icon" />
+                    <img src={service.img} alt="Icon" loading="lazy" />
                   </div>
                   <div className="service-grid_content">
                     <h3 className="box-title">
@@ -41,7 +41,7 @@ const Services = ({ services }) => {
                       Read More <i className="fas fa-arrow-right ms-2" />
                     </Link>
                     <div className="bg-shape">
-                      <img src={service_grid_bg} alt="bg" />
+                      <img src={service_grid_bg} alt="bg" loading="lazy" />
                     </div>
                   </div>
                 </div>

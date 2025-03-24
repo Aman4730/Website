@@ -10,11 +10,11 @@ const SolAbout = ({ aboutData = [] }) => {
             <div className="img-box3">
               {aboutData.images.map((img, index) => (
                 <div key={index} className={`img${index + 1}`}>
-                  <img src={img} alt="About" />
+                  <img src={img} alt="About" loading="lazy" />
                 </div>
               ))}
               <div className="shape1">
-                <img src={aboutData.shapeImage} alt="Shape" />
+                <img src={aboutData.shapeImage} alt="Shape" loading="lazy" />
               </div>
             </div>
           </div>
@@ -24,7 +24,7 @@ const SolAbout = ({ aboutData = [] }) => {
               <div className="shadow-title">{aboutData.title}</div>
               <span className="sub-title">
                 <div className="icon-masking me-2">
-                  <img src={aboutData.titleShape} alt="shape" />
+                  <img src={aboutData.titleShape} alt="shape" loading="lazy" />
                 </div>
                 {aboutData.title}
               </span>

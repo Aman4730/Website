@@ -16,7 +16,7 @@ const CarrerAbout = () => {
             <div className="col-xl-6">
               <div className="choose-image4 pe-xl-5 me-xl-4">
                 <div className="img1">
-                  <img src={choose_3} alt="Choose" />
+                  <img src={choose_3} alt="Choose" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -28,6 +28,7 @@ const CarrerAbout = () => {
                     <img
                       src="assets/img/theme-img/title_shape_2.svg"
                       alt="shape"
+                      loading="lazy"
                     />
                   </div>
                   Evolving Your Careers
@@ -46,7 +47,7 @@ const CarrerAbout = () => {
               <div className="choose-feature3-wrap">
                 <div className="choose-feature3">
                   <div className="choose-feature3_icon">
-                    <img src={choose_feature_1_1} alt="Icon" />
+                    <img src={choose_feature_1_1} alt="Icon" loading="lazy" />
                   </div>
                   <div className="media-body">
                     <h3 className="box-title">Innovate with Purpose</h3>
@@ -58,7 +59,7 @@ const CarrerAbout = () => {
                 </div>
                 <div className="choose-feature3">
                   <div className="choose-feature3_icon">
-                    <img src={choose_feature_1_2} alt="Icon" />
+                    <img src={choose_feature_1_2} alt="Icon" loading="lazy" />
                   </div>
                   <div className="media-body">
                     <h3 className="box-title">Collaborative Culture</h3>
@@ -70,7 +71,7 @@ const CarrerAbout = () => {
                 </div>
                 <div className="choose-feature3">
                   <div className="choose-feature3_icon">
-                    <img src={choose_feature_1_3} alt="Icon" />
+                    <img src={choose_feature_1_3} alt="Icon" loading="lazy" />
                   </div>
                   <div className="media-body">
                     <h3 className="box-title">Grow Without Limits</h3>
@@ -95,7 +96,7 @@ const CarrerAbout = () => {
             <div className="col-lg-4 col-md-6">
               <div className="choose-feature">
                 <div className="box-icon">
-                  <img src={feature_box_1} alt="Icon" />
+                  <img src={feature_box_1} alt="Icon" loading="lazy" />
                 </div>
                 <div className="choose-feature_content">
                   <h3 className="box-title">Innovative Work Environment</h3>
@@ -109,7 +110,7 @@ const CarrerAbout = () => {
             <div className="col-lg-4 col-md-6">
               <div className="choose-feature">
                 <div className="box-icon">
-                  <img src={feature_box_2} alt="Icon" />
+                  <img src={feature_box_2} alt="Icon" loading="lazy" />
                 </div>
                 <div className="choose-feature_content">
                   <h3 className="box-title">Career Growth Opportunities</h3>
@@ -123,7 +124,7 @@ const CarrerAbout = () => {
             <div className="col-lg-4 col-md-6">
               <div className="choose-feature">
                 <div className="box-icon">
-                  <img src={feature_box_3} alt="Icon" />
+                  <img src={feature_box_3} alt="Icon" loading="lazy" />
                 </div>
                 <div className="choose-feature_content">
                   <h3 className="box-title">Work-Life Balance</h3>

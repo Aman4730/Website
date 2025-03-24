@@ -69,6 +69,7 @@ const CarrerForm = ({
           <img
             src={carrerLoder}
             alt="Loading..."
+            loading="lazy"
             style={{ width: "180px", height: "180px" }}
           />
         </Backdrop>

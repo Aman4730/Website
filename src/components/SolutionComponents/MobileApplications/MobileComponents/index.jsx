@@ -61,6 +61,7 @@ const MobileComponents = () => {
                       <img
                         src="assets/img/testimonial/testi_1_1.png"
                         alt="Image"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -69,6 +70,7 @@ const MobileComponents = () => {
                       <img
                         src="assets/img/testimonial/testi_1_2.png"
                         alt="Image"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -77,6 +79,7 @@ const MobileComponents = () => {
                       <img
                         src="assets/img/testimonial/testi_1_3.png"
                         alt="Image"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -85,6 +88,7 @@ const MobileComponents = () => {
                       <img
                         src="assets/img/testimonial/testi_1_4.png"
                         alt="Image"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -93,6 +97,7 @@ const MobileComponents = () => {
                       <img
                         src="assets/img/testimonial/testi_1_5.png"
                         alt="Image"
+                        loading="lazy"
                       />
                     </div>
                   </div>

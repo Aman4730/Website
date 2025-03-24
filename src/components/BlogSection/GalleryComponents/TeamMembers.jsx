@@ -87,6 +87,7 @@ const TeamMembers = () => {
                       <img
                         src={member.img}
                         alt="Team"
+                        loading="lazy"
                         style={{
                           objectFit: "cover",
                           backgroundSize: "cover",

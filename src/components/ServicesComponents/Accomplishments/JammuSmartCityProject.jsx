@@ -13,6 +13,8 @@ import counter_card_4_2 from "../../../assets/img/icon/counter_card_4_2.svg";
 import counter_card_4_3 from "../../../assets/img/icon/counter_card_4_3.svg";
 import ServiceThreeCard from "../ServicesResueCom/ServiceThreeCard";
 import jammuimg from "../../../Imges/jammuimg.png";
+import jammu1 from "../../../Imges/jammu1.jpg";
+import jammu from "../../../Imges/jammu.jpg";
 const aboutContent = {
   title: "Jammu Smart City Project – In Collaboration with Baxy",
   description:
@@ -23,7 +25,7 @@ const aboutContent = {
   ],
   buttonText: "Learn More",
   buttonLink: "/contactUs",
-  images: [jammuimg, about_8_2],
+  images: [jammu1, jammu],
 };
 const services = [
   {

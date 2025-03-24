@@ -142,6 +142,7 @@ const Timeline = () => {
                   <img
                     src="assets/img/theme-img/title_shape_2.svg"
                     alt="shape"
+                    loading="lazy"
                   />
                 </div>
                 Our Journey

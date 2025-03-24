@@ -1,21 +1,19 @@
 import React from "react";
-import project_11_1 from "../../../assets/img/project/project_11_1.jpg";
-import project_11_2 from "../../../assets/img/project/project_11_2.jpg";
-import project_11_3 from "../../../assets/img/project/project_11_3.jpg";
 import project_11_4 from "../../../assets/img/project/project_11_4.jpg";
 import shan from "../../../Imges/GalleryImg/shan.png";
 import photo21 from "../../../Imges/GalleryImg/photo21.jpeg";
 import photo22 from "../../../Imges/GalleryImg/photo23.jpeg";
 import { Link } from "react-router-dom";
-
+import TeamLead from "../../../Imges/GalleryImg/TeamLead.jpeg";
 const TeamLeaderGallery = () => {
   return (
     <section className="overflow-hidden space-bottom" id="project-sec">
       <div className="container th-container4">
         <div className="title-area text-center">
-          <span className="sub-title sub-title5">our project</span>
-          <h2 className="sec-title">Discover Our Latest Projects</h2>
+          <span className="sub-title sub-title5">Our Gallery</span>
+          <h2 className="sec-title">Explore Our Visual Journey</h2>
         </div>
+
         <div className="row d-flex">
           <div className="col-md-6 col-xxl-auto filter-item">
             <div className="project-card style3">
@@ -23,6 +21,7 @@ const TeamLeaderGallery = () => {
                 <img
                   src={photo21}
                   alt="project image"
+                  loading="lazy"
                   style={{
                     width: "678px",
                     height: "682px",
@@ -32,7 +31,7 @@ const TeamLeaderGallery = () => {
               </div>
               <div className="project-content-wrap">
                 <div className="project-content">
-                  <p className="project-subtitle">Founded by</p>
+                  <p className="project-subtitle">Founder</p>
                   <h3 className="box-title">
                     <a href="/contactus"> Shantanu Kumar</a>
                   </h3>
@@ -53,7 +52,7 @@ const TeamLeaderGallery = () => {
               <div className="col-md-12">
                 <div className="project-card style3">
                   <div className="project-img">
-                    <img src={shan} alt="project image" />
+                    <img src={shan} alt="project image" loading="lazy" />
                   </div>
                   <div className="project-content-wrap">
                     <div className="project-content">
@@ -81,6 +80,7 @@ const TeamLeaderGallery = () => {
                     <img
                       src={photo22}
                       alt="project image"
+                      loading="lazy"
                       style={{
                         width: "327px",
                         height: "278px",
@@ -92,7 +92,12 @@ const TeamLeaderGallery = () => {
                     <div className="project-content">
                       <p className="project-subtitle">CEO</p>
                       <h3 className="box-title">
-                        <a href="/contactus">Vipul Rai</a>
+                        <a
+                          href="/contactus"
+                          style={{ textTransform: "uppercase" }}
+                        >
+                          Vipul Rai
+                        </a>
                       </h3>
                     </div>
                   </div>
@@ -109,18 +114,18 @@ const TeamLeaderGallery = () => {
               <div className="col-md-6">
                 <div className="project-card style3">
                   <div className="project-img">
-                    <img src={project_11_4} alt="project image" />
+                    <img src={TeamLead} alt="gallery image" loading="lazy" />
                   </div>
                   <div className="project-content-wrap">
                     <div className="project-content">
-                      <p className="project-subtitle">Digital Marketing</p>
+                      <p className="project-subtitle">NDS Meeting</p>
                       <h3 className="box-title">
-                        <a href="/contactus">SEO Optimization</a>
+                        <a href="/contactus">Cropnet</a>
                       </h3>
                     </div>
                   </div>
                   <a
-                    href={project_11_4}
+                    href={TeamLead}
                     className="icon-btn popup-image"
                     target="_blank"
                     rel="noopener noreferrer"

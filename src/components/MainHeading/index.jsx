@@ -25,7 +25,7 @@ const MainHeading = ({ title, subtitle, breadcrumbs, marginBottom = 0 }) => {
             <div className="shadow-title">{title}</div>
             <span className="sub-title" style={{ color: "white" }}>
               <div className="icon-masking me-2">
-                <img src={title_shape_2_white} alt="shape" />
+                <img src={title_shape_2_white} alt="shape" loading="lazy" />
               </div>
               {subtitle}
             </span>

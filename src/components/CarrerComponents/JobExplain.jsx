@@ -19,6 +19,7 @@ const JobExplain = ({ handleFormOpen, selectedJob }) => {
         src={CarrerBackgound}
         className="job-bg"
         alt=""
+        loading="lazy"
         style={{ width: "100%", height: "250px", objectFit: "cover" }}
       />
       <div className="job-logos">

@@ -57,7 +57,7 @@ const EmployeeTestimonial = () => {
         <div className="title-area text-center">
           <span className="sub-title d-flex align-items-center justify-content-center">
             <div className="icon-masking me-2">
-              <img src={title_shape_2} alt="decorative shape" />
+              <img src={title_shape_2} alt="decorative shape" loading="lazy" />
             </div>
             Hear From Our Team
           </span>
@@ -89,6 +89,7 @@ const EmployeeTestimonial = () => {
                     <img
                       src={testimonial.image}
                       alt="Avatar"
+                      loading="lazy"
                       style={{
                         width: "180px",
                         height: "180px",
@@ -96,7 +97,7 @@ const EmployeeTestimonial = () => {
                       }}
                     />
                     <div className="testi-box_quote">
-                      <img src={quote_left_2} alt="quote" />
+                      <img src={quote_left_2} alt="quote" loading="lazy" />
                     </div>
                   </div>
                   <div className="testi-box_content">

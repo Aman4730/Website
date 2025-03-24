@@ -40,7 +40,7 @@ const Ourworkthatinspired = () => {
             <div className="title-area mb-50 text-center text-md-start">
               <span className="sub-title">
                 <div className="icon-masking me-2">
-                  <img src={title_shape_2} alt="shape" />
+                  <img src={title_shape_2} alt="shape" loading="lazy" />
                 </div>
                 Success Stories
               </span>
@@ -78,7 +78,7 @@ const Ourworkthatinspired = () => {
                   <SwiperSlide key={index}>
                     <div className="project-box4">
                       <div className="project-img">
-                        <img src={project.img} alt="project" />
+                        <img src={project.img} alt="project" loading="lazy" />
                       </div>
                       <div className="project-content">
                         <div className="media-body">

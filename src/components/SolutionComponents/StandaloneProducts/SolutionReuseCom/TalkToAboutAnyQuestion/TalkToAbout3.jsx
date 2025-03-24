@@ -106,6 +106,7 @@ const TalkToAbout3 = ({ TalkToAbout3Array }) => {
         >
           <img
             className="faq-img6"
+            loading="lazy"
             src={faq_shape_1}
             alt="shape"
             style={{

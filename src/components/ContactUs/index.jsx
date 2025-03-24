@@ -6,6 +6,7 @@ import title_shape_2 from "../../assets/img/theme-img/title_shape_2.svg";
 import title_shape_2_white from "../../assets/img/theme-img/title_shape_2_white.svg";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { toast, ToastContainer } from "react-toastify";
 const ContactUs = () => {
   const [errors, setErrors] = useState({});
   const [formData, setFormData] = useState({
@@ -55,11 +56,6 @@ const ContactUs = () => {
     return true;
   };
 
-  const isValidPhoneNumber = (phone) => {
-    if (!phone) return false;
-    const numericPhone = phone.replace(/\D/g, "");
-    return numericPhone.length >= 8 && numericPhone.length <= 15;
-  };
   const handleChange = (e) => {
     const { name, value } = e.target;
     let newErrors = { ...errors };
@@ -77,6 +73,11 @@ const ContactUs = () => {
     }
 
     setErrors(newErrors);
+  };
+  const isValidPhoneNumber = (phone) => {
+    if (!phone) return false;
+    const numericPhone = phone.replace(/\D/g, "");
+    return numericPhone.length >= 8 && numericPhone.length <= 15;
   };
   const handlePhoneChange = (value, country) => {
     const phoneNumber = value.replace(`+${country.dialCode}`, "").trim();
@@ -98,30 +99,51 @@ const ContactUs = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (Object.keys(errors).length === 0) {
-      try {
-        await axios.post(
-          `${import.meta.env.VITE_API_URL_LOCAL}/inquiry`,
-          formData
-        );
-        alert("Message sent successfully!");
-        setFormData({
-          Name: "",
-          Email: "",
-          Phone: "",
-          CountryCode: "",
-          Message: "",
-        });
-        setErrors({});
-      } catch (error) {
-        console.error(
-          "API Error:",
-          error.response ? error.response.data : error.message
-        );
-        alert("Failed to send message");
+
+    let newErrors = {};
+
+    Object.keys(formData).forEach((key) => {
+      if (!formData[key].trim()) {
+        newErrors[key] = "This field is required";
       }
-    } else {
-      alert("Please fix errors before submitting.");
+    });
+
+    if (formData.Email && !isValidEmail(formData.Email)) {
+      newErrors.Email = "Invalid email format";
+    }
+
+    if (!isValidPhoneNumber(formData.Phone)) {
+      newErrors.Phone = "Invalid phone number";
+    }
+
+    setErrors(newErrors);
+
+    // If there are errors, stop submission
+    if (Object.keys(newErrors).length > 0) {
+      toast.error("Please fill in all fields.");
+      return;
+    }
+
+    try {
+      await axios.post(
+        `${import.meta.env.VITE_API_URL_LOCAL}/inquiry`,
+        formData
+      );
+      toast.success("Message sent successfully!", { autoClose: 2000 });
+      setFormData({
+        Name: "",
+        Email: "",
+        Phone: "",
+        CountryCode: "",
+        Message: "",
+      });
+      setErrors({});
+    } catch (error) {
+      console.error(
+        "API Error:",
+        error.response ? error.response.data : error.message
+      );
+      toast.error("Failed to send message", { autoClose: 2000 });
     }
   };
 
@@ -146,7 +168,7 @@ const ContactUs = () => {
               <div className="shadow-title">Contact Us</div>
               <span className="sub-title" style={{ color: "white" }}>
                 <div className="icon-masking me-2">
-                  <img src={title_shape_2_white} alt="shape" />
+                  <img src={title_shape_2_white} alt="shape" loading="lazy" />
                 </div>
                 Contact Us
               </span>
@@ -216,7 +238,7 @@ const ContactUs = () => {
               <div className="title-area mb-35 text-xl-start text-center">
                 <span className="sub-title">
                   <div className="icon-masking me-2">
-                    <img src={title_shape_2} alt="shape" />
+                    <img src={title_shape_2} alt="shape" loading="lazy" />
                   </div>
                   Contact Our Company!
                 </span>
@@ -351,6 +373,7 @@ const ContactUs = () => {
           referrerpolicy="no-referrer-when-downgrade"
         />
       </div>
+      <ToastContainer position="bottom-right" autoClose={3000} />
     </>
   );
 };

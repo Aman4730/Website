@@ -189,6 +189,7 @@ const BlogApprovalPage = () => {
                       >
                         <img
                           src={`data:image/jpeg;base64,${blog.imageBase64}`}
+                          loading="lazy"
                           alt="Blog Image"
                           style={{
                             width: "100%",
@@ -279,6 +280,7 @@ const BlogApprovalPage = () => {
               >
                 <img
                   src="/noBlog.png"
+                  loading="lazy"
                   alt="No Blogs Available"
                   style={{ width: "500px" }}
                 />

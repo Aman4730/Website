@@ -1,4 +1,3 @@
-
 import React from "react";
 
 // import faq_7_1 from "../../../../../assets/img/normal/faq_7_1.jpg";
@@ -24,9 +23,7 @@ const TalkToAbout = ({ TalkToAboutAnyQuestion }) => {
                 </h2>
               </div>
               <div className="accordion style2" id="faqAccordion">
-
                 {TalkToAboutAnyQuestion?.questionAns?.map((faq, index) => (
-
                   <div
                     className="accordion-card style2 th-radius1"
                     key={faq.id}
@@ -67,11 +64,27 @@ const TalkToAbout = ({ TalkToAboutAnyQuestion }) => {
             <div className="col-xl-6">
               <div className="faq-img8 mb-xl-0 mt-xl-0 ps-xl-5 ms-xl-1">
                 <div className="img1">
-
-                  <img src={TalkToAboutAnyQuestion.img} alt="FAQ" />
+                  <img
+                    src={TalkToAboutAnyQuestion.img}
+                    alt="FAQ"
+                    loading="lazy"
+                    style={{
+                      objectFit: "cover",
+                      width: "520px",
+                      height: "485px",
+                    }}
+                  />
                   <div className="img2 jump">
-                    <img src={TalkToAboutAnyQuestion.img1} alt="FAQ" />
-
+                    <img
+                      src={TalkToAboutAnyQuestion.img1}
+                      alt="FAQ"
+                      loading="lazy"
+                      style={{
+                        objectFit: "cover",
+                        width: "328px",
+                        height: "250px",
+                      }}
+                    />
                   </div>
                   <div className="faq8-shape"></div>
                 </div>

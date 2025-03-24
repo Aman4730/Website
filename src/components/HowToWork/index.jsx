@@ -11,7 +11,11 @@ const HowToWork = () => {
           <div className="shadow-title">PROCESS</div>
           <span className="sub-title">
             <div className="icon-masking me-2">
-              <img src="assets/img/theme-img/title_shape_2.svg" alt="shape" />
+              <img
+                src="assets/img/theme-img/title_shape_2.svg"
+                alt="shape"
+                loading="lazy"
+              />
             </div>
             WORK PROCESS
           </span>
@@ -21,7 +25,11 @@ const HowToWork = () => {
         </div>
         <div className="process-card-area">
           <div className="process-line position-top">
-            <img src="assets/img/bg/process_line_2.svg" alt="line" />
+            <img
+              src="assets/img/bg/process_line_2.svg"
+              alt="line"
+              loading="lazy"
+            />
           </div>
           <div className="row gy-40 justify-content-between">
             <div className="col-sm-6 col-xl-auto process-card-wrap">
@@ -31,6 +39,7 @@ const HowToWork = () => {
                   <img
                     src={ConsultingIcon}
                     alt="icon"
+                    loading="lazy"
                     style={{
                       width: "90px",
                       height: "90px",
@@ -53,6 +62,7 @@ const HowToWork = () => {
                   <img
                     src={Business1}
                     alt="icon"
+                    loading="lazy"
                     style={{
                       width: "100px",
                       height: "100px",
@@ -75,6 +85,7 @@ const HowToWork = () => {
                   <img
                     src={developmentIcon}
                     alt="icon"
+                    loading="lazy"
                     style={{
                       width: "90px",
                       height: "80px",
@@ -97,6 +108,7 @@ const HowToWork = () => {
                   <img
                     src={seoIcon}
                     alt="icon"
+                    loading="lazy"
                     style={{
                       width: "90px",
                       height: "90px",

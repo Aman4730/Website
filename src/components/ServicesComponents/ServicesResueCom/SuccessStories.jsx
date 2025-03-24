@@ -24,7 +24,7 @@ const SuccessStories = ({ data }) => {
           <div className="shadow-title color3">{data.shadowTitle}</div>
           <span className="sub-title">
             <div className="icon-masking me-2">
-              <img src={title_shape_2} alt="shape" />
+              <img src={title_shape_2} alt="shape" loading="lazy" />
             </div>
             {data.subtitle}
           </span>
@@ -56,6 +56,7 @@ const SuccessStories = ({ data }) => {
                     <img
                       src={post.img}
                       alt="blog"
+                      loading="lazy"
                       style={{
                         width: "100%",
                         height: "100%",
@@ -71,7 +72,8 @@ const SuccessStories = ({ data }) => {
                     <p className="blog-text">{post.desc}</p>
                     <div className="blog-bottom">
                       <Link to="/contactUs" className="author">
-                        <img src={author11} alt="author" /> By Logimetrix
+                        <img src={author11} alt="author" loading="lazy" /> By
+                        Logimetrix
                       </Link>
                       <Link to={post.link} className="line-btn">
                         Explore more <i className="fas fa-arrow-right" />

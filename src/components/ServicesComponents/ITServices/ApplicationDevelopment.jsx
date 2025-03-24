@@ -26,11 +26,13 @@ import OurApplicationDevelopment from "../ServicesResueCom/OurApplicationDevelop
 import OurDevelopmentMethodology from "../ServicesResueCom/OurDevelopmentMethodology";
 import about_14_1 from "../../../assets/img/normal/about_14_1.jpg";
 import about_14_2 from "../../../assets/img/normal/about_14_2.jpg";
+import ApplicationDeve from "../../../Imges/ApplicationDeve.png";
+import ApplicationDeve1 from "../../../Imges/ApplicationDeve1.png";
 const ApplicationDevelopment = () => {
   const aboutFeatures = {
     title: "Application Development",
     heading: "What you can get with custom application development",
-    img: [about_14_1, about_14_2],
+    img: [ApplicationDeve, ApplicationDeve1],
     aboutus:
       "With decades of experience in software development across various industries, we provide specialized technology expertise. Our solutions integrate seamlessly with existing systems, ensuring long-term efficiency. Harnessing the power of Telecommunication & Computer Networking, Banking Software, AgriTech, EduTech, Smart Cities Solutions, AI, data analytics, machine learning, cybersecurity, and cloud consulting, we deliver future-proof solutions tailored to your needs.",
     asd: [

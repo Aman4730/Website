@@ -159,6 +159,7 @@ const OurClient = () => {
                     <img
                       src="assets/img/theme-img/title_shape_2_1.svg"
                       alt="shape"
+                      loading="lazy"
                     />
                   </div>
                   Our Clients
@@ -224,6 +225,7 @@ const OurClient = () => {
                   <img
                     src={item.img}
                     alt="testimonial"
+                    loading="lazy"
                     style={{
                       width: item.width,
                       height: "100px",
@@ -235,7 +237,11 @@ const OurClient = () => {
                 <div className="testi-box5_wrapper">
                   <div className="testi-box5_profile"></div>
                   <div className="testi-quote">
-                    <img src="assets/img/icon/quote.svg" alt="quote" />
+                    <img
+                      src="assets/img/icon/quote.svg"
+                      alt="quote"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>

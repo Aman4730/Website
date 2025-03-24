@@ -36,7 +36,7 @@ const OurExpertise1 = ({ processSteps, processStepsArray = [] }) => {
           <span className="shadow-title">PROCESS</span>
           <span className="sub-title">
             <div className="icon-masking me-2">
-              <img src={title_shape_2} alt="shape" />
+              <img src={title_shape_2} alt="shape" loading="lazy" />
             </div>
             Our Work Process
           </span>
@@ -111,7 +111,11 @@ const OurExpertise1 = ({ processSteps, processStepsArray = [] }) => {
                       </Link>
                     </div>
                     <div className="process-image">
-                      <img src={step.image} alt={`Process Step ${step.id}`} />
+                      <img
+                        src={step.image}
+                        alt={`Process Step ${step.id}`}
+                        loading="lazy"
+                      />
                     </div>
                   </div>
                 </div>
@@ -125,13 +129,13 @@ const OurExpertise1 = ({ processSteps, processStepsArray = [] }) => {
                 right: "29.5%",
               }}
             >
-              <img src={star2} alt="shape" />
+              <img src={star2} alt="shape" loading="lazy" />
             </div>
             <div
               className="shape-mockup z-index-3 d-none d-xl-block"
               style={{ top: "13%", left: "35.5%" }}
             >
-              <img src={line3} alt="shape" />
+              <img src={line3} alt="shape" loading="lazy" />
             </div>
           </div>
         )}
@@ -147,7 +151,11 @@ const OurExpertise1 = ({ processSteps, processStepsArray = [] }) => {
               <SwiperSlide key={step.id}>
                 <div className="process-wrapper d-flex flex-column align-items-start">
                   <div className="process-image">
-                    <img src={step.image} alt={`Process Step ${step.id}`} />
+                    <img
+                      src={step.image}
+                      alt={`Process Step ${step.id}`}
+                      loading="lazy"
+                    />
                   </div>
                   <div className="process-content text-start">
                     <h5 className="box-title">{step.title}</h5>

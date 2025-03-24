@@ -10,12 +10,12 @@ const SolAbout2 = ({ aboutData }) => {
             <div className="img-box14">
               {aboutData.images.map((img, index) => (
                 <div key={index} className={`img${index + 1}`}>
-                  <img src={img} alt="About" />
+                  <img src={img} alt="About" loading="lazy" />
                 </div>
               ))}
               {aboutData.shapeImages.map((shape, index) => (
                 <div key={index} className={`shape${index + 1}`}>
-                  <img src={shape} alt="Shape" />
+                  <img src={shape} alt="Shape" loading="lazy" />
                 </div>
               ))}
             </div>

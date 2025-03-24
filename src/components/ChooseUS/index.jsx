@@ -11,12 +11,12 @@ const ChooseUS = () => {
           <div className="col-xl-6">
             <div className="faq-img7 mb-xl-0 mt-xl-0 mt-n4 pe-xl-5 me-xl-1">
               <div className="img1">
-                <img src={faq_6_1} alt="About" />
+                <img src={faq_6_1} alt="About" loading="lazy" />
                 <div className="img2 jump">
-                  <img src={faq_6_2} alt="About" />
+                  <img src={faq_6_2} alt="About" loading="lazy" />
                 </div>
                 <div className="img3 movingX">
-                  <img src={faq_6_3} alt="About" />
+                  <img src={faq_6_3} alt="About" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -26,7 +26,7 @@ const ChooseUS = () => {
               <div class="shadow-title">WHY CHOOSE US?</div>
               <span class="sub-title">
                 <div class="icon-masking me-2">
-                  <img src={title_shape_2} alt="shape" />
+                  <img src={title_shape_2} alt="shape" loading="lazy" />
                 </div>
                 WHY CHOOSE US?
               </span>

@@ -9,7 +9,7 @@ const TalkToAbout2 = ({ TalkToAbout2Array }) => {
             <div className="title-area text-center text-xl-start">
               <span className="sub-title">
                 <div className="icon-masking me-2">
-                  <img src={title_shape_2} alt="shape" />
+                  <img src={title_shape_2} alt="shape" loading="lazy" />
                 </div>
                 Frequently Asked Questions
               </span>
@@ -62,9 +62,9 @@ const TalkToAbout2 = ({ TalkToAbout2Array }) => {
               <div className="img-shape icon-masking">
                 <span className="mask-icon" />
 
-                <img src={TalkToAbout2Array?.img} alt="img" />
+                <img src={TalkToAbout2Array?.img} alt="img" loading="lazy" />
               </div>
-              <img src={TalkToAbout2Array?.img} alt="Faq" />
+              <img src={TalkToAbout2Array?.img} alt="Faq" loading="lazy" />
             </div>
           </div>
         </div>

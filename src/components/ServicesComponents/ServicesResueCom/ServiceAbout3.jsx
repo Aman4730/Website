@@ -11,10 +11,14 @@ const ServiceAbout3 = ({ data, about3features }) => {
               <div className="col-xl-6 order-lg-4">
                 <div className="feature-thumb12_wrapp">
                   <div className="feature-thumb12-3">
-                    <img src={item.images?.[0]} alt="Feature 1" />
+                    <img
+                      src={item.images?.[0]}
+                      alt="Feature 1"
+                      loading="lazy"
+                    />
                   </div>
                   <div className="feature-thumb12-4 movingX">
-                    <img src={item.images?.[1]} alt="" />
+                    <img src={item.images?.[1]} alt="" loading="lazy" />
                   </div>
                 </div>
               </div>

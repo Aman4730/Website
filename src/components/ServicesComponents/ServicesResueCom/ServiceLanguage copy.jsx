@@ -27,6 +27,7 @@ const ServiceLanguage = ({ languages }) => {
             <img
               src={title_shape_2}
               alt="shape"
+              loading="lazy"
               style={{ marginRight: "10px" }}
             />
             WORK PROCESS
@@ -47,7 +48,12 @@ const ServiceLanguage = ({ languages }) => {
               width: "100%",
             }}
           >
-            <img src={process_line_2} alt="line" style={{ width: "90%" }} />
+            <img
+              src={process_line_2}
+              alt="line"
+              style={{ width: "90%" }}
+              loading="lazy"
+            />
           </div>
 
           <div
@@ -95,6 +101,7 @@ const ServiceLanguage = ({ languages }) => {
                     <img
                       src={lang.img}
                       alt={lang.name}
+                      loading="lazy"
                       style={{ width: "70px", height: "70px" }}
                     />
                   </div>

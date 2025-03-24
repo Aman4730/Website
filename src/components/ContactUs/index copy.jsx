@@ -26,7 +26,7 @@ const ContactUs = () => {
               <div className="shadow-title">Contact Us</div>
               <span className="sub-title" style={{ color: "white" }}>
                 <div className="icon-masking me-2">
-                  <img src={title_shape_2_white} alt="shape" />
+                  <img src={title_shape_2_white} alt="shape" loading="lazy" />
                 </div>
                 Contact Us
               </span>
@@ -100,7 +100,7 @@ const ContactUs = () => {
               <div className="title-area mb-35 text-xl-start text-center">
                 <span className="sub-title">
                   <div className="icon-masking me-2">
-                    <img src={title_shape_2} alt="shape" />
+                    <img src={title_shape_2} alt="shape" loading="lazy" />
                   </div>
                   contact with us!
                 </span>

@@ -70,6 +70,7 @@ const BrandSlider = () => {
                       <img
                         src={item}
                         alt="Brand Logo"
+                        loading="lazy"
                         style={{
                           width: "150px",
                           height: "100px",
@@ -91,10 +92,10 @@ const BrandSlider = () => {
         </div>
 
         <div className="shape-mockup" data-top={0} data-right={0}>
-          <img src={tech_shape_1} alt="shape" />
+          <img src={tech_shape_1} alt="shape" loading="lazy" />
         </div>
         <div className="shape-mockup" data-top="0%" data-left="0%">
-          <img src={square_1} alt="shape" />
+          <img src={square_1} alt="shape" loading="lazy" />
         </div>
       </section>
 

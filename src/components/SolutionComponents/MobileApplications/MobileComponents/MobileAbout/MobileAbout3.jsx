@@ -30,13 +30,13 @@ const MobileAbout3 = ({ aboutData }) => {
                     to={item.playStoreLink}
                     className="th-btn style7 style-radius"
                   >
-                    <img src={playstorebtn} alt="Play Store" />
+                    <img src={playstorebtn} alt="Play Store" loading="lazy" />
                   </Link>
                   <Link
                     to={item.appleStoreLink}
                     className="th-btn style7 style-radius"
                   >
-                    <img src={applebtn} alt="App Store" />
+                    <img src={applebtn} alt="App Store" loading="lazy" />
                   </Link>
                 </div>
               </div>
@@ -44,7 +44,7 @@ const MobileAbout3 = ({ aboutData }) => {
             <div className="col-xl-6 align-self-end">
               <div className="thumb text-center mt-xl-0 mt-n5">
                 <div className="img1">
-                  <img src={item.image} alt="About" />
+                  <img src={item.image} alt="About" loading="lazy" />
                 </div>
               </div>
             </div>

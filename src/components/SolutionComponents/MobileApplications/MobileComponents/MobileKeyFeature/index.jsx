@@ -31,6 +31,7 @@ const KeyFeature = () => {
                   <img
                     src={`assets/img/testimonial/testi_1_${num}.png`}
                     alt={`Testimonial ${num}`}
+                    loading="lazy"
                   />
                 </div>
               </SwiperSlide>

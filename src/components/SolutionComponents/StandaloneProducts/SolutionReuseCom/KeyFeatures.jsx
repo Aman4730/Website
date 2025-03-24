@@ -26,7 +26,7 @@ const KeyFeatures = ({ testimonials }) => {
             <div className="shadow-title">Key Features</div>
             <span className="sub-title" style={{ color: "white" }}>
               <div className="icon-masking me-2">
-                <img src={title_shape_2_white} alt="shape" />
+                <img src={title_shape_2_white} alt="shape" loading="lazy" />
               </div>
               Key Features
             </span>
@@ -61,6 +61,7 @@ const KeyFeatures = ({ testimonials }) => {
                         <img
                           src={testimonial.img}
                           alt="Avatar"
+                          loading="lazy"
                           style={{ width: "80px", height: "80px" }}
                         />
                       </div>
@@ -76,7 +77,7 @@ const KeyFeatures = ({ testimonials }) => {
               ))}
             </Swiper>
             <div className="testi-block-quote">
-              <img src={quote_3d} alt="quote" />
+              <img src={quote_3d} alt="quote" loading="lazy" />
             </div>
           </div>
         </div>

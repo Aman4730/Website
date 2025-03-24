@@ -16,8 +16,7 @@ import POD1 from "../../../Imges/POD1.png";
 import POD2 from "../../../Imges/POD2.png";
 import POD3 from "../../../Imges/POD3.png";
 import appDevelp from "../../../Imges/appDevelp.png";
-import appDevelp1 from "../../../Imges/appDevelp1.png";
-import about_14_2 from "../../../assets/img/normal/about_14_2.jpg";
+import ProductOriented from "../../../Imges/ProductOriented.png";
 const ProductOrientedDelivery = () => {
   const blogData = {
     title: "Recent POD Success",
@@ -63,7 +62,7 @@ const ProductOrientedDelivery = () => {
     heading: "What’s behind LOGIMETRIX guaranteed delivery",
     aboutus:
       "With LOGIMETRIX' product-oriented delivery, we ensure your software vision transforms into a superior solution within your timeline and budget constraints. Our approach guarantees a quick start with a complementary product definition phase, allowing us to align swiftly with your project. We prioritize flexibility while keeping costs in check, ensuring your success is our success. By taking full responsibility for delivering your strategic plan, we maximize your solution’s business value and provide a tailored product that meets your business objectives. With complete transparency and a strong focus on business goals, we guarantee results as stated in the contract.",
-    img: [appDevelp, about_14_2],
+    img: [appDevelp, ProductOriented],
     asd: [
       {
         title: "Quick Start & Flexibility",

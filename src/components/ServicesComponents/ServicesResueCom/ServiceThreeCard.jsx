@@ -11,7 +11,7 @@ const ServiceThreeCard = ({ cardData, space }) => {
             <React.Fragment key={index}>
               <div className="counter-card4">
                 <div className="counter-card4_icon">
-                  <img src={card.icon} alt={card.title} />
+                  <img src={card.icon} alt={card.title} loading="lazy" />
                 </div>
                 <div className="media-body">
                   <h3 className="box-number">

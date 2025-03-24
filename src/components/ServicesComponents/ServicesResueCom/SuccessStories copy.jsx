@@ -49,6 +49,7 @@ const SuccessStories = () => {
                 <img
                   src={item.img}
                   alt={item.title}
+                  loading="lazy"
                   className="w-full h-56 object-cover"
                 />
                 <div className="p-5">

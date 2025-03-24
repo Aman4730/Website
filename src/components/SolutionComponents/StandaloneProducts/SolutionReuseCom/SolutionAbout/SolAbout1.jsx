@@ -1,8 +1,4 @@
 import React from "react";
-import about_11_1 from "../../../../../assets/img/normal/about_11_1.jpg";
-import about_11_2 from "../../../../../assets/img/normal/about_11_2.jpg";
-import about_11_3 from "../../../../../assets/img/normal/about_11_3.jpg";
-import title_shape_2 from "../../../../../assets/img/theme-img/title_shape_2.svg";
 import CountUp from "react-countup";
 import { Link } from "react-router-dom";
 
@@ -18,7 +14,11 @@ const SolAbout1 = ({ aboutData }) => {
                   <div className="shadow-title">{aboutData.title}</div>
                   <span className="sub-title">
                     <div className="icon-masking me-2">
-                      <img src={aboutData.titleShape} alt="shape" />
+                      <img
+                        src={aboutData.titleShape}
+                        alt="shape"
+                        loading="lazy"
+                      />
                     </div>
                     {aboutData.title}
                   </span>
@@ -56,7 +56,7 @@ const SolAbout1 = ({ aboutData }) => {
             <div className="img-box9">
               {aboutData.images.map((img, index) => (
                 <div key={index} className={`img${index + 1}`}>
-                  <img src={img} alt="About" />
+                  <img src={img} alt="About" loading="lazy" />
                 </div>
               ))}
               <div className="th-experience">

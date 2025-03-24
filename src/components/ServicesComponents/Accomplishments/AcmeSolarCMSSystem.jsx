@@ -4,20 +4,21 @@ import ServiceWhatWeDo2 from "../ServicesResueCom/ServiceWhatWeDo2";
 import BusinessPlanning from "../../HowWeDoItComponents/BusinessPlanning";
 import ServiceThreeCard from "../ServicesResueCom/ServiceThreeCard";
 import SolAbout4 from "../../SolutionComponents/StandaloneProducts/SolutionReuseCom/SolutionAbout/SolAbout4";
-
 import service_7_1 from "../../../assets/img/icon/service_7_1.svg";
 import service_7_2 from "../../../assets/img/icon/service_7_2.svg";
 import service_7_3 from "../../../assets/img/icon/service_7_3.svg";
-
 import counter_card_4_1 from "../../../assets/img/icon/counter_card_4_1.svg";
 import counter_card_4_2 from "../../../assets/img/icon/counter_card_4_2.svg";
 import counter_card_4_3 from "../../../assets/img/icon/counter_card_4_3.svg";
-import about_13_1 from "../../../assets/img/normal/about_13_1.jpg";
-import about_13_2 from "../../../assets/img/normal/about_13_2.jpg";
-import about_13_3 from "../../../assets/img/normal/about_13_3.jpg";
 import blog_12_1 from "../../../assets/img/blog/blog_12_1.jpg";
-import blog_1_2 from "../../../assets/img/blog/blog_1_2.jpg";
 import blog_12_3 from "../../../assets/img/blog/blog_12_3.jpg";
+import solar from "../../../Imges/solar2.png";
+import solar1 from "../../../Imges/solar1.png";
+import solar2 from "../../../Imges/solar3.png";
+import acme from "../../../Imges/acme.png";
+import acme2 from "../../../Imges/acme2.png";
+import acme3 from "../../../Imges/acme3.png";
+
 const AcmeSolarCMSSystem = () => {
   const services = [
     {
@@ -66,7 +67,7 @@ const AcmeSolarCMSSystem = () => {
         title: "Administrators",
         description:
           "Oversee system configurations, data insights, and generate reports for seamless operations. Manage user roles, security protocols, and ensure compliance with policies. Handle data integrity, oversee audits, optimize workflows, and enhance system performance.",
-        image: blog_12_3,
+        image: acme2,
         date: "25 Feb, 2024",
         author: "Acme Team",
       },
@@ -75,7 +76,7 @@ const AcmeSolarCMSSystem = () => {
         title: "Plant Operators",
         description:
           "Monitor live performance metrics, receive alerts, and manage plant operations efficiently.",
-        image: blog_12_3,
+        image: acme,
         date: "20 Apr, 2024",
         author: "Solar Experts",
       },
@@ -84,7 +85,7 @@ const AcmeSolarCMSSystem = () => {
         title: "Data Analysts",
         description:
           "Analyze trends, generate efficiency reports, and provide insights for better energy management.",
-        image: blog_12_1,
+        image: acme3,
         date: "20 Apr, 2024",
         author: "Analytics Team",
       },
@@ -125,7 +126,7 @@ const AcmeSolarCMSSystem = () => {
         ["Performance Tracking", "Smart Distribution"],
       ],
       contactLink: "/contactUs",
-      images: [about_13_1, about_13_2, about_13_3],
+      images: [solar1, solar, solar2],
     },
   ];
   return (

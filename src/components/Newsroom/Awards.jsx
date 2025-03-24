@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-
+import newsRoom from "../../Imges/newsRoom.png";
 const Awards = () => {
   return (
     <div className="main-container">
@@ -15,6 +15,7 @@ const Awards = () => {
                     <img
                       src="assets/img/theme-img/title_shape_2.svg"
                       alt="shape"
+                      loading="lazy"
                     />
                   </div>
                   News & Recognition
@@ -63,6 +64,7 @@ const Awards = () => {
                   <img
                     src="https://assets.codepen.io/285131/author-3.png"
                     alt="Shantanu Kumar"
+                    loading="lazy"
                   />
                 </div>
                 <div className="article-author-info">
@@ -88,7 +90,7 @@ const Awards = () => {
           <div className="magazine-column">
             <article className="article">
               <figure className="article-img">
-                <img src="https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" />
+                <img src={newsRoom} loading="lazy" />
               </figure>
               <h2 className="article-title article-title--medium">
                 <a href="#" className="article-link">
@@ -122,7 +124,10 @@ const Awards = () => {
               </div>
               <div className="article-author">
                 <div className="article-author-img">
-                  <img src="https://assets.codepen.io/285131/author-2.png" />
+                  <img
+                    src="https://assets.codepen.io/285131/author-2.png"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="article-author-info">
                   <dl>
@@ -136,7 +141,10 @@ const Awards = () => {
           <div className="magazine-column">
             <article className="article">
               <figure className="article-img">
-                <img src="https://images.unsplash.com/photo-1512521743077-a42eeaaa963c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" />
+                <img
+                  src="https://images.unsplash.com/photo-1512521743077-a42eeaaa963c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
+                  loading="lazy"
+                />
               </figure>
               <h2 className="article-title article-title--small">
                 <a href="#" className="article-link">
@@ -151,7 +159,10 @@ const Awards = () => {
             </article>
             <article className="article">
               <figure className="article-img">
-                <img src="https://images.unsplash.com/photo-1569234817121-a2552baf4fd4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" />
+                <img
+                  src="https://images.unsplash.com/photo-1569234817121-a2552baf4fd4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                  loading="lazy"
+                />
               </figure>
               <h2 className="article-title article-title--small">
                 <a href="#" className="article-link">
@@ -181,7 +192,10 @@ const Awards = () => {
               </div>
               <div className="article-author">
                 <div className="article-author-img">
-                  <img src="https://assets.codepen.io/285131/author-2.png" />
+                  <img
+                    src="https://assets.codepen.io/285131/author-2.png"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="article-author-info">
                   <dl>
@@ -287,7 +301,10 @@ const Awards = () => {
               </div>
               <div className="article-author">
                 <div className="article-author-img">
-                  <img src="https://assets.codepen.io/285131/author-3.png" />
+                  <img
+                    src="https://assets.codepen.io/285131/author-3.png"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="article-author-info">
                   <dl>

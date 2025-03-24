@@ -19,6 +19,7 @@ const Footer = () => {
                     <img
                       src={footerLogo}
                       alt="Logimetrix Tech Solution"
+                      loading="lazy"
                       style={{
                         width: "170px",
                         height: "auto",
@@ -203,7 +204,7 @@ const Footer = () => {
       </div>
 
       <div className="shape-left">
-        <img src={footer_shape_2} alt="shape" />
+        <img src={footer_shape_2} alt="shape" loading="lazy" />
       </div>
       <div className="shape-right">
         <div className="particle-1" id="particle-5" />

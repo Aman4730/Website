@@ -30,7 +30,7 @@ const OurDevelopmentMethodology = ({ processData }) => {
               >
                 <div className="process-card style3">
                   <div className="process-card_icon">
-                    <img src={step.img} alt={step.title} />
+                    <img src={step.img} alt={step.title} loading="lazy" />
                   </div>
                   <div className="process-card_number">{step.id}</div>
                   <h2 className="box-title">{step.title}</h2>

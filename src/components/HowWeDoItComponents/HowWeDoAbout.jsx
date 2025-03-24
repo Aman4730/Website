@@ -4,7 +4,8 @@ import title_shape_2 from "../../assets/img/theme-img/title_shape_2.svg";
 import about_feature_2_1 from "../../assets/img/icon/about_feature_2_1.svg";
 import about_feature_2_2 from "../../assets/img/icon/about_feature_2_2.svg";
 import { Link } from "react-router-dom";
-
+import howWeDoIt from "../../Imges/howWeDoIt.jpg";
+import howWeDoIt1 from "../../Imges/howWeDoIt1.jpg";
 const HowWeDoAbout = () => {
   return (
     <div id="about-sec">
@@ -13,7 +14,7 @@ const HowWeDoAbout = () => {
           <div className="col-xl-6 mb-30 mb-xl-0">
             <div className="img-box17 pe-xl-5">
               <div className="img1">
-                <img src={about_15_1} alt="About" />
+                <img src={howWeDoIt1} alt="About" loading="lazy" />
               </div>
             </div>
           </div>
@@ -21,7 +22,7 @@ const HowWeDoAbout = () => {
             <div className="title-area mb-35">
               <span className="sub-title text-capitalize fs-20">
                 <div className="icon-masking me-2">
-                  <img src={title_shape_2} alt="shape" />
+                  <img src={title_shape_2} alt="shape" loading="lazy" />
                 </div>
                 How we do it
               </span>
@@ -39,7 +40,7 @@ const HowWeDoAbout = () => {
               <div>
                 <div className="about-feature style5">
                   <div className="about-feature_icon">
-                    <img src={about_feature_2_1} alt="Icon" />
+                    <img src={about_feature_2_1} alt="Icon" loading="lazy" />
                   </div>
                   <div className="media-body">
                     <h3 className="about-feature_title">
@@ -49,7 +50,7 @@ const HowWeDoAbout = () => {
                 </div>
                 <div className="about-feature style5">
                   <div className="about-feature_icon">
-                    <img src={about_feature_2_2} alt="Icon" />
+                    <img src={about_feature_2_2} alt="Icon" loading="lazy" />
                   </div>
                   <div className="media-body">
                     <h3 className="about-feature_title">
@@ -67,7 +68,7 @@ const HowWeDoAbout = () => {
                 </div>
               </div>
               <div className="about-img">
-                <img src="assets/img/normal/about_15_2.jpg" alt="" />
+                <img src={howWeDoIt} alt="" loading="lazy" />
               </div>
             </div>
           </div>

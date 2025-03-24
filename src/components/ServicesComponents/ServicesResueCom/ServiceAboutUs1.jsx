@@ -28,7 +28,16 @@ const ServiceAboutUs1 = ({ aboutData }) => {
           <div className="col-xl-6 col-xxl-7">
             <div className="img-box18">
               <div className="img1">
-                <img src={aboutData.images.main} alt="About" />
+                <img
+                  src={aboutData.images.main}
+                  alt="About"
+                  loading="lazy"
+                  style={{
+                    objectFit: "cover",
+                    width: "740px",
+                    height: "404px",
+                  }}
+                />
               </div>
             </div>
           </div>
@@ -51,7 +60,7 @@ const ServiceAboutUs1 = ({ aboutData }) => {
 
               <div className="about17-client-wrapp">
                 <div className="cilent-box">
-                  <img src={arrow2} alt="Arrow" />
+                  <img src={arrow2} alt="Arrow" loading="lazy" />
                   <div className="about-content">
                     <h4 className="box-title">{aboutData.client.title}</h4>
                     <span className="title">{aboutData.client.subtitle}</span>
@@ -74,7 +83,11 @@ const ServiceAboutUs1 = ({ aboutData }) => {
                   </div>
                   <div className="about17-wrapp">
                     <div className="about17-img">
-                      <img src={aboutData.images.client} alt="Client" />
+                      <img
+                        src={aboutData.images.client}
+                        alt="Client"
+                        loading="lazy"
+                      />
                     </div>
                   </div>
                 </div>

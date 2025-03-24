@@ -4,10 +4,6 @@ import ServiceAbout3 from "../ServicesResueCom/ServiceAbout3";
 import MainHeading from "../../MainHeading";
 import Services from "../../Services";
 import FarmRenovation from "../ServicesResueCom/FarmRenovation";
-import ServiceWhatWeDo2 from "../ServicesResueCom/ServiceWhatWeDo2";
-import service_7_1 from "../../../assets/img/icon/service_7_1.svg";
-import service_7_2 from "../../../assets/img/icon/service_7_2.svg";
-import service_7_3 from "../../../assets/img/icon/service_7_3.svg";
 import featureimg121 from "../../../assets/img/normal/feature-img-12-3.png";
 import featureimg122 from "../../../assets/img/normal/feature-img-12-2.png";
 import service_card_1 from "../../../assets/img/icon/service_card_1.svg";
@@ -22,6 +18,9 @@ import ServiceThreeCard from "../ServicesResueCom/ServiceThreeCard";
 import counter_card_4_1 from "../../../assets/img/icon/counter_card_4_1.svg";
 import counter_card_4_2 from "../../../assets/img/icon/counter_card_4_2.svg";
 import counter_card_4_3 from "../../../assets/img/icon/counter_card_4_3.svg";
+import CentralCattle from "../../../Imges/CentralCattle.jpg";
+import CentralCattle1 from "../../../Imges/CentralCattle1.jpg";
+
 const CentralCattleBreedingFarm = () => {
   const features = [
     {
@@ -29,8 +28,8 @@ const CentralCattleBreedingFarm = () => {
       title: "Central Cattle Breeding Farm Renovation",
       description:
         "The Central Cattle Breeding Farm (CCBF) site is undergoing extensive construction and renovation activities to enhance its functionality and infrastructure. Key work areas include old cow shades, loafing areas, a quarantine center, administrative buildings, and other auxiliary structures.",
-      image1: featureimg121,
-      image2: featureimg122,
+      image1: CentralCattle1,
+      image2: CentralCattle,
       link: "/contactUs",
     },
   ];

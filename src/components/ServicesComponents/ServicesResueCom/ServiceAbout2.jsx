@@ -14,10 +14,24 @@ const ServiceAbout2 = ({ features }) => {
               <div className="col-xl-6">
                 <div className="feature-thumb12_wrapp">
                   <div className="feature-thumb12-1">
-                    <img src={feature.image1} alt="feature" />
+                    <img
+                      src={feature.image1}
+                      alt="feature"
+                      loading="lazy"
+                      style={{ borderRadius: "1rem" }}
+                    />
                   </div>
                   <div className="feature-thumb12-2 movingX">
-                    <img src={feature.image2} alt="feature" />
+                    <img
+                      src={feature.image2}
+                      alt="feature"
+                      loading="lazy"
+                      style={{
+                        objectFit: "cover",
+                        width: "180px",
+                        height: "172px",
+                      }}
+                    />
                   </div>
                 </div>
               </div>

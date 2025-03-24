@@ -21,7 +21,7 @@ const SolAbout3 = ({ aboutData }) => {
               <div className="img-box21 pe-xl-5 me-xl-2">
                 {item.images.map((img, index) => (
                   <div className={`img${index + 1}`} key={index}>
-                    <img src={img} alt="About" />
+                    <img src={img} alt="About" loading="lazy" />
                   </div>
                 ))}
                 <div className="th-experience">
@@ -45,7 +45,7 @@ const SolAbout3 = ({ aboutData }) => {
                 <span className="shadow-title">{item.shadowTitle}</span>
                 <span className="sub-title">
                   <div className="icon-masking me-2">
-                    <img src={title_shape_2} alt="shape" />
+                    <img src={title_shape_2} alt="shape" loading="lazy" />
                   </div>
                   {item.subTitle}
                 </span>
@@ -58,7 +58,7 @@ const SolAbout3 = ({ aboutData }) => {
                     <ul>
                       {list.map((point, idx) => (
                         <li key={idx}>
-                          <img src={check_4} alt="" /> {point}
+                          <img src={check_4} alt="" loading="lazy" /> {point}
                         </li>
                       ))}
                     </ul>

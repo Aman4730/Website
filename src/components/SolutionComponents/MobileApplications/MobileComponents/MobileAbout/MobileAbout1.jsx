@@ -45,10 +45,10 @@ const MobileAbout1 = () => {
           <div className="col-lg-6 text-lg-end">
             <div className="img-box11">
               <div className="img1">
-                <img src={aboutData.images[0]} alt="img" />
+                <img src={aboutData.images[0]} alt="img" loading="lazy" />
               </div>
               <div className="img2 jump">
-                <img src={aboutData.images[1]} alt="img" />
+                <img src={aboutData.images[1]} alt="img" loading="lazy" />
               </div>
             </div>
           </div>

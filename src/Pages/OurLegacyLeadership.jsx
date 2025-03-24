@@ -107,7 +107,12 @@ const OurLegacyLeadership = () => {
             <div class="row align-items-center flex-row-reverse">
               <div class="col-xl-6 mb-30 mb-xl-0">
                 <div class="img-box5">
-                  <img class="tilt-active" src={why_2_1} alt="Why" />
+                  <img
+                    class="tilt-active"
+                    src={why_2_1}
+                    alt="Why"
+                    loading="lazy"
+                  />
                   <div class="year-counter">
                     <h3 class="year-counter_number">
                       <span class="counter-number">10</span>k+
@@ -121,7 +126,7 @@ const OurLegacyLeadership = () => {
                   <div class="shadow-title color3">Our Vision</div>
                   <span class="sub-title">
                     <div class="icon-masking me-2">
-                      <img src={title_shape_2} alt="shape" />
+                      <img src={title_shape_2} alt="shape" loading="lazy" />
                     </div>
                     Founder's Message
                   </span>
@@ -182,6 +187,7 @@ const OurLegacyLeadership = () => {
                   <img
                     src="assets/img/theme-img/title_shape_2.svg"
                     alt="shape"
+                    loading="lazy"
                   />
                 </div>
                 Meet Our Leaders
@@ -221,6 +227,7 @@ const OurLegacyLeadership = () => {
                         <img
                           src={member.image}
                           alt={member.name}
+                          loading="lazy"
                           style={{
                             width: "100%",
                             height: "300px",

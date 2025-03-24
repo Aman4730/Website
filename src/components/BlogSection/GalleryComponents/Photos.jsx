@@ -92,6 +92,7 @@ const Photos = () => {
                   <img
                     src={image.src}
                     alt="gallery image"
+                    loading="lazy"
                     style={{
                       objectFit: "cover",
                     }}

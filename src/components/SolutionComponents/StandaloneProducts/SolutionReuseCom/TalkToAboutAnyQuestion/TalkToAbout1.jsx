@@ -1,9 +1,7 @@
-
 import React from "react";
 import faq_5_1 from "../../../../../assets/img/normal/faq_5_1.jpg";
 import faq_5_2 from "../../../../../assets/img/normal/faq_5_2.jpg";
 import faq_5_3 from "../../../../../assets/img/normal/faq_5_3.jpg";
-
 
 const TalkToAbout1 = ({ TalkToAbout1Array }) => {
   return (
@@ -13,14 +11,12 @@ const TalkToAbout1 = ({ TalkToAbout1Array }) => {
           <div className="col-xl-6">
             <div className="faq-img5 mb-xl-0 mt-xl-0 mt-n4 me-xl-5 pe-xl-5">
               <div className="img1">
-
-                <img src={TalkToAbout1Array.img} alt="FAQ" />
+                <img src={TalkToAbout1Array.img} alt="FAQ" loading="lazy" />
                 <div className="img2 jump">
-                  <img src={TalkToAbout1Array.img1} alt="FAQ" />
+                  <img src={TalkToAbout1Array.img1} alt="FAQ" loading="lazy" />
                 </div>
                 <div className="img3 movingX">
-                  <img src={TalkToAbout1Array.img2} alt="FAQ" />
-
+                  <img src={TalkToAbout1Array.img2} alt="FAQ" loading="lazy" />
                 </div>
                 <div className="faq-shape5" />
               </div>
@@ -36,9 +32,7 @@ const TalkToAbout1 = ({ TalkToAbout1Array }) => {
               </h2>
             </div>
             <div className="accordion" id="faqAccordion">
-
               {TalkToAbout1Array?.TalkToAboutArray?.map((faq, index) => (
-
                 <div className="accordion-card style7" key={index}>
                   <div className="accordion-header" id={`heading-${index}`}>
                     <button

@@ -12,7 +12,7 @@ const ServiceWhatWeDo = ({ services }) => {
       <div className="title-area text-center">
         <span className="sub-title">
           <div className="icon-masking me-2">
-            <img src={title_shape_2} alt="shape" />
+            <img src={title_shape_2} alt="shape" loading="lazy" />
           </div>
           Transform your business
         </span>
@@ -63,6 +63,7 @@ const ServiceWhatWeDo = ({ services }) => {
                         <img
                           src={service.img}
                           alt="Icon"
+                          loading="lazy"
                           style={{ width: "50px", height: "50px" }}
                         />
                       </div>

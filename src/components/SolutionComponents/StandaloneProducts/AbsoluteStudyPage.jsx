@@ -172,7 +172,7 @@ const aboutData2 = {
   images: [edusaroj1, edusaroj2, edusaroj3],
 
   shapeImages: [about_12_shape, about_12_1_shape],
-  demoLink: "https://www.youtube.com/watch?v=_sI_Ps7JSEk",
+  demoLink: "https://www.youtube.com/@logimetrixtechsolutions4572",
   trialLink: "https://edusaroj.com/home/landing",
 };
 const TalkToAbout5Array = {

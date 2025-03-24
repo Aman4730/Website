@@ -11,7 +11,11 @@ const HappyClient = () => {
           <div className="col-6 col-lg-auto">
             <div className="counter-card">
               <div className="counter-card_icon">
-                <img src="assets/img/icon/counter_1_1.svg" alt="Icon" />
+                <img
+                  src="assets/img/icon/counter_1_1.svg"
+                  alt="Icon"
+                  loading="lazy"
+                />
               </div>
               <div className="media-body">
                 <h2 className="counter-card_number">
@@ -24,7 +28,11 @@ const HappyClient = () => {
           <div className="col-6 col-lg-auto">
             <div className="counter-card">
               <div className="counter-card_icon">
-                <img src="assets/img/icon/counter_1_2.svg" alt="Icon" />
+                <img
+                  src="assets/img/icon/counter_1_2.svg"
+                  alt="Icon"
+                  loading="lazy"
+                />
               </div>
               <div className="media-body">
                 <h2 className="counter-card_number">
@@ -37,7 +45,11 @@ const HappyClient = () => {
           <div className="col-6 col-lg-auto">
             <div className="counter-card">
               <div className="counter-card_icon">
-                <img src="assets/img/icon/counter_1_3.svg" alt="Icon" />
+                <img
+                  src="assets/img/icon/counter_1_3.svg"
+                  alt="Icon"
+                  loading="lazy"
+                />
               </div>
               <div className="media-body">
                 <h2 className="counter-card_number">
@@ -50,7 +62,11 @@ const HappyClient = () => {
           <div className="col-6 col-lg-auto">
             <div className="counter-card">
               <div className="counter-card_icon">
-                <img src="assets/img/icon/counter_1_4.svg" alt="Icon" />
+                <img
+                  src="assets/img/icon/counter_1_4.svg"
+                  alt="Icon"
+                  loading="lazy"
+                />
               </div>
               <div className="media-body">
                 <h2 className="counter-card_number">

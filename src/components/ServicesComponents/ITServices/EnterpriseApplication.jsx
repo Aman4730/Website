@@ -2,10 +2,6 @@ import React from "react";
 import SEO from "../../../Imges/SEO1.jpg";
 import MainHeading from "../../MainHeading";
 import Digital from "../../../Imges/Digital.jpg";
-import blog_1_1 from "../../../assets/img/blog/blog_1_1.jpg";
-import blog_1_2 from "../../../assets/img/blog/blog_1_2.jpg";
-import blog_1_3 from "../../../assets/img/blog/blog_1_3.jpg";
-import blog_1_4 from "../../../assets/img/blog/blog_1_4.jpg";
 import ServiceAboutUs from "../ServicesResueCom/ServiceAboutUs";
 import SuccessStories from "../ServicesResueCom/SuccessStories";
 import ServiceLanguage from "../ServicesResueCom/ServiceLanguage";
@@ -20,16 +16,14 @@ import enterprise1 from "../../../Imges/enterprise1.png";
 import enterprise2 from "../../../Imges/enterprise2.png";
 import enterprise3 from "../../../Imges/enterprise3.png";
 import enterprise4 from "../../../Imges/enterprise4.png";
-import enterprise5 from "../../../Imges/enterprise5.png";
-import about_14_1 from "../../../assets/img/normal/about_14_1.jpg";
-import about_14_2 from "../../../assets/img/normal/about_14_2.jpg";
+import ProductOriented1 from "../../../Imges/ProductOriented2.png";
 const EnterpriseApplication = () => {
   const aboutFeatures = {
     title: "Enterprise Application Solutions",
     heading: "What you get with LOGIMETRIX enterprise applications",
     aboutus:
       "We provide top-tier enterprise solutions with customization options and expert support. With 12+ years of experience, we specialize in custom software and seamless integrations across industries like finance, logistics, healthcare, and more. Our certified team partners with SAP, Microsoft, Odoo, and Salesforce to deliver secure, high-performance solutions.",
-    img: [enterprise4, about_14_2],
+    img: [enterprise4, ProductOriented1],
     asd: [
       {
         title: "Fast & Flexible",

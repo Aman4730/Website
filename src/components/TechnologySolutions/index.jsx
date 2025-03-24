@@ -15,6 +15,7 @@ const TechnologySolutions = () => {
                     <img
                       src="assets/img/theme-img/title_shape_2.svg"
                       alt="shape"
+                      loading="lazy"
                     />
                   </div>
                   Our Services
@@ -33,7 +34,11 @@ const TechnologySolutions = () => {
             <div className="service-box3">
               <div className="service-box3_content">
                 <div className="service-box3_icon">
-                  <img src="assets/img/icon/service_4_1.svg" alt="Icon" />
+                  <img
+                    src="assets/img/icon/service_4_1.svg"
+                    alt="Icon"
+                    loading="lazy"
+                  />
                 </div>
                 <h3 className="box-title">
                   <Link to="/contactUs">Web Development</Link>
@@ -48,7 +53,11 @@ const TechnologySolutions = () => {
           </div>
           <div className="col-md-6 col-xl-6">
             <div className="service-box3_img">
-              <img src="assets/img/service/service_box_7-4.jpg" alt="" />
+              <img
+                src="assets/img/service/service_box_7-4.jpg"
+                alt=""
+                loading="lazy"
+              />
               <div
                 className="service-shape"
                 data-mask-src="assets/img/shape/ser_shape_2.png"
@@ -65,7 +74,11 @@ const TechnologySolutions = () => {
             <div className="service-box3">
               <div className="service-box3_content">
                 <div className="service-box3_icon">
-                  <img src="assets/img/icon/service_4_2.svg" alt="Icon" />
+                  <img
+                    src="assets/img/icon/service_4_2.svg"
+                    alt="Icon"
+                    loading="lazy"
+                  />
                 </div>
                 <h3 className="box-title">
                   <Link to="/contactUs">
@@ -84,7 +97,11 @@ const TechnologySolutions = () => {
             <div className="service-box3">
               <div className="service-box3_content">
                 <div className="service-box3_icon">
-                  <img src="assets/img/icon/service_4_3.svg" alt="Icon" />
+                  <img
+                    src="assets/img/icon/service_4_3.svg"
+                    alt="Icon"
+                    loading="lazy"
+                  />
                 </div>
                 <h3 className="box-title">
                   <Link to="/contactUs">AI & Machine Learning</Link>
@@ -101,7 +118,11 @@ const TechnologySolutions = () => {
             <div className="service-box3">
               <div className="service-box3_content">
                 <div className="service-box3_icon">
-                  <img src="assets/img/icon/service_4_4.svg" alt="Icon" />
+                  <img
+                    src="assets/img/icon/service_4_4.svg"
+                    alt="Icon"
+                    loading="lazy"
+                  />
                 </div>
                 <h3 className="box-title">
                   <Link to="/contactUs">Cybersecurity</Link>
@@ -118,7 +139,11 @@ const TechnologySolutions = () => {
             <div className="service-box3">
               <div className="service-box3_content">
                 <div className="service-box3_icon">
-                  <img src="assets/img/icon/service_4_5.svg" alt="Icon" />
+                  <img
+                    src="assets/img/icon/service_4_5.svg"
+                    alt="Icon"
+                    loading="lazy"
+                  />
                 </div>
                 <h3 className="box-title">
                   <Link to="/contactUs">Cloud & DevOps</Link>
@@ -141,7 +166,7 @@ const TechnologySolutions = () => {
                 <i className="fa-regular fa-arrow-right ms-2" />
               </Link>
               <div className="ser-shape">
-                <img src="assets/img/icon/circle.png" alt="" />
+                <img src="assets/img/icon/circle.png" alt="" loading="lazy" />
               </div>
             </div>
           </div>

@@ -35,10 +35,31 @@ const MobileAbout = ({ aboutContent }) => {
           </div>
           <div className="col-xl-6 align-self-end">
             <div className="img-box10 text-center mb-xl-0 mt-xl-0 mt-n4">
-              <div className="img1">
-                <img src={aboutContent.images[0]} alt="About" />
+              <div className="img">
+                <img
+                  src={aboutContent.images[0]}
+                  alt="About"
+                  loading="lazy"
+                  style={{
+                    objectFit: "cover",
+                    width: "700px",
+                    height: "420px",
+                    borderRadius: "1rem",
+                  }}
+                />
                 <div className="img2 jump">
-                  <img src={aboutContent.images[1]} alt="About" />
+                  <img
+                    src={aboutContent.images[1]}
+                    alt="About"
+                    loading="lazy"
+                    style={{
+                      objectFit: "cover",
+                      width: "295px",
+                      height: "153px",
+                      borderRadius: "1rem",
+                      marginBottom: "20px",
+                    }}
+                  />
                 </div>
               </div>
             </div>

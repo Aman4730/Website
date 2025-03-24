@@ -41,6 +41,7 @@ const CaseStudies = () => {
                 <img
                   src={shan8}
                   alt="project image"
+                  loading="lazy"
                   style={{
                     width: "327px",
                     height: "438px",
@@ -56,6 +57,7 @@ const CaseStudies = () => {
                 <img
                   src={shan3}
                   alt="project image"
+                  loading="lazy"
                   style={{
                     width: "678px",
                     height: "438px",
@@ -71,6 +73,7 @@ const CaseStudies = () => {
                 <img
                   src={vipul}
                   alt="project image"
+                  loading="lazy"
                   style={{
                     width: "327px",
                     height: "438px",
@@ -86,6 +89,7 @@ const CaseStudies = () => {
                 <img
                   src={shan7}
                   alt="project image"
+                  loading="lazy"
                   style={{
                     width: "444px",
                     height: "394px",
@@ -101,6 +105,7 @@ const CaseStudies = () => {
                 <img
                   src={shan13}
                   alt="project image"
+                  loading="lazy"
                   style={{
                     width: "444px",
                     height: "394px",
@@ -116,6 +121,7 @@ const CaseStudies = () => {
                 <img
                   src={shan12}
                   alt="project image"
+                  loading="lazy"
                   style={{
                     width: "444px",
                     height: "394px",

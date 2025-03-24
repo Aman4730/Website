@@ -180,13 +180,15 @@ const BlogComponents = () => {
                         <img
                           src={`data:image/jpeg;base64,${blog.imageBase64}`}
                           alt="Blog Image"
+                          loading="lazy"
                         />
                       </div>
                     )}
                     <div className="blog-content">
                       <div className="blog-meta">
                         <Link className="author" to="/contactUs">
-                          <img src={author11} alt="avatar" /> By Logimetrix
+                          <img src={author11} alt="avatar" loading="lazy" /> By
+                          Logimetrix
                         </Link>
                         <Link to="/contactUs">
                           <i className="fa-light fa-calendar-days" />{" "}
@@ -211,6 +213,7 @@ const BlogComponents = () => {
                   <img
                     src={noBlog}
                     alt="No Blogs Available"
+                    loading="lazy"
                     style={{ width: "600px" }}
                   />
                   <h3

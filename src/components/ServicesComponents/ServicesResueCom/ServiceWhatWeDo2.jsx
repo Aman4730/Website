@@ -17,7 +17,7 @@ const ServiceWhatWeDo2 = ({ sectionTitle, services }) => {
             <div className="title-area text-center">
               <span className="sub-title">
                 <div className="icon-masking me-2">
-                  <img src={title_shape_2} alt="shape" />
+                  <img src={title_shape_2} alt="shape" loading="lazy" />
                 </div>
                 Benefit management
               </span>
@@ -42,7 +42,7 @@ const ServiceWhatWeDo2 = ({ sectionTitle, services }) => {
               <SwiperSlide key={index}>
                 <div className="service_card4">
                   <div className="box-icon">
-                    <img src={service.img} alt="Icon" />
+                    <img src={service.img} alt="Icon" loading="lazy" />
                   </div>
                   <h3 className="box-title">
                     <Link to={service.link}>{service.title}</Link>

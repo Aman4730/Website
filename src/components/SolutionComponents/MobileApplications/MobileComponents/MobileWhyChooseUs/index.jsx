@@ -41,7 +41,7 @@ const MobileWhyChooseUs = () => {
               <div className="why-feature-wrap-4-1">
                 <div className="about-feature style3">
                   <div className="about-feature_icon">
-                    <img src={why81} alt="icon" />
+                    <img src={why81} alt="icon" loading="lazy" />
                   </div>
                   <div className="media-body">
                     <h3 className="about-feature_title">City Officials</h3>
@@ -53,7 +53,7 @@ const MobileWhyChooseUs = () => {
                 </div>
                 <div className="about-feature style3">
                   <div className="about-feature_icon">
-                    <img src={why82} alt="icon" />
+                    <img src={why82} alt="icon" loading="lazy" />
                   </div>
                   <div className="media-body">
                     <h3 className="about-feature_title">
@@ -71,7 +71,7 @@ const MobileWhyChooseUs = () => {
               <div className="why-feature-wrap-4-2">
                 <div className="about-feature style3">
                   <div className="about-feature_icon">
-                    <img src={why83} alt="icon" />
+                    <img src={why83} alt="icon" loading="lazy" />
                   </div>
                   <div className="media-body">
                     <h3 className="about-feature_title">IT Administrators</h3>
@@ -83,7 +83,7 @@ const MobileWhyChooseUs = () => {
                 </div>
                 <div className="about-feature style3">
                   <div className="about-feature_icon">
-                    <img src={why84} alt="icon" />
+                    <img src={why84} alt="icon" loading="lazy" />
                   </div>
                   <div className="media-body">
                     <h3 className="about-feature_title">Secure Access</h3>
@@ -97,7 +97,7 @@ const MobileWhyChooseUs = () => {
             </div>
             <div className="col-lg-4 order-lg-2">
               <div className="why-thumb-4">
-                <img src={jammuimg1} alt="img" />
+                <img src={jammuimg1} alt="img" loading="lazy" />
               </div>
             </div>
           </div>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import logimetrixlogo1 from "../../Imges/logimetrixlogo1.png";
 import { Link } from "react-router-dom";
 import MobileMenu from "./MobileMenu";
-
+import brochurePdf from "../../Brochure/Logimetrix Techsolutions Brochure (2)_compressed.pdf";
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   const [submenuOpen, setSubmenuOpen] = useState({});
@@ -12,7 +12,10 @@ const NavBar = () => {
     setSubmenuOpen((prev) => ({ ...prev, [index]: !prev[index] }));
 
   const user_role = JSON.parse(localStorage.getItem("user_role"));
-
+  const handleBrochureClick = (e) => {
+    e.preventDefault();
+    window.open(brochurePdf, "_blank", "noopener,noreferrer");
+  };
   return (
     <>
       <header className="th-header header-layout2">
@@ -46,8 +49,8 @@ const NavBar = () => {
                 </div>
               </div>
               <div className="col-auto">
-                <div className="header-social">
-                  <a href="path/to/download" download>
+                <div className="header-social" onClick={handleBrochureClick}>
+                  <a href="" download>
                     <i className="fas fa-download" />
                     <span style={{ marginLeft: "8px" }}>Brochure</span>
                   </a>
@@ -70,6 +73,7 @@ const NavBar = () => {
                       <img
                         src={logimetrixlogo1}
                         alt="logimetrix"
+                        loading="lazy"
                         style={{ width: "130px", height: "45px" }}
                       />
                     </Link>

@@ -10,7 +10,7 @@ const SideBar = ({ isMenuOpen }) => {
               data-mask-src="assets/img/logo.svg"
               className="mask-icon"
             ></span>
-            <img src="assets/img/logo.svg" alt="logimetrix" />
+            <img src="assets/img/logo.svg" alt="logimetrix" loading="lazy" />
           </a>
         </div>
         <div className={`th-mobile-menu ${isMenuOpen ? "open" : ""}`}>

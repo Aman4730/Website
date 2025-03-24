@@ -14,6 +14,7 @@ import ServiceThreeCard from "../ServicesResueCom/ServiceThreeCard";
 import counter_card_4_1 from "../../../assets/img/icon/counter_card_4_1.svg";
 import counter_card_4_2 from "../../../assets/img/icon/counter_card_4_2.svg";
 import counter_card_4_3 from "../../../assets/img/icon/counter_card_4_3.svg";
+import OrganicHealth4 from "../../../Imges/OrganicHealth4.png";
 const OrganicHealthProductsInitiative = () => {
   const aboutData1 = {
     title: "Organic Health",
@@ -25,7 +26,7 @@ const OrganicHealthProductsInitiative = () => {
     titleShape: title_shape_2,
     experienceYears: 12,
     experienceText: "Years of experience in startup building",
-    videoLink: "https://www.youtube.com/watch?v=_sI_Ps7JSEk",
+    videoLink: "https://www.youtube.com/@logimetrixtechsolutions4572",
   };
   const aboutData3 = [
     {
@@ -52,35 +53,6 @@ const OrganicHealthProductsInitiative = () => {
       phone: "+993-554-0006",
     },
   ];
-  const TalkToAbout5Array = {
-    title: "Organic Farming Why Choose Our Organic",
-    highlight: " Products?",
-    subtitle: "Committed to Quality & Sustainability",
-    image: faq_11_1,
-    faqs: [
-      {
-        question: "What makes your organic products premium quality?",
-        answer:
-          "Our products are made from certified organic ingredients sourced from ethical farms worldwide, ensuring purity and sustainability.",
-      },
-      {
-        question: "How are your products eco-friendly?",
-        answer:
-          "We use biodegradable packaging and carbon-neutral shipping methods to minimize environmental impact.",
-        defaultOpen: true,
-      },
-      {
-        question: "Are your products safe for all skin types?",
-        answer:
-          "Yes, our skincare and health products are formulated by expert nutritionists and dermatologists to be safe and effective for all skin types.",
-      },
-      {
-        question: "Do you have any certifications for your organic products?",
-        answer:
-          "Yes, our products are certified by leading organic certification bodies to ensure quality, safety, and sustainability.",
-      },
-    ],
-  };
   const cardData = [
     {
       icon: counter_card_4_1,
@@ -104,7 +76,35 @@ const OrganicHealthProductsInitiative = () => {
         "Maintaining high standards and regulatory adherence in every project.",
     },
   ];
-
+  const TalkToAbout5Array = {
+    title: "Why Choose Our Organic Products?",
+    highlight: "Quality & Sustainability",
+    subtitle: "Bringing You The Best in Organic Health Products",
+    image: OrganicHealth4,
+    faqs: [
+      {
+        question: "What sets your organic products apart?",
+        answer:
+          "Our products are crafted using ethically sourced, certified organic ingredients, ensuring the highest quality and sustainability.",
+      },
+      {
+        question: "How do your products support environmental sustainability?",
+        answer:
+          "We prioritize eco-friendly packaging, sustainable farming practices, and carbon-neutral logistics to reduce our environmental footprint.",
+        defaultOpen: true,
+      },
+      {
+        question: "Are your organic products suitable for all skin types?",
+        answer:
+          "Absolutely! Our skincare and wellness products are dermatologically tested and safe for all skin types, even sensitive skin.",
+      },
+      {
+        question: "What certifications do your products hold?",
+        answer:
+          "Our organic products are certified by globally recognized organizations to guarantee their authenticity, safety, and sustainability.",
+      },
+    ],
+  };
   return (
     <div>
       <MainHeading

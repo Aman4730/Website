@@ -230,6 +230,7 @@ const JobCard = ({ handleCardClick, jobData = [], admin, handleEditJob }) => {
           <img
             src={jobNotFound}
             alt="No Jobs Found"
+            loading="lazy"
             style={{ width: "100%", height: "auto" }}
           />
         </Box>

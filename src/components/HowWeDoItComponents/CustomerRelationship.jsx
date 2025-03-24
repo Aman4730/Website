@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import title_shape_2 from "../../assets/img/theme-img/title_shape_2.svg";
+import howWeDoIt2 from "../../Imges/howWeDoIt2.jpg";
+import howWeDoIt3 from "../../Imges/howWeDoIt3.jpg";
 const CustomerRelationship = () => {
   return (
     <div className="overflow-hidden space-bottom">
@@ -26,11 +28,19 @@ const CustomerRelationship = () => {
               <div className="checklist style12">
                 <ul>
                   <li>
-                    <img src="assets/img/icon/check_3.svg" alt="" />
+                    <img
+                      src="assets/img/icon/check_3.svg"
+                      alt=""
+                      loading="lazy"
+                    />
                     Client-Centric Partnership
                   </li>
                   <li>
-                    <img src="assets/img/icon/check_3.svg" alt="" />
+                    <img
+                      src="assets/img/icon/check_3.svg"
+                      alt=""
+                      loading="lazy"
+                    />
                     Expertise You Can Trust
                   </li>
                 </ul>
@@ -38,7 +48,11 @@ const CustomerRelationship = () => {
               <div className="checklist style12">
                 <ul>
                   <li>
-                    <img src="assets/img/icon/check_3.svg" alt="" />
+                    <img
+                      src="assets/img/icon/check_3.svg"
+                      alt=""
+                      loading="lazy"
+                    />
                     24/7 Hour Support
                   </li>
                 </ul>
@@ -58,10 +72,28 @@ const CustomerRelationship = () => {
           <div className="col-xl-6">
             <div className="feature-thumb14_wrapp">
               <div className="feature-thumb14-1">
-                <img src="assets/img/normal/feature-img-12-1.jpg" alt="img" />
+                <img
+                  src={howWeDoIt3}
+                  alt="img"
+                  loading="lazy"
+                  style={{
+                    objectFit: "cover",
+                    width: "560px",
+                    height: "432px",
+                  }}
+                />
               </div>
               <div className="feature-thumb14-2 jump">
-                <img src="assets/img/normal/feature-img-12-2.jpg" alt="img" />
+                <img
+                  src={howWeDoIt2}
+                  alt="img"
+                  loading="lazy"
+                  style={{
+                    objectFit: "cover",
+                    width: "209px",
+                    height: "173px",
+                  }}
+                />
               </div>
             </div>
           </div>

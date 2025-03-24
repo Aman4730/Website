@@ -30,7 +30,7 @@ const FarmRenovation = ({ projects, space }) => {
           <div className="shadow-title">PROJECTS</div>
           <span className="sub-title d-flex align-items-center justify-content-center mb-3">
             <div className="icon-masking me-2">
-              <img src={title_shape_2} alt="shape" />
+              <img src={title_shape_2} alt="shape" loading="lazy" />
             </div>
             LATEST PROJECTS
           </span>
@@ -49,6 +49,7 @@ const FarmRenovation = ({ projects, space }) => {
                       <img
                         src={project.img}
                         alt="project image"
+                        loading="lazy"
                         className="img-fluid"
                         style={{ height: "300px" }}
                       />

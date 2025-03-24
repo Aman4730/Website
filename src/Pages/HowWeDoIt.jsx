@@ -16,9 +16,6 @@ import HowWeDo3 from "../Imges/language/HowWeDo3.png";
 import process_box_3_1 from "../assets/img/icon/process_box_3_1.svg";
 import process_box_3_2 from "../assets/img/icon/process_box_3_2.svg";
 import process_box_3_3 from "../assets/img/icon/process_box_3_3.svg";
-import blog_12_1 from "../assets/img/blog/blog_12_1.jpg";
-import blog_1_2 from "../assets/img/blog/blog_1_2.jpg";
-import blog_12_3 from "../assets/img/blog/blog_12_3.jpg";
 const HowWeDoIt = () => {
   const services = [
     {

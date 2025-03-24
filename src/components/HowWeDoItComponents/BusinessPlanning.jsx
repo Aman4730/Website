@@ -25,7 +25,16 @@ const BusinessPlanning = ({ blogData, space }) => {
           <div className="col-xl-6">
             <div className="blog-grid">
               <div className="blog-img">
-                <img src={blogData.BusinessData[0].image} alt="blog image" />
+                <img
+                  src={blogData.BusinessData[0].image}
+                  alt="blog image"
+                  loading="lazy"
+                  style={{
+                    objectFit: "cover",
+                    width: "613px",
+                    height: "250px",
+                  }}
+                />
               </div>
               <div className="blog-content">
                 <h3 className="box-title">
@@ -46,7 +55,16 @@ const BusinessPlanning = ({ blogData, space }) => {
                 key={blog.id}
               >
                 <div className="blog-img">
-                  <img src={blog.image} alt="blog image" />
+                  <img
+                    src={blog.image}
+                    alt="blog image"
+                    loading="lazy"
+                    style={{
+                      objectFit: "cover",
+                      width: "613px",
+                      height: "181px",
+                    }}
+                  />
                 </div>
                 <div className="blog-content">
                   <h3 className="box-title">

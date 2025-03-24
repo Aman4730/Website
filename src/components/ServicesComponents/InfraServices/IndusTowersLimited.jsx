@@ -22,6 +22,10 @@ import TalkToAbout from "../../SolutionComponents/StandaloneProducts/SolutionReu
 import visiondesk5 from "../../../Imges/visiondesk5.png";
 import visiondesk6 from "../../../Imges/visiondesk6.png";
 import indus from "../../../Imges/indus.png";
+import indus1 from "../../../Imges/indus.jpg";
+import indus2 from "../../../Imges/indus2.jpg";
+import indus3 from "../../../Imges/indus1.jpg";
+import indus5 from "../../../Imges/indus5.jpg";
 const IndusTowersLimited = () => {
   const services = [
     {
@@ -55,8 +59,8 @@ const IndusTowersLimited = () => {
       title: "Telecom Infrastructure Excellence",
       description:
         "Since 2017, we have been proudly associated with Indus Towers Limited, formerly known as Bharti Infratel Limited. This project is a key part of our business and focuses on strengthening telecom infrastructure across various locations. It encompasses two major departments: New Build Sites (NBS) and Upgrade, ensuring the seamless expansion and enhancement of telecom networks, and SitesCab Services, which streamline site management and operational efficiency. Our commitment to excellence drives us to deliver cutting-edge solutions that support the evolving needs of the telecom industry.",
-      image1: featureimg121,
-      image2: featureimg122,
+      image1: indus2,
+      image2: indus1,
       link: "/contactUs",
     },
   ];
@@ -79,35 +83,36 @@ const IndusTowersLimited = () => {
   ];
 
   const TalkToAboutAnyQuestion = {
-    img: visiondesk5,
-    img1: visiondesk6,
+    img: indus5,
+    img1: indus3,
     questionAns: [
       {
         id: 1,
-        question: "How does Eklavya improve school operations?",
+        question: "How does your telecom infrastructure ensure reliability?",
         answer:
-          "Eklavya automates routine administrative tasks, tracks student performance, and ensures smooth communication between all stakeholders, making school operations more efficient.",
+          "We utilize state-of-the-art technology and a highly skilled team to construct and maintain telecom towers, ensuring uninterrupted connectivity.",
       },
       {
         id: 2,
-        question: "Can Eklavya help with student performance analysis?",
+        question: "What regions do you provide services in?",
         answer:
-          "Yes! Eklavya provides in-depth analytics, performance tracking, and customizable reports to monitor and improve student progress.",
+          "We have successfully expanded our infrastructure across 7+ regions, providing robust and reliable telecom solutions.",
       },
       {
         id: 3,
-        question: "How does Eklavya ensure data security?",
+        question: "How do you support site operations?",
         answer:
-          "We use encrypted cloud storage and role-based access control to ensure that school data remains secure and confidential.",
+          "Our 24/7 cab availability ensures seamless transportation of workforce and equipment, making operations more efficient.",
       },
       {
         id: 4,
-        question: "Can Eklavya be accessed remotely?",
+        question: "What expertise does your team bring?",
         answer:
-          "Yes! Eklavya is cloud-based, so you can access the system anytime and from anywhere with a mobile-friendly interface for ease of use.",
+          "We have a dedicated team of 150+ skilled technicians, ensuring the highest quality standards in telecom site execution and maintenance.",
       },
     ],
   };
+
   return (
     <div>
       <MainHeading

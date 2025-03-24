@@ -136,9 +136,9 @@ const TalkToAbout4 = () => {
             <div class="col-xl-6">
               <div class="faq-img8 mb-xl-0 mt-xl-0 ps-xl-5 ms-xl-1">
                 <div class="img1">
-                  <img src={faq_7_1} alt="About" />
+                  <img src={faq_7_1} alt="About" loading="lazy" />
                   <div class="img2 jump">
-                    <img src={faq_7_2} alt="About" />
+                    <img src={faq_7_2} alt="About" loading="lazy" />
                   </div>
                   <div class="faq8-shape"></div>
                 </div>

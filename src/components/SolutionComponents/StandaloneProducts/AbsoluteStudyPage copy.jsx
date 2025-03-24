@@ -32,21 +32,38 @@ const AbsoluteStudyPage = () => {
             <div className="col-xl-7">
               <div className="img-box14">
                 <div className="img1">
-                  <img src="assets/img/normal/about_12_1.jpg" alt="About" />
+                  <img
+                    src="assets/img/normal/about_12_1.jpg"
+                    alt="About"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="img2">
-                  <img src="assets/img/normal/about_12_3.jpg" alt="About" />
+                  <img
+                    src="assets/img/normal/about_12_3.jpg"
+                    alt="About"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="img3">
-                  <img src="assets/img/normal/about_12_2.jpg" alt="About" />
+                  <img
+                    src="assets/img/normal/about_12_2.jpg"
+                    alt="About"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="shape1">
-                  <img src="assets/img/normal/about_12_shape.png" alt="About" />
+                  <img
+                    src="assets/img/normal/about_12_shape.png"
+                    alt="About"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="shape2">
                   <img
                     src="assets/img/normal/about_12_1_shape.png"
                     alt="About"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -83,7 +100,7 @@ const AbsoluteStudyPage = () => {
               </div>
               <div className="btn-group">
                 <a
-                  href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
+                  href="https://www.youtube.com/@logimetrixtechsolutions4572"
                   className="th-btn popup-video style-radius fs-16 text-capitalize"
                 >
                   <i className="fa-solid fa-circle-play me-2" />

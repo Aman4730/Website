@@ -197,7 +197,7 @@ const aboutData2 = {
   images: [cropnet1, cropnet3, cropnet4],
 
   shapeImages: [about_12_shape, about_12_1_shape],
-  demoLink: "https://www.youtube.com/watch?v=_sI_Ps7JSEk",
+  demoLink: "https://www.youtube.com/@logimetrixtechsolutions4572",
   trialLink: "https://dairycroptech.com/home/landing",
 };
 

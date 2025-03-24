@@ -14,6 +14,10 @@ import counter_card_4_1 from "../../../assets/img/icon/counter_card_4_1.svg";
 import counter_card_4_2 from "../../../assets/img/icon/counter_card_4_2.svg";
 import counter_card_4_3 from "../../../assets/img/icon/counter_card_4_3.svg";
 import sag from "../../../Imges/sag.png";
+import Agricultural from "../../../Imges/Agricultural.jpg";
+import Agricultural1 from "../../../Imges/Agricultural1.jpg";
+import farmer from "../../../Imges/farmer3.png";
+import sag1 from "../../../Imges/sag1.png";
 
 const SAG = () => {
   const services = [
@@ -54,7 +58,6 @@ const SAG = () => {
       link: "/contactUs",
     },
   ];
-
   const businessInfo = {
     title: "Role-Based Access Matrix",
     Subtitle: "Secure & Efficient Platform Utilization",
@@ -64,7 +67,7 @@ const SAG = () => {
         title: "Farmers",
         description:
           "Access to AI tracking, breeding insights, and personalized livestock data to enhance productivity and livestock management. Farmers can monitor cattle health, vaccination schedules, and breeding history. Get AI-driven recommendations for better livestock care, track milk production trends, and receive real-time alerts on disease outbreaks. The system helps optimize feeding schedules, improve genetic selection, and analyze fertility rates.",
-        image: blog_12_3,
+        image: farmer,
         date: "25 Feb, 2024",
         author: "Logimetrix Team",
       },
@@ -73,7 +76,7 @@ const SAG = () => {
         title: "Veterinarians",
         description:
           "Real-time monitoring of Artificial Insemination procedures and livestock health records to ensure optimal breeding success and cattle well-being.",
-        image: blog_12_1,
+        image: Agricultural,
         date: "20 Apr, 2024",
         author: "AgriTech Team",
       },
@@ -82,13 +85,12 @@ const SAG = () => {
         title: "Agricultural Organizations",
         description:
           "Comprehensive reports for strategic planning and sustainability in livestock management, ensuring data-driven decision-making for better outcomes.",
-        image: blog_1_2,
+        image: Agricultural1,
         date: "20 Apr, 2024",
         author: "AgriTech Team",
       },
     ],
   };
-
   const cardData = [
     {
       icon: counter_card_4_1,
@@ -115,7 +117,7 @@ const SAG = () => {
   const howWeDoItData = [
     {
       id: 1,
-      imgSrc: sag,
+      imgSrc: sag1,
       title: "SAG – System for Agricultural Growth",
       subtitle: "Strategic Implementation",
       description:

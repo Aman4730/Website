@@ -12,7 +12,11 @@ const OurExpertise = () => {
           <div className="shadow-title">Our Expertise</div>
           <span className="sub-title">
             <div className="icon-masking me-2">
-              <img src="assets/img/theme-img/title_shape_2.svg" alt="shape" />
+              <img
+                src="assets/img/theme-img/title_shape_2.svg"
+                alt="shape"
+                loading="lazy"
+              />
             </div>
             Our Expertise
           </span>
@@ -23,14 +27,22 @@ const OurExpertise = () => {
         </div>
         <div className="process-card-area">
           <div className="process-line">
-            <img src="assets/img/bg/process_line.svg" alt="line" />
+            <img
+              src="assets/img/bg/process_line.svg"
+              alt="line"
+              loading="lazy"
+            />
           </div>
           <div className="row gy-40">
             <div className="col-sm-6 col-xl-3 process-card-wrap">
               <div className="process-card">
                 <div className="process-card_number">01</div>
                 <div className="process-card_icon">
-                  <img src="assets/img/icon/process_card_1.svg" alt="icon" />
+                  <img
+                    src="assets/img/icon/process_card_1.svg"
+                    alt="icon"
+                    loading="lazy"
+                  />
                 </div>
                 <h2 className="box-title" style={{ fontSize: "20px" }}>
                   IT Consulting
@@ -45,7 +57,11 @@ const OurExpertise = () => {
               <div className="process-card">
                 <div className="process-card_number">02</div>
                 <div className="process-card_icon">
-                  <img src="assets/img/icon/process_card_2.svg" alt="icon" />
+                  <img
+                    src="assets/img/icon/process_card_2.svg"
+                    alt="icon"
+                    loading="lazy"
+                  />
                 </div>
                 <h2 className="box-title" style={{ fontSize: "20px" }}>
                   Web Development
@@ -60,7 +76,11 @@ const OurExpertise = () => {
               <div className="process-card">
                 <div className="process-card_number">03</div>
                 <div className="process-card_icon">
-                  <img src="assets/img/icon/process_card_3.svg" alt="icon" />
+                  <img
+                    src="assets/img/icon/process_card_3.svg"
+                    alt="icon"
+                    loading="lazy"
+                  />
                 </div>
                 <h2 className="box-title" style={{ fontSize: "20px" }}>
                   Apps Development
@@ -75,7 +95,11 @@ const OurExpertise = () => {
               <div className="process-card">
                 <div className="process-card_number">04</div>
                 <div className="process-card_icon">
-                  <img src="assets/img/icon/process_card_4.svg" alt="icon" />
+                  <img
+                    src="assets/img/icon/process_card_4.svg"
+                    alt="icon"
+                    loading="lazy"
+                  />
                 </div>
                 <h2 className="box-title" style={{ fontSize: "20px" }}>
                   DW, BI & Analysis

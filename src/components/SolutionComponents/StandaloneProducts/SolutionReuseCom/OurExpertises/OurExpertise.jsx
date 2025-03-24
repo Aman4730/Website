@@ -14,7 +14,7 @@ const OurExpertise = ({ ExpertiseArray = {} }) => {
                 <div className="shadow-title">Our Expertise</div>
                 <span className="sub-title">
                   <div className="icon-masking me-2">
-                    <img src={title_shape_2} alt="shape" />
+                    <img src={title_shape_2} alt="shape" loading="lazy" />
                   </div>
                   Our Expertise in {ExpertiseArray.heading}
                 </span>
@@ -44,7 +44,12 @@ const OurExpertise = ({ ExpertiseArray = {} }) => {
           </div>
           <div className="col-xl-6 mt-40 mt-xl-0">
             <div className="video-box1">
-              <img className="tilt-active" src={video_shape_2} alt="Video" />
+              <img
+                className="tilt-active"
+                src={video_shape_2}
+                alt="Video"
+                loading="lazy"
+              />
               <a
                 href="https://youtu.be/ix_OpmpsRBY"
                 className="play-btn popup-video"
@@ -57,10 +62,18 @@ const OurExpertise = ({ ExpertiseArray = {} }) => {
         </div>
       </div>
       <div className="shape-mockup" data-top="0%" data-left="0%">
-        <img src="assets/img/shape/tech_shape_3.png" alt="shape" />
+        <img
+          src="assets/img/shape/tech_shape_3.png"
+          alt="shape"
+          loading="lazy"
+        />
       </div>
       <div className="shape-mockup" data-bottom="0%" data-right="0%">
-        <img src="assets/img/shape/tech_shape_4.png" alt="shape" />
+        <img
+          src="assets/img/shape/tech_shape_4.png"
+          alt="shape"
+          loading="lazy"
+        />
       </div>
     </div>
   );

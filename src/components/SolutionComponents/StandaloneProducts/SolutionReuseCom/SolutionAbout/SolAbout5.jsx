@@ -24,7 +24,8 @@ const SolAbout5 = ({ aboutData }) => {
                       <ul>
                         {list.map((point, idx) => (
                           <li key={idx}>
-                            <img src={point.icon} alt="" /> {point.text}
+                            <img src={point.icon} alt="" loading="lazy" />{" "}
+                            {point.text}
                           </li>
                         ))}
                       </ul>
@@ -44,7 +45,7 @@ const SolAbout5 = ({ aboutData }) => {
             <div className="col-xl-7">
               <div className="feature-box me-xl-5 pe-xl-5">
                 <div className="img1">
-                  <img src={item.featureImg} alt="About" />
+                  <img src={item.featureImg} alt="About" loading="lazy" />
                 </div>
                 <div className="feature-content11">
                   <h4 className="feature-text">{item.featureText}</h4>

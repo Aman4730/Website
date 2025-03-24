@@ -30,7 +30,7 @@ const ConnectTeam = () => {
             <div className="col-xl-7">
               <div className="soft-wrapper">
                 <div className="soft-image">
-                  <img src={softwarelogo} alt="" />
+                  <img src={softwarelogo} alt="" loading="lazy" />
                 </div>
               </div>
             </div>

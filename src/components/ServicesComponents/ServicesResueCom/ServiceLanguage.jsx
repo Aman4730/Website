@@ -20,7 +20,7 @@ const ServiceLanguage = ({ languages }) => {
           <div className="shadow-title">PROCESS</div>
           <span className="sub-title">
             <div className="icon-masking me-2">
-              <img src={title_shape_2} alt="shape" />
+              <img src={title_shape_2} alt="shape" loading="lazy" />
             </div>
             WORK PROCESS
           </span>
@@ -49,6 +49,7 @@ const ServiceLanguage = ({ languages }) => {
                       <img
                         src={lang.img}
                         alt={lang.name}
+                        loading="lazy"
                         style={{ width: "90px", height: "90px" }}
                       />
                     </div>

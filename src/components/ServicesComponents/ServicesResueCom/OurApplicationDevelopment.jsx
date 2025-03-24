@@ -15,7 +15,7 @@ const OurApplicationDevelopment = ({ applicationservices }) => {
         <div className="title-area text-center">
           <span className="sub-title">
             <div className="icon-masking me-2">
-              <img src={title_shape_2} alt="shape" />
+              <img src={title_shape_2} alt="shape" loading="lazy" />
             </div>
             Service benefits
           </span>
@@ -53,7 +53,7 @@ const OurApplicationDevelopment = ({ applicationservices }) => {
                   onMouseLeave={() => setExpandedCard(null)}
                 >
                   <div className="service-item_icon">
-                    <img src={service.icon} alt="Icon" />
+                    <img src={service.icon} alt="Icon" loading="lazy" />
                   </div>
                   <div className="service-item_content">
                     <h3

@@ -10,7 +10,7 @@ const WorkingProcess = () => {
         height: "70vh",
       }}
     >
-      <img src={working} alt="" />
+      <img src={working} alt="" loading="lazy" />
     </div>
   );
 };

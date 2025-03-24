@@ -47,11 +47,44 @@ const SolAbout4 = ({ aboutData, nospace }) => {
             </div>
             <div className="col-xl-7">
               <div className="img-box15 mb-xl-0 mt-xl-0 mt-n4">
-                {item.images.map((img, index) => (
-                  <div className={`img${index + 1}`} key={index}>
-                    <img src={img} alt="About" />
-                  </div>
-                ))}
+                <div className="img1">
+                  <img
+                    src={item.images[0]}
+                    alt="About 1"
+                    loading="lazy"
+                    style={{
+                      objectFit: "cover",
+                      width: "600.99px",
+                      height: "430.99px",
+                    }}
+                  />
+                </div>
+                <div className="img2">
+                  <img
+                    src={item.images[1]}
+                    alt="About 2"
+                    loading="lazy"
+                    style={{
+                      objectFit: "cover",
+                      width: "270px",
+                      height: "205px",
+                      borderRadius: "10px",
+                    }}
+                  />
+                </div>
+                <div className="img3">
+                  <img
+                    src={item.images[2]}
+                    alt="About 3"
+                    loading="lazy"
+                    style={{
+                      objectFit: "cover",
+                      width: "185px",
+                      height: "145px",
+                      borderRadius: "10px",
+                    }}
+                  />
+                </div>
                 <div className="about-shape15" />
               </div>
             </div>

@@ -10,13 +10,13 @@ const AboutUS = ({ aboutSectionRef }) => {
         <div className="col-lg-5 mb-30 mb-lg-0">
           <div className="img-box6">
             <div className="img1">
-              <img src={about_4_1} alt="About" />
+              <img src={about_4_1} alt="About" loading="lazy" />
             </div>
             <div className="shape1">
-              <img src={about_4_2} alt="About" />
+              <img src={about_4_2} alt="About" loading="lazy" />
             </div>
             <div className="shape2">
-              <img src={about_4_3} alt="About" />
+              <img src={about_4_3} alt="About" loading="lazy" />
             </div>
             <div className="color-animate" />
           </div>
@@ -30,6 +30,7 @@ const AboutUS = ({ aboutSectionRef }) => {
                   <img
                     src="assets/img/theme-img/title_shape_2.svg"
                     alt="shape"
+                    loading="lazy"
                   />
                 </div>
                 About Logimetrix IT SOLUTIONS
@@ -50,21 +51,37 @@ const AboutUS = ({ aboutSectionRef }) => {
             <div className="checklist style4 mb-40 list-center d-flex flex-row justify-content-between w-50">
               <ul className="list-unstyled d-flex flex-column gap-2">
                 <li className="d-flex align-items-center gap-2">
-                  <img src="assets/img/icon/check_1.png" alt="icon" />
+                  <img
+                    src="assets/img/icon/check_1.png"
+                    alt="icon"
+                    loading="lazy"
+                  />
                   Award Winning
                 </li>
                 <li className="d-flex align-items-center gap-2">
-                  <img src="assets/img/icon/check_1.png" alt="icon" />
+                  <img
+                    src="assets/img/icon/check_1.png"
+                    alt="icon"
+                    loading="lazy"
+                  />
                   Professional Staff
                 </li>
               </ul>
               <ul className="list-unstyled d-flex flex-column gap-2">
                 <li className="d-flex align-items-center gap-2">
-                  <img src="assets/img/icon/check_1.png" alt="icon" />
+                  <img
+                    src="assets/img/icon/check_1.png"
+                    alt="icon"
+                    loading="lazy"
+                  />
                   24/7 Support
                 </li>
                 <li className="d-flex align-items-center gap-2">
-                  <img src="assets/img/icon/check_1.png" alt="icon" />
+                  <img
+                    src="assets/img/icon/check_1.png"
+                    alt="icon"
+                    loading="lazy"
+                  />
                   Fair Prices
                 </li>
               </ul>

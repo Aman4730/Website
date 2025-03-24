@@ -133,7 +133,7 @@ const aboutData1 = {
   titleShape: title_shape_2,
   experienceYears: 12,
   experienceText: "Years of experience in enterprise solutions",
-  videoLink: "https://www.youtube.com/watch?v=_sI_Ps7JSEk",
+  videoLink: "https://www.youtube.com/@logimetrixtechsolutions4572",
 };
 
 const TalkToAboutAnyQuestion = {

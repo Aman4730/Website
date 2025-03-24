@@ -15,10 +15,20 @@ const ServiceAboutUs = ({ aboutFeatures, hide, hideVideo }) => {
               </div>
               {!hideVideo && (
                 <div className="img2">
-                  <img src={aboutFeatures.img[1]} alt="About" />
+                  <img
+                    src={aboutFeatures.img[1]}
+                    alt="About"
+                    loading="lazy"
+                    style={{
+                      objectFit: "cover",
+                      width: "227px",
+                      height: "180px",
+                    }}
+                  />
                   <a
-                    href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
+                    href="https://www.youtube.com/@logimetrixtechsolutions4572"
                     className="play-btn popup-video"
+                    target="_blank"
                   >
                     <i className="fas fa-play" />
                   </a>
@@ -38,7 +48,7 @@ const ServiceAboutUs = ({ aboutFeatures, hide, hideVideo }) => {
             <div className="title-area mb-35">
               <span className="sub-title text-capitalize fs-20">
                 <div className="icon-masking me-2">
-                  <img src={title_shape_2} alt="shape" />
+                  <img src={title_shape_2} alt="shape" loading="lazy" />
                   &nbsp;&nbsp;{aboutFeatures.title}
                 </div>
               </span>
@@ -49,7 +59,7 @@ const ServiceAboutUs = ({ aboutFeatures, hide, hideVideo }) => {
               {aboutFeatures.asd.map((feature, index) => (
                 <div className="about-feature style4" key={index}>
                   <div className="about-feature_icon">
-                    <img src={check_2} alt="Icon" />
+                    <img src={check_2} alt="Icon" loading="lazy" />
                   </div>
                   <div className="media-body">
                     <h3 className="about-feature_title">{feature.title}</h3>
@@ -62,7 +72,7 @@ const ServiceAboutUs = ({ aboutFeatures, hide, hideVideo }) => {
         </div>
       </div>
       <div className="shape-mockup" data-bottom="0%" data-right="0%">
-        <img src={about_shape} alt="shape" />
+        <img src={about_shape} alt="shape" loading="lazy" />
       </div>
     </div>
   );

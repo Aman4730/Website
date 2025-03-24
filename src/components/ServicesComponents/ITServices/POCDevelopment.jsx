@@ -16,6 +16,7 @@ import POC1 from "../../../Imges/POC1.png";
 import POC2 from "../../../Imges/POC2.png";
 import POC3 from "../../../Imges/POC3.png";
 import POC4 from "../../../Imges/POC4.png";
+import POC5 from "../../../Imges/POC6.png";
 const POCDevelopment = () => {
   const blogData = {
     title: "Recent POC Success",
@@ -90,7 +91,7 @@ const POCDevelopment = () => {
       stars: 4.5,
     },
     images: {
-      main: about_17_1,
+      main: POC5,
       client: about_17_2,
     },
   };
@@ -135,7 +136,7 @@ const POCDevelopment = () => {
       <ServiceAboutUs1 aboutData={aboutData} />
       <ServiceWhatWeDo1 stepsData={stepsData} />
       <SuccessStories data={blogData} />
-      <ConnectTeam />
+      {/* <ConnectTeam />*/}
     </div>
   );
 };

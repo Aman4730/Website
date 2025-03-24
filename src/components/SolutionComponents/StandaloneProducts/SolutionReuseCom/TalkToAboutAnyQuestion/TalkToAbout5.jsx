@@ -66,9 +66,13 @@ const TalkToAbout5 = ({ TalkToAbout5Array }) => {
               <img
                 src={TalkToAbout5Array.image}
                 alt="FAQ"
+                loading="lazy"
                 style={{
                   // transform: "scaleX(-1)",
                   borderRadius: "10px",
+                  objectFit: "cover",
+                  height: "560px",
+                  width: "703px",
                 }}
               />
             </div>

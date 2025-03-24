@@ -104,6 +104,7 @@ const LoginPage = () => {
             <img
               src={loginAnimation}
               alt="Sign Up"
+              loading="lazy"
               onLoad={() => setLoading(false)}
             />
           </Box>

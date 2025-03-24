@@ -24,7 +24,7 @@ const OurWorkProcessNew = () => {
           <div className="col-xl-6">
             <div className="blog-grid">
               <div className="blog-img">
-                <img src={blog_12_3} alt="blog image" />
+                <img src={blog_12_3} alt="blog image" loading="lazy" />
               </div>
               <div className="blog-content">
                 <h3 className="box-title">
@@ -58,7 +58,7 @@ const OurWorkProcessNew = () => {
           <div className="col-xl-6">
             <div className="blog-grid style2">
               <div className="blog-img">
-                <img src={blog_12_1} alt="blog image" />
+                <img src={blog_12_1} alt="blog image" loading="lazy" />
               </div>
               <div className="blog-content">
                 <h3 className="box-title">
@@ -86,7 +86,7 @@ const OurWorkProcessNew = () => {
             </div>
             <div className="blog-grid style2 mt-30">
               <div className="blog-img">
-                <img src={blog_1_2} alt="blog image" />
+                <img src={blog_1_2} alt="blog image" loading="lazy" />
               </div>
               <div className="blog-content">
                 <h3 className="box-title">

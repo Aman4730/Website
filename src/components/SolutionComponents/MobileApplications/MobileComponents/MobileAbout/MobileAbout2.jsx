@@ -32,10 +32,10 @@ const MobileAbout2 = () => {
             <div className="col-lg-6">
               <div className="img-box12">
                 <div className="img1">
-                  <img src={section.image1} alt="img" />
+                  <img src={section.image1} alt="img" loading="lazy" />
                 </div>
                 <div className="img2 jump">
-                  <img src={section.image2} alt="img" />
+                  <img src={section.image2} alt="img" loading="lazy" />
                 </div>
               </div>
             </div>

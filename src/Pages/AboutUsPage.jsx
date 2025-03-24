@@ -97,7 +97,7 @@ const AboutUsPage = () => {
               <div className="shadow-title">Why US</div>
               <span className="sub-title" style={{ color: "white" }}>
                 <div className="icon-masking me-2">
-                  <img src={title_shape_2_white} alt="shape" />
+                  <img src={title_shape_2_white} alt="shape" loading="lazy" />
                 </div>
                 Logimetrix TechSolutions
               </span>
@@ -117,10 +117,18 @@ const AboutUsPage = () => {
             <div className="col-xl-6 mb-30 mb-xl-0">
               <div className="img-box1">
                 <div className="img1">
-                  <img src="assets/img/normal/about_1_1.png" alt="About" />
+                  <img
+                    src="assets/img/normal/about_1_1.png"
+                    alt="About"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="shape1">
-                  <img src="assets/img/normal/about_shape_1.png" alt="shape" />
+                  <img
+                    src="assets/img/normal/about_shape_1.png"
+                    alt="shape"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="year-counter">
                   <h3 className="year-counter_number">
@@ -139,6 +147,7 @@ const AboutUsPage = () => {
                       <img
                         src="assets/img/theme-img/title_shape_2.svg"
                         alt="shape"
+                        loading="lazy"
                       />
                     </div>
                     About Logimetrix IT SOLUTIONS
@@ -160,7 +169,7 @@ const AboutUsPage = () => {
                 <div className="about-feature-wrap">
                   <div className="about-feature">
                     <div className="about-feature_icon">
-                      <img src={about_feature_1_1} alt="Icon" />
+                      <img src={about_feature_1_1} alt="Icon" loading="lazy" />
                     </div>
                     <div className="media-body">
                       <h3 className="about-feature_title">Certified Company</h3>
@@ -171,7 +180,7 @@ const AboutUsPage = () => {
                   </div>
                   <div className="about-feature">
                     <div className="about-feature_icon">
-                      <img src={about_feature_1_2} alt="Icon" />
+                      <img src={about_feature_1_2} alt="Icon" loading="lazy" />
                     </div>
                     <div className="media-body">
                       <h3 className="about-feature_title">Expart Team</h3>
@@ -214,6 +223,7 @@ const AboutUsPage = () => {
                       <img
                         src="assets/img/theme-img/title_shape_2.svg"
                         alt="shape"
+                        loading="lazy"
                       />
                     </div>
                     What We Do
@@ -233,7 +243,7 @@ const AboutUsPage = () => {
                 <div className="service-card2 wow fadeInRight">
                   <div className="service-card2_content">
                     <div className="service-card2_icon">
-                      <img src={service_1_2} alt="Icon" />
+                      <img src={service_1_2} alt="Icon" loading="lazy" />
                     </div>
                     <h3 className="box-title">
                       <Link to="/contactUs">Mobility Solutions</Link>
@@ -247,7 +257,7 @@ const AboutUsPage = () => {
                 <div className="service-card2 wow fadeInRight">
                   <div className="service-card2_content">
                     <div className="service-card2_icon">
-                      <img src={service_3_4} alt="Icon" />
+                      <img src={service_3_4} alt="Icon" loading="lazy" />
                     </div>
                     <h3 className="box-title">
                       <Link to="/contactUs">Technology Solutions</Link>
@@ -261,7 +271,7 @@ const AboutUsPage = () => {
                 <div className="service-card2 wow fadeInRight">
                   <div className="service-card2_content">
                     <div className="service-card2_icon">
-                      <img src={service_2_3} alt="Icon" />
+                      <img src={service_2_3} alt="Icon" loading="lazy" />
                     </div>
                     <h3 className="box-title">
                       <Link to="/contactUs">Research & Analytics</Link>
@@ -275,7 +285,7 @@ const AboutUsPage = () => {
                 <div className="service-card2 wow fadeInRight">
                   <div className="service-card2_content">
                     <div className="service-card2_icon">
-                      <img src={service_3_2} alt="Icon" />
+                      <img src={service_3_2} alt="Icon" loading="lazy" />
                     </div>
                     <h3 className="box-title">
                       <Link to="/contactUs">Custom Development</Link>
@@ -317,7 +327,7 @@ const AboutUsPage = () => {
                 data-top="46%"
                 data-left="23.5%"
               >
-                <img src={star} alt="shape" />
+                <img src={star} alt="shape" loading="lazy" />
               </div>
             </div>
           </div>
@@ -330,7 +340,11 @@ const AboutUsPage = () => {
             <div className="col-xxl-7 col-xl-6 mb-30 mb-xl-0">
               <div className="img-box2">
                 <div className="img1">
-                  <img src="assets/img/normal/why_1_1.jpg" alt="Why" />
+                  <img
+                    src="assets/img/normal/why_1_1.jpg"
+                    alt="Why"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -342,6 +356,7 @@ const AboutUsPage = () => {
                     <img
                       src="assets/img/theme-img/title_shape_2.svg"
                       alt="shape"
+                      loading="lazy"
                     />
                   </div>
                   WHY CHOOSE US
@@ -431,6 +446,7 @@ const AboutUsPage = () => {
                   <img
                     src="assets/img/theme-img/title_shape_2.svg"
                     alt="shape"
+                    loading="lazy"
                   />
                 </span>
               </div>
@@ -475,11 +491,12 @@ const AboutUsPage = () => {
                     }}
                   >
                     <div className="testi-grid_img">
-                      <img src={testimonial.img} alt="Avatar" />
+                      <img src={testimonial.img} alt="Avatar" loading="lazy" />
                       <div className="testi-grid_quote">
                         <img
                           src="assets/img/icon/quote_left_3.svg"
                           alt="quote"
+                          loading="lazy"
                         />
                       </div>
                     </div>
@@ -552,7 +569,7 @@ const AboutUsPage = () => {
           </div>
         </div>
       </section>
-      <EmployeeTestimonial />
+      {/*<EmployeeTestimonial />*/}
     </>
   );
 };

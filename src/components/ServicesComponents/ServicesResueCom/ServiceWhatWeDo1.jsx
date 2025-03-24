@@ -29,7 +29,7 @@ const ServiceWhatWeDo1 = ({ stepsData }) => {
               <div key={index} className="col-md-6 col-lg-3 process-card3-wrap">
                 <div className="process-card3">
                   <div className="process-card3_icon">
-                    <img src={step.icon} alt="icon" />
+                    <img src={step.icon} alt="icon" loading="lazy" />
                   </div>
                   <h2 className="box-title">{step.heading}</h2>
                   <p className="process-card3_text">{step.description}</p>

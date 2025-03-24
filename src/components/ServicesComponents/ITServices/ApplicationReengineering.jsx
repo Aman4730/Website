@@ -18,6 +18,7 @@ import reeng from "../../../Imges/reeng.png";
 import reeng1 from "../../../Imges/reeng3.png";
 import reeng2 from "../../../Imges/reeng2.png";
 import reeng3 from "../../../Imges/reeng1.png";
+import ApplicationRee from "../../../Imges/ApplicationRee1.jpg";
 const ApplicationReengineering = () => {
   const blogData = {
     title: "Success Stories",
@@ -62,7 +63,7 @@ const ApplicationReengineering = () => {
   const aboutData = {
     title: "Application Re-engineering Services",
     subtitle: "What you get with LOGIMETRIX application re-engineering",
-    tags: ["WEBSITE", "BRANDING", "INTERFACE", "ANIMATION"],
+    tags: ["MODERNIZATION", "PERFORMANCE", "SCALABILITY", "CLOUD MIGRATION"],
     description:
       "Our application re-engineering services are designed to transform your legacy software for superior user experience and improved scalability, security, and maintainability. By addressing and pre-empting performance issues through strategic updates to your architecture and technology stack, we ensure your applications run smoothly and efficiently, safeguarding your business operations from disruptions. Our expert cloud consulting and migration services allow you to enhance your software's scalability and flexibility further. This allows you to adapt swiftly to the ever-changing business environment without being held back by outdated legacy systems. Our multi-skilled team of software engineers also helps you streamline your entire SDLC to optimize application development, minimize downtime, and prevent revenue loss.",
     stats: [
@@ -86,7 +87,7 @@ const ApplicationReengineering = () => {
       stars: 4.5,
     },
     images: {
-      main: about_17_1,
+      main: ApplicationRee,
       client: about_17_2,
     },
   };

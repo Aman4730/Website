@@ -8,7 +8,13 @@ import {
 } from "@mui/material";
 import React from "react";
 
-const ConfirmationModal = ({ open, handleClose, data, handleConfirm }) => {
+const ConfirmationModal = ({
+  open,
+  handleClose,
+  data,
+  handleConfirm,
+  message,
+}) => {
   return (
     <Dialog
       open={open.status}
@@ -21,9 +27,7 @@ const ConfirmationModal = ({ open, handleClose, data, handleConfirm }) => {
         {`Confirm ${data?.status}?`}
       </DialogTitle>
       <DialogContent>
-        <DialogContentText>
-          {`Are you sure you want to ${data?.status?.toLowerCase() || ""} this blog?`}
-        </DialogContentText>
+        <DialogContentText>{message}</DialogContentText>
       </DialogContent>
       <DialogActions>
         <Button

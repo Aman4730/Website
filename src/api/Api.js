@@ -67,6 +67,7 @@ export const getOneFetch = async (url, id) => {
     return error;
   }
 };
+
 export const getOneFetchByUrl = async (url) => {
   try {
     const response = await axios({
@@ -271,6 +272,7 @@ export const deleteFetch = async (url, id) => {
     throw error;
   }
 };
+
 export const deleteFetchByUrl = async (url) => {
   try {
     const response = await axios({

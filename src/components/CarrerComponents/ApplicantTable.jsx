@@ -3,22 +3,20 @@ import Box from "@mui/material/Box";
 import Table from "@mui/material/Table";
 import Paper from "@mui/material/Paper";
 import { visuallyHidden } from "@mui/utils";
-import Tooltip from "@mui/material/Tooltip";
 import TableRow from "@mui/material/TableRow";
-import EditIcon from "@mui/icons-material/Edit";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
 import TableHead from "@mui/material/TableHead";
-import DeleteIcon from "@mui/icons-material/Delete";
 import TableSortLabel from "@mui/material/TableSortLabel";
 import TableContainer from "@mui/material/TableContainer";
 import TablePagination from "@mui/material/TablePagination";
+import { Autocomplete, TextField } from "@mui/material";
 
-function EnhancedTableHead(props) {
-  const { order, orderBy, onRequestSort, headCells } = props;
+function EnhancedTableHead({ order, orderBy, onRequestSort, headCells }) {
   const createSortHandler = (property) => (event) => {
     onRequestSort(event, property);
   };
+
   return (
     <TableHead>
       <TableRow>
@@ -26,7 +24,6 @@ function EnhancedTableHead(props) {
           <TableCell
             key={headCell.id}
             align={headCell.numeric ? "right" : "left"}
-            padding={"normal"}
             sortDirection={orderBy === headCell.id ? order : false}
             style={{ backgroundColor: "#FFFFCC" }}
           >
@@ -51,16 +48,15 @@ function EnhancedTableHead(props) {
 }
 
 export default function ApplicantTable({
-  rows,
   headCells,
-  searchTerm,
-  onEditClick,
-  handleClickOpen,
+  searchTerm = "",
+  rows,
+  handleOpen,
+  downloadResume,
 }) {
   const [page, setPage] = React.useState(0);
   const [order, setOrder] = React.useState("asc");
-  const [selected, setSelected] = React.useState([]);
-  const [orderBy, setOrderBy] = React.useState("calories");
+  const [orderBy, setOrderBy] = React.useState("name");
   const [rowsPerPage, setRowsPerPage] = React.useState(10);
 
   const handleRequestSort = (event, property) => {
@@ -69,25 +65,7 @@ export default function ApplicantTable({
     setOrderBy(property);
   };
 
-  const handleClick = (event, name) => {
-    const selectedIndex = selected.indexOf(name);
-    let newSelected = [];
-    if (selectedIndex === -1) {
-      newSelected = newSelected.concat(selected, name);
-    } else if (selectedIndex === 0) {
-      newSelected = newSelected.concat(selected.slice(1));
-    } else if (selectedIndex === selected.length - 1) {
-      newSelected = newSelected.concat(selected.slice(0, -1));
-    } else if (selectedIndex > 0) {
-      newSelected = newSelected.concat(
-        selected.slice(0, selectedIndex),
-        selected.slice(selectedIndex + 1)
-      );
-    }
-    setSelected(newSelected);
-  };
-
-  const handleChangePage = (event, newPage) => {
+  const handleChangePage = (_, newPage) => {
     setPage(newPage);
   };
 
@@ -96,24 +74,13 @@ export default function ApplicantTable({
     setPage(0);
   };
 
-  const isSelected = (name) => selected.indexOf(name) !== -1;
-  const filteredRows = rows.filter((row) => {
-    const searchLower = searchTerm.toLowerCase();
-    const selectedUsers = row?.selected_users?.join(", ").toLowerCase() || "";
-    const selectedGroups = row?.selected_groups?.join(", ").toLowerCase() || "";
-    return (
-      row?.cabinet_name?.toLowerCase().includes(searchLower) ||
-      selectedUsers.includes(searchLower) ||
-      selectedGroups.includes(searchLower)
-    );
-  });
+  const filteredRows = rows?.filter((row) =>
+    row.Name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   const sortedRows = [...filteredRows].sort((a, b) => {
-    if (a[orderBy] < b[orderBy]) {
-      return order === "asc" ? -1 : 1;
-    }
-    if (a[orderBy] > b[orderBy]) {
-      return order === "asc" ? 1 : -1;
-    }
+    if (a[orderBy] < b[orderBy]) return order === "asc" ? -1 : 1;
+    if (a[orderBy] > b[orderBy]) return order === "asc" ? 1 : -1;
     return 0;
   });
 
@@ -121,9 +88,6 @@ export default function ApplicantTable({
     page * rowsPerPage,
     page * rowsPerPage + rowsPerPage
   );
-  React.useEffect(() => {
-    setPage(0);
-  }, [searchTerm]);
 
   return (
     <Box>
@@ -138,36 +102,60 @@ export default function ApplicantTable({
             />
             <TableBody>
               {rowsToDisplay.map((row, index) => {
-                const isItemSelected = isSelected(row.name);
                 return (
-                  <TableRow
-                    hover
-                    key={index}
-                    onClick={(event) => handleClick(event, row.name)}
-                    role="checkbox"
-                    aria-checked={isItemSelected}
-                    tabIndex={-1}
-                    selected={isItemSelected}
-                  >
-                    <TableCell style={{ fontSize: "12px" }}>
-                      {row.cabinet_name}
-                    </TableCell>
-                    <TableCell style={{ fontSize: "12px" }}>
-                      {row.selected_groups}
-                    </TableCell>
-                    <TableCell style={{ fontSize: "12px" }}>
-                      {row.selected_users}
+                  <TableRow hover key={index} role="checkbox" tabIndex={-1}>
+                    <TableCell>{index + 1}</TableCell>
+                    <TableCell>{row.Name}</TableCell>
+                    <TableCell>{row.jobID}</TableCell>
+                    <TableCell>{row.Email}</TableCell>
+                    <TableCell>{row.PhoneNumber}</TableCell>
+                    <TableCell>{row.Status}</TableCell>
+                    <TableCell>{row.ScheduledDate}</TableCell>
+                    <TableCell>
+                      <Autocomplete
+                        size="small"
+                        options={["Pending", "Viewed", "Rejected", "Scheduled"]}
+                        renderInput={(params) => (
+                          <TextField {...params} label="Status" />
+                        )}
+                        value={
+                          [
+                            "Pending",
+                            "Viewed",
+                            "Rejected",
+                            "Scheduled",
+                          ].includes(row.Status)
+                            ? row.Status
+                            : null
+                        }
+                        onChange={(event, newValue) => {
+                          if (newValue) {
+                            handleOpen(row.id, newValue, row.ScheduledDate);
+                          }
+                        }}
+                      />
                     </TableCell>
                     <TableCell>
-                      <Tooltip title="Edit" onClick={() => onEditClick(row.id)}>
-                        <EditIcon sx={{ ml: 1, mr: 1 }} fontSize="small" />
-                      </Tooltip>
-                      <Tooltip
-                        title="Delete"
-                        onClick={() => handleClickOpen(row.id)}
-                      >
-                        <DeleteIcon sx={{ ml: 1, mr: 1 }} fontSize="small" />
-                      </Tooltip>
+                      <div className="col-auto d-none d-lg-block">
+                        <div className="header-button">
+                          <button
+                            className="th-btn shadow-none"
+                            style={{
+                              padding: "6px 12px",
+                              fontSize: "12px",
+                              height: "35px",
+                              width: "auto",
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "6px",
+                            }}
+                            onClick={() => downloadResume(row.id, row.Name)}
+                          >
+                            Download
+                            <i className="fas fa-download me-2" />
+                          </button>
+                        </div>
+                      </div>
                     </TableCell>
                   </TableRow>
                 );
@@ -200,14 +188,14 @@ export default function ApplicantTable({
           nextIconButtonProps={{
             style: {
               marginBottom: "12px",
-              color: "green",
+              color: "#4786e6",
             },
             tabIndex: -1,
           }}
           backIconButtonProps={{
             style: {
               marginBottom: "12px",
-              color: "green",
+              color: "#4786e6",
             },
             tabIndex: -1,
           }}

@@ -79,7 +79,6 @@ const BlogApprovalPage = () => {
   ];
   const [currentPage, setCurrentPage] = useState(1);
   const [blogData, setBlogData] = useState([]);
-  console.log(blogData, "==blogData");
   const [approveOpen, setApproveOpen] = useState({
     status: false,
     data: "",
@@ -168,6 +167,7 @@ const BlogApprovalPage = () => {
         handleClose={handleClose}
         data={approveOpen.data}
         handleConfirm={handleStatusChange}
+        message={`Are you sure you want to ${approveOpen?.data?.status?.toLowerCase() || ""} this blog?`}
       />
       <section className="th-blog-wrapper space-top space-extra-bottom">
         <div className="container">

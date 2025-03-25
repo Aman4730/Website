@@ -287,8 +287,8 @@ const OurLegacyLeadership = () => {
           </div>
         </section>
         <TeamMembers />
-        <OurJourney />
-        <Awards />
+        {/* <OurJourney />*/}
+        {/* <Awards />*/}
       </section>
     </>
   );

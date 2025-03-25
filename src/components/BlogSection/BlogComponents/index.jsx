@@ -194,9 +194,6 @@ const BlogComponents = () => {
                           <i className="fa-light fa-calendar-days" />{" "}
                           {formatDate(blog.createdAt)}
                         </Link>
-                        <Link to="/contactUs">
-                          <i className="fa-regular fa-comments" /> Comments (3)
-                        </Link>
                       </div>
                       <h2 className="blog-title">
                         <span>{blog.Title}</span>

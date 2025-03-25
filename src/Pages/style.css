@@ -396,7 +396,6 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding-left: 40px;
 }
 
 @keyframes slideY {
@@ -548,7 +547,8 @@ body {
 
 .menu-dot {
   background-color: var(--placeholder-color);
-  box-shadow: -6px 0 0 0 var(--placeholder-color),
+  box-shadow:
+    -6px 0 0 0 var(--placeholder-color),
     6px 0 0 0 var(--placeholder-color);
   width: 4px;
   height: 4px;

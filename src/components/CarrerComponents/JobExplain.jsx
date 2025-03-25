@@ -2,7 +2,12 @@ import React from "react";
 import { Typography, Box, Grid, IconButton } from "@mui/material";
 import CarrerBackgound from "../../Imges/CarrerBackgound.png";
 
-const JobExplain = ({ handleFormOpen, selectedJob }) => {
+const JobExplain = ({
+  handleFormOpen,
+  selectedJob,
+  ApplicantsTrue,
+  handleCardBack,
+}) => {
   function getDaysLeft(endDate) {
     const end = new Date(endDate);
     const today = new Date();
@@ -58,8 +63,12 @@ const JobExplain = ({ handleFormOpen, selectedJob }) => {
                 <path d="M20.8 4.6a5.5 5.5 0 00-7.7 0l-1.1 1-1-1a5.5 5.5 0 00-7.8 7.8l1 1 7.8 7.8 7.8-7.7 1-1.1a5.5 5.5 0 000-7.8z" />
               </svg>
             </IconButton>
-            <div onClick={handleFormOpen}>
-              <spam className="th-btn">Apply Now</spam>
+            <div
+              onClick={ApplicantsTrue == true ? handleCardBack : handleFormOpen}
+            >
+              <spam className="th-btn">
+                {ApplicantsTrue == true ? "Go Back" : "Apply Now"}
+              </spam>
             </div>
           </div>
         </div>

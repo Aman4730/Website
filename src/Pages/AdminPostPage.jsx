@@ -4,20 +4,30 @@ import JobPost from "../components/CarrerComponents/JobPost";
 import { Grid } from "@mui/material";
 import { motion } from "framer-motion";
 import JobCard from "../components/CarrerComponents/JobCard";
-import { getFetch, postFetchData, putFetch } from "../api/Api";
+import {
+  getFetch,
+  getOneFetchByUrl,
+  postFetchData,
+  putFetch,
+  putFetchById,
+  putFetchData,
+} from "../api/Api";
 import JobExplain from "../components/CarrerComponents/JobExplain";
 import ApplicantTable from "../components/CarrerComponents/ApplicantTable";
 import { toast, ToastContainer } from "react-toastify";
+import ConfirmationModal from "../components/ConfirmationModal";
 
 const AdminPostPage = () => {
   const [open, setOpen] = useState(false);
   const [jobData, setJobData] = useState([]);
   const [showDetails, setShowDetails] = useState(false);
   const [selectedJob, setSelectedJob] = useState(null);
-
+  const [ApplicantsTrue, setApplicantsTrue] = useState(false);
   const handleCardClick = (job) => {
     setSelectedJob(job);
     setShowDetails(true);
+    setApplicantsTrue(true);
+    fetchAppliedList(job.id);
   };
   const handleCardBack = () => {
     setShowDetails(false);
@@ -30,7 +40,6 @@ const AdminPostPage = () => {
     setOpen(false);
     handleReset();
   };
-
   const fetchData = async () => {
     const url = `${import.meta.env.VITE_API_URL_LOCAL}/getjob`;
     try {
@@ -165,24 +174,47 @@ const AdminPostPage = () => {
   };
   const tableHeader = [
     {
-      id: "cabinet_name",
+      id: "Sr No",
       numeric: false,
       disablePadding: true,
-      label: "Cabinet Name",
+      label: "Sr No",
     },
     {
-      id: "selected_groups",
+      id: "Name",
       numeric: false,
       disablePadding: true,
-      label: "Selected Groups",
+      label: "Name",
     },
     {
-      id: "selected_users",
+      id: "Job ID",
       numeric: false,
       disablePadding: true,
-      label: "Selected User",
+      label: "Job ID",
     },
-
+    {
+      id: "Email",
+      numeric: false,
+      disablePadding: true,
+      label: "Email",
+    },
+    {
+      id: "Mobile",
+      numeric: false,
+      disablePadding: true,
+      label: "Mobile",
+    },
+    {
+      id: "Status",
+      numeric: false,
+      disablePadding: true,
+      label: "Status",
+    },
+    {
+      id: "Scheduled Date",
+      numeric: false,
+      disablePadding: true,
+      label: "Scheduled Date",
+    },
     {
       id: "Action",
       numeric: false,
@@ -190,9 +222,129 @@ const AdminPostPage = () => {
       label: "Action",
       style: { marginLeft: "18px" },
     },
+    {
+      id: "Resume",
+      numeric: false,
+      disablePadding: true,
+      label: "Resume",
+    },
   ];
+  // --------------------------------Applicants
+  const [approveOpen, setApproveOpen] = useState({
+    status: false,
+    data: {},
+  });
+  const handleOpen = (id, status, scheduledDate) => {
+    console.log("sdfsf");
+    setApproveOpen({
+      status: true,
+      data: { id, status, scheduledDate },
+    });
+  };
+  const handleClose = () => {
+    setApproveOpen({
+      status: false,
+      data: {},
+    });
+  };
+  const [appliedList, setAppliedList] = useState([]);
+  const fetchAppliedList = async (id) => {
+    const Applyid = selectedJob?.id ? selectedJob?.id : id;
+    const url = `${import.meta.env.VITE_API_URL_LOCAL}/appliedList/${Applyid}`;
+    try {
+      const response = await getFetch(url);
+      if (response?.status === 200) {
+        setAppliedList(response.data.data);
+      } else {
+        toast.error("Error fetching data", { autoClose: 2000 });
+      }
+    } catch (error) {
+      toast.error("Error fetching data", { autoClose: 2000 });
+    }
+  };
+  const handleStatusChange = async () => {
+    const { id, status, scheduledDate } = approveOpen.data;
+    try {
+      const url = `${import.meta.env.VITE_API_URL_LOCAL}/updateStatus/${selectedJob.id}`;
+      const response = await putFetchData(url, {
+        ApplicantId: id,
+        Status: status,
+        ScheduledDate: scheduledDate,
+      });
+      if (response?.status === 200) {
+        console.log(response);
+        toast.success(response.data.message, { autoClose: 2000 });
+        fetchAppliedList(id);
+        handleClose();
+      } else {
+        toast.error(response?.message || "Failed to update status.", {
+          autoClose: 2000,
+        });
+      }
+    } catch (error) {
+      toast.error(error.response?.data?.message || "Something went wrong!", {
+        autoClose: 2000,
+      });
+    }
+  };
+  const downloadResume = async (id, name) => {
+    const url = `${import.meta.env.VITE_API_URL_LOCAL}/downloadResume/${selectedJob.id}?JobId=${id}`;
+
+    try {
+      const response = await fetch(url, {
+        method: "GET",
+      });
+
+      console.log("Response Headers:", response.headers.get("content-type"));
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        console.error("Error Response Data:", errorData);
+        if (errorData?.message === "No Applicant Found") {
+          toast.warning("No applicant found for this job!");
+          return;
+        }
+        throw new Error("Failed to download the resume.");
+      }
+
+      const blob = await response.blob();
+      console.log("Blob Size:", blob.size);
+
+      if (blob.size === 0) {
+        console.error("Empty file received.");
+        toast.error("Received an empty file.");
+        return;
+      }
+
+      // Ensure unique blob URL
+      const blobUrl = window.URL.createObjectURL(blob);
+
+      const link = document.createElement("a");
+      link.href = blobUrl;
+      link.download = name;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      // Revoke URL to prevent memory leak
+      setTimeout(() => window.URL.revokeObjectURL(blobUrl), 1000);
+
+      toast.success("Resume downloaded successfully!");
+    } catch (error) {
+      console.error("Error downloading resume:", error);
+      toast.error("Failed to download the resume.");
+    }
+  };
+
   return (
     <div>
+      <ConfirmationModal
+        open={approveOpen}
+        handleClose={handleClose}
+        data={approveOpen.data}
+        handleConfirm={handleStatusChange}
+        message={`Are you sure you want to ${approveOpen?.data?.status?.toLowerCase() || ""} this Applicants?`}
+      />
       <MainHeading
         title="Job Post"
         subtitle="Job Post"
@@ -254,15 +406,6 @@ const AdminPostPage = () => {
                 ) : (
                   <React.Fragment>
                     <Grid item lg={12} sm={12} xs={12} order={{ xs: 1, sm: 2 }}>
-                      <Grid
-                        item
-                        lg={12}
-                        sm={12}
-                        xs={12}
-                        order={{ xs: 1, sm: 2 }}
-                      >
-                        <ApplicantTable headCells={tableHeader} />
-                      </Grid>
                       <motion.div
                         initial={{ x: "100%", opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
@@ -271,8 +414,25 @@ const AdminPostPage = () => {
                         <JobExplain
                           handleFormOpen={handleFormOpen}
                           selectedJob={selectedJob}
+                          ApplicantsTrue={ApplicantsTrue}
+                          handleCardBack={handleCardBack}
                         />
                       </motion.div>
+                      <Grid
+                        item
+                        lg={12}
+                        sm={12}
+                        xs={12}
+                        order={{ xs: 1, sm: 2 }}
+                        marginTop={5}
+                      >
+                        <ApplicantTable
+                          headCells={tableHeader}
+                          rows={appliedList || []}
+                          handleOpen={handleOpen}
+                          downloadResume={downloadResume}
+                        />
+                      </Grid>
                     </Grid>
                   </React.Fragment>
                 )}

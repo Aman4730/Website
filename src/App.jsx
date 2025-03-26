@@ -223,6 +223,7 @@ function App() {
         <Route path="/Gallery" element={<GalleryPage />} />
         <Route path="/Blog" element={<BlogPage />} />
         <Route path="/CarrerPage" element={<CarrerPage />} />
+        <Route path="/career/:id" element={<CarrerPage />} />
         <Route path="/HowWeDoIt" element={<HowWeDoIt />} />
         <Route
           path="/adminlogin"

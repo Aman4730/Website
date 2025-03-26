@@ -8,13 +8,34 @@ import {
   Box,
   Stack,
   Grid,
+  Tooltip,
 } from "@mui/material";
 import jobNotFound from "../../Imges/jobNotFound.gif";
-
+import { ContentCopy } from "@mui/icons-material";
+import PlaylistAddCheckIcon from "@mui/icons-material/PlaylistAddCheck";
 const JobCard = ({ handleCardClick, jobData = [], admin, handleEditJob }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const jobs = Array.isArray(jobData) && jobData.length > 0 ? jobData : [];
+
+  const [copiedState, setCopiedState] = useState({});
+
+  const handleCopy = (jobId) => {
+    const jobUrl = `${window.location.origin}/career/${jobId}`;
+    navigator.clipboard.writeText(jobUrl).then(() => {
+      setCopiedState((prevState) => ({
+        ...prevState,
+        [jobId]: true,
+      }));
+
+      setTimeout(() => {
+        setCopiedState((prevState) => ({
+          ...prevState,
+          [jobId]: false,
+        }));
+      }, 2000);
+    });
+  };
 
   return (
     <Grid
@@ -84,21 +105,34 @@ const JobCard = ({ handleCardClick, jobData = [], admin, handleEditJob }) => {
                     <path d="M19.5 3.5L18 2l-1.5 1.5L15 2l-1.5 1.5L12 2l-1.5 1.5L9 2 7.5 3.5 6 2 4.5 3.5 3 2v20l1.5-1.5L6 22l1.5-1.5L9 22l1.5-1.5L12 22l1.5-1.5L15 22l1.5-1.5L18 22l1.5-1.5L21 22V2l-1.5 1.5z" />
                   </svg>
                 </Box>
-
-                <Typography
-                  color="text.secondary"
-                  sx={{
-                    fontSize: "20px",
-                    fontWeight: "bold",
-                    cursor: "pointer",
-                    transition: "color 0.2s ease",
-                    "&:hover": {
-                      color: "text.primary",
-                    },
-                  }}
+                <Tooltip
+                  title={copiedState[job.id] ? "Copied!" : "Copy URL"}
+                  arrow
                 >
-                  •••
-                </Typography>
+                  <Typography
+                    color="text.secondary"
+                    sx={{
+                      fontSize: "14px",
+                      fontWeight: "bold",
+                      cursor: "pointer",
+                      transition: "color 0.2s ease",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 1,
+                      "&:hover": {
+                        color: "text.primary",
+                      },
+                    }}
+                    onClick={() => handleCopy(job.id)}
+                  >
+                    {!copiedState[job.id] ? (
+                      <ContentCopy fontSize="small" />
+                    ) : (
+                      <PlaylistAddCheckIcon fontSize="small" />
+                    )}
+                    {copiedState[job.id] ? "Copied!" : "Copy URL"}
+                  </Typography>
+                </Tooltip>
               </Box>
 
               <Typography

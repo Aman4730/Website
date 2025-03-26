@@ -2,6 +2,12 @@ import axios from "axios";
 import { toast } from "react-toastify";
 const token = localStorage.getItem("token");
 
+const handleLogout = () => {
+  localStorage.removeItem("token");
+  localStorage.removeItem("user_role");
+  toast("Token expired, please login again");
+  window.location.href = "/";
+};
 export const getFetch = async (url) => {
   try {
     const response = await axios({
@@ -16,7 +22,7 @@ export const getFetch = async (url) => {
     return response;
   } catch (error) {
     if (error.status === 401) {
-      localStorage.removeItem("tokenData");
+      handleLogout();
       toast("Token expired Please Login");
     }
     return error;
@@ -38,7 +44,7 @@ export const getFetchByLimit = async (url, limit, page) => {
     }
   } catch (error) {
     if (error.status === 401) {
-      localStorage.removeItem("tokenData");
+      handleLogout();
       toast("Token expired Please Login");
     }
     return error;
@@ -61,7 +67,7 @@ export const getOneFetch = async (url, id) => {
   } catch (error) {
     console.log(error);
     if (error.status === 401) {
-      localStorage.removeItem("tokenData");
+      handleLogout();
       toast("Token expired Please Login");
     }
     return error;
@@ -83,7 +89,7 @@ export const getOneFetchByUrl = async (url) => {
   } catch (error) {
     console.log(error);
     if (error.status === 401) {
-      localStorage.removeItem("tokenData");
+      handleLogout();
       toast("Token expired Please Login");
     }
     return error;
@@ -108,7 +114,7 @@ export const postFetch = async (url, data) => {
     }
   } catch (error) {
     if (error.status === 401) {
-      localStorage.removeItem("tokenData");
+      handleLogout();
       toast("Token expired Please Login");
     }
     return error;
@@ -130,7 +136,7 @@ export const postFetchUser = async (url, data) => {
     }
   } catch (error) {
     if (error.status === 401) {
-      localStorage.removeItem("tokenData");
+      handleLogout();
       toast("Token expired Please Login");
     }
     return error;
@@ -147,7 +153,7 @@ export const postFetchContent = async (url, data) => {
     return response.data;
   } catch (error) {
     if (error.status === 401) {
-      localStorage.removeItem("tokenData");
+      handleLogout();
       toast("Token expired Please Login");
     }
     throw error;
@@ -170,7 +176,7 @@ export const patchFetch = async (url, id, data) => {
     }
   } catch (error) {
     if (error.status === 401) {
-      localStorage.removeItem("tokenData");
+      handleLogout();
       toast("Token expired Please Login");
     }
     throw error;
@@ -194,7 +200,7 @@ export const putFetch = async (url, data) => {
     }
   } catch (error) {
     if (error.status === 401) {
-      localStorage.removeItem("tokenData");
+      handleLogout();
       toast("Token expired Please Login");
       // window.location.reload();
     }
@@ -218,7 +224,7 @@ export const putFetchById = async (url) => {
     }
   } catch (error) {
     if (error.status === 401) {
-      localStorage.removeItem("tokenData");
+      handleLogout();
       toast("Token expired Please Login");
       // window.location.reload();
     }
@@ -242,7 +248,7 @@ export const putFetchData = async (url, data) => {
     }
   } catch (error) {
     if (error.status === 401) {
-      localStorage.removeItem("tokenData");
+      handleLogout();
       toast("Token expired Please Login");
       // window.location.reload();
     }
@@ -265,7 +271,7 @@ export const deleteFetch = async (url, id) => {
     }
   } catch (error) {
     if (error.status === 401) {
-      localStorage.removeItem("tokenData");
+      handleLogout();
       toast("Token expired Please Login");
       // window.location.reload();
     }
@@ -288,7 +294,7 @@ export const deleteFetchByUrl = async (url) => {
     }
   } catch (error) {
     if (error.status === 401) {
-      localStorage.removeItem("tokenData");
+      handleLogout();
       toast("Token expired Please Login");
       // window.location.reload();
     }
@@ -313,7 +319,7 @@ export const postFetchData = async (url, data) => {
     }
   } catch (error) {
     if (error.status === 401) {
-      localStorage.removeItem("tokenData");
+      localStorage.removeItem("token");
       toast("Token expired Please Login");
       // window.location.reload();
     }

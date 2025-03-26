@@ -84,7 +84,7 @@ const JobExplain = ({
             Posted &nbsp;
             {getDaysLeft(selectedJob.EndDate) > 0
               ? `${getDaysLeft(selectedJob.EndDate)} days left`
-              : "Expired"}
+              : "red"}
           </Typography>
         </div>
         <Grid container spacing={2} sx={{ my: 0.4 }}>

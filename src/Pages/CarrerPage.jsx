@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./style.css";
 import MainHeading from "../components/MainHeading";
 import SearchType from "../components/CarrerComponents/SearchType";
@@ -11,19 +11,45 @@ import CarrerAbout from "../components/CarrerComponents/CarrerAbout";
 import CarrerForm from "../components/CarrerComponents/CarrerForm";
 import { getFetch } from "../api/Api";
 import { toast, ToastContainer } from "react-toastify";
+import { useNavigate, useParams } from "react-router-dom";
 export default function CarrerPage() {
   const [showDetails, setShowDetails] = useState(false);
   const [selectedJob, setSelectedJob] = useState(null);
   const [jobData, setJobData] = useState([]);
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+  const jobDetailRef = useRef(null);
+  const { id } = useParams();
+
   const handleCardClick = (job) => {
     setSelectedJob(job);
     setShowDetails(true);
+    navigate(`/career/${job.id}`, { replace: true });
   };
+
+  useEffect(() => {
+    if (id && jobData.length > 0) {
+      const job = jobData.find((job) => job.id.toString() === id);
+      if (job) {
+        setSelectedJob(job);
+        setShowDetails(true);
+
+        requestAnimationFrame(() => {
+          jobDetailRef.current?.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        });
+      }
+    }
+  }, [id, jobData]);
+
   const handleCardBack = () => {
     setShowDetails(false);
     setSelectedJob(null);
+    navigate("/CarrerPage");
   };
+
   const handleFormOpen = () => {
     setOpen(true);
   };
@@ -177,9 +203,9 @@ export default function CarrerPage() {
         title="Carrer"
         subtitle="Carrer"
         breadcrumbs={[{ label: "Home", link: "/" }, { label: "Solution" }]}
-        marginBottom="-50px"
+        // marginBottom="-50px"
       />
-      <CarrerAbout />
+      {!showDetails && <CarrerAbout />}
       <div className="job">
         <div className="wrapper">
           <div className="main-container">
